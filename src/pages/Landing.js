@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Header from '../components/Header';
+
 function Landing(){
     return(
         <div>
-            {/* HEADER */}
+            <Header />
             {/* SECTION */}
                 {/* GREETING SECTION */}
                 {/* ABOUT US */}
