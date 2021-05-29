@@ -25,7 +25,7 @@
     display: flex;
 }
 
-.logo {
+.brand__logo {
     max-height: 40px;
     width: auto;
 }
@@ -76,6 +76,10 @@
     &:hover {
         cursor: pointer;
     }
+}
+
+.brand__name {
+    display: none;
 }
 
 .header__menu-burger {
@@ -183,8 +187,37 @@
         max-width: 720px;
     }
 
-    .logo {
+    .brand__logo {
         max-height: 3.5em;
+    }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+// Full Desktops media query 
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .header__brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .brand__logo {
+        max-height: 4em;
+    }
+
+    .brand__name {
+        display: inline-block;
+        margin-left: 1em;
+        font-weight: 300;
     }
 }
 

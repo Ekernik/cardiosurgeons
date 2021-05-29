@@ -17,7 +17,10 @@ function Header() {
         <header className='header'>
             <div className='container'>
                 <nav className='header__navbar'>
-                    <img className='logo' src={logo} alt=''/>
+                    <div className='header__brand'>
+                        <img className='brand__logo' role='presentation' src={logo} alt=''/>
+                        <p className='brand__name'>Центр кардиохирургии и интервенционной кардиологии</p>
+                    </div>
                     <ul className='header__menu'>
                         <li><a href="#landing-greeting" className='menu__item'>главная</a></li>
                         <li><a href="#landing-about-us" className='menu__item'>о нас</a></li>

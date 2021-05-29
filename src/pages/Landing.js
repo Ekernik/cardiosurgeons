@@ -4,7 +4,7 @@ import Header from '../components/Header';
 
 function Landing(){
     return(
-        <div>
+        <div className='landing-page'>
             <Header />
             {/* SECTION */}
                 {/* GREETING SECTION */}
