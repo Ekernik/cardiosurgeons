@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Landing(){
     return(
@@ -12,7 +13,7 @@ function Landing(){
                 {/* OUR TEAM */}
                 {/* SERVICES */}
                 {/* CONTACTS */}
-            {/* FOOTER */}
+            <Footer />
         </div>
     )
 }

@@ -1,0 +1,19 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: none;
+    width: 100vw;
+    height: 3em;
+    background-color: #323232;
+    color: #fff;
+
+    &__copyright {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

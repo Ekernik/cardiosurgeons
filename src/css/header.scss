@@ -17,14 +17,6 @@
     }
 }
 
-.container {
-    height: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding: .5em;
-    display: flex;
-}
-
 .brand__logo {
     max-height: 40px;
     width: auto;
@@ -173,6 +165,10 @@
             display: none;
         }
 
+        &__burger-nav{ 
+            display: none;
+        }
+
         &__menu {
             display: flex;
             list-style-type: none;
@@ -183,19 +179,8 @@
         }
     }
 
-    .container {
-        max-width: 720px;
-    }
-
     .brand__logo {
         max-height: 3.5em;
-    }
-}
-
-// Laptops media query
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
     }
 }
 
