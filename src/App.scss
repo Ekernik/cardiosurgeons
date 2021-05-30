@@ -1,10 +1,28 @@
-:root {
-  --text-c-main: #3BACB5;
-  --text-c-black: #000;
-  --text-c-white: #FFF;
+.container {
+  height: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: .5em;
+  overflow: hidden;
 }
 
+// Tablet media query 
 @media (min-width: 768px) {
-  
+  .container {
+    max-width: 720px;
+  }
 }
 
+// Laptops media query
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+
+// Full Desktops media query 
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/header.scss';
+import './index.scss';
 
-import logo from '../assets/images/logo_1.png';
+import logo from '../../assets/images/logo_1.png';
 
 function Header() {
     let handleClick = () => {
@@ -15,7 +15,7 @@ function Header() {
 
     return(
         <header className='header'>
-            <div className='container'>
+            <div className='container header__container'>
                 <nav className='header__navbar'>
                     <div className='header__brand'>
                         <img className='brand__logo' role='presentation' src={logo} alt=''/>

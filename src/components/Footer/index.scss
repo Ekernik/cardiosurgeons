@@ -5,8 +5,8 @@
     overflow: none;
     width: 100vw;
     height: 3em;
-    background-color: #323232;
-    color: #fff;
+    background-color: var(--color-dark);
+    color: var(--color-white);
 
     &__copyright {
         height: 100%;
