@@ -12,17 +12,17 @@ function WhyUs() {
                 <h2 className='section__header'>Почему люди выбирают нас</h2>
                 <div className='why-us__reason'>
                     <p className='reason__title'>Наш центр представляет собой уникальное сочетание кардиологии, кардиохирургии, сосудистой хирургии, аритмологии, рентгенхирургии, кардиоанестезиологии, работающих как единое целое, позволяя проводить процесс лечения и последующего наблюдения пациентов в едином блоке</p>
-                    <img className='reason__img' src={svg_doctors} alt=''/>
+                    <img className='reason__img' src={svg_doctors} loading='lazy' alt=''/>
                     <hr className='reason__divider'/>
                 </div>
                 <div className='why-us__reason'>
                     <p className='reason__title'>Отделение располагает комфортными 1,2,3-местными палатами со всеми удобствами</p>
-                    <img className='reason__img' src={svg_building} alt=''/>
+                    <img className='reason__img' src={svg_building} loading='lazy' alt=''/>
                     <hr className='reason__divider'/>
                 </div>
                 <div className='why-us__reason'>
                     <p className='reason__title'>Мы оказываем высокотехнологичную медицинскую помощь</p>
-                    <img className='reason__img' src={svg_tech} alt=''/>
+                    <img className='reason__img' src={svg_tech} loading='lazy' alt=''/>
                 </div>
             </div>
         </section>
