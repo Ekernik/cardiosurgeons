@@ -4,6 +4,7 @@ import Header from '../components/Header/';
 import Footer from '../components/Footer/';
 import Greetings from '../components/Greetings/';
 import WhyUs from '../components/WhyUs/';
+import OurServices from '../components/OurServices/';
 
 function Landing(){
     return(
@@ -14,7 +15,7 @@ function Landing(){
                 <WhyUs />
                 {/* ABOUT US */}
                 {/* OUR TEAM */}
-                {/* SERVICES */}
+                <OurServices />
                 {/* CONTACTS */}
             <Footer />
         </div>
