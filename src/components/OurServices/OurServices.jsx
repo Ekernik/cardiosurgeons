@@ -25,13 +25,21 @@ function OurServices() {
                 </div>
                 <div className='our-services__list-container'>
                     <ul className='list-container__list'>
-                        {diagnostics.map(diagnos => <div><li className='illness-list__item'>{diagnos}</li><hr /></div>)}
+                        {diagnostics.map(diagnos => {
+                            return diagnostics[diagnostics.length - 1] === diagnos ?
+                                <div><li className='illness-list__item'>{diagnos}</li></div> :
+                                <div><li className='illness-list__item'>{diagnos}</li><hr /></div>;
+                        })}
                     </ul>
                     <ul className='list-container__list list-container__list--hidden'>
                         {illnesses.map(object => 
                             <div className='illness-subsection'>
                                 <h3 className='illness-list__header'>{object.categoryName}</h3>
-                                {object.illnesses.map(illness => <div><li className='illness-list__item'>{illness}</li><hr /></div>)}
+                                {object.illnesses.map(illness => {
+                                    return (object.illnesses[object.illnesses.length - 1]) === illness ? 
+                                        <div><li className='illness-list__item'>{illness}</li></div> :
+                                        <div><li className='illness-list__item'>{illness}</li><hr /></div>
+                                })}
                             </div>
                         )}
                     </ul>
