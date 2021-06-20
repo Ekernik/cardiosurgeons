@@ -76,8 +76,14 @@
 @media (min-width: 992px) {
     .list-container__list {
         width: 600px;
-        height: 1150px;
         flex-wrap: wrap;
+        height: auto;
+        max-height: 1150px;
+
+
+        &:not(:first-child) {
+            align-items: center;
+        }
     }
 
     .illness-subsection {
@@ -107,7 +113,6 @@
 
     .list-container__list {
         width: 850px;
-        height: auto;
         max-height: 1300px;
         flex-wrap: wrap;
     }
