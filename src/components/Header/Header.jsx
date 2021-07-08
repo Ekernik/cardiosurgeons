@@ -1,7 +1,10 @@
 import React from 'react';
+import './scroll.scss';
 import './index.scss';
+import './scroll.js';
 
 import logo from '../../assets/images/logo_1.png';
+import listenToScroll from './scroll.js';
 
 function Header() {
     let handleClick = () => {
@@ -14,7 +17,7 @@ function Header() {
     };
 
     return(
-        <header className='header'>
+        <header className='header' onLoad={listenToScroll}>
             <div className='container header__container'>
                 <nav className='header__navbar'>
                     <div className='header__brand'>

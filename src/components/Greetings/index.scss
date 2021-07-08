@@ -1,11 +1,12 @@
-.greetings-section {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url('../../assets/images/bg-doctors.webp') no-repeat center center scroll;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
 .greetings {
+    &-section {
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url('../../assets/images/bg-doctors.webp') no-repeat center center scroll;
+        background-size: cover;
+        margin-top: 3em;
+        height: 100%;
+        width: 100%;
+    }
+
     &__header, 
     &__subheader {
         color: var(--color-white);
@@ -47,6 +48,10 @@
 
 @media (min-width: 768px) {
     .greetings {
+        &-section {
+            margin-top: 5em;
+        }
+
         &__header, 
         &__subheader {
             margin-bottom: 1rem;
@@ -71,13 +76,19 @@
 }
 
 @media (min-width: 992px) {
-    .greetings__header {
-        max-width: 50%;
+    .greetings {
+        &__header {
+            max-width: 50%;
+        }
     }
 }
 
 @media (min-width: 1400px) {
     .greetings {
+        &-section {
+            padding: 3em 0;
+        }
+
         &__header, 
         &__subheader {
             margin-bottom: 1.5rem;
