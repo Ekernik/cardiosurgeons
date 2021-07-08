@@ -21,7 +21,7 @@
     }
 
     &__subheader {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     &__cta {
@@ -30,9 +30,10 @@
         border-radius: 5px;
         color: var(--color-white);
         filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, .7));
+        font-size: 1em;
         font-weight: 600;
         margin-bottom: 1rem;
-        padding: .4em 2em;
+        padding: .8em 2em;
         text-transform: uppercase;
 
         &:hover {
