@@ -25,11 +25,11 @@ function Header() {
                         <p className='brand__name'>Центр кардиохирургии и интервенционной кардиологии</p>
                     </div>
                     <ul className='header__menu'>
-                        <li><a href="#landing-greeting" className='menu__item'>главная</a></li>
-                        <li><a href="#landing-about-us" className='menu__item'>о нас</a></li>
-                        <li><a href="#landing-our-team" className='menu__item'>команда</a></li>
-                        <li><a href="#landing-services" className='menu__item'>услуги</a></li>
-                        <li><a href="#landing-contacts" className='menu__item'>контакты</a></li>
+                        <li className='menu__item'><a href="#landing-greeting" className='menu__link'>главная</a></li>
+                        <li className='menu__item'><a href="#landing-about-us" className='menu__link'>о нас</a></li>
+                        <li className='menu__item'><a href="#landing-services" className='menu__link'>услуги</a></li>
+                        <li className='menu__item'><a href="#landing-our-team" className='menu__link'>команда</a></li>
+                        <li className='menu__item'><a href="#landing-contacts" className='menu__link'>контакты</a></li>
                     </ul>
                 </nav>
                 <div onClick={handleClick} className='header__burger'>
@@ -39,11 +39,11 @@ function Header() {
                 </div>
                 <nav className='header__burger-nav'>
                     <ul className='burger__menu'>
-                        <li><a href="#landing-greeting" className='menu__item'>главная</a></li>
-                        <li><a href="#landing-about-us" className='menu__item'>о нас</a></li>
-                        <li><a href="#landing-our-team" className='menu__item'>команда</a></li>
-                        <li><a href="#landing-services" className='menu__item'>услуги</a></li>
-                        <li><a href="#landing-contacts" className='menu__item'>контакты</a></li>
+                        <li className='menu__item'><a href="#landing-greeting" className='menu__link'>главная</a></li>
+                        <li className='menu__item'><a href="#landing-about-us" className='menu__link'>о нас</a></li>
+                        <li className='menu__item'><a href="#landing-services" className='menu__link'>услуги</a></li>
+                        <li className='menu__item'><a href="#landing-our-team" className='menu__link'>команда</a></li>
+                        <li className='menu__item'><a href="#landing-contacts" className='menu__link'>контакты</a></li>
                     </ul>
                 </nav>
             </div>

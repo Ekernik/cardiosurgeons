@@ -6,6 +6,7 @@ import Greetings from '../components/Greetings/';
 import WhyUs from '../components/WhyUs/';
 import OurServices from '../components/OurServices/';
 import Contacts from '../components/Contacts/';
+import FloatingContacts from '../components/FloatingContacts/';
 
 function Landing(){
     return(
@@ -13,6 +14,7 @@ function Landing(){
             <Header />
             {/* SECTION */}
                 <Greetings />
+                <FloatingContacts />
                 <WhyUs />
                 {/* ABOUT US */}
                 {/* OUR TEAM */}

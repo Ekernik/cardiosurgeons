@@ -49,10 +49,6 @@ function Contacts() {
                                 <label className='contact-form__label'>Ваше ФИО (полностью)<span className='must-have'>*</span></label>
                             </div>
                             <div className='contact-form__group'>
-                                <input type='date' placeholder='' className='contact-form__input' required/>
-                                <label className='contact-form__label'>Дата рождения<span className='must-have'>*</span></label>
-                            </div>
-                            <div className='contact-form__group'>
                                 <input type='tel' className='contact-form__input' required/>
                                 <label className='contact-form__label'>Контактный телефон<span className='must-have'>*</span></label>
                             </div>
@@ -61,14 +57,10 @@ function Contacts() {
                                 <label className='contact-form__label'>Адрес Вашей электронной почты<span className='must-have'>*</span></label>
                             </div>
                             <div className='contact-form__group'>
-                                <input type='text' className='contact-form__input' required/>
-                                <label className='contact-form__label'>Врач<span className='must-have'>*</span></label>
+                                <textarea className='contact-form__textfield' required></textarea>
+                                <label className='contact-form__label'>Ваше сообщение<span className='must-have'>*</span></label>
                             </div>
                             <div className='contact-form__sm-section'>
-                                <div className='contact-form__group'>
-                                    <input type='date' className='contact-form__input' required/>
-                                    <label className='contact-form__label'>Удобная дата<span className='must-have'>*</span></label>
-                                </div>
                                 <div className='contact-form__group'>
                                     <input type='checkbox' required/>
                                     <label className='label-for-terms'>Я согласен на <a href='#TODO' className='tac-link'>обработку персональных данных</a></label>

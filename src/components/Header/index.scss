@@ -33,7 +33,11 @@
 }
 
 .menu__item {
-    margin: .5em 2em .5em 0;
+    margin: .4em 0;
+}
+
+.menu__link {
+    margin: 0;
     padding: .5em;
     text-decoration: none;
     color: var(--text-c-black);
@@ -192,26 +196,35 @@
         }
     }
 
-    .brand__logo {
-        max-height: 3.5em;
+    .header {
+        &__brand {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        &__menu {
+            justify-content: space-evenly;
+            flex: 1.5;
+        }
+    }
+
+    .brand {
+        &__logo {
+            max-height: 3.5em;
+        }
+        &__name {
+            display: inline-block;
+            margin-left: 1em;
+            font-weight: 300;
+            font-size: var(--text-sm);
+        }
     }
 }
 
 // Full Desktops media query 
 @media (min-width: 1400px) {
-    .header__brand {
-        display: flex;
-        align-items: center;
-    }
-
     .brand__logo {
         max-height: 4em;
-    }
-
-    .brand__name {
-        display: inline-block;
-        margin-left: 1em;
-        font-weight: 300;
     }
 }
 
