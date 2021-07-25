@@ -1,0 +1,133 @@
+.card-news {
+  text-align: left;
+  min-width: 70vw;
+  max-width: 220px;
+  height: 220px;
+  padding: 1.5em 1.2em;
+  border: 1px solid var(--color-P);
+  border-radius: var(--border-radius-secondary);
+  transition: 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    -webkit-box-shadow: 4px 3px 18px 2px rgba(20, 107, 107, 0.2);
+    -moz-box-shadow: 4px 3px 18px 2px rgba(20, 107, 107, 0.2);
+    box-shadow: 4px 3px 18px 2px rgba(20, 107, 107, 0.2);
+  }
+}
+
+.card {
+  &__title {
+    font-size: var(--text-xs);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: .6rem;
+  }
+
+  &__text {
+    font-size: var(--text-sm);
+  }
+
+  &__read-more {
+    padding: 0.4em 1em;
+    background-color: white;
+    border: 1px solid var(--color-P);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    transition: .4s ease-in-out;
+    letter-spacing: .2em;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-P--light);
+      border-radius: var(--border-radius-secondary);
+    }
+
+    &:active {
+      transition: .1s;
+      background-color: var(--color-P);
+    }
+
+    &:any-link {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .card-news {
+    min-width: 39vw;
+    max-width: 39vw;
+  }
+
+  .card {
+    &__read-more {
+      padding: 0.8em 1.4em;
+    }
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .card-news {
+    min-width: 26.5vw;
+    max-width: 26.5vw;
+    margin: 0.5em;
+    height: 230px;
+  }
+
+  .card {
+    &__title {
+      font-size: var(--text-sm);
+      margin-bottom: .4rem ;
+    }
+
+    &__text {
+      height: 120px;
+      font-size: var(--text-regular);
+      line-height: 1.2rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      max-height: 7.2rem;
+    }
+
+    &__read-more {
+      padding: 0.6em 1.2em;
+    }
+  }
+}
+
+// Full Desktops media query
+@media (min-width: 1400px) {
+  .card-news {
+    min-width: 288px;
+    max-width: 288px;
+    padding: 1em 1.4em;
+  }
+
+  .card {
+    &__title {
+      font-size: var(--text-sm);
+      margin-bottom: .3rem;
+    }
+
+    &__text {
+      font-size: var(--text-regular);
+      -webkit-line-clamp: 7;
+      max-height: 8.4rem;
+      height: 8.4rem;
+    }
+
+    &__read-more {
+      padding: 0.6em 1.2em;
+    }
+  }
+}
