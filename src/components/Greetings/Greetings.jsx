@@ -6,14 +6,16 @@ function Greetings() {
     const body = document.querySelector('body');
     const curtain = document.getElementById('curtain');
     const floatingContacts = document.querySelector('.floating-contacts');
-
+    // Scroll to the top
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     body.classList.toggle('fixed-page');
     curtain.classList.toggle('curtain--opened');
     floatingContacts.classList.toggle('floating-contacts--hidden');
   };
 
   return (
-    <section className="greetings-section">
+    <section id="greetings-section">
       <div className="container">
         <h1 className="greetings__header">
           Центр кардиохирургии и интервенционной кардиологии

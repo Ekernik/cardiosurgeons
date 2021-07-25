@@ -25,11 +25,11 @@ function Header() {
                         <p className='brand__name'>Центр кардиохирургии и интервенционной кардиологии</p>
                     </div>
                     <ul className='header__menu'>
-                        <li className='menu__item'><a href="#landing-greeting" className='menu__link'>главная</a></li>
+                        <li className='menu__item'><a href="#greetings-section" className='menu__link'>главная</a></li>
                         <li className='menu__item'><a href="#landing-about-us" className='menu__link'>о нас</a></li>
                         <li className='menu__item'><a href="#landing-services" className='menu__link'>услуги</a></li>
                         <li className='menu__item'><a href="#landing-our-team" className='menu__link'>команда</a></li>
-                        <li className='menu__item'><a href="#landing-contacts" className='menu__link'>контакты</a></li>
+                        <li className='menu__item'><a href="#contacts-section" className='menu__link'>контакты</a></li>
                     </ul>
                 </nav>
                 <div onClick={handleClick} className='header__burger'>
