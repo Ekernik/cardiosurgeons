@@ -1,7 +1,7 @@
 import './scroll.scss';
 
 function listenToScroll() {
-	const scrollParent = document.querySelector('.landing-page');
+	const scrollParent = document.querySelector('body');
 	let lastScroll = 0;
 	console.log(scrollParent)
 

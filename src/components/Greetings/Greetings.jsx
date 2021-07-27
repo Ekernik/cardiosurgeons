@@ -1,7 +1,9 @@
 import React from 'react';
 import './index.scss';
 
-function Greetings() {
+import FloatingContacts from '../FloatingContacts';
+
+function Greetings(props) {
   let handleClick = () => {
     const body = document.querySelector('body');
     const curtain = document.getElementById('curtain');
@@ -16,13 +18,14 @@ function Greetings() {
 
   return (
     <section id="greetings-section">
+      <FloatingContacts />
       <div className="container">
         <h1 className="greetings__header">
-          Центр кардиохирургии и интервенционной кардиологии
+          {props.header}
         </h1>
-        <h3 className="greetings__subheader">Медицина, доступная каждому</h3>
+        <h3 className="greetings__subheader">{props.subheader}</h3>
         <button className="greetings__cta" onClick={handleClick}>
-          Записаться на прием
+          {props.button}
         </button>
       </div>
     </section>

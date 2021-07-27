@@ -6,7 +6,7 @@ import './scroll.js';
 import logo from '../../assets/images/logo_1.png';
 import listenToScroll from './scroll.js';
 
-function Header() {
+function Header(props) {
     let handleClick = () => {
         const headerBurger = document.querySelector('.header__menu-burger');
         const headerMenu = document.querySelector('.header__burger-nav');

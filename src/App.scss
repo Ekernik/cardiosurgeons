@@ -2,14 +2,24 @@
   height: 100%;
   max-width: 100%;
   margin: auto;
-  padding: 0.5em;
+  padding: .5em 1em;
   overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 // Tablet media query
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  .flex {
+    flex-direction: row;
   }
 }
 
