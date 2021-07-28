@@ -1,32 +1,15 @@
 import React from 'react';
 import './index.scss';
 
-import FloatingContacts from '../FloatingContacts';
+import Button from '../../atoms/ButtonCTA';
 
 function Greetings(props) {
-  let handleClick = () => {
-    const body = document.querySelector('body');
-    const curtain = document.getElementById('curtain');
-    const floatingContacts = document.querySelector('.floating-contacts');
-    // Scroll to the top
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    body.classList.toggle('fixed-page');
-    curtain.classList.toggle('curtain--opened');
-    floatingContacts.classList.toggle('floating-contacts--hidden');
-  };
-
   return (
     <section id="greetings-section">
-      <FloatingContacts />
       <div className="container">
-        <h1 className="greetings__header">
-          {props.header}
-        </h1>
+        <h1 className="greetings__header">{props.header}</h1>
         <h3 className="greetings__subheader">{props.subheader}</h3>
-        <button className="greetings__cta" onClick={handleClick}>
-          {props.button}
-        </button>
+        <Button styling="greetings__cta" text={props.buttonText} />
       </div>
     </section>
   );

@@ -28,6 +28,11 @@
         align-items: center;
         font-size: var(--text-sm);
         margin: .7em 0;
+
+        & a:any-link {
+            text-decoration: none;
+            color: black;
+        }
     }
 
     & img {

@@ -6,6 +6,12 @@ function FloatingContacts() {
     const body = document.querySelector('body');
     const curtain = document.getElementById('curtain');
     const floatingContacts = document.querySelector('.floating-contacts')
+    const headerContainer = document.querySelector('.header__container');
+    const headerNav = document.querySelector('.header__nav');
+    const header = document.querySelector('.header');
+    headerContainer.classList.toggle('hidden');
+    headerNav.classList.toggle('hidden');
+    header.classList.toggle('darken')
     body.classList.toggle('fixed-page');
     curtain.classList.toggle('curtain--opened')
     floatingContacts.classList.toggle('floating-contacts--hidden')

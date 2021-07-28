@@ -12,7 +12,7 @@ function listenToScroll() {
 			return;
 		}
 	
-		if (currentScroll > lastScroll && !scrollParent.classList.contains("scroll-down")) {
+		if (currentScroll - 5 > lastScroll && !scrollParent.classList.contains("scroll-down")) {
 			scrollParent.classList.remove("scroll-up");
 			scrollParent.classList.add("scroll-down");
 		} 

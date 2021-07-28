@@ -12,16 +12,13 @@ function Landing() {
   return (
     <div className="landing-page">
       <Header />
-      {/* SECTION */}
       <Greetings
         header="Центр кардиохирургии и интервенционной кардиологии"
         subheader="Медицина, доступная каждому"
-        button="Записаться на прием"
+        buttonText="Записаться на прием"
       />
       <News />
       <WhyUs />
-      {/* ABOUT US */}
-      {/* OUR TEAM */}
       <OurServices />
       <Contacts />
       <Footer />

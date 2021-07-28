@@ -12,9 +12,9 @@ function Coronarography() {
     <div className="Coronarography-page">
       <Header />
       <Greetings
-        header="Коронография"
+        header="Коронарография"
         subheader="эффективный и достоверный метод диагностики поражения артерий сердца"
-        button="записаться на бесплатный прием"
+        buttonText="записаться на бесплатный прием"
       />
       <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
       <AboutCG />

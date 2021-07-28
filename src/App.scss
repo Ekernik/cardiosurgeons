@@ -13,6 +13,18 @@
   flex-wrap: wrap;
 }
 
+.overflow {
+  overflow: visible;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.darken {
+  background-color: var(--color-dark) !important;
+}
+
 // Tablet media query
 @media (min-width: 768px) {
   .container {
