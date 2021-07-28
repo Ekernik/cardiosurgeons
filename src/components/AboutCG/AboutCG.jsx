@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.scss';
 
-import svg_building from '../../assets/svg/building_1.svg';
+import svg_research from '../../assets/svg/research_1.svg';
 import svg_doctors from '../../assets/svg/doctors_1.svg';
-import svg_tech from '../../assets/svg/tech_1.svg';
+import svg_care from '../../assets/svg/care_1.svg';
 
 function AboutCG() {
   return (
@@ -17,7 +17,7 @@ function AboutCG() {
           безошибочно определить участок и степень сужения просвета коронарной
           артерии и выбрать подходящую тактику лечения.
         </p>
-        <img className="reason__img" src={svg_doctors} loading="lazy" alt="" />
+        <img className="reason__img" src={svg_research} loading="lazy" alt="" />
         <hr className="reason__divider" />
       </div>
       <div className="why-us__reason">
@@ -26,7 +26,7 @@ function AboutCG() {
           выполнению исследования устанавливаются либо кардиологом либо
           сердечно-сосудистым хирургом.
         </p>
-        <img className="reason__img" src={svg_building} loading="lazy" alt="" />
+        <img className="reason__img" src={svg_care} loading="lazy" alt="" />
         <hr className="reason__divider" />
       </div>
       <div className="why-us__reason">
@@ -39,7 +39,7 @@ function AboutCG() {
           прохождению контраста хирургами проводится оценка состояния коронарных
           артерий.
         </p>
-        <img className="reason__img" src={svg_tech} loading="lazy" alt="" />
+        <img className="reason__img" src={svg_doctors} loading="lazy" alt="" />
       </div>
     </section>
   );
