@@ -12,72 +12,7 @@ import 'swiper/components/navigation/navigation.min.css';
 import './index.scss';
 
 import NewsCard from '../../organisms/NewsCard/NewsCard';
-let newsArr = [
-  {
-    id: 'n1',
-    title: 'Новости',
-    date: '21 Июля 2021',
-    p:
-      'Работа Клиники высоких медицинских технологий им. Н. И. Пирогова СПбГУ в период пандемии COVID-19',
-    link: '#TODOlink1',
-  },
-  {
-    id: 'n2',
-    title: 'Новости',
-    date: '20 Июля 2021',
-    p:
-      'Уважаемые посетители Клиники! В период с 21 июля по 3 августа 2021 г. водительская и оружейная комиссии находится в коллективном отпуске. В период с 2 августа по 29 августа 2021 г. комиссия плавсостава работать не будет',
-    link: '#TODOlink2',
-  },
-  {
-    id: 'n3',
-    title: 'Новости',
-    date: '16 Июля 2021',
-    p:
-      'Врач - травматолог Клиники высоких медицинских технологий СПбГУ – Турбин Кирилл Олегович проведёт бесплатные консультации для жителей Великого Новгорода с заболеваниями опорно-двигательного аппарата',
-    link: '#TODOlink3',
-  },
-  {
-    id: 'n4',
-    title: 'Card title',
-    date: '14 октября 2020',
-    p:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.',
-    link: '#TODOlink',
-  },
-  {
-    id: 'n5',
-    title: 'Card title',
-    date: '14 октября 2020',
-    p:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.',
-    link: '#TODOlink',
-  },
-  {
-    id: 'n6',
-    title: 'Card title',
-    date: '14 октября 2020',
-    p:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.',
-    link: '#TODOlink',
-  },
-  {
-    id: 'n7',
-    title: 'Card title',
-    date: '14 октября 2020',
-    p:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.',
-    link: '#TODOlink',
-  },
-  {
-    id: 'n8',
-    title: 'Card title',
-    date: '14 октября 2020',
-    p:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.',
-    link: '#TODOlink',
-  },
-];
+import newsArr from '../../assets/databases/news';
 
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
@@ -91,7 +26,7 @@ function News() {
           title={news.title}
           date={news.date}
           p={news.p}
-          link={news.link}
+          link={`/news/${news.id}`}
         />
       </SwiperSlide>
     ));

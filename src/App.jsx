@@ -12,7 +12,7 @@ function App() {
       </div>
 
       <Switch>
-        <Route path="/coronarography">
+        <Route path="/hot/coronarography">
           <Coronarography />
         </Route>
         <Route path="/">

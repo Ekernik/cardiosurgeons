@@ -70,13 +70,13 @@ function Contacts() {
               <span>
                 <img src={icon_mail} lodaing="lazy" alt="" />
               </span>
-              <a href="mailto:">6762525@gosmed.ru</a>
+              <a href="mailto:6762525@gosmed.ru">6762525@gosmed.ru</a>
             </li>
             <li className="contacts-info__item">
               <span>
                 <img src={icon_phone} lodaing="lazy" alt="" />
               </span>
-              <a href="tel:+">+7(812)676-25-25</a>
+              <a href="tel:+7(812)676-25-25">+7(812)676-25-25</a>
             </li>
           </ul>
         </div>

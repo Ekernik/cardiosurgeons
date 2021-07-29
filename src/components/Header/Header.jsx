@@ -1,20 +1,20 @@
-import React from 'react';
-import './scroll.scss';
-import './index.scss';
-import './scroll.js';
-import FloatingContacts from '../../components/FloatingContacts';
-import Button from '../../atoms/ButtonCTA';
-import logo from '../../assets/images/logo_1.png';
-import listenToScroll from './scroll.js';
+import React from "react";
+import "./scroll.scss";
+import "./index.scss";
+import "./scroll.js";
+import FloatingContacts from "../../components/FloatingContacts";
+import Button from "../../atoms/ButtonCTA";
+import logo from "../../assets/images/logo_1.png";
+import listenToScroll from "./scroll.js";
 
 function Header(props) {
   let handleClick = () => {
-    const headerBurger = document.querySelector('.header__menu-burger');
-    const headerMenu = document.querySelector('.header__burger-nav');
-    const body = document.querySelector('body');
-    body.classList.toggle('fixed-page');
-    headerMenu.classList.toggle('menu--opened');
-    headerBurger.classList.toggle('menu--opened');
+    const headerBurger = document.querySelector(".header__menu-burger");
+    const headerMenu = document.querySelector(".header__burger-nav");
+    const body = document.querySelector("body");
+    body.classList.toggle("fixed-page");
+    headerMenu.classList.toggle("menu--opened");
+    headerBurger.classList.toggle("menu--opened");
   };
 
   return (
@@ -33,7 +33,7 @@ function Header(props) {
             </a>
           </div>
           <div className="header__phone">
-            <a href="tel:+">+7(812)676-25-25</a>
+            <a href="tel:+">+7 (812) 676-25-25</a>
             <p>c 8:00 до 21:00</p>
           </div>
           <Button styling="header__cta" text="Записаться на прием" />
@@ -82,7 +82,7 @@ function Header(props) {
               </a>
             </li>
             <li className="menu__item">
-              <a href="#landing-about-us" className="menu__link">
+              <a href="/about-us" className="menu__link">
                 о нас
               </a>
             </li>
@@ -92,11 +92,40 @@ function Header(props) {
                 услуги
               </a>
               <div className="menu__drop-down">
-                <a href="/coronarography">Горячие предложения</a>
+                <div className="link-container">
+                  <a href="/hot/coronarography">Коронарография</a>
+                </div>
+                <div className="link-container">
+                  <a href="/hot/stentirovanie">
+                    Стентирование коронарных артерий
+                  </a>
+                </div>
+                <div className="link-container">
+                  <a href="/hot/shuntirovanie">Арто-коронарное шунтирование</a>
+                </div>
+                <div className="link-container">
+                  <a href="/hot/plastika-klapana">
+                    Пластика митрального клапана
+                  </a>
+                </div>
+                <div className="link-container">
+                  <a href="/hot/miniinvisiv">
+                    Миниинвизивное протезирование клапанов
+                  </a>
+                </div>
+                <div className="link-container">
+                  <a href="/hot/protezirovanie">Протезирование аорты</a>
+                </div>
+                <div className="link-container">
+                  <a href="/hot/endarterektomia">Каротидная эндартерэктомия</a>
+                </div>
+                <div className="link-container">
+                  <a href="/hot/ablacia">Радиочастотная абляция</a>
+                </div>
               </div>
             </li>
             <li className="menu__item">
-              <a href="/coronarography" className="menu__link">
+              <a href="/team" className="menu__link">
                 команда
               </a>
             </li>
