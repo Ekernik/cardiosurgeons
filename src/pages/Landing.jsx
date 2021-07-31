@@ -1,28 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../components/Header/';
-import Footer from '../components/Footer/';
-import Greetings from '../components/Greetings/';
-import WhyUs from '../components/WhyUs/';
-import OurServices from '../components/OurServices/';
-import Contacts from '../components/Contacts/';
-import News from '../components/News/';
+import Header from "../components/Header/";
+import Footer from "../components/Footer/";
+import Greetings from "../components/Greetings/";
+import WhyUs from "../components/WhyUs/";
+import OurServices from "../components/OurServices/";
+import Contacts from "../components/Contacts/";
+import NewsSlider from "../components/NewsSlider/";
 
 function Landing() {
   return (
-    <div className="landing-page">
+    <main className="landing-page">
       <Header />
       <Greetings
         header="Центр кардиохирургии и интервенционной кардиологии"
         subheader="Медицина, доступная каждому"
         buttonText="Записаться на прием"
       />
-      <News />
+      <NewsSlider />
       <WhyUs />
       <OurServices />
       <Contacts />
       <Footer />
-    </div>
+    </main>
   );
 }
 

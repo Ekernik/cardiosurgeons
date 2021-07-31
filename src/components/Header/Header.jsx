@@ -22,12 +22,14 @@ function Header(props) {
       <div className="container header__container">
         <nav className="header__navbar">
           <div className="header__brand">
-            <img
-              className="brand__logo"
-              role="presentation"
-              src={logo}
-              alt=""
-            />
+            <a href="/">
+              <img
+                className="brand__logo"
+                role="presentation"
+                src={logo}
+                alt=""
+              />
+            </a>
             <a href="/" className="brand__name">
               Центр кардиохирургии и интервенционной кардиологии
             </a>

@@ -3,6 +3,7 @@ import './App.scss';
 
 import Landing from './pages/Landing.jsx';
 import Coronarography from './pages/hot/Coronarography';
+import News from './pages/news/n1';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Switch>
         <Route path="/hot/coronarography">
           <Coronarography />
+        </Route>
+        <Route path='/news/'>
+          <News />
         </Route>
         <Route path="/">
           <Landing />

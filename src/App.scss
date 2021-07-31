@@ -2,7 +2,7 @@
   height: 100%;
   max-width: 100%;
   margin: auto;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   overflow: hidden;
 }
 
@@ -25,6 +25,13 @@
   background-color: var(--color-dark) !important;
 }
 
+.marked-container {
+  background-color: var(--color-P--tint-dark);
+  padding: 1em;
+  line-height: 1.3em;
+  border-radius: var(--border-radius-secondary);
+}
+
 // Tablet media query
 @media (min-width: 768px) {
   .container {
@@ -32,6 +39,10 @@
   }
   .flex {
     flex-direction: row;
+  }
+  .marked-container {
+    padding: 1.2em;
+    line-height: 1.5em;
   }
 }
 

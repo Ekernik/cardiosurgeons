@@ -1,0 +1,57 @@
+.section__news-article {
+  width: 100%;
+}
+
+.container__news-article {
+  & > p,
+  & > ul > li {
+    line-height: 1.2em;
+  }
+
+  & > h2 {
+    font-size: var(--text-md);
+    margin: 1em 0;
+  }
+
+  & > h3 {
+    margin: 1em 0;
+    letter-spacing: 0.1em;
+  }
+
+  & > h6 {
+    font-size: 0.8em;
+    color: var(--color-dark);
+    opacity: 0.5;
+  }
+
+  & > p {
+    margin: 0.5em 0;
+  }
+
+  & > ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+
+    & > li {
+      margin: 0.5em 0;
+    }
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .container__news-article {
+    & > p,
+    & > ul > li {
+      line-height: 1.4em;
+    }
+
+    & > h6 {
+      margin-top: 0.3em;
+    }
+
+    & > p {
+      margin: 1em 0;
+    }
+  }
+}
