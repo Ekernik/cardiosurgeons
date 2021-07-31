@@ -10,11 +10,10 @@ import Greetings from "../../../components/Greetings";
 const newsID = window.location.href.slice(27);
 const NewsArticle = React.lazy(() => import(`../../../assets/news/${newsID}`));
 
-function News(props) {
+function News() {
   function getRightNews() {
-    let url = window.location.href;
-    let newsId = url.slice(27);
-
+    let url = window.location.href.toString().split(window.location.host)[1];
+    let newsId = url.slice(6);
     return news.filter((story) => story.id === newsId)[0];
   }
 
