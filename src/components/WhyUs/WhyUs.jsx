@@ -21,7 +21,7 @@ function WhyUs() {
       </div>
       <div className="why-us__reason">
         <p className="reason__title">
-          Отделение располагает комфортными 1,2,3-местными палатами со всеми
+          Отделение располагает комфортными одноместными, двух- и трехместными палатами со всеми
           удобствами
         </p>
         <img className="reason__img" src={svg_building} loading="lazy" alt="" />

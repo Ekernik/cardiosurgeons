@@ -8,6 +8,7 @@ import {
 } from 'react-yandex-maps';
 
 import './index.scss';
+import map from '../../assets/images/map.png';
 
 // ICONS
 import icon_mail from '../../assets/svg/mail.svg';
@@ -41,7 +42,7 @@ function Contacts() {
             </Map>
           </YMaps>
           <a
-            href="#TODO"
+            href={map}
             className="advanced-route"
             target="_blank"
             rel="noopener noreferrer"
