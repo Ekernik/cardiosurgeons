@@ -1,22 +1,22 @@
-import React from 'react';
+import React from "react";
 import {
   YMaps,
   Map,
   Placemark,
   FullscreenControl,
   ZoomControl,
-} from 'react-yandex-maps';
+} from "react-yandex-maps";
 
-import './index.scss';
-import map from '../../assets/images/map.png';
+import "./index.scss";
+import map from "../../assets/images/map.png";
 
 // ICONS
-import icon_mail from '../../assets/svg/mail.svg';
-import icon_map from '../../assets/svg/pin.svg';
-import icon_metro from '../../assets/svg/metro.svg';
-import icon_phone from '../../assets/svg/phone.svg';
-import icon_clock from '../../assets/svg/clock.svg';
-import icon_external from '../../assets/svg/external.svg';
+import icon_mail from "../../assets/svg/mail.svg";
+import icon_map from "../../assets/svg/pin.svg";
+import icon_metro from "../../assets/svg/metro.svg";
+import icon_phone from "../../assets/svg/phone.svg";
+import icon_clock from "../../assets/svg/clock.svg";
+import icon_external from "../../assets/svg/external.svg";
 
 function Contacts() {
   return (
@@ -25,14 +25,14 @@ function Contacts() {
       <div className="container contacts-flexbox">
         <div className="our-location">
           <h3 className="subheader">Где нас найти</h3>
-          <YMaps query={{ lang: 'ru_RU' }}>
+          <YMaps query={{ lang: "ru_RU" }}>
             <Map
-              width={'100%'}
-              height={'30vh'}
+              width={"100%"}
+              height={"30vh"}
               defaultState={{
                 center: [59.915765, 30.28255],
                 zoom: 12,
-                behaviors: ['default', 'scrollZoom'],
+                behaviors: ["default", "scrollZoom"],
                 controls: [],
               }}
             >
@@ -113,8 +113,8 @@ function Contacts() {
               <div className="contact-form__group">
                 <input type="checkbox" required />
                 <label className="label-for-terms">
-                  Я согласен на{' '}
-                  <a href="#TODO" className="tac-link">
+                  Я согласен на {` `}
+                  <a href="/licenses" target="_blank" className="tac-link">
                     обработку персональных данных
                   </a>
                 </label>

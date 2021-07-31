@@ -1,9 +1,10 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.scss";
 
-import Landing from './pages/Landing.jsx';
-import Coronarography from './pages/hot/Coronarography';
-import News from './pages/news/n1';
+import Landing from "./pages/Landing.jsx";
+import Coronarography from "./pages/hot/Coronarography";
+import News from "./pages/news/n1";
+import Licenses from "./pages/Licenses";
 
 function App() {
   return (
@@ -16,8 +17,11 @@ function App() {
         <Route path="/hot/coronarography">
           <Coronarography />
         </Route>
-        <Route path='/news/'>
+        <Route path="/news/">
           <News />
+        </Route>
+        <Route path="/licenses">
+          <Licenses />
         </Route>
         <Route path="/">
           <Landing />

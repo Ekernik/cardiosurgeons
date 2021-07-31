@@ -1,21 +1,21 @@
-import React from 'react';
-import './index.scss';
+import React from "react";
+import "./index.scss";
 
 function FloatingContacts() {
   let handleClick = () => {
-    const body = document.querySelector('body');
-    const curtain = document.getElementById('curtain');
-    const floatingContacts = document.querySelector('.floating-contacts')
-    const headerContainer = document.querySelector('.header__container');
-    const headerNav = document.querySelector('.header__nav');
-    const header = document.querySelector('.header');
-    headerContainer.classList.toggle('hidden');
-    headerNav.classList.toggle('hidden');
-    header.classList.toggle('darken')
-    body.classList.toggle('fixed-page');
-    curtain.classList.toggle('curtain--opened')
-    floatingContacts.classList.toggle('floating-contacts--hidden')
-};
+    const body = document.querySelector("body");
+    const curtain = document.getElementById("curtain");
+    const floatingContacts = document.querySelector(".floating-contacts");
+    const headerContainer = document.querySelector(".header__container");
+    const headerNav = document.querySelector(".header__nav");
+    const header = document.querySelector(".header");
+    headerContainer.classList.toggle("hidden");
+    headerNav.classList.toggle("hidden");
+    header.classList.toggle("darken");
+    body.classList.toggle("fixed-page");
+    curtain.classList.toggle("curtain--opened");
+    floatingContacts.classList.toggle("floating-contacts--hidden");
+  };
 
   return (
     <div className="floating-contacts floating-contacts--hidden">
@@ -52,8 +52,8 @@ function FloatingContacts() {
           <div className="contact-form__group">
             <input type="checkbox" required />
             <label className="label-for-terms">
-              Я согласен на{' '}
-              <a href="#TODO" className="tac-link">
+              Я согласен на {` `}
+              <a href="/licenses" target="_blank" className="tac-link">
                 обработку персональных данных
               </a>
             </label>
