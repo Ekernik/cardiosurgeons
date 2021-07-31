@@ -7,14 +7,15 @@ import Contacts from "../../../components/Contacts";
 import Footer from "../../../components/Footer";
 import Greetings from "../../../components/Greetings";
 
-const newsID = window.location.href.slice(27);
+const newsID = window.location.href
+  .toString()
+  .split(window.location.host)[1]
+  .slice(6);
 const NewsArticle = React.lazy(() => import(`../../../assets/news/${newsID}`));
 
 function News() {
   function getRightNews() {
-    let url = window.location.href.toString().split(window.location.host)[1];
-    let newsId = url.slice(6);
-    return news.filter((story) => story.id === newsId)[0];
+    return news.filter((story) => story.id === newsID)[0];
   }
 
   const newsObj = getRightNews();
