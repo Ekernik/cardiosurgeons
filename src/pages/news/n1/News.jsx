@@ -12,11 +12,24 @@ const newsID = window.location.href
   .split(window.location.host)[1]
   .slice(6);
 
-const NewsArticle = React.lazy(() => import(`../../../assets/news/${newsID}`));
+const NewsArticle = React.lazy(async () => {
+  return import(`../../../assets/news/${newsID}`)
+    .then()
+    .catch(() => {
+      return import("../../../assets/news/articleNotFound");
+    });
+});
 
-function News() {
+let News = () => {
   function getRightNews() {
-    return news.filter((story) => story.id === newsID)[0];
+    let rightNews = news.filter((story) => story.id === newsID)[0];
+    return rightNews
+      ? rightNews
+      : {
+          title: "Ой, что-то пошло не так",
+          subheader: "Мы не нашли такую статью",
+          settings: { noButton: true },
+        };
   }
 
   const newsObj = getRightNews();
@@ -26,6 +39,7 @@ function News() {
       <Header />
       <Greetings
         header={newsObj.title}
+        subheader={newsObj.subheader}
         buttonText={newsObj.buttonText}
         settings={newsObj.settings}
       />
@@ -36,6 +50,6 @@ function News() {
       <Footer />
     </main>
   );
-}
+};
 
 export default News;
