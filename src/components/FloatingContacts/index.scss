@@ -84,7 +84,7 @@
   }
 }
 
-.contact-form__curtain {
+.floating-form__curtain {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -244,10 +244,12 @@
   0% {
     opacity: 1;
     display: block;
+    height: auto;
   }
   80% {
     opacity: 0;
-    display: block;
+    display: none;
+    height: 0;
   }
   100% {
     opacity: 0;

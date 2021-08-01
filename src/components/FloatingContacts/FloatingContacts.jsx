@@ -2,30 +2,14 @@ import React from "react";
 import "./index.scss";
 
 import success from "../../assets/svg/success.svg";
-
-// Form inputs and action
-const email_entry = "entry.1879504940";
-const phone_entry = "entry.1859320754";
-const message_entry = "entry.1529901543";
-const name_entry = "entry.1552386635";
-const formLink =
-  "https://docs.google.com/forms/u/0/d/e/1FAIpQLScZ7vKD_Cgav2R21Zgmex2vnBGro2HMYpV0F9_wWG9qF_HHww/formResponse";
-
-let checkValues = () => {
-  let inputs = Array.prototype.slice
-    .call(document.querySelectorAll("input[required]"))
-    .slice(0, 4);
-  let valid = inputs.filter((input) => input.checkValidity() === true);
-  console.log(inputs, valid);
-  return inputs.length === valid.length ? true : false;
-};
+import formSettings from "../../assets/databases/googleForm";
 
 let handleSubmit = () => {
-  if (checkValues()) {
+  if (formSettings.checkValues(0, 4)) {
     // Make success animation
     const formTitle = document.querySelector(".floating-contacts__title");
     const floatingForm = document.querySelector(".floating-contacts__form");
-    const curtain = document.querySelector(".contact-form__curtain");
+    const curtain = document.querySelector(".floating-form__curtain");
     formTitle.style.animation = "group-fade-out .3s ease-in forwards";
     floatingForm.style.animation = "group-fade-out .3s ease-in forwards";
     curtain.style.display = "flex";
@@ -42,7 +26,7 @@ let resetStyling = () => {
   curtain.style.display = "none";
 };
 
-let handleClick = () => {
+let handleClose = () => {
   const body = document.querySelector("body");
   const curtain = document.getElementById("curtain");
   const floatingContacts = document.querySelector(".floating-contacts");
@@ -63,7 +47,7 @@ function FloatingContacts() {
 
   return (
     <div className="floating-contacts floating-contacts--hidden">
-      <div className="floating-contacts-cross" onClick={handleClick}>
+      <div className="floating-contacts-cross" onClick={handleClose}>
         <span></span>
       </div>
       <h3 className="floating-contacts__title">
@@ -75,7 +59,7 @@ function FloatingContacts() {
         id="hidden_iframe"
         style={frameStyle}
       ></iframe>
-      <div className="contact-form__curtain">
+      <div className="floating-form__curtain">
         <img
           src={success}
           alt="знак успешно выполненного действия"
@@ -87,13 +71,13 @@ function FloatingContacts() {
       <form
         target="hidden_iframe"
         method="POST"
-        action={formLink}
+        action={formSettings.submit_link}
         className="floating-contacts__form"
       >
         <div className="contact-form__group">
           <input
             className="contact-form__input"
-            name={name_entry}
+            name={formSettings.name_entry}
             type="text"
             required
           />
@@ -103,7 +87,7 @@ function FloatingContacts() {
         </div>
         <div className="contact-form__group">
           <input
-            name={phone_entry}
+            name={formSettings.phone_entry}
             type="tel"
             className="contact-form__input"
             required
@@ -114,7 +98,7 @@ function FloatingContacts() {
         </div>
         <div className="contact-form__group">
           <input
-            name={email_entry}
+            name={formSettings.email_entry}
             type="email"
             className="contact-form__input"
             required
@@ -126,7 +110,7 @@ function FloatingContacts() {
         </div>
         <div className="contact-form__group">
           <textarea
-            name={message_entry}
+            name={formSettings.message_entry}
             className="contact-form__textfield"
           ></textarea>
           <label className="contact-form__label">Ваше сообщение</label>
