@@ -11,7 +11,7 @@ const newsID = window.location.href
   .toString()
   .split(window.location.host)[1]
   .slice(6);
-  
+
 const NewsArticle = React.lazy(() => import(`../../../assets/news/${newsID}`));
 
 function News() {
@@ -24,7 +24,11 @@ function News() {
   return (
     <main className="page__news">
       <Header />
-      <Greetings header={newsObj.title} settings={newsObj.settings} />
+      <Greetings
+        header={newsObj.title}
+        buttonText={newsObj.buttonText}
+        settings={newsObj.settings}
+      />
       <Suspense fallback={<div>Loading...</div>}>
         <NewsArticle date={newsObj.date} />
       </Suspense>

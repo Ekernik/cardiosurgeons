@@ -11,8 +11,6 @@ const name_entry = "entry.1552386635";
 const formLink =
   "https://docs.google.com/forms/u/0/d/e/1FAIpQLScZ7vKD_Cgav2R21Zgmex2vnBGro2HMYpV0F9_wWG9qF_HHww/formResponse";
 
-let formSubmitted = false;
-
 let checkValues = () => {
   let inputs = Array.prototype.slice
     .call(document.querySelectorAll("input[required]"))
@@ -23,7 +21,6 @@ let checkValues = () => {
 };
 
 let handleSubmit = () => {
-  formSubmitted = true;
   if (checkValues()) {
     // Make success animation
     const formTitle = document.querySelector(".floating-contacts__title");

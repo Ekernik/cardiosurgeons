@@ -5,7 +5,6 @@ import Button from "../../atoms/ButtonCTA";
 
 function Greetings(props) {
   let isHidden = () => {
-    console.log(props.settings);
     if (props.settings) {
       if (props.settings.noButton) return "hidden";
     }
