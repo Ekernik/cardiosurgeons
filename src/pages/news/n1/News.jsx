@@ -11,6 +11,7 @@ const newsID = window.location.href
   .toString()
   .split(window.location.host)[1]
   .slice(6);
+  
 const NewsArticle = React.lazy(() => import(`../../../assets/news/${newsID}`));
 
 function News() {

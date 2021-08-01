@@ -18,7 +18,25 @@ import icon_phone from "../../assets/svg/phone.svg";
 import icon_clock from "../../assets/svg/clock.svg";
 import icon_external from "../../assets/svg/external.svg";
 
+// Form inputs and action
+const email_entry = "entry.1879504940";
+const phone_entry = "entry.1859320754";
+const message_entry = "entry.1529901543";
+const name_entry = "entry.1552386635";
+const formLink =
+  "https://docs.google.com/forms/u/0/d/e/1FAIpQLScZ7vKD_Cgav2R21Zgmex2vnBGro2HMYpV0F9_wWG9qF_HHww/formResponse";
+
 function Contacts() {
+  let formSubmitted = false;
+  const frameStyle = { display: "none" };
+  let handleSubmit = () => {
+    formSubmitted = true;
+  };
+  let handleRedirect = () => {
+    if (formSubmitted) {
+      window.location = "/";
+    }
+  };
   return (
     <section id="contacts-section">
       <h2 className="section__header">Контакты</h2>
@@ -83,28 +101,60 @@ function Contacts() {
         </div>
         <div className="appointment">
           <h3 className="subheader">Запись на прием</h3>
-          <form className="contact-form">
+          <iframe
+            title="Redirected"
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style={frameStyle}
+            onLoad={handleRedirect()}
+          ></iframe>
+          <form
+            target="hidden_iframe"
+            onSubmit={handleSubmit()}
+            method="POST"
+            action={formLink}
+            className="contact-form"
+          >
             <div className="contact-form__group">
-              <input className="contact-form__input" type="text" required />
+              <input
+                className="contact-form__input"
+                name={name_entry}
+                type="text"
+                required
+              />
               <label className="contact-form__label">
                 Ваше ФИО (полностью)<span className="must-have">*</span>
               </label>
             </div>
             <div className="contact-form__group">
-              <input type="tel" className="contact-form__input" required />
+              <input
+                name={phone_entry}
+                type="tel"
+                className="contact-form__input"
+                required
+              />
               <label className="contact-form__label">
                 Контактный телефон<span className="must-have">*</span>
               </label>
             </div>
             <div className="contact-form__group">
-              <input type="email" className="contact-form__input" required />
+              <input
+                name={email_entry}
+                type="email"
+                className="contact-form__input"
+                required
+              />
               <label className="contact-form__label">
                 Адрес Вашей электронной почты
                 <span className="must-have">*</span>
               </label>
             </div>
             <div className="contact-form__group">
-              <textarea className="contact-form__textfield" required></textarea>
+              <textarea
+                name={message_entry}
+                className="contact-form__textfield"
+                required
+              ></textarea>
               <label className="contact-form__label">
                 Ваше сообщение<span className="must-have">*</span>
               </label>
