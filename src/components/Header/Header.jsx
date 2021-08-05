@@ -106,7 +106,7 @@ function Header(props) {
                   <a href="/hot/operation_03">Аорто-коронарное шунтирование</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/plastika-klapana">
+                  <a href="/hot/operation_04">
                     Пластика митрального клапана
                   </a>
                 </div>
@@ -119,10 +119,10 @@ function Header(props) {
                   <a href="/hot/protezirovanie">Протезирование аорты</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/endarterektomia">Каротидная эндартерэктомия</a>
+                  <a href="/hot/operation_07">Каротидная эндартерэктомия</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/ablacia">Радиочастотная абляция</a>
+                  <a href="/hot/operation_08">Радиочастотная абляция</a>
                 </div>
               </div>
             </li>
