@@ -103,7 +103,7 @@ function Header(props) {
                   </a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/shuntirovanie">Арто-коронарное шунтирование</a>
+                  <a href="/hot/operation_03">Аорто-коронарное шунтирование</a>
                 </div>
                 <div className="link-container">
                   <a href="/hot/plastika-klapana">

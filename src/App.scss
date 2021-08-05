@@ -29,7 +29,19 @@
   background-color: var(--color-P--tint-dark);
   padding: 1em;
   line-height: 1.3em;
+  text-align: start;
   border-radius: var(--border-radius-secondary);
+  & > p {
+    margin: 0 !important;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-start {
+  text-align: start !important;
 }
 
 // Tablet media query
@@ -50,6 +62,9 @@
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .marked-container {
+    text-align: center;
   }
 }
 
