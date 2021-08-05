@@ -1,0 +1,67 @@
+.doc-card {
+  &__doctor {
+    height: auto;
+    width: 100%;
+    background-color: var(--color-P--tint);
+    border: 1px solid var(--color-P--tint-dark);
+    margin-bottom: 1em;
+    border-radius: var(--border-radius-secondary);
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    font-size: var(--text-regular);
+    text-align: center;
+    text-transform: none;
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding: 0 1em;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: var(--text-regular);
+    padding: 0 1em 1em;
+    text-align: center;
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .doc-card {
+    &__doctor {
+      height: auto;
+      width: 45%;
+      margin: 0 0.5em 1em;
+    }
+
+    &__title {
+      font-size: var(--text-md);
+    }
+
+    &__subtitle {
+      font-size: var(--text-md);
+    }
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .doc-card {
+    &__doctor {
+      width: 31%;
+    }
+
+    &__title {
+      font-size: var(--text-regular);
+    }
+
+    &__subtitle {
+      font-size: var(--text-regular);
+    }
+  }
+}

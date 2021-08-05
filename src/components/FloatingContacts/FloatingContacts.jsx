@@ -1,49 +1,57 @@
-import React from "react";
-import "./index.scss";
+import React from 'react';
+import './index.scss';
 
-import success from "../../assets/svg/success.svg";
-import formSettings from "../../assets/databases/googleForm";
+import success from '../../assets/svg/success.svg';
+import formSettings from '../../assets/databases/googleForm';
 
 let handleSubmit = () => {
   if (formSettings.checkValues(0, 4)) {
     // Make success animation
-    const formTitle = document.querySelector(".floating-contacts__title");
-    const floatingForm = document.querySelector(".floating-contacts__form");
-    const curtain = document.querySelector(".floating-form__curtain");
-    formTitle.style.animation = "group-fade-out .3s ease-in forwards";
-    floatingForm.style.animation = "group-fade-out .3s ease-in forwards";
-    curtain.style.display = "flex";
-    curtain.style.animation = "text-fade-in 1s ease-in forwards";
+    const formTitle = document.querySelector('.floating-contacts__title');
+    const floatingForm = document.querySelector('.floating-contacts__form');
+    const curtain = document.querySelector('.floating-form__curtain');
+    formTitle.style.animation = 'group-fade-out .3s ease-in forwards';
+    floatingForm.style.animation = 'group-fade-out .3s ease-in forwards';
+    curtain.style.display = 'flex';
+    curtain.style.animation = 'text-fade-in 1s ease-in forwards';
   }
 };
 
 let resetStyling = () => {
-  const formTitle = document.querySelector(".floating-contacts__title");
-  const floatingForm = document.querySelector(".floating-contacts__form");
-  const curtain = document.querySelector(".contact-form__curtain");
-  formTitle.style.animation = "";
-  floatingForm.style.animation = "";
-  curtain.style.display = "none";
+  const formTitle = document.querySelector('.floating-contacts__title');
+  const floatingForm = document.querySelector('.floating-contacts__form');
+  const floatingCurtain = document.querySelector('.floating-form__curtain');
+  const formCurtain = document.querySelector('.contact-form__curtain');
+  if (formCurtain) {
+    formCurtain.style.display = 'none';
+    console.log(formCurtain);
+  }
+  if (floatingCurtain) {
+    floatingCurtain.style.display = 'none';
+    console.log(floatingCurtain)
+  }
+  formTitle.style.animation = '';
+  floatingForm.style.animation = '';
 };
 
 let handleClose = () => {
-  const body = document.querySelector("body");
-  const curtain = document.getElementById("curtain");
-  const floatingContacts = document.querySelector(".floating-contacts");
-  const headerContainer = document.querySelector(".header__container");
-  const headerNav = document.querySelector(".header__nav");
-  const header = document.querySelector(".header");
-  headerContainer.classList.toggle("hidden");
-  headerNav.classList.toggle("hidden");
-  header.classList.toggle("darken");
-  body.classList.toggle("fixed-page");
-  curtain.classList.toggle("curtain--opened");
-  floatingContacts.classList.toggle("floating-contacts--hidden");
+  const body = document.querySelector('body');
+  const curtain = document.getElementById('curtain');
+  const floatingContacts = document.querySelector('.floating-contacts');
+  const headerContainer = document.querySelector('.header__container');
+  const headerNav = document.querySelector('.header__nav');
+  const header = document.querySelector('.header');
+  headerContainer.classList.toggle('hidden');
+  headerNav.classList.toggle('hidden');
+  header.classList.toggle('darken');
+  body.classList.toggle('fixed-page');
+  curtain.classList.toggle('curtain--opened');
+  floatingContacts.classList.toggle('floating-contacts--hidden');
   resetStyling();
 };
 
-function FloatingContacts() {
-  const frameStyle = { display: "none" };
+export default function FloatingContacts() {
+  const frameStyle = { display: 'none' };
 
   return (
     <div className="floating-contacts floating-contacts--hidden">
@@ -137,5 +145,3 @@ function FloatingContacts() {
     </div>
   );
 }
-
-export default FloatingContacts;

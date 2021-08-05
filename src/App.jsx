@@ -6,6 +6,7 @@ import Coronarography from "./pages/hot/Coronarography";
 import News from "./pages/news/n1";
 import Licenses from "./pages/Licenses";
 import PageNotFound from "./pages/404/PageNotFound";
+import OurTeam from "./pages/OurTeam/OurTeam";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Switch>
         <Route path="/hot/coronarography" component={Coronarography} />
         <Route path="/news/" component={News} />
+        <Route path='/team' component={OurTeam} />
         <Route path="/licenses" component={Licenses} />
         <Route exact path="/" component={Landing} />
         <Route path="" component={PageNotFound} />

@@ -63,7 +63,7 @@ function Header(props) {
               </a>
             </li>
             <li className="menu__item">
-              <a href="#landing-our-team" className="menu__link">
+              <a href="/team" className="menu__link">
                 команда
               </a>
             </li>
