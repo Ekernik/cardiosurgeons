@@ -40,7 +40,7 @@
 .our-services__list-container {
   width: auto;
   max-width: 100%;
-  background-color: var(--color-gray);
+  background-color: var(--color-P--tint);
   padding: 1em;
   border-radius: var(--border-radius-main);
   transition-duration: 0.3s;
@@ -58,6 +58,12 @@
 
   &--hidden {
     display: none;
+  }
+
+  & hr {
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: .3;
   }
 }
 

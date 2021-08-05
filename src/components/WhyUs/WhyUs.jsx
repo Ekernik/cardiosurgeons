@@ -19,7 +19,7 @@ function WhyUs() {
         <img className="reason__img" src={svg_doctors} loading="lazy" alt="" />
         <hr className="reason__divider" />
       </div>
-      <div className="why-us__reason">
+      <div className="why-us__reason--reversed">
         <p className="reason__title">
           Отделение располагает комфортными одноместными, двух- и трехместными палатами со всеми
           удобствами

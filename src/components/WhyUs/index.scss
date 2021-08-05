@@ -9,7 +9,7 @@
   margin: 1.4rem 0;
 }
 
-.why-us__reason {
+.why-us__reason, .why-us__reason--reversed {
   width: 100%;
   height: auto;
   display: flex;
@@ -45,7 +45,7 @@
     font-size: 1.5em;
   }
 
-  .why-us__reason {
+  .why-us__reason, .why-us__reason--reversed {
     align-items: center;
     margin-bottom: 2em;
   }
@@ -68,7 +68,7 @@
     margin: 1.5rem 0;
   }
 
-  .why-us__reason {
+  .why-us__reason, .why-us__reason--reversed {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -82,7 +82,7 @@
     width: 30%;
   }
 
-  .why-us__reason:nth-child(3) {
+  .why-us__reason--reversed {
     flex-direction: row-reverse;
   }
 

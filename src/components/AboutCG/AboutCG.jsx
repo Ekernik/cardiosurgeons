@@ -20,7 +20,7 @@ function AboutCG() {
         <img className="reason__img" src={svg_research} loading="lazy" alt="" />
         <hr className="reason__divider" />
       </div>
-      <div className="why-us__reason">
+      <div className="why-us__reason--reversed">
         <p className="reason__title">
           Коронарография выполняется только в условиях стационара. Показания к
           выполнению исследования устанавливаются, либо кардиологом либо

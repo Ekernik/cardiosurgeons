@@ -7,6 +7,7 @@ import News from "./pages/news/n1";
 import Licenses from "./pages/Licenses";
 import PageNotFound from "./pages/404/PageNotFound";
 import OurTeam from "./pages/OurTeam/OurTeam";
+import Stentirovanie from "./pages/hot/Stentirovanie";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
       <Switch>
         <Route path="/hot/coronarography" component={Coronarography} />
+        <Route path="/hot/operation_02" component={Stentirovanie} />
         <Route path="/news/" component={News} />
         <Route path='/team' component={OurTeam} />
         <Route path="/licenses" component={Licenses} />

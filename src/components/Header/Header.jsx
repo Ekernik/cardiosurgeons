@@ -98,7 +98,7 @@ function Header(props) {
                   <a href="/hot/coronarography">Коронарография</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/stentirovanie">
+                  <a href="/hot/operation_02">
                     Стентирование коронарных артерий
                   </a>
                 </div>
