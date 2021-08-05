@@ -58,7 +58,7 @@ function Header(props) {
               </a>
             </li>
             <li className="menu__item">
-              <a href="#landing-services" className="menu__link">
+              <a href="/services" className="menu__link">
                 услуги
               </a>
             </li>
