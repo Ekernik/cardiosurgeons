@@ -1,26 +1,24 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Operation08 from '../../components/Abouts/Operation_08';
+import Operation07 from '../../components/Abouts/Operation_07';
 import Greetings from '../../components/Greetings';
 import Contacts from '../../components/Contacts';
 import Banner from '../../organisms/Banner';
 
-function RadioAblacia() {
+export default function Stentirovanie() {
   return (
-    <div className="Coronarography-page">
+    <main className="page__stentirovanie">
       <Header />
       <Greetings
-        header="Радиочастотная абляция"
-        subheader="молодой, эффективный и малоинвазивный метод радикального лечения тахикардий"
+        header="Каротидная эндартерэктомия"
+        subheader="один из способов устранения стеноза внутренней сонной артерии"
         buttonText="записаться на бесплатный прием"
       />
       <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-      <Operation08 />
+      <Operation07 />
       <Contacts />
       <Footer />
-    </div>
+    </main>
   );
 }
-
-export default RadioAblacia;
