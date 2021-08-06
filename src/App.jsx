@@ -13,6 +13,7 @@ import PlastikaMK from './pages/hot/PlastikaMK';
 import Karodit from './pages/hot/Karotid';
 import RadioAblacia from './pages/hot/RadioAblacia';
 import Services from './pages/Services/Services';
+import OurContacts from './pages/OurContacts/OurContacts';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/hot/operation_07" component={Karodit} />
         <Route path="/hot/operation_08" component={RadioAblacia} />
         <Route path="/services" component={Services} />
+        <Route path="/contacts" component={OurContacts} />
         <Route path="/news/" component={News} />
         <Route path="/team" component={OurTeam} />
         <Route path="/licenses" component={Licenses} />

@@ -1,20 +1,20 @@
-import React from "react";
-import "./scroll.scss";
-import "./index.scss";
-import "./scroll.js";
-import FloatingContacts from "../../components/FloatingContacts";
-import Button from "../../atoms/ButtonCTA";
-import logo from "../../assets/images/logo_1.png";
-import listenToScroll from "./scroll.js";
+import React from 'react';
+import './scroll.scss';
+import './index.scss';
+import './scroll.js';
+import FloatingContacts from '../../components/FloatingContacts';
+import Button from '../../atoms/ButtonCTA';
+import logo from '../../assets/images/logo_1.png';
+import listenToScroll from './scroll.js';
 
 function Header(props) {
   let handleClick = () => {
-    const headerBurger = document.querySelector(".header__menu-burger");
-    const headerMenu = document.querySelector(".header__burger-nav");
-    const body = document.querySelector("body");
-    body.classList.toggle("fixed-page");
-    headerMenu.classList.toggle("menu--opened");
-    headerBurger.classList.toggle("menu--opened");
+    const headerBurger = document.querySelector('.header__menu-burger');
+    const headerMenu = document.querySelector('.header__burger-nav');
+    const body = document.querySelector('body');
+    body.classList.toggle('fixed-page');
+    headerMenu.classList.toggle('menu--opened');
+    headerBurger.classList.toggle('menu--opened');
   };
 
   return (
@@ -68,7 +68,7 @@ function Header(props) {
               </a>
             </li>
             <li className="menu__item">
-              <a href="#landing-contacts" className="menu__link">
+              <a href="/contacts" className="menu__link">
                 контакты
               </a>
             </li>
@@ -106,17 +106,15 @@ function Header(props) {
                   <a href="/hot/operation_03">Аорто-коронарное шунтирование</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_04">
-                    Пластика митрального клапана
-                  </a>
+                  <a href="/hot/operation_04">Пластика митрального клапана</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/miniinvisiv">
+                  <a href="/hot/operation_05">
                     Миниинвизивное протезирование клапанов
                   </a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/protezirovanie">Протезирование аорты</a>
+                  <a href="/hot/operation_06">Протезирование аорты</a>
                 </div>
                 <div className="link-container">
                   <a href="/hot/operation_07">Каротидная эндартерэктомия</a>
@@ -132,7 +130,7 @@ function Header(props) {
               </a>
             </li>
             <li className="menu__item">
-              <a href="#contacts-section" className="menu__link">
+              <a href="/contacts" className="menu__link">
                 контакты
               </a>
             </li>
