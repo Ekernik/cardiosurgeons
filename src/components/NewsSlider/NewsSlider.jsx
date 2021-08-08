@@ -18,8 +18,9 @@ import newsArr from "../../assets/databases/news";
 SwiperCore.use([Pagination, Navigation]);
 
 function NewsSlider() {
-  let renderNews = (news) =>
-    news.map((news) => (
+  let renderNews = (news) => {
+    let a = [...news].reverse();
+    return a.map((news) => (
       <SwiperSlide key={news.id}>
         <NewsCard
           id={news.id}
@@ -30,6 +31,7 @@ function NewsSlider() {
         />
       </SwiperSlide>
     ));
+  };
 
   let width =
     window.innerWidth ||
@@ -38,9 +40,9 @@ function NewsSlider() {
 
   const slidesPerDevice = {
     phone: 1,
-    tablet: 2,
-    laptop: 3,
-    pc: 4,
+    tablet: newsArr.length || 2,
+    laptop: newsArr.length || 3,
+    pc: newsArr.length || 4,
   };
 
   let getDevice = () => {

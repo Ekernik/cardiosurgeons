@@ -21,48 +21,6 @@ let newsArr = [
     setting: {},
     buttonText: "Записаться на консультацию",
   },
-  {
-    id: "n3",
-    pretitle: "Новости",
-    title:
-      "Врач - травматолог Клиники высоких медицинских технологий СПбГУ – Турбин Кирилл Олегович проведёт бесплатные консультации для жителей Великого Новгорода с заболеваниями опорно-двигательного аппарата",
-    date: "16 Июля 2021",
-  },
-  {
-    id: "n4",
-    pretitle: "Card title",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.",
-    date: "14 октября 2020",
-  },
-  {
-    id: "n5",
-    pretitle: "Card title",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.",
-    date: "14 октября 2020",
-  },
-  {
-    id: "n6",
-    pretitle: "Card title",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.",
-    date: "14 октября 2020",
-  },
-  {
-    id: "n7",
-    pretitle: "Card title",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.",
-    date: "14 октября 2020",
-  },
-  {
-    id: "n8",
-    pretitle: "Card title",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum velit, beatae nemo porro ad at vitae doloremque nobis impedit.",
-    date: "14 октября 2020",
-  },
 ];
 
 export default newsArr;
