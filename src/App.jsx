@@ -2,16 +2,16 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 
 import Landing from './pages/Landing.jsx';
-import Coronarography from './pages/hot/Coronarography';
+import Coronarography from './pages/treatment/Coronarography';
 import News from './pages/news/n1';
 import Licenses from './pages/Licenses';
 import PageNotFound from './pages/404/PageNotFound';
 import OurTeam from './pages/OurTeam/OurTeam';
-import Stentirovanie from './pages/hot/Stentirovanie';
-import Shuntirovanie from './pages/hot/Shuntirovanie';
-import PlastikaMK from './pages/hot/PlastikaMK';
-import Karodit from './pages/hot/Karotid';
-import RadioAblacia from './pages/hot/RadioAblacia';
+import Stentirovanie from './pages/treatment/Stentirovanie';
+import Shuntirovanie from './pages/treatment/Shuntirovanie';
+import PlastikaMK from './pages/treatment/PlastikaMK';
+import Karodit from './pages/treatment/Karotid';
+import RadioAblacia from './pages/treatment/RadioAblacia';
 import Treatment from './pages/Treatment/Treatment';
 import OurContacts from './pages/OurContacts/OurContacts';
 
@@ -23,13 +23,15 @@ function App() {
       </div>
 
       <Switch>
-        <Route path="/hot/coronarography" component={Coronarography} />
-        <Route path="/hot/operation_02" component={Stentirovanie} />
-        <Route path="/hot/operation_03" component={Shuntirovanie} />
-        <Route path="/hot/operation_04" component={PlastikaMK} />
-        <Route path="/hot/operation_07" component={Karodit} />
-        <Route path="/hot/operation_08" component={RadioAblacia} />
-        <Route path="/treatment" component={Treatment} />
+        <Route path="/treatment/coronarographia" component={Coronarography} />
+        <Route path="/treatment/stentirovanie-koronarnih-arteriy" component={Stentirovanie} />
+        <Route path="/treatment/aorto-koronarnoe-shuntirovanie" component={Shuntirovanie} />
+        <Route path="/treatment/plastika-mitralnogo-klapana" component={PlastikaMK} />
+        <Route path="/treatment/miniinvisivnoe-protezirovanie-klapanov" component={Treatment} /> {/* TODO */}
+        <Route path="/treatment/protezirovanie-aorti" component={Treatment} /> {/* TODO */}
+        <Route path="/treatment/karotidnaya-endarterektomiya" component={Karodit} />
+        <Route path="/treatment/radiochastotnaya-ablyaciya" component={RadioAblacia} />
+        <Route exact path="/treatment" component={Treatment} />
         <Route path="/diagnostics" component={Treatment} /> {/* TODO */}
         <Route path="/contacts" component={OurContacts} />
         <Route path="/news/" component={News} />

@@ -58,8 +58,13 @@ function Header(props) {
               </a>
             </li>
             <li className="menu__item">
-              <a href="/services" className="menu__link">
-                услуги
+              <a href="/treatment" className="menu__link">
+                лечение
+              </a>
+            </li>
+            <li className="menu__item">
+              <a href="/diagnostics" className="menu__link">
+                диагностика
               </a>
             </li>
             <li className="menu__item">
@@ -95,32 +100,32 @@ function Header(props) {
               </a>
               <div className="menu__drop-down">
                 <div className="link-container">
-                  <a href="/hot/coronarography">Коронарография</a>
+                  <a href="/treatment/coronarographia">Коронарография</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_02">
+                  <a href="/treatment/stentirovanie-koronarnih-arteriy">
                     Стентирование коронарных артерий
                   </a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_03">Аорто-коронарное шунтирование</a>
+                  <a href="/treatment/aorto-koronarnoe-shuntirovanie">Аорто-коронарное шунтирование</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_04">Пластика митрального клапана</a>
+                  <a href="/treatment/plastika-mitralnogo-klapana">Пластика митрального клапана</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_05">
+                  <a href="/treatment/miniinvisivnoe-protezirovanie-klapanov">
                     Миниинвизивное протезирование клапанов
                   </a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_06">Протезирование аорты</a>
+                  <a href="/treatment/protezirovanie-aorti">Протезирование аорты</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_07">Каротидная эндартерэктомия</a>
+                  <a href="/treatment/karotidnaya-endarterektomiya">Каротидная эндартерэктомия</a>
                 </div>
                 <div className="link-container">
-                  <a href="/hot/operation_08">Радиочастотная абляция</a>
+                  <a href="/treatment/radiochastotnaya-ablyaciya">Радиочастотная абляция</a>
                 </div>
               </div>
             </li>

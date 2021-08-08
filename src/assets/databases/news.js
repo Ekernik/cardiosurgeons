@@ -11,6 +11,7 @@ let newsArr = [
     на плановую диспансеризацию населения;
     на плановую вакцинацию взрослого населения.`,
     settings: { noButton: true },
+    link: 'rabota-v-period-pandemii'
   },
   {
     id: "n2",
@@ -20,6 +21,7 @@ let newsArr = [
     date: "01 Августа 2021",
     setting: {},
     buttonText: "Записаться на консультацию",
+    link: 'priev-v-gorode-vladimir-17-08-2021'
   },
 ];
 

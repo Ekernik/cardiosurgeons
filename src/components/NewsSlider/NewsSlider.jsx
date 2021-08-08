@@ -27,7 +27,7 @@ function NewsSlider() {
           pretitle={news.pretitle}
           title={news.title}
           date={news.date}
-          link={`/news/${news.id}`}
+          link={`/news/${news.link}`}
         />
       </SwiperSlide>
     ));

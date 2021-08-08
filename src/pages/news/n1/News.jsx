@@ -7,13 +7,14 @@ import Contacts from "../../../components/Contacts";
 import Footer from "../../../components/Footer";
 import Greetings from "../../../components/Greetings";
 
-const newsID = window.location.href
+const newsLink = window.location.href
   .toString()
   .split(window.location.host)[1]
   .slice(6);
 
 const NewsArticle = React.lazy(async () => {
-  return import(`../../../assets/news/${newsID}`)
+  let newsId = news.filter((story) => story.link === newsLink)[0].id;
+  return import(`../../../assets/news/${newsId}`)
     .then()
     .catch(() => {
       return import("../../../assets/news/articleNotFound");
@@ -22,7 +23,7 @@ const NewsArticle = React.lazy(async () => {
 
 let News = () => {
   function getRightNews() {
-    let rightNews = news.filter((story) => story.id === newsID)[0];
+    let rightNews = news.filter((story) => story.link === newsLink)[0];
     return rightNews
       ? rightNews
       : {
@@ -44,7 +45,7 @@ let News = () => {
         settings={newsObj.settings}
       />
       <Suspense fallback={<div>Loading...</div>}>
-        <NewsArticle date={newsObj.date} />
+        <NewsArticle id={newsObj.id} date={newsObj.date} />
       </Suspense>
       <Contacts />
       <Footer />
