@@ -90,8 +90,8 @@ function Header(props) {
             </li>
 
             <li className="menu__item">
-              <a href="/services" className="menu__link">
-                услуги
+              <a href="/treatment" className="menu__link">
+                лечение
               </a>
               <div className="menu__drop-down">
                 <div className="link-container">
@@ -123,6 +123,11 @@ function Header(props) {
                   <a href="/hot/operation_08">Радиочастотная абляция</a>
                 </div>
               </div>
+            </li>
+            <li className="menu__item">
+              <a href="/diagnostics" className="menu__link">
+                диагностика
+              </a>
             </li>
             <li className="menu__item">
               <a href="/team" className="menu__link">

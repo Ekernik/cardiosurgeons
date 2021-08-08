@@ -12,7 +12,7 @@ import Shuntirovanie from './pages/hot/Shuntirovanie';
 import PlastikaMK from './pages/hot/PlastikaMK';
 import Karodit from './pages/hot/Karotid';
 import RadioAblacia from './pages/hot/RadioAblacia';
-import Services from './pages/Services/Services';
+import Treatment from './pages/Treatment/Treatment';
 import OurContacts from './pages/OurContacts/OurContacts';
 
 function App() {
@@ -29,7 +29,8 @@ function App() {
         <Route path="/hot/operation_04" component={PlastikaMK} />
         <Route path="/hot/operation_07" component={Karodit} />
         <Route path="/hot/operation_08" component={RadioAblacia} />
-        <Route path="/services" component={Services} />
+        <Route path="/treatment" component={Treatment} />
+        <Route path="/diagnostics" component={Treatment} /> {/* TODO */}
         <Route path="/contacts" component={OurContacts} />
         <Route path="/news/" component={News} />
         <Route path="/team" component={OurTeam} />
