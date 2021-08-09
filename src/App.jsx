@@ -14,6 +14,7 @@ import Karodit from './pages/treatment/Karotid';
 import RadioAblacia from './pages/treatment/RadioAblacia';
 import Treatment from './pages/Treatment/Treatment';
 import OurContacts from './pages/OurContacts/OurContacts';
+import Diagnostics from './pages/Diagnostics/Diagnostics';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
         <Route path="/treatment/karotidnaya-endarterektomiya" component={Karodit} />
         <Route path="/treatment/radiochastotnaya-ablyaciya" component={RadioAblacia} />
         <Route exact path="/treatment" component={Treatment} />
-        <Route path="/diagnostics" component={Treatment} /> {/* TODO */}
+        <Route path="/diagnostics" component={Diagnostics} />
         <Route path="/contacts" component={OurContacts} />
         <Route path="/news/" component={News} />
         <Route path="/team" component={OurTeam} />
