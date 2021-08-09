@@ -87,13 +87,20 @@ function Contacts() {
               <span>
                 <img src={icon_mail} lodaing="lazy" alt="" />
               </span>
-              <a href="mailto:6762525@gosmed.ru">6762525@gosmed.ru</a>
+              <p className="our-contacts__info-text">
+                <a href="mailto:heartteam.spb@gmail.com">
+                  heartteam.spb@gmail.com
+                </a>
+              </p>{" "}
             </li>
             <li className="contacts-info__item">
               <span>
                 <img src={icon_phone} lodaing="lazy" alt="" />
               </span>
-              <a href="tel:+7(812)676-25-25">+7(812)676-25-25</a>
+              <p>
+                <a href="tel:+79992380136">8 (999) 238-01-36</a> (9:00-17:00
+                пн-пт)
+              </p>
             </li>
           </ul>
         </div>
