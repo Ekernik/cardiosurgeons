@@ -71,7 +71,7 @@ export default function NewsArticle(props) {
             </YMaps>
             <p className="news__p">
               тел. для записи:{" "}
-              <a href="tel:+7(4922)777778">+7 (4922) 77 77 78</a>
+              <a href="tel:+79992380136">8 (999) 238-01-36</a>
             </p>
             <ButtonCTA
               styling="greetings__cta news__cta"
