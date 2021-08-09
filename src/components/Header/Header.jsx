@@ -35,8 +35,8 @@ function Header(props) {
             </a>
           </div>
           <div className="header__phone">
-            <a href="tel:+">+7 (812) 676-25-25</a>
-            <p>c 8:00 до 21:00</p>
+            <a href="tel:+79992380136">8 (999) 238-01-36</a>
+            <p>c 9:00 до 17:00</p>
           </div>
           <Button styling="header__cta" text="Записаться на прием" />
         </nav>
@@ -53,7 +53,7 @@ function Header(props) {
               </a>
             </li>
             <li className="menu__item">
-              <a href="#landing-about-us" className="menu__link">
+              <a href="/about-us" className="menu__link">
                 о нас
               </a>
             </li>

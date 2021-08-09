@@ -3,7 +3,7 @@ import './App.scss';
 
 import Landing from './pages/Landing.jsx';
 import Coronarography from './pages/treatment/Coronarography';
-import News from './pages/news/n1';
+import News from './pages/news/';
 import Licenses from './pages/Licenses';
 import PageNotFound from './pages/404/PageNotFound';
 import OurTeam from './pages/OurTeam/OurTeam';

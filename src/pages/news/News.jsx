@@ -1,11 +1,11 @@
 import React, { Suspense } from "react";
-import news from "../../../assets/databases/news";
+import news from "../../assets/databases/news";
 import "./index.scss";
 
-import Header from "../../../components/Header";
-import Contacts from "../../../components/Contacts";
-import Footer from "../../../components/Footer";
-import Greetings from "../../../components/Greetings";
+import Header from "../../components/Header";
+import Contacts from "../../components/Contacts";
+import Footer from "../../components/Footer";
+import Greetings from "../../components/Greetings";
 
 const newsLink = window.location.href
   .toString()
@@ -14,10 +14,10 @@ const newsLink = window.location.href
 
 const NewsArticle = React.lazy(async () => {
   let newsId = news.filter((story) => story.link === newsLink)[0].id;
-  return import(`../../../assets/news/${newsId}`)
+  return import(`../../assets/news/${newsId}`)
     .then()
     .catch(() => {
-      return import("../../../assets/news/articleNotFound");
+      return import("../../assets/news/articleNotFound");
     });
 });
 
@@ -44,7 +44,7 @@ let News = () => {
         buttonText={newsObj.buttonText}
         settings={newsObj.settings}
       />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Загружаем новость...</div>}>
         <NewsArticle id={newsObj.id} date={newsObj.date} />
       </Suspense>
       <Contacts />

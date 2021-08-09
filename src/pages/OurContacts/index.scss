@@ -84,13 +84,27 @@
       justify-content: space-between;
     }
     &__title {
-        font-size: var(--text-lg);
-        margin-bottom: 1em;
-        font-weight: 400;
-        text-align: center;
-      }
-      &__other-flex {
-        margin-left: 1em;
-      }
+      font-size: var(--text-lg);
+      margin-bottom: 1em;
+      font-weight: 400;
+      text-align: center;
+    }
+    &__other-flex {
+      margin-left: 1em;
+    }
+  }
+}
+
+// Full Desktops media query
+@media (min-width: 1400px) {
+  .our-contacts {
+    &__main-flex {
+      justify-content: normal;
+    }
+
+    &__other-flex {
+      margin-top: .5em;
+      margin-left: 3em;
+    }
   }
 }

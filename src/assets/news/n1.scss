@@ -3,40 +3,8 @@
 }
 
 .container__news-article {
-  & > p,
-  & > ul > li {
-    line-height: 1.4em;
-  }
-
-  & > h2 {
-    font-size: var(--text-md);
-    margin: 1em 0;
-  }
-
-  & > h3 {
-    margin: 1em 0;
-    letter-spacing: 0.1em;
-  }
-
-  & > h6 {
-    font-size: 0.8em;
-    color: var(--color-dark);
-    opacity: 0.5;
-  }
-
-  & > p {
-    margin: 1em 0;
-  }
-
-  & > ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
-    margin-bottom: 1em;
-
-    & > li {
-      margin: 0.5em 0;
-    }
-  }
+  display: flex;
+  flex-direction: column;
 
   & a:any-link {
     text-decoration: none;
@@ -44,20 +12,113 @@
   }
 }
 
+.news {
+  &__p,
+  &__list-item {
+    line-height: 1.4em;
+  }
+
+  &__date {
+    margin: 1em 0;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    color: var(--color-dark);
+    opacity: 0.5;
+  }
+
+  &__title {
+    font-size: var(--text-lg);
+    margin: 1em 0;
+  }
+
+  &__p {
+    margin: 1em 0;
+    font-size: var(--text-md);
+  }
+
+  &__main-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__help-flex {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__doctor-card {
+    align-self: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+
+    &-item {
+      margin: 0.8em 0;
+      font-size: var(--text-regular);
+    }
+  }
+}
+
 // Tablet media query
 @media (min-width: 768px) {
-  .container__news-article {
-    & > p,
-    & > ul > li {
+  .news {
+    &__p,
+    &__list-item {
       line-height: 1.4em;
     }
 
-    & > h6 {
+    &__date {
       margin-top: 0.3em;
     }
 
-    & > p {
+    &__p {
       margin: 1em 0;
+    }
+    &__list-item {
+      font-size: var(--text-md);
+    }
+    &__cta {
+      width: 70%;
+      align-self: center;
+      margin: 1em 0;
+    }
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .news {
+    &__main-flex {
+      flex-direction: row;
+    }
+    &__doctor-card {
+      width: 70%;
+    }
+    &__help-flex {
+      &:nth-of-type(1) {
+        margin-right: 1em;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 1em;
+      }
+    }
+
+    &__cta {
+      width: 100%;
+    }
+  }
+}
+
+// Full Desktops media query
+@media (min-width: 1400px) {
+  .news {
+    &__doctor-card {
+      width: 50%;
     }
   }
 }
