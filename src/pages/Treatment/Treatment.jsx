@@ -21,15 +21,15 @@ export default function Treatment() {
           <a className="services__link" href="/treatment/aorto-koronarnoe-shuntirovanie">
             Аорто-коронарное шунтирование
           </a>
-          <a className="services__link" href="/treatment/plastika-mitralnogo-klapana">
+          {/* <a className="services__link" href="/treatment/plastika-mitralnogo-klapana">
             Пластика митрального клапана
-          </a>
-          <a className="services__link" href="/treatment/miniinvisivnoe-protezirovanie-klapanov">
+          </a> */}
+          {/* <a className="services__link" href="/treatment/miniinvisivnoe-protezirovanie-klapanov">
             Миниинвизивное протезирование клапанов
-          </a>
-          <a className="services__link" href="/treatment/protezirovanie-aorti">
+          </a> */}
+          {/* <a className="services__link" href="/treatment/protezirovanie-aorti">
             Протезирование аорты
-          </a>
+          </a> */}
           <a className="services__link" href="/treatment/karotidnaya-endarterektomiya">
             Каротидная эндартерэктомия
           </a>
