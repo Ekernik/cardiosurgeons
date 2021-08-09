@@ -23,13 +23,13 @@ function OurServices() {
           onClick={(event) => toggleOurServiceButtons(event)}
           className="toggle__button"
         >
-          Лечение
+          Диагностика
         </button>
         <button
           onClick={(event) => toggleOurServiceButtons(event)}
           className="toggle__button toggle__button--active"
         >
-          Диагностика
+          Лечение
         </button>
       </div>
       <div className="our-services__list-container">
