@@ -49,32 +49,32 @@ function Header(props) {
           <ul className="burger__menu">
             <li className="menu__item">
               <a href="/" className="menu__link">
-                главная
+                Главная
               </a>
             </li>
             <li className="menu__item">
               <a href="/about-us" className="menu__link">
-                о нас
+                О нас
               </a>
             </li>
             <li className="menu__item">
               <a href="/treatment" className="menu__link">
-                лечение
+                Лечение
               </a>
             </li>
             <li className="menu__item">
               <a href="/diagnostics" className="menu__link">
-                диагностика
+                Диагностика
               </a>
             </li>
             <li className="menu__item">
               <a href="/team" className="menu__link">
-                команда
+                Команда
               </a>
             </li>
             <li className="menu__item">
               <a href="/contacts" className="menu__link">
-                контакты
+                Контакты
               </a>
             </li>
           </ul>
@@ -85,18 +85,18 @@ function Header(props) {
           <ul className="header__menu">
             <li className="menu__item">
               <a href="/" className="menu__link">
-                главная
+                Главная
               </a>
             </li>
             <li className="menu__item">
               <a href="/about-us" className="menu__link">
-                о нас
+                О нас
               </a>
             </li>
 
             <li className="menu__item">
               <a href="/treatment" className="menu__link">
-                лечение
+                Лечение
               </a>
               <div className="menu__drop-down">
                 <div className="link-container">
@@ -131,17 +131,17 @@ function Header(props) {
             </li>
             <li className="menu__item">
               <a href="/diagnostics" className="menu__link">
-                диагностика
+                Диагностика
               </a>
             </li>
             <li className="menu__item">
               <a href="/team" className="menu__link">
-                команда
+                Команда
               </a>
             </li>
             <li className="menu__item">
               <a href="/contacts" className="menu__link">
-                контакты
+                Контакты
               </a>
             </li>
           </ul>
