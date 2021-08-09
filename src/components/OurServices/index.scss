@@ -55,6 +55,7 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+  align-self: center;
 
   &--hidden {
     display: none;
@@ -79,7 +80,7 @@
 
   &__item {
     font-size: var(--text-sm);
-    margin: 0.6rem 0;
+    margin: 0.9em 0;
   }
 }
 
