@@ -9,28 +9,28 @@ function AboutCG() {
   return (
     <section className="About-CG-section container">
       <h2 className="section__header">О процедуре</h2>
-      <div className="why-us__reason">
-        <p className="reason__title">
+      <div className="operation__flex-main">
+        <p className="operation__p">
           Коронарография - исследование сердечных сосудов, занимает не более
           двадцати-тридцати минут. Она проводится без наркоза и не вызывает
           болевых ощущений у пациента. При помощи рентгеновских лучей можно
           безошибочно определить участок и степень сужения просвета коронарной
           артерии и выбрать подходящую тактику лечения.
         </p>
-        <img className="reason__img" src={svg_research} loading="lazy" alt="" />
-        <hr className="reason__divider" />
+        <img className="operation__img" src={svg_research} loading="lazy" alt="" />
+        <hr className="operation__divider" />
       </div>
-      <div className="why-us__reason--reversed">
-        <p className="reason__title">
+      <div className="operation__flex-main--reversed">
+        <p className="operation__p">
           Коронарография выполняется только в условиях стационара. Показания к
           выполнению исследования устанавливаются, либо кардиологом либо
           сердечно-сосудистым хирургом.
         </p>
-        <img className="reason__img" src={svg_care} loading="lazy" alt="" />
-        <hr className="reason__divider" />
+        <img className="operation__img" src={svg_care} loading="lazy" alt="" />
+        <hr className="operation__divider" />
       </div>
-      <div className="why-us__reason">
-        <p className="reason__title">
+      <div className="operation__flex-main">
+        <p className="operation__p">
           Во время вмешательства используется местная анестезия. Катетер
           проходит через бедренную артерию и аорты, а затем попадает в просвет
           коронарной артерии. Потом через катетер вводят специальное
@@ -39,7 +39,7 @@ function AboutCG() {
           прохождению контраста хирургами проводится оценка состояния коронарных
           артерий.
         </p>
-        <img className="reason__img" src={svg_doctors} loading="lazy" alt="" />
+        <img className="operation__img" src={svg_doctors} loading="lazy" alt="" />
       </div>
     </section>
   );

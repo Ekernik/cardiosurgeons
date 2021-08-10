@@ -40,11 +40,13 @@
   &__img {
     width: 100%;
     height: auto;
-    margin-bottom: 1em;
+    margin: 1em auto;
     border-radius: var(--border-radius-main);
+    align-self: center;
   }
 
-  &__flex-main {
+  &__flex-main,
+  &__flex-main--reversed {
     width: 100%;
     height: auto;
     display: flex;
@@ -65,6 +67,12 @@
       line-height: 1.4em;
     }
 
+    &__img {
+      margin: 2em auto;
+      max-width: 90%;
+      max-height: 25vh;
+    }
+
     &__p {
       margin: 0 0 1em;
     }
@@ -76,6 +84,35 @@
     &__cover-img {
       display: inline-block;
       border-radius: var(--border-radius-main);
+    }
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .operation {
+    &__flex-main, &__flex-main--reversed {
+      align-items: center;
+      margin: 1em auto;
+    }
+
+    &__flex-main {
+      flex-direction: row;
+    }
+
+    &__flex-main--reversed {
+      flex-direction: row-reverse;
+    }
+    &__img {
+      padding: 3em;
+      margin: auto;
+      width: 40%;
+      max-width: 30vw;
+      max-height: 35vh;
+    }
+
+    &__divider {
+      margin: 1em;
     }
   }
 }

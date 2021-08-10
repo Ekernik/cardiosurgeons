@@ -1,38 +1,38 @@
-import React from 'react';
-import './index.scss'
+import React from "react";
+import "./index.scss";
 
 export default function Operation03() {
   return (
     <section className="section__about-op-03 container">
+      <h2 className="section__header text-center">О процедуре</h2>
       <div className="marked-container">
-        <p>
+        <p className="operation__p">
           Коронарное шунтирование - это операция по восстановлению нарушенного
           кровотока в сердечной мышце.
         </p>
       </div>
-      <h2 className="section__header text-center">О процедуре</h2>
-      <div className="why-us__reason">
-        <p className="reason__title">
+      <div className="operatioin__flex-main">
+        <p className="operation__p">
           Коронарное шунтирование является самой частой кардиохирургической
           операцией. Ежегодно несколько сотен тысяч человек успешно переносят
           эту операцию
         </p>
-        <img className="reason__img" src={''} loading="lazy" alt="" />
-        <hr className="reason__divider" />
+        <img className="operation__img" src={""} loading="lazy" alt="" />
+        <hr className="operation__divider" />
       </div>
 
-      <div className="why-us__reason--reversed">
-        <p className="reason__title">
+      <div className="operatioin__flex-main--reversed">
+        <p className="operation__p">
           её цель — восстановить нормальное кровообращение сердца. Коронарное
           шунтирование избавляет пациента от стенокардии, предотвращает развитие
           инфаркта миокарда и внезапной сердечной смерти, возвращает человека к
           обычной жизнедеятельности.
         </p>
-        <img className="reason__img" src={''} loading="lazy" alt="" />
-        <hr className="reason__divider" />
+        <img className="operation__img" src={""} loading="lazy" alt="" />
+        <hr className="operation__divider" />
       </div>
-      <div className="why-us__reason">
-        <p className="reason__title">
+      <div className="operatioin__flex-main">
+        <p className="operation__p">
           Суть операции заключается в создании новых путей кровоснабжения сердца
           — шунтов в обход пораженных атеросклерозом артерий. В качестве «новых»
           сосудов используются собственные вены и артерии пациента. Такие сосуды
@@ -41,38 +41,37 @@ export default function Operation03() {
           швом фиксируются к сердечным артериям ниже мест закупорки
           атеросклеротическими бляшками.
         </p>
-        <img className="reason__img" src={''} loading="lazy" alt="" />
+        <img className="operation__img" src={""} loading="lazy" alt="" />
       </div>
       <div className="marked-container">
-        <p>
+        <p className="operation__p">
           Показания к операции устанавливаются на основании симптомов, а также
           рентгенологических и инструментальных исследований.
         </p>
-         
-        <p>
-          Операцию назначают коллегиально (кардиохирург, интервенционный
-          кардиолог) после согласования с пациентом.
-        </p>
       </div>
       <h2 className="section__header">Операция на сердце показана при</h2>
-      <ul>
-        <li>– Стенозировании ствола левой коронарной артерии ≥50%</li>
-        <li>– Трехсосудистом поражении коронарного русла ≥70%</li>
-        <li>
+      <ul className="operation__list">
+        <li className="operation__list-item">
+          – Стенозировании ствола левой коронарной артерии ≥50%
+        </li>
+        <li className="operation__list-item">
+          – Трехсосудистом поражении коронарного русла ≥70%
+        </li>
+        <li className="operation__list-item">
           – Двухсосудистом стенозировании коронарного русла с проксимальным
           поражением передней нисходящей артерии ≥70%
         </li>
-        <li>
+        <li className="operation__list-item">
           – Двухсосудистом стенозировании коронарного русла ≥70% без
           проксимального поражения передней нисходящей артерии с выраженной
           стенокардией
         </li>
-        <li>
+        <li className="operation__list-item">
           – Однососудистом проксимальном поражении передней нисходящей артерии
           ≥70% с выраженной стенокардией при шунтировании левой внутренней
           грудной артерии
         </li>
-        <li>
+        <li className="operation__list-item">
           – При внезапной сердечной смерти в анамнезе в результате
           предполагаемой ишемически-опосредованной желудочковой тахикардии с
           поражением основной коронарной артерии ≥70%
@@ -81,19 +80,27 @@ export default function Operation03() {
       <h2 className="section__header">
         Противопоказания к операции по шунтированию
       </h2>
-      <ul>
-        <li>– Множественное поражение дистального коронарного русла</li>
-        <li>
+      <ul className="operation__list">
+        <li className="operation__list-item">
+          – Множественное поражение дистального коронарного русла
+        </li>
+        <li className="operation__list-item">
           – Некорригируемая полиорганная недостаточность, обусловленная
           первичной сердечной недостаточностью
         </li>
-        <li>
+        <li className="operation__list-item">
           – Терминальные онкологические заболевания, обострение системных
           заболеваний
         </li>
       </ul>
+      <div className="marked-container">
+        <p className="operation__p">
+          Операцию назначают коллегиально (кардиохирург, интервенционный
+          кардиолог) после согласования с пациентом.
+        </p>
+      </div>
       <h2 className="section__header">Подготовка к операции</h2>
-      <p>
+      <p className="operation__p">
         Заключается в тесном взаимодействии между пациентом и медицинским
         персоналом отделения. Обязательна беседа с лечащим пациента врачом и
         оперирующим хирургом, а также анестезиологом, во время которой
@@ -103,13 +110,13 @@ export default function Operation03() {
         психологический фон для уменьшения страха и закономерных переживаний.
       </p>
       <div className="marked-container">
-        <p>
+        <p className="operation__p">
           Продолжительность всей операции (коронарное шунтирование сосудов
           сердца) в среднем составляет от 2 до 4 часов.
         </p>
       </div>
       <h2 className="section__header">Послеоперационный период</h2>
-      <p>
+      <p className="operation__p">
         Сразу после операции шунтирования пациент несколько дней находится в
         отделении кардиореанимации, после чего переводится в кардиохирургическое
         отделение. Лечение в послеоперационном периоде занимает от одной до двух
@@ -120,7 +127,7 @@ export default function Operation03() {
         физиотерапия и лечебная физкультура. Восстановление после операции
         происходит в течение месяца, редко - больше.
       </p>
-      <p>
+      <p className="operation__p">
         Результатом операции является избавление пациента от стенокардии,
         возвращение безопасного объема физических нагрузок, вплоть до
         восстановления трудоспособности. Операция снижает риск развития инфаркта
@@ -128,7 +135,7 @@ export default function Operation03() {
         принимаемых лекарств к минимуму , что доказано многочисленными научными
         исследованиями.
       </p>
-      <p>
+      <p className="operation__p">
         Обязательным условием успешного исхода операции является строгое
         соблюдение пациентом всех рекомендаций кардиолога в раннем и отдаленном
         послеоперационном периоде, прием лекарственных препаратов: как правило,

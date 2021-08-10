@@ -6,6 +6,7 @@ import Banner from "../../organisms/Banner";
 import Operation06 from "../../components/Abouts/Operation_06";
 import Contacts from "../../components/Contacts";
 import Footer from "../../components/Footer";
+import Advantages from "../../organisms/Advantages";
 
 export default function miniinvisiv() {
   return (
@@ -18,6 +19,7 @@ export default function miniinvisiv() {
       />
       <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
       <Operation06 />
+      <Advantages />
       <Contacts />
       <Footer />
     </main>
