@@ -18,6 +18,8 @@ import Diagnostics from "./pages/Diagnostics/Diagnostics";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import miniinvisiv from "./pages/treatment/Miniinvisiv";
 
+import news from "./assets/databases/news";
+
 function App() {
   return (
     <Router>
@@ -56,7 +58,14 @@ function App() {
         <Route path="/diagnostics" component={Diagnostics} />
         <Route path="/about-us" component={AboutUs} />
         <Route path="/contacts" component={OurContacts} />
-        <Route path="/news/" component={News} />
+        {news.map((news) => {
+          return (
+            <Route
+              path={`/news/${news.link}`}
+              render={(props) => <News newsId={news.id} {...props} />}
+            />
+          );
+        })}
         <Route path="/team" component={OurTeam} />
         <Route path="/licenses" component={Licenses} />
         <Route exact path="/" component={Landing} />

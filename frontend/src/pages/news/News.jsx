@@ -7,33 +7,16 @@ import Contacts from "../../components/Contacts";
 import Footer from "../../components/Footer";
 import Greetings from "../../components/Greetings";
 
-const newsLink = window.location.href
-  .toString()
-  .split(window.location.host)[1]
-  .slice(6);
+let News = (props) => {
+  const NewsArticle = React.lazy(async () => {
+    return import(`../../assets/news/${props.newsId}`)
+      .then()
+      .catch(() => {
+        return import("../../assets/news/articleNotFound");
+      });
+  });
 
-const NewsArticle = React.lazy(async () => {
-  let newsId = news.filter((story) => story.link === newsLink)[0].id;
-  return import(`../../assets/news/${newsId}`)
-    .then()
-    .catch(() => {
-      return import("../../assets/news/articleNotFound");
-    });
-});
-
-let News = () => {
-  function getRightNews() {
-    let rightNews = news.filter((story) => story.link === newsLink)[0];
-    return rightNews
-      ? rightNews
-      : {
-          title: "Ой, что-то пошло не так",
-          subheader: "Мы не нашли такую статью",
-          settings: { noButton: true },
-        };
-  }
-
-  const newsObj = getRightNews();
+  const newsObj = news.filter((news) => news.id === props.newsId)[0];
 
   return (
     <main className="page__news">
