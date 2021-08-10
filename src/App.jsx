@@ -15,6 +15,7 @@ import RadioAblacia from './pages/treatment/RadioAblacia';
 import Treatment from './pages/Treatment/Treatment';
 import OurContacts from './pages/OurContacts/OurContacts';
 import Diagnostics from './pages/Diagnostics/Diagnostics';
+import AboutUs from './pages/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/treatment/radiochastotnaya-ablyaciya" component={RadioAblacia} />
         <Route exact path="/treatment" component={Treatment} />
         <Route path="/diagnostics" component={Diagnostics} />
+        <Route path="/about-us" component={AboutUs} />
         <Route path="/contacts" component={OurContacts} />
         <Route path="/news/" component={News} />
         <Route path="/team" component={OurTeam} />
