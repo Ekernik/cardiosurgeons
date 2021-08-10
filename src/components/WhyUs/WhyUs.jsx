@@ -7,31 +7,31 @@ import svg_tech from '../../assets/svg/tech_1.svg';
 
 function WhyUs() {
   return (
-    <section className="why-us-section container">
+    <section className="section__why-us container">
       <h2 className="section__header">Почему люди выбирают нас</h2>
-      <div className="why-us__reason">
-        <p className="reason__title">
+      <div className="why-us__flex-main">
+        <p className="why-us__p">
           Наш центр представляет собой уникальное сочетание кардиологии,
           кардиохирургии, сосудистой хирургии, аритмологии, рентгенхирургии,
           кардиоанестезиологии, работающих как единое целое, позволяя проводить
           процесс лечения и последующего наблюдения пациентов в едином блоке
         </p>
-        <img className="reason__img" src={svg_doctors} loading="lazy" alt="" />
-        <hr className="reason__divider" />
+        <img className="why-us__img" src={svg_doctors} loading="lazy" alt="" />
+        <hr className="why-us__divider" />
       </div>
-      <div className="why-us__reason--reversed">
-        <p className="reason__title">
+      <div className="why-us__flex-main--reversed">
+        <p className="why-us__p">
           Отделение располагает комфортными одноместными, двух- и трехместными палатами со всеми
           удобствами
         </p>
-        <img className="reason__img" src={svg_building} loading="lazy" alt="" />
-        <hr className="reason__divider" />
+        <img className="why-us__img" src={svg_building} loading="lazy" alt="" />
+        <hr className="why-us__divider" />
       </div>
-      <div className="why-us__reason">
-        <p className="reason__title">
+      <div className="why-us__flex-main">
+        <p className="why-us__p">
           Мы оказываем высокотехнологичную медицинскую помощь
         </p>
-        <img className="reason__img" src={svg_tech} loading="lazy" alt="" />
+        <img className="why-us__img" src={svg_tech} loading="lazy" alt="" />
       </div>
     </section>
   );
