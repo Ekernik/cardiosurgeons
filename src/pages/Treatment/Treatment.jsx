@@ -24,9 +24,9 @@ export default function Treatment() {
           {/* <a className="services__link" href="/treatment/plastika-mitralnogo-klapana">
             Пластика митрального клапана
           </a> */}
-          {/* <a className="services__link" href="/treatment/miniinvisivnoe-protezirovanie-klapanov">
+          <a className="services__link" href="/treatment/miniinvisivnoe-protezirovanie-klapanov">
             Миниинвизивное протезирование клапанов
-          </a> */}
+          </a>
           {/* <a className="services__link" href="/treatment/protezirovanie-aorti">
             Протезирование аорты
           </a> */}

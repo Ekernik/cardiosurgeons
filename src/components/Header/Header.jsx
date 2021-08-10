@@ -110,17 +110,17 @@ function Header(props) {
                 <div className="link-container">
                   <a href="/treatment/aorto-koronarnoe-shuntirovanie">Аорто-коронарное шунтирование</a>
                 </div>
-                <div className="link-container">
+                {/* <div className="link-container">
                   <a href="/treatment/plastika-mitralnogo-klapana">Пластика митрального клапана</a>
-                </div>
+                </div> */}
                 <div className="link-container">
                   <a href="/treatment/miniinvisivnoe-protezirovanie-klapanov">
                     Миниинвизивное протезирование клапанов
                   </a>
                 </div>
-                <div className="link-container">
+                {/* <div className="link-container">
                   <a href="/treatment/protezirovanie-aorti">Протезирование аорты</a>
-                </div>
+                </div> */}
                 <div className="link-container">
                   <a href="/treatment/karotidnaya-endarterektomiya">Каротидная эндартерэктомия</a>
                 </div>
