@@ -7,6 +7,7 @@ import WhyUs from "../components/WhyUs/";
 import OurServices from "../components/OurServices/";
 import Contacts from "../components/Contacts/";
 import NewsSlider from "../components/NewsSlider/";
+import Banner from "../organisms/Banner/";
 
 function Landing() {
   return (
@@ -17,6 +18,7 @@ function Landing() {
         subheader="Медицина, доступная каждому"
         buttonText="Записаться на прием"
       />
+      <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
       <NewsSlider />
       <WhyUs />
       <OurServices />
