@@ -37,6 +37,7 @@ export default function NewsArticle(props) {
           дальнейшее оказание <strong>бесплатной</strong> оперативной помощи в
           г. Санкт-Петербург.
         </p>
+        <p className='news__p'>Стоимость приёма 1500 рублей.</p>
         <hr />
         <div className="news__main-flex">
           <div className="news__help-flex">
@@ -50,7 +51,7 @@ export default function NewsArticle(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                г. Владимир, ул. Добросельская д. 36-б
+                г. Владимир, ул. Добросельская, д. 36-б, Медицинский центр "Палитра"
               </a>
             </p>
             <YMaps query={{ lang: "ru_RU" }}>
