@@ -28,7 +28,7 @@ export default function AboutUs() {
           хирургическому лечению заболеваний сердечно-сосудистой системы
           взрослого населения.
         </p>
-        <h2>Структура центра</h2>
+        <h2 className='section__subheader'>Структура центра</h2>
         <ul className="about-us__list">
           <li className="about-us__list-item">
             — Кардиохирургическое отделение
