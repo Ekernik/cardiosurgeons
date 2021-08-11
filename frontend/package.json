@@ -1,5 +1,6 @@
 {
   "name": "cardio-surgeons",
+  "homepage": "https://localhost:3443",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
