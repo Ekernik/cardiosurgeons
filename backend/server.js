@@ -6,6 +6,7 @@ const fs = require("fs");
 const cors = require("cors");
 
 const app = express();
+const httpApp = express();
 
 const PORT = process.env.PORT || 3000;
 const root = path.join(__dirname, "../frontend", "build");
@@ -18,7 +19,7 @@ app.get("*", (req, res) => {
   res.sendFile("index.html", { root });
 });
 
-const httpServer = http.createServer(app);
+const httpServer = http.createServer(httpApp);
 const sslServer = https.createServer(
   {
     key: fs.readFileSync(path.join(__dirname, ".cert", "key.pem")),
@@ -31,11 +32,11 @@ const sslServer = https.createServer(
 httpApp.all("*", (req, res) =>
   res.redirect(301, "https://heartteamspb.com" + req.originalUrl)
 );
+sslServer.listen(PORT, () => {
+  console.log(`HTTPS listening: ${PORT}`);
+});
 
 httpServer.listen(80, () =>
   console.log(`HTTP server listening: http://heartteamspb.com`)
 );
 
-sslServer.listen(PORT, () => {
-  console.log(`HTTPS listening: ${PORT}`);
-});
