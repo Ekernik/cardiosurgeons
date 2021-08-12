@@ -42,7 +42,7 @@ export default function NewsArticle(props) {
         <div className="news__main-flex">
           <div className="news__help-flex">
             <p className="news__p">
-              Консультация будет проводиться: <strong>17 августа 2021 г</strong>
+              Консультация будет проводиться: <strong>7&#160;сентября&#160;2021&#160;г</strong>
             </p>
             <p className="news__p">
               По адресу:{" "}

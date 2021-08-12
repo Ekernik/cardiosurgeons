@@ -16,11 +16,11 @@ let newsArr = [
   {
     id: "n2",
     pretitle: "Приём специалиста",
-    title: "17 августа приём в городе Владимир",
+    title: "7 сентября приём в городе Владимир",
     date: "01 Августа 2021",
     setting: {},
     buttonText: "Записаться на консультацию",
-    link: "priem-v-gorode-vladimir-17-08-2021",
+    link: "priem-v-gorode-vladimir-07-09-2021",
     hot: true,
   },
 ];
