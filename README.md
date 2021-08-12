@@ -1,5 +1,7 @@
 # A website for cardiosurgeons.
 
 ## Technologies used:
--    React
--    SCSS
+
+- React
+- Express
+- SCSS
