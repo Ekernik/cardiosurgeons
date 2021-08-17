@@ -1,3 +1,7 @@
+// Фотографии заглушки
+import img_doctor_woman from '../svg/doctor_woman.svg';
+
+
 // Фотографии докторов
 import img_Shmatov from '../images/doctors/doctor_Shmatov.jpg';
 import img_Stolyarov from '../images/doctors/doctor_Stolyarov.jpg';
@@ -313,6 +317,14 @@ const doctors = [
     img: img_Sheremet,
     alt: 'Доктор Шеремет Антон Андреевич',
     personaLinks: [],
+    personaDetails: [],
+  },{
+    id: 'd_11',
+    name: 'Котова Анна Сергеевна',
+    title: 'Врач-кардиолог Центра кардиохирургии и интервенционной кардиологии',
+    img: img_doctor_woman,
+    alt: 'Доктор Котова Анна Сергеевна',
+    personaLinks: ['Врачебная деятельность'],
     personaDetails: [],
   },
 
