@@ -21,6 +21,7 @@ export default function OurTeam() {
               imgAlt={doctor.alt}
               title={doctor.name}
               subtitle={doctor.title}
+              link={doctor.link}
             />
           ))}
         </div>

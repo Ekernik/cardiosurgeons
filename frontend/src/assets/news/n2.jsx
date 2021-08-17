@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import {
   YMaps,
   Map,
   Placemark,
   FullscreenControl,
   ZoomControl,
-} from "react-yandex-maps";
-import DoctorCard from "../../organisms/DoctorCard/DoctorCard";
-import doctor_woman from "../svg/doctor_woman.svg";
-import ButtonCTA from "../../atoms/ButtonCTA";
+} from 'react-yandex-maps';
+import DoctorCard from '../../organisms/DoctorCard/DoctorCard';
+import doctor_woman from '../svg/doctor_woman.svg';
+import ButtonCTA from '../../atoms/ButtonCTA';
 
-import "./n1.scss";
+import './n1.scss';
 
 export default function NewsArticle(props) {
   return (
@@ -37,31 +37,33 @@ export default function NewsArticle(props) {
           дальнейшее оказание <strong>бесплатной</strong> оперативной помощи в
           г. Санкт-Петербург.
         </p>
-        <p className='news__p'>Стоимость приёма 1500 рублей.</p>
+        <p className="news__p">Стоимость приёма 1500 рублей.</p>
         <hr />
         <div className="news__main-flex">
           <div className="news__help-flex">
             <p className="news__p">
-              Консультация будет проводиться: <strong>7&#160;сентября&#160;2021&#160;г</strong>
+              Консультация будет проводиться:{' '}
+              <strong>7&#160;сентября&#160;2021&#160;г</strong>
             </p>
             <p className="news__p">
-              По адресу:{" "}
+              По адресу:{' '}
               <a
                 href="https://yandex.ru/mApS/-/CCUiuPuYWA"
                 target="_blank"
                 rel="noreferrer"
               >
-                г. Владимир, ул. Добросельская, д. 36-б, Медицинский центр "Палитра"
+                г. Владимир, ул. Добросельская, д. 36-б, Медицинский центр
+                "Палитра"
               </a>
             </p>
-            <YMaps query={{ lang: "ru_RU" }}>
+            <YMaps query={{ lang: 'ru_RU' }}>
               <Map
-                width={"100%"}
-                height={"30vh"}
+                width={'100%'}
+                height={'30vh'}
                 defaultState={{
                   center: [56.160802, 40.475113],
                   zoom: 15,
-                  behaviors: ["default", "scrollZoom"],
+                  behaviors: ['default', 'scrollZoom'],
                   controls: [],
                 }}
               >
@@ -71,8 +73,7 @@ export default function NewsArticle(props) {
               </Map>
             </YMaps>
             <p className="news__p">
-              тел. для записи:{" "}
-              <a href="tel:+79992380136">8 (999) 238-01-36</a>
+              тел. для записи: <a href="tel:+79992380136">8 (999) 238-01-36</a>
             </p>
             <ButtonCTA
               styling="greetings__cta news__cta"
@@ -82,7 +83,7 @@ export default function NewsArticle(props) {
           <div className="news__help-flex">
             <p className="news__p">
               Консультирует врач – кардиолог Центра кардиохирургии и
-              интервенционной кардиологии{" "}
+              интервенционной кардиологии{' '}
               <a href="#TODO" targer="_blank">
                 Котова Анна Сергеевна
               </a>
@@ -90,9 +91,10 @@ export default function NewsArticle(props) {
             <DoctorCard
               className="news__doctor-card"
               imgSrc={doctor_woman}
-              imgAlt={"Доктор Котова Анна Сергеевна"}
-              title={"Котова Анна Сергеевна"}
-              subtitle={"Врач-кардиолог"}
+              imgAlt={'Доктор Котова Анна Сергеевна'}
+              title={'Котова Анна Сергеевна'}
+              subtitle={'Врач-кардиолог'}
+              link={'/team/doctor_kotova'}
             />
           </div>
         </div>

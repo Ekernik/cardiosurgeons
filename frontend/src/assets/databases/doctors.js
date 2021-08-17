@@ -324,6 +324,7 @@ const doctors = [
     title: 'Врач-кардиолог Центра кардиохирургии и интервенционной кардиологии',
     img: img_doctor_woman,
     alt: 'Доктор Котова Анна Сергеевна',
+    link: '/team/doctor_kotova',
     personaLinks: ['Врачебная деятельность'],
     personaDetails: [],
   },
