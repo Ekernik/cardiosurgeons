@@ -9,11 +9,11 @@ import Contacts from '../../components/Contacts';
 
 export default function Kotova() {
   return (
-    <main className='page__doctor'>
+    <main className="page__doctor">
       <Header />
       <section className="section__doctor container">
         <div className="doctor__flex">
-          <div className='doctor__card'>
+          <div className="doctor__card">
             <h1 className="doctor__name">Котова Анна Сергеевна</h1>
             <img
               className="doctor__image"
@@ -39,7 +39,8 @@ export default function Kotova() {
             </p>
             <p className="doctor__text">
               2010 — 2013 гг. — Врач-кардиолог кардиохирургического отделения №1
-              ФГБУ Федеральный центр сердечно-сосудистой хирургии (г.&nbsp;Красноярск).
+              ФГБУ Федеральный центр сердечно-сосудистой хирургии
+              (г.&nbsp;Красноярск).
             </p>
             <p className="doctor__text">
               2008 — 2010 гг. — Врач-кардиолог кардиохирургического отделения
@@ -58,6 +59,15 @@ export default function Kotova() {
               1999 — 2005 гг. — Высшее профессиональное образование:
               Красноярская Государственная Медицинская Академия. Квалификация:
               врач. Специальность: лечебное дело.
+            </p>
+            <h3 className="doctor__theme">Сертификат</h3>
+            <p className="doctor__text">
+              Кардиология. Годен до 21.05.2025. Выдан: ФГБОУ ВО «СПб&nbsp;ГУ»
+            </p>
+            <h3 className="doctor__theme">Членство</h3>
+            <p className="doctor__text">
+              Общероссийская общественная организация "Российское
+              кардиологическое общество".
             </p>
           </div>
         </div>
