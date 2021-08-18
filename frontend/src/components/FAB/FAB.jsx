@@ -3,11 +3,14 @@ import "./index.scss";
 import svg__phone from "../../assets/svg/phone-call.svg";
 
 export default function FAB() {
+  let handleClick = () => {
+    window.location.href = "tel:+79992380136";
+  };
   return (
-    <div className="fab">
-      <a className="fab__link" href="tel:+79992380136">
-        <img className='fab__icon' src={svg__phone} alt="" />
-      </a>
-    </div>
+    <button className="fab" onClick={handleClick}>
+      <div className='fab__container'>
+        <img className="fab__icon" src={svg__phone} alt="" />
+      </div>
+    </button>
   );
 }
