@@ -95,6 +95,7 @@ export default function NewsArticle(props) {
               title={'Котова Анна Сергеевна'}
               subtitle={'Врач-кардиолог'}
               link={'/team/doctor_kotova'}
+              showMore={true}
             />
           </div>
         </div>
