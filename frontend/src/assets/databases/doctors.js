@@ -237,6 +237,7 @@ const doctors = [
     title: 'Врач сердечно-сосудистый хирург, специалист по рентгенэндоваскулярным методам диагностики и лечения',
     img: img_Sorokin,
     alt: 'Доктор Сорокин Андрей Александрович',
+    link: '/team/doctor_sorokin',
     personaLinks: [],
     personaDetails: [],
   },
