@@ -23,6 +23,16 @@ let newsArr = [
     link: "priem-v-gorode-vladimir-07-09-2021",
     hot: true,
   },
+  {
+    id: "n3",
+    pretitle: "Приём специалиста",
+    title: "4 сентября приём в городе Старый Оскол",
+    date: "23 Августа 2021",
+    setting: {},
+    buttonText: "Записаться на приём",
+    link: "priem-v-gorode-stariy-oskol-04.09.2021",
+    hot: true,
+  },
 ];
 
 export default newsArr;
