@@ -65,10 +65,10 @@ export default function NewsArticle(props) {
               </Map>
             </YMaps>
             <p className="news__p">
-              тел. для записи: <a href="tel:+79992380136">8 (999) 238-01-36</a>
+              тел. для записи: <a href="tel:+79992380136">8&nbsp;(999)&nbsp;238&#8209;01&#8209;36</a>
               <br />
               тел. МДЦ «Медтест»:{" "}
-              <a href="tel:+74725452503">8 (4725) 45-25-03</a>
+              <a href="tel:+74725452503">8&nbsp;(4725)&nbsp;45&#8209;25&#8209;03</a>
             </p>
             <ButtonCTA
               styling="greetings__cta news__cta"

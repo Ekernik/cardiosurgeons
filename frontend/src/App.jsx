@@ -20,6 +20,7 @@ import miniinvisiv from "./pages/treatment/Miniinvisiv";
 
 import news from "./assets/databases/news";
 import Kotova from "./pages/doctors/Kotova";
+import Sorokin from "./pages/doctors/Sorokin";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
           );
         })}
         <Route path="/team/doctor_kotova/" component={Kotova} />
+        <Route path="/team/doctor_sorokin/" component={Sorokin} />
         <Route path="/team" component={OurTeam} />
         <Route path="/licenses" component={Licenses} />
         <Route exact path="/" component={Landing} />

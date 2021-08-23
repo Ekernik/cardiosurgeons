@@ -7,11 +7,19 @@
 }
 
 .doctor {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__image {
-    width: 100%;
+    width: auto;
+    height: auto;
     max-width: 100%;
-    max-height: 30vh;
-    margin-bottom: 1em;
+    max-height: 50vh;
+    margin: 0 auto 1em;
+    border-radius: var(--border-radius-secondary);
   }
 
   &__name {
@@ -32,6 +40,10 @@
 
   &__theme {
     margin-bottom: 0.5em;
+
+    &-section {
+      margin-bottom: 2em;
+    }
   }
 
   &__text {
@@ -71,15 +83,24 @@
     }
 
     &__card {
-      margin-right: 1em;
+      margin-right: 2em;
+      flex: 1;
     }
 
     &__theme {
       font-size: var(--text-md);
+
+      &-section {
+        margin-bottom: 2.5em;
+      }
     }
 
     &__text {
-      font-size: var(--text-regular);
+      font-size: var(--text-md);
+    }
+
+    &__info {
+    flex: 2;
     }
   }
 }
