@@ -84,7 +84,7 @@ export default function NewsArticle(props) {
             <p className="news__p">
               Консультирует врач – кардиолог Центра кардиохирургии и
               интервенционной кардиологии{' '}
-              <a href="#TODO" targer="_blank">
+              <a href="/team/doctor_kotova" target="_blank">
                 Котова Анна Сергеевна
               </a>
             </p>

@@ -79,7 +79,7 @@ export default function NewsArticle(props) {
             <p className="news__p">
               принимает врач сердечно-сосудистый хирург Центра кардиохирургии и
               интервенционной кардиологии{" "}
-              <a href="/team/doctor_sorokin" targer="_blank">
+              <a href="/team/doctor_sorokin" target="_blank">
                 Сорокин Андрей Александрович
               </a>
             </p>
