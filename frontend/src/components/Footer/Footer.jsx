@@ -7,7 +7,7 @@ import FAB from "../FAB/FAB";
 function Footer() {
   return (
     <footer className="footer">
-      <YMInitializer accounts={[83857552]} />
+      <YMInitializer accounts={[83857552]} options={{webvisor: true, triggerEvent: true}} />
       <FAB />
       <div className="container">
         <span className="footer__copyright">© copyright 2021</span>
