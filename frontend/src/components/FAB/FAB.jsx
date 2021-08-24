@@ -8,7 +8,7 @@ export default function FAB() {
   };
   return (
     <button className="fab" onClick={handleClick}>
-      <div className='fab__container'>
+      <div className="fab__container">
         <img className="fab__icon" src={svg__phone} alt="" />
       </div>
     </button>

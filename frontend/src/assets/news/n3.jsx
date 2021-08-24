@@ -18,7 +18,7 @@ export default function NewsArticle(props) {
       <div className="container container__news-article">
         <h6 className="news__date">{props.date}</h6>
         <h2 className="news__title">
-          04 сентября 2021 г. в&nbsp;МДЦ «Медтест» провидится отбор
+          04 сентября 2021 г. в&nbsp;МДЦ «Медтест» проводится отбор
           на&nbsp;бесплатное <strong>хирургическое лечение</strong>{" "}
           в&nbsp;Санкт-Петербурге пациентов с&nbsp;заболеваниями:
         </h2>
@@ -108,9 +108,9 @@ export default function NewsArticle(props) {
         </ul>
         <div className="marked-container">
           <p className="news__p">
-            Большинство операций в Клинике ВМТ им. Н.И. Пирогова выполняются
-            бесплатно в рамках федеральных квот на высокотехнологичную
-            медицинскую помощь, а также по ОМС.
+            Большинство операций в Клинике ВМТ им.&nbsp;Н.И.Пирогова выполняются
+            бесплатно в&nbsp;рамках федеральных квот на&nbsp;высокотехнологичную
+            медицинскую помощь, а&nbsp;также по&nbsp;ОМС.
           </p>
         </div>
       </div>
