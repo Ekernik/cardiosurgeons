@@ -1,7 +1,5 @@
 import React from "react";
 import Contacts from "../../components/Contacts";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 
 import team from "../../assets/images/team.jpg";
 import operation01 from "../../assets/images/operation_01.jpg";
@@ -12,7 +10,6 @@ import "./index.scss";
 export default function AboutUs() {
   return (
     <main className="page__about-us">
-      <Header />
       <section className="container section__about-us">
         <h1 className="section__header">О нас</h1>
         <img
@@ -106,7 +103,6 @@ export default function AboutUs() {
         </p>
       </section>
       <Contacts />
-      <Footer />
     </main>
   );
 }

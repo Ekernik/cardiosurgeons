@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import {
   YMaps,
   Map,
@@ -14,7 +12,6 @@ import "./index.scss";
 export default function OurContacts() {
   return (
     <main className="page__our-contacts">
-      <Header />
       <section className="container section__our-contacts">
         <h1 className="section__header">Контакты</h1>
         <h2 className="our-contacts__title">
@@ -108,7 +105,6 @@ export default function OurContacts() {
           </p>
         </div>
       </section>
-      <Footer />
     </main>
   );
 }

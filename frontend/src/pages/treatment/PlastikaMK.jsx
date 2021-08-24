@@ -1,7 +1,5 @@
 import React from "react";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import Operation04 from "../../components/Abouts/Operation_04";
 import Greetings from "../../components/Greetings";
 import Contacts from "../../components/Contacts";
@@ -11,7 +9,6 @@ import Advantages from "../../organisms/Advantages";
 export default function Stentirovanie() {
   return (
     <main className="page__stentirovanie">
-      <Header />
       <Greetings
         header="Пластика митрального клапана"
         subheader=""
@@ -21,7 +18,6 @@ export default function Stentirovanie() {
       <Operation04 />
       <Advantages />
       <Contacts />
-      <Footer />
     </main>
   );
 }

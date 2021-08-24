@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import Contacts from '../../components/Contacts';
 
 import './index.scss';
@@ -8,7 +6,6 @@ import './index.scss';
 export default function Treatment() {
   return (
     <main className="page__services">
-      <Header />
       <div className="container container__services">
         <h1 className="services__header">Лечение</h1>
         <div className="services__list">
@@ -39,7 +36,6 @@ export default function Treatment() {
         </div>
       </div>
       <Contacts />
-      <Footer />
     </main>
   );
 }

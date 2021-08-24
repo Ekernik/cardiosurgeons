@@ -1,7 +1,5 @@
 import React from "react";
 
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import Operation03 from "../../components/Abouts/Operation_03";
 import Greetings from "../../components/Greetings";
 import Contacts from "../../components/Contacts";
@@ -11,7 +9,6 @@ import Advantages from "../../organisms/Advantages";
 export default function Shuntirovanie() {
   return (
     <main className="page__shuntirovanie">
-      <Header />
       <Greetings
         header="Коронарное шунтирование"
         subheader="самая частая кардиохирургическая операция"
@@ -21,7 +18,6 @@ export default function Shuntirovanie() {
       <Operation03 />
       <Advantages />
       <Contacts />
-      <Footer />
     </main>
   );
 }

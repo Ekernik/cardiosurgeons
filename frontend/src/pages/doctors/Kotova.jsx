@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 
 import img_doctor from "../../assets/svg/doctor_woman.svg";
 
@@ -10,7 +8,6 @@ import Contacts from "../../components/Contacts";
 export default function Kotova() {
   return (
     <main className="page__doctor">
-      <Header />
       <section className="section__doctor container">
         <div className="doctor__flex">
           <div className="doctor__card">
@@ -82,7 +79,6 @@ export default function Kotova() {
         </div>
       </section>
       <Contacts />
-      <Footer />
     </main>
   );
 }

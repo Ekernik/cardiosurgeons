@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import Operation07 from "../../components/Abouts/Operation_07";
 import Greetings from "../../components/Greetings";
 import Contacts from "../../components/Contacts";
@@ -10,7 +8,6 @@ import Advantages from "../../organisms/Advantages";
 export default function Stentirovanie() {
   return (
     <main className="page__stentirovanie">
-      <Header />
       <Greetings
         header="Каротидная эндартерэктомия"
         subheader="один из способов устранения стеноза внутренней сонной артерии"
@@ -20,7 +17,6 @@ export default function Stentirovanie() {
       <Operation07 />
       <Advantages />
       <Contacts />
-      <Footer />
     </main>
   );
 }

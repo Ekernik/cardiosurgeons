@@ -1,14 +1,11 @@
 import React from "react";
 import Contacts from "../../components/Contacts/Contacts";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import illnesses from "../../assets/databases/illnesses";
 import "./index.scss";
 
 export default function Diagnostics() {
   return (
     <main className="page__diagnostics">
-      <Header />
       <section className="container  section__diagnostics">
         <h1 className="section__header">
           Мы производим диагностику по следующим направлениям
@@ -47,7 +44,6 @@ export default function Diagnostics() {
         </ul>
       </section>
       <Contacts />
-      <Footer />
     </main>
   );
 }

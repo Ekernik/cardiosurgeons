@@ -21,6 +21,8 @@ import miniinvisiv from "./pages/treatment/Miniinvisiv";
 import news from "./assets/databases/news";
 import Kotova from "./pages/doctors/Kotova";
 import Sorokin from "./pages/doctors/Sorokin";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
       <div className="App">
         <div id="curtain"></div>
       </div>
+      <Header />
       <Switch>
         <Route path="/treatment/coronarographia" component={Coronarography} />
         <Route
@@ -75,6 +78,7 @@ function App() {
         <Route exact path="/" component={Landing} />
         <Route path="" component={PageNotFound} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

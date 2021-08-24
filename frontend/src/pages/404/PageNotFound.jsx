@@ -1,13 +1,10 @@
 import React from "react";
 import lost from "../../assets/svg/lost.svg";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import "./index.scss";
 
 export default function PageNotFound() {
   return (
     <main className="page__page-not-found">
-      <Header />
       <div className="container">
         <section className="section__page-not-found">
           <img src={lost} alt="" />
@@ -19,7 +16,6 @@ export default function PageNotFound() {
           <a href="/">Вернуться на главную</a>
         </section>
       </div>
-      <Footer />
     </main>
   );
 }
