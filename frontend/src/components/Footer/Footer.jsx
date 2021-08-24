@@ -1,4 +1,5 @@
 import React from "react";
+import { YMInitializer } from 'react-yandex-metrika';
 import "./index.scss";
 import reestr from "../../assets/documents/reestr.pdf";
 import FAB from "../FAB/FAB";
@@ -6,6 +7,7 @@ import FAB from "../FAB/FAB";
 function Footer() {
   return (
     <footer className="footer">
+      <YMInitializer accounts={[83857552]} />
       <FAB />
       <div className="container">
         <span className="footer__copyright">© copyright 2021</span>
