@@ -23,6 +23,7 @@ import Kotova from "./pages/doctors/Kotova";
 import Sorokin from "./pages/doctors/Sorokin";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Balahonov from "./pages/doctors/Balahonov";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
           })}
           <Route path="/team/doctor_kotova/" component={Kotova} />
           <Route path="/team/doctor_sorokin/" component={Sorokin} />
+          <Route path="/team/doctor_balahonov/" component={Balahonov} />
           <Route path="/team" component={OurTeam} />
           <Route path="/licenses" component={Licenses} />
           <Route exact path="/" component={Landing} />
