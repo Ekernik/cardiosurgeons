@@ -26,60 +26,60 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <div id="curtain"></div>
-      </div>
+    <div className="App">
+      <div id="curtain"></div>
       <Header />
-      <Switch>
-        <Route path="/treatment/coronarographia" component={Coronarography} />
-        <Route
-          path="/treatment/stentirovanie-koronarnih-arteriy"
-          component={Stentirovanie}
-        />
-        <Route
-          path="/treatment/aorto-koronarnoe-shuntirovanie"
-          component={Shuntirovanie}
-        />
-        <Route
-          path="/treatment/plastika-mitralnogo-klapana"
-          component={PlastikaMK}
-        />
-        <Route
-          path="/treatment/miniinvisivnoe-protezirovanie-klapanov"
-          component={miniinvisiv}
-        />
-        <Route path="/treatment/protezirovanie-aorti" component={Treatment} />{" "}
-        {/* TODO */}
-        <Route
-          path="/treatment/karotidnaya-endarterektomiya"
-          component={Karodit}
-        />
-        <Route
-          path="/treatment/radiochastotnaya-ablyaciya"
-          component={RadioAblacia}
-        />
-        <Route exact path="/treatment" component={Treatment} />
-        <Route path="/diagnostics" component={Diagnostics} />
-        <Route path="/about-us" component={AboutUs} />
-        <Route path="/contacts" component={OurContacts} />
-        {news.map((news) => {
-          return (
-            <Route
-              path={`/news/${news.link}`}
-              render={(props) => <News newsId={news.id} {...props} />}
-            />
-          );
-        })}
-        <Route path="/team/doctor_kotova/" component={Kotova} />
-        <Route path="/team/doctor_sorokin/" component={Sorokin} />
-        <Route path="/team" component={OurTeam} />
-        <Route path="/licenses" component={Licenses} />
-        <Route exact path="/" component={Landing} />
-        <Route path="" component={PageNotFound} />
-      </Switch>
-      <Footer />
-    </Router>
+      <Router>
+        <Switch>
+          <Route path="/treatment/coronarographia" component={Coronarography} />
+          <Route
+            path="/treatment/stentirovanie-koronarnih-arteriy"
+            component={Stentirovanie}
+          />
+          <Route
+            path="/treatment/aorto-koronarnoe-shuntirovanie"
+            component={Shuntirovanie}
+          />
+          <Route
+            path="/treatment/plastika-mitralnogo-klapana"
+            component={PlastikaMK}
+          />
+          <Route
+            path="/treatment/miniinvisivnoe-protezirovanie-klapanov"
+            component={miniinvisiv}
+          />
+          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />{" "}
+          {/* TODO */}
+          <Route
+            path="/treatment/karotidnaya-endarterektomiya"
+            component={Karodit}
+          />
+          <Route
+            path="/treatment/radiochastotnaya-ablyaciya"
+            component={RadioAblacia}
+          />
+          <Route exact path="/treatment" component={Treatment} />
+          <Route path="/diagnostics" component={Diagnostics} />
+          <Route path="/about-us" component={AboutUs} />
+          <Route path="/contacts" component={OurContacts} />
+          {news.map((news) => {
+            return (
+              <Route
+                path={`/news/${news.link}`}
+                render={(props) => <News newsId={news.id} {...props} />}
+              />
+            );
+          })}
+          <Route path="/team/doctor_kotova/" component={Kotova} />
+          <Route path="/team/doctor_sorokin/" component={Sorokin} />
+          <Route path="/team" component={OurTeam} />
+          <Route path="/licenses" component={Licenses} />
+          <Route exact path="/" component={Landing} />
+          <Route path="" component={PageNotFound} />
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

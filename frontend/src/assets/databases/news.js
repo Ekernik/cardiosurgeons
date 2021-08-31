@@ -33,6 +33,16 @@ let newsArr = [
     link: "priem-v-gorode-stariy-oskol-04.09.2021",
     hot: true,
   },
+  {
+    id: "n4",
+    pretitle: "Приём специалиста",
+    title: "23 сентября приём в городе Ставрополь",
+    date: "31 Августа 2021",
+    setting: {},
+    buttonText: "Записаться на приём",
+    link: "priem-v-gorode-stavropol-23.09.2021",
+    hot: true,
+  },
 ];
 
 export default newsArr;

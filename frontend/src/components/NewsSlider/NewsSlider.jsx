@@ -41,9 +41,9 @@ function NewsSlider() {
 
   const slidesPerDevice = {
     phone: 1,
-    tablet: newsArr.length || 2,
-    laptop: newsArr.length || 3,
-    pc: newsArr.length || 4,
+    tablet: 2 || newsArr.length,
+    laptop: 3 || newsArr.length,
+    pc: 3 || newsArr.length,
   };
 
   let getDevice = () => {
