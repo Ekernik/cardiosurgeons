@@ -10,7 +10,7 @@ import DoctorCard from '../../organisms/DoctorCard/DoctorCard';
 import doctor_woman from '../svg/doctor_woman.svg';
 import ButtonCTA from '../../atoms/ButtonCTA';
 
-import './n1.scss';
+import './index.scss';
 
 export default function NewsArticle(props) {
   return (

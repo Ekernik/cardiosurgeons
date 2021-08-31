@@ -1,5 +1,5 @@
 import React from "react";
-import "./n1.scss";
+import "./index.scss";
 
 export default function NewsArticle(props) {
   return (

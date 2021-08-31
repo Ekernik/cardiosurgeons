@@ -10,7 +10,7 @@ import DoctorCard from "../../organisms/DoctorCard/DoctorCard";
 import img_doctor from "../images/doctors/doctor_Balahonov.jpg";
 import ButtonCTA from "../../atoms/ButtonCTA";
 
-import "./n1.scss";
+import "./index.scss";
 
 export default function NewsArticle(props) {
   return (
