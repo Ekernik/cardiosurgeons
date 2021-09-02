@@ -15,7 +15,7 @@ function Landing() {
         subheader="Медицина, доступная каждому"
         buttonText="Записаться на прием"
       />
-      <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
+      <Banner />
       <NewsSlider />
       <WhyUs />
       <OurServices />
