@@ -5,7 +5,7 @@ import "./index.scss";
 import diagnostics from "../../assets/databases/diagnostics";
 import illnesses from "../../assets/databases/illnesses";
 
-const toggleOurServiceButtons = (event) => {
+const toggleBtn = (event) => {
   const buttons = document.querySelectorAll(".toggle__button");
   const lists = document.querySelectorAll(".list-container__list");
   buttons[0].classList.toggle("toggle__button--active");
@@ -15,18 +15,50 @@ const toggleOurServiceButtons = (event) => {
 };
 
 function OurServices() {
+  const renderSection = (object) => {
+    return (
+      <div className="illness-subsection">
+        <h3>{object.categoryName}</h3>
+        {object.illnesses.map((illness) =>
+          renderItems(object.illnesses, illness, "illness")
+        )}
+      </div>
+    );
+  };
+
+  const renderItems = (object, item, type) => {
+    const isLastItem = object[object.length - 1] === item;
+    const isItemAnObject = typeof item === "object";
+    const itemLink = isItemAnObject ? (
+      <a href={item.link} className="illness__link">
+        {item.title}
+      </a>
+    ) : (
+      ""
+    );
+    const key =
+      type === "illness"
+        ? `i_${object}_${object.indexOf(item)}`
+        : `d${object.indexOf(item)}`;
+    const className = "illness-list__item";
+
+    return (
+      <div key={key}>
+        <li className={className}>{isItemAnObject ? itemLink : item}</li>
+        {isLastItem ? "" : <hr />}
+      </div>
+    );
+  };
+
   return (
     <section className="our-services-section container flex-box">
       <h2 className="section__header">Наши услуги</h2>
       <div className="our-services__toggle">
-        <button
-          onClick={(event) => toggleOurServiceButtons(event)}
-          className="toggle__button"
-        >
+        <button onClick={(e) => toggleBtn(e)} className="toggle__button">
           Диагностика
         </button>
         <button
-          onClick={(event) => toggleOurServiceButtons(event)}
+          onClick={(e) => toggleBtn(e)}
           className="toggle__button toggle__button--active"
         >
           Лечение
@@ -34,50 +66,12 @@ function OurServices() {
       </div>
       <div className="our-services__list-container">
         <ul className="list-container__list">
-          {diagnostics.map((diagnos) => {
-            return diagnostics[diagnostics.length - 1] === diagnos ? (
-              <div key={`d${diagnostics.indexOf(diagnos)}`}>
-                <li className="illness-list__item">{diagnos}</li>
-              </div>
-            ) : (
-              <div key={`d${diagnostics.indexOf(diagnos)}`}>
-                <li className="illness-list__item">{diagnos}</li>
-                <hr />
-              </div>
-            );
-          })}
+          {diagnostics.map((diagnos) =>
+            renderItems(diagnostics, diagnos, "diagnos")
+          )}
         </ul>
         <ul className="list-container__list list-container__list--hidden">
-          {illnesses.map((object) => (
-            <div
-              className="illness-subsection"
-              key={`is${illnesses.indexOf(object)}`}
-            >
-              <h3 className="illness-list__header">{object.categoryName}</h3>
-              {object.illnesses.map((illness) => {
-                return object.illnesses[object.illnesses.length - 1] ===
-                  illness ? (
-                  <div
-                    key={`i_${object.categoryName}_${object.illnesses.indexOf(
-                      illness
-                    )}`}
-                  >
-                    <li className="illness-list__item">{illness}</li>
-                  </div>
-                ) : (
-                  <div
-                    key={`i_${object.categoryName}_${object.illnesses.indexOf(
-                      illness
-                    )}
-                    )}`}
-                  >
-                    <li className="illness-list__item">{illness}</li>
-                    <hr />
-                  </div>
-                );
-              })}
-            </div>
-          ))}
+          {illnesses.map((object) => renderSection(object))}
         </ul>
       </div>
     </section>

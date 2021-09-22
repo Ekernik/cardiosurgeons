@@ -24,6 +24,7 @@ import Sorokin from "./pages/doctors/Sorokin";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Balahonov from "./pages/doctors/Balahonov";
+import Ateroskleros from "./pages/diagnostics/Ateroskleros";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
             component={RadioAblacia}
           />
           <Route exact path="/treatment" component={Treatment} />
+          <Route path="/diagnostics/ateroskleros" component={Ateroskleros} />
           <Route path="/diagnostics" component={Diagnostics} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/contacts" component={OurContacts} />
