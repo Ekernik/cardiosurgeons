@@ -17,7 +17,7 @@ function Landing() {
       />
       <Banner />
       <NewsSlider />
-      <WhyUs />
+      {/* <WhyUs /> */}
       <OurServices />
       <Contacts />
     </main>
