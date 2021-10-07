@@ -6,10 +6,8 @@ function Banner(props) {
     <div className="banner">
       <div className="container flex">
         <p className="banner__text">
-          Получить бесплатную оперативную помощь в&nbsp;рамках ОМС и&nbsp;ВМП
-          могут все граждане&nbsp;РФ
-          <br />
-          (из&nbsp;любых регионов&nbsp;РФ)
+          Наш Центр предлагает бесплатное оперативное лечение по федеральным
+          квотам и ОМС <br />всем гражданам РФ из любых регионов
         </p>
       </div>
     </div>
