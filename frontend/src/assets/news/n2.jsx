@@ -16,7 +16,7 @@ export default function NewsArticle(props) {
   return (
     <section className="section__news-article">
       <div className="container container__news-article">
-        <h6 className="news__date">{props.date}</h6>
+        <h6 className="news__date">новость от {props.date}</h6>
         <h2 className="news__title">
           Приглашаем пациентов с заболеваниями органов сердечно-сосудистой
           системы:

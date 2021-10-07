@@ -39,7 +39,7 @@ export default function NewsArticle(props) {
           Приём будет проводить врач сердечно-сосудистый хирург Центра
           кардиохирургии КВМТ им.&nbsp;Н.И.Пирогова СПбГУ
           (г.&nbsp;Санкт-Петербург) кандидат медицинских наук Балахонов Василий
-          Васильевич 23 сентября 2021&nbsp;г. в&nbsp;<strong>Ставропольском Краевом
+          Васильевич 02 ноября 2021&nbsp;г. в&nbsp;<strong>Ставропольском Краевом
           реабилитационном Центре</strong>.
         </p>
         <p className="news__p">
@@ -50,7 +50,7 @@ export default function NewsArticle(props) {
           <div className="news__help-flex">
             <p className="news__p">
               Прием будет проводиться:{" "}
-              <strong>23&#160;сентября&#160;2021&#160;г</strong>
+              <strong>02&#160;ноября&#160;2021&#160;г</strong>
             </p>
             <p className="news__p">
               По адресу:{" "}
@@ -112,7 +112,7 @@ export default function NewsArticle(props) {
         </div>
         <hr />
         <p className="news__p">
-          При себе необходимо иметь следующие ксерокопии:
+          При себе необходимо иметь следующие копии документов:
         </p>
         <ul className="news__list">
           <li className="news__list-item">
