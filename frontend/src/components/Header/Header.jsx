@@ -1,20 +1,20 @@
-import React from 'react';
-import './scroll.scss';
-import './index.scss';
-import './scroll.js';
-import FloatingContacts from '../../components/FloatingContacts';
-import Button from '../../atoms/ButtonCTA';
-import logo from '../../assets/images/logo_1.png';
-import listenToScroll from './scroll.js';
+import React from "react";
+import "./scroll.scss";
+import "./index.scss";
+import "./scroll.js";
+import FloatingContacts from "../../components/FloatingContacts";
+import Button from "../../atoms/ButtonCTA";
+import logo from "../../assets/images/logo_1.png";
+import listenToScroll from "./scroll.js";
 
 function Header(props) {
   let handleClick = () => {
-    const headerBurger = document.querySelector('.header__menu-burger');
-    const headerMenu = document.querySelector('.header__burger-nav');
-    const body = document.querySelector('body');
-    body.classList.toggle('fixed-page');
-    headerMenu.classList.toggle('menu--opened');
-    headerBurger.classList.toggle('menu--opened');
+    const headerBurger = document.querySelector(".header__menu-burger");
+    const headerMenu = document.querySelector(".header__burger-nav");
+    const body = document.querySelector("body");
+    body.classList.toggle("fixed-page");
+    headerMenu.classList.toggle("menu--opened");
+    headerBurger.classList.toggle("menu--opened");
   };
 
   return (
@@ -31,12 +31,12 @@ function Header(props) {
               />
             </a>
             <a href="/" className="brand__name">
-              Центр кардиохирургии и интервенционной кардиологии
+              Центр кардиохирургии и&nbsp;интервенционной кардиологии <br />
+              клиники ВМТ им.&nbsp;Н.И.Пирогова&nbsp;СПбГУ
             </a>
           </div>
           <div className="header__phone">
             <a href="tel:+79992380136">8 (999) 238-01-36</a>
-            <p>c 9:00 до 17:00</p>
           </div>
           <Button styling="header__cta" text="Записаться на прием" />
         </nav>
@@ -108,7 +108,9 @@ function Header(props) {
                   </a>
                 </div>
                 <div className="link-container">
-                  <a href="/treatment/aorto-koronarnoe-shuntirovanie">Аорто-коронарное шунтирование</a>
+                  <a href="/treatment/aorto-koronarnoe-shuntirovanie">
+                    Аорто-коронарное шунтирование
+                  </a>
                 </div>
                 {/* <div className="link-container">
                   <a href="/treatment/plastika-mitralnogo-klapana">Пластика митрального клапана</a>
@@ -122,10 +124,14 @@ function Header(props) {
                   <a href="/treatment/protezirovanie-aorti">Протезирование аорты</a>
                 </div> */}
                 <div className="link-container">
-                  <a href="/treatment/karotidnaya-endarterektomiya">Каротидная эндартерэктомия</a>
+                  <a href="/treatment/karotidnaya-endarterektomiya">
+                    Каротидная эндартерэктомия
+                  </a>
                 </div>
                 <div className="link-container">
-                  <a href="/treatment/radiochastotnaya-ablyaciya">Радиочастотная абляция</a>
+                  <a href="/treatment/radiochastotnaya-ablyaciya">
+                    Радиочастотная абляция
+                  </a>
                 </div>
               </div>
             </li>
