@@ -62,6 +62,10 @@ function NewsSlider() {
   return (
     <div className="news-section">
       <div className="container">
+        <h2 className="section__header">
+          Прием специалистов Центра в городах РФ
+        </h2>
+
         <Swiper
           slidesPerView={amountOfSlides()}
           spaceBetween={20}
