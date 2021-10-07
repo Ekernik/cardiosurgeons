@@ -40,7 +40,7 @@ function Contacts() {
     <section id="contacts-section">
       <div className="container contacts-flexbox">
         <div className="our-location">
-          <h3 className="subheader">Где нас найти</h3>
+          <h3 className="subheader">Где нас найти в г. Санкт-Петербурге</h3>
           <YMaps query={{ lang: "ru_RU" }}>
             <Map
               width={"100%"}
@@ -81,7 +81,7 @@ function Contacts() {
               <span>
                 <img src={icon_clock} lodaing="lazy" alt="" />
               </span>
-              09:00 - 20:00
+              09:00 - 21:00
             </li>
             <li className="contacts-info__item">
               <span>
@@ -98,8 +98,7 @@ function Contacts() {
                 <img src={icon_phone} lodaing="lazy" alt="" />
               </span>
               <p>
-                <a href="tel:+79992380136">8 (999) 238-01-36</a> (9:00-17:00
-                пн-пт)
+                <a href="tel:+79992380136">8 (999) 238-01-36</a> (9:00-21:00)
               </p>
             </li>
           </ul>
