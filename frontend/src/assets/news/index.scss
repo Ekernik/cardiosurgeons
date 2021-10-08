@@ -118,7 +118,12 @@
 @media (min-width: 1400px) {
   .news {
     &__doctor-card {
-      width: 50%;
+      width: 80%;
+    }
+
+    &__cta-btn {
+      width: auto;
+      margin: 1em;
     }
   }
 }

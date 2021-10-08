@@ -23,46 +23,71 @@ export default function NewsArticle(props) {
           бесплатной высокотехнологичной медицинской помощи по федеральным
           квотам и ОМС в Санкт-Петербурге:
         </h2>
-        <ul className="news__list">
-          <li className="news__list-item">— Ишемическая болезнь сердца</li>
-          <li className="news__list-item">— Клапанные пороки сердца</li>
-          <li className="news__list-item">— Патология аорты</li>
-          <li className="news__list-item">
-            — Патология периферических сосудов
-          </li>
-          <li className="news__list-item">— Нарушения ритма сердца</li>
-        </ul>
-        <p className="news__p">
-          При себе необходимо иметь ксерокопии следующих документов:
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">
-            — Паспорт (1-я страница и страница с регистрацией)
-          </li>
-          <li className="news__list-item">— Полис ОМС (с двух сторон)</li>
-          <li className="news__list-item">— СНИЛС</li>
-        </ul>
-        <p className="news__p">А также, медицинские документы:</p>
+        <div className="flex">
+          <div style={{ flex: 1 }}>
+            <ul className="news__list">
+              <li className="news__list-item">— Ишемическая болезнь сердца</li>
+              <li className="news__list-item">— Клапанные пороки сердца</li>
+              <li className="news__list-item">— Патология аорты</li>
+              <li className="news__list-item">
+                — Патология периферических сосудов
+              </li>
+              <li className="news__list-item">— Нарушения ритма сердца</li>
+            </ul>
+            <p className="news__p">
+              При себе необходимо иметь ксерокопии следующих документов:
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">
+                — Паспорт (1-я страница и страница с регистрацией)
+              </li>
+              <li className="news__list-item">— Полис ОМС (с двух сторон)</li>
+              <li className="news__list-item">— СНИЛС</li>
+            </ul>
+            <p className="news__p">А также, медицинские документы:</p>
+            <p className="news__p">
+              <strong>
+                Обследования для кардиохирургических больных (ИБС, клапаны,
+                аорта):
+              </strong>
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">— ЭКГ (описание)</li>
+              <li className="news__list-item">— Эхокардиография</li>
+              <li className="news__list-item">
+                — Осмотр кардиолога (по возможности)
+              </li>
+              <li className="news__list-item">
+                — Коронарография (по возможности)
+              </li>
+              <li className="news__list-item">
+                — При наличии сопутствующих заболеваний - консультации
+                врачей-специалистов (по возможности)
+              </li>
+            </ul>
+          </div>
+          <div className="news__help-flex">
+            <p className="news__p">
+              Принимает врач – сердечно-сосудистый хирург Центра кардиохирургии
+              и интервенционной кардиологии{" "}
+              <a href="/team/doctor_balahonov" target="_blank">
+                Балахонов Василий Васильевич
+              </a>
+            </p>
+            <DoctorCard
+              className="news__doctor-card"
+              imgSrc={doctor_balahonov}
+              imgAlt={"Доктор Балахонов Василий Васильевич"}
+              title={"Балахонов Василий Васильевич"}
+              subtitle={"сердечно-сосудистый хирург"}
+              link={"/team/doctor_balahonov"}
+              showMore={true}
+            />
+          </div>
+        </div>
         <p className="news__p">
           <strong>
-            Обследования для кардиохирургических больных (ИБС, клапаны, аорта):
-          </strong>
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">— ЭКГ (описание)</li>
-          <li className="news__list-item">— Эхокардиография</li>
-          <li className="news__list-item">
-            — Осмотр кардиолога (по возможности)
-          </li>
-          <li className="news__list-item">— Коронарография (по возможности)</li>
-          <li className="news__list-item">
-            — При наличии сопутствующих заболеваний - консультации
-            врачей-специалистов (по возможности)
-          </li>
-        </ul>
-        <p className="news__p">
-          <strong>
-            При сосудистой патологии, дополнительно к вышесказанному:
+            При сосудистой патологии, дополнительно к&nbsp;вышесказанному:
           </strong>
         </p>
         <ul className="news__list">
@@ -73,7 +98,7 @@ export default function NewsArticle(props) {
         </ul>
         <p className="news__p">
           <strong>
-            При нарушении ритма сердца, дополнительно к вышенаписанному:
+            При нарушении ритма сердца, дополнительно к&nbsp;вышенаписанному:
           </strong>
         </p>
         <ul className="news__list">
@@ -84,12 +109,18 @@ export default function NewsArticle(props) {
         <p className="news__p">
           Стоимость приёма <strong>1500 рублей</strong>.
         </p>
-        <div className="marked-container">
-          <p className="news__p">
+        <div className="marked-container flex" style={{ alignItems: "center" }}>
+          <p className="news__p" style={{ flex: 1 }}>
             Для госпитализации в Клинику ВМТ им. Н.И.Пирогова форма 057-у не
             требуется.
           </p>
+          <ButtonCTA
+            style={{ flex: 1 }}
+            styling="greetings__cta news__cta-btn"
+            text="Записаться на конусльтацию"
+          />
         </div>
+
         <hr />
         <div className="news__main-flex">
           <div className="news__help-flex">
@@ -111,7 +142,7 @@ export default function NewsArticle(props) {
             <YMaps query={{ lang: "ru_RU" }}>
               <Map
                 width={"100%"}
-                height={"30vh"}
+                height={"30em"}
                 defaultState={{
                   center: [56.255322, 43.852258],
                   zoom: 15,
@@ -127,28 +158,7 @@ export default function NewsArticle(props) {
             <p className="news__p">
               тел. для записи: <a href="tel:+79992380136">8 (999) 238-01-36</a>
             </p>
-            <ButtonCTA
-              styling="greetings__cta news__cta"
-              text="Записаться на конусльтацию"
-            />
-          </div>
-          <div className="news__help-flex">
-            <p className="news__p">
-              Принимает врач – сердечно-сосудистый хирург Центра кардиохирургии
-              и интервенционной кардиологии{" "}
-              <a href="/team/doctor_balahonov" target="_blank">
-                Балахонов Василий Васильевич
-              </a>
-            </p>
-            <DoctorCard
-              className="news__doctor-card"
-              imgSrc={doctor_balahonov}
-              imgAlt={"Доктор Балахонов Василий Васильевич"}
-              title={"Балахонов Василий Васильевич"}
-              subtitle={"сердечно-сосудистый хирург"}
-              link={"/team/doctor_balahonov"}
-              showMore={true}
-            />
+            <hr />
           </div>
         </div>
       </div>

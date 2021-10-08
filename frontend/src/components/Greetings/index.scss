@@ -102,6 +102,13 @@
       max-width: 70%;
     }
 
+    &__text {
+      color: var(--color-white);
+      font-size: var(--text-xl);
+      line-height: 1.3em;
+      font-weight: 600;
+    }
+
     &__subheader {
       font-size: 1.2em;
     }

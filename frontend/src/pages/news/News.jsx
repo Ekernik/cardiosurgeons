@@ -6,20 +6,18 @@ import Contacts from "../../components/Contacts";
 import Greetings from "../../components/Greetings";
 
 let News = (props) => {
-  const NewsArticle = React.lazy(async () => {
-    return import(`../../assets/news/${props.newsId}`)
+  const NewsArticle = React.lazy(async () =>
+    import(`../../assets/news/${props.newsId}`)
       .then()
-      .catch(() => {
-        return import("../../assets/news/articleNotFound");
-      });
-  });
+      .catch(() => import("../../assets/news/articleNotFound"))
+  );
 
   const newsObj = news.filter((news) => news.id === props.newsId)[0];
 
   return (
     <main className="page__news">
       <Greetings
-        header={newsObj.title}
+        header={newsObj.header || newsObj}
         subheader={newsObj.subheader}
         buttonText={newsObj.buttonText}
         settings={newsObj.settings}

@@ -1,8 +1,10 @@
 .card-news {
   text-align: left;
-  min-width: 70vw;
-  max-width: 220px;
-  height: 220px;
+  min-width: 200px;
+  margin: auto;
+  max-width: 80%;
+  width: 100%;
+  height: 130px;
   padding: 1.5em 1.2em;
   border: 1px solid var(--color-P);
   border-radius: var(--border-radius-secondary);
@@ -19,12 +21,18 @@
 }
 
 .card {
+  &__container {
+    width: 100%;
+    padding: 1.5em;
+  }
+
   &__title {
     font-size: var(--text-sm);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.6rem;
+    text-align: center;
   }
 
   &__text {
@@ -35,6 +43,7 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     max-height: 4.8em;
+    text-align: center;
   }
 
   &__read-more {
@@ -68,8 +77,8 @@
 // Tablet media query
 @media (min-width: 768px) {
   .card-news {
-    min-width: 39vw;
-    max-width: 39vw;
+    max-width: 100%;
+    padding: 1em;
   }
 
   .card {
@@ -84,7 +93,7 @@
       max-height: 4.8em;
     }
     &__read-more {
-      padding: 0.8em 1.4em;
+      padding: 0.8em 1em;
     }
   }
 }
@@ -92,19 +101,21 @@
 // Laptops media query
 @media (min-width: 992px) {
   .card-news {
-    min-width: 26.5vw;
-    max-width: 26.5vw;
-    margin: 0.5em;
-    height: 230px;
+    width: 100%;
+    height: 150px;
   }
 
   .card {
+    &__container {
+      min-width: 80%;
+      max-width: 100%;
+    }
     &__title {
       margin-bottom: 0.4rem;
     }
 
     &__text {
-      height: 120px;
+      height: auto;
       -webkit-line-clamp: 6;
       max-height: 7.2rem;
     }
@@ -112,29 +123,35 @@
     &__read-more {
       padding: 0.6em 1.2em;
     }
+
+    &__container {
+      height: auto;
+      padding: 1.5em;
+    }
   }
 }
 
 // Full Desktops media query
 @media (min-width: 1400px) {
   .card-news {
-    min-width: 330px;
-    max-width: 330px;
     padding: 1em 1.4em;
   }
 
   .card {
+    &__container {
+      padding: 1em 2em;
+    }
     &__title {
       font-size: var(--text-sm);
       margin-bottom: 1em;
     }
 
     &__text {
-      font-size: var(--text-md);
+      font-size: var(--text-lg);
       line-height: 1.2em;
       -webkit-line-clamp: 6;
       max-height: 6em;
-      height: 6em;
+      height: auto;
     }
 
     &__read-more {

@@ -24,58 +24,99 @@ export default function NewsArticle(props) {
           отбора на дальнейшее оказание бесплатной высокотехнологичной
           медицинской помощи по федеральным квотам и ОМС в Санкт-Петербурге
         </h2>
-        <p className="news__p">
-          При себе необходимо иметь ксерокопии следующих документов:
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">
-            — Паспорт (1-я страница и страница с регистрацией)
-          </li>
-          <li className="news__list-item">— Полис ОМС (с двух сторон)</li>
-          <li className="news__list-item">— СНИЛС</li>
-        </ul>
-        <p className="news__p">А также, медицинские документы:</p>
-        <p className="news__p">
-          <strong>
-            Обследования для кардиохирургических больных (ИБС, клапаны, аорта):
-          </strong>
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">— ЭКГ (описание)</li>
-          <li className="news__list-item">— Эхокардиография</li>
-          <li className="news__list-item">
-            — Осмотр кардиолога (по возможности)
-          </li>
-          <li className="news__list-item">— Коронарография (по возможности)</li>
-          <li className="news__list-item">
-            — При наличии сопутствующих заболеваний - консультации
-            врачей-специалистов (по возможности)
-          </li>
-        </ul>
-        <p className="news__p">
-          <strong>
-            При сосудистой патологии, дополнительно к вышесказанному:
-          </strong>
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">
-            — Дуплексное сканирование брахиоцефальных артерий, аорты, артерий
-            нижних конечностей.
-          </li>
-        </ul>
-        <p className="news__p">
-          <strong>
-            При нарушении ритма сердца, дополнительно к вышенаписанному:
-          </strong>
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">
-            — Суточный мониторинг ЭКГ по Холтеру.
-          </li>
-        </ul>
-        <p className="news__p">
-          Стоимость приёма <strong>2000 рублей</strong>.
-        </p>
+        <div className="flex">
+          <div style={{ flex: 1 }}>
+            <p className="news__p">
+              При себе необходимо иметь ксерокопии следующих документов:
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">
+                — Паспорт (1-я страница и страница с регистрацией)
+              </li>
+              <li className="news__list-item">— Полис ОМС (с двух сторон)</li>
+              <li className="news__list-item">— СНИЛС</li>
+            </ul>
+            <p className="news__p">А также, медицинские документы:</p>
+            <p className="news__p">
+              <strong>
+                Обследования для кардиохирургических больных (ИБС, клапаны,
+                аорта):
+              </strong>
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">— ЭКГ (описание)</li>
+              <li className="news__list-item">— Эхокардиография</li>
+              <li className="news__list-item">
+                — Осмотр кардиолога (по возможности)
+              </li>
+              <li className="news__list-item">
+                — Коронарография (по возможности)
+              </li>
+              <li className="news__list-item">
+                — При наличии сопутствующих заболеваний - консультации
+                врачей-специалистов (по возможности)
+              </li>
+            </ul>
+            <p className="news__p">
+              <strong>
+                При сосудистой патологии, дополнительно к вышесказанному:
+              </strong>
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">
+                — Дуплексное сканирование брахиоцефальных артерий, аорты,
+                артерий нижних конечностей.
+              </li>
+            </ul>
+            <p className="news__p">
+              <strong>
+                При нарушении ритма сердца, дополнительно к вышенаписанному:
+              </strong>
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">
+                — Суточный мониторинг ЭКГ по Холтеру.
+              </li>
+            </ul>
+            <p className="news__p">
+              Стоимость приёма <strong>2000 рублей</strong>.
+            </p>
+          </div>
+          <div className="news__help-flex">
+            <p className="news__p">
+              прием ведут специалисты Центра кардиохирургии
+              и&nbsp;интервенционной кардиологии:{" "}
+              <a href="/team/doctor_balahonov" target="_blank">
+                Балахонов&nbsp;Василий&nbsp;Васильевич
+              </a>
+              <br />— врач сердечно-сосудистый хирург и <br />
+              <a href="/team/doctor_zubarev" target="_blank">
+                Зубарев&nbsp;Евгений&nbsp;Игоревич
+              </a>
+              <br />— врач сердечно-сосудистый хирург, аритмолог
+            </p>
+            <div style={{ display: "flex" }}>
+              <DoctorCard
+                className="news__doctor-card"
+                imgSrc={img_doctor1}
+                imgAlt={"Доктор Балахонов Василий Васильевич"}
+                title={"Балахонов Василий Васильевич"}
+                subtitle={"врач cердечно-сосудистый хирург, к.м.н."}
+                link={"/team/doctor_balahonov"}
+                showMore={true}
+              />
+              <DoctorCard
+                className="news__doctor-card"
+                imgSrc={img_doctor2}
+                imgAlt={"Доктор Зубарев Евгений Игоревич"}
+                title={"Зубарев Евгений Игоревич"}
+                subtitle={"врач cердечно-сосудистый хирург, аритмолог"}
+                link={"/team/doctor_zubarev"}
+                showMore={true}
+              />
+            </div>
+          </div>
+        </div>
         <hr />
         <div className="news__main-flex">
           <div className="news__help-flex">
@@ -120,40 +161,6 @@ export default function NewsArticle(props) {
               styling="greetings__cta news__cta"
               text="Записаться на прием"
             />
-          </div>
-          <div className="news__help-flex">
-            <p className="news__p">
-              прием ведут врач сердечно-сосудистый хирург Центра кардиохирургии
-              и интервенционной кардиологии{" "}
-              <a href="/team/doctor_balahonov" target="_blank">
-                Балахонов&nbsp;Василий&nbsp;Васильевич
-              </a>{" "}
-              и врач сердечно-сосудистый хирург, аритмолог Центра кардиохирургии
-              и интервенционной кардиологии{" "}
-              <a href="/team/doctor_zubarev" target="_blank">
-                Зубарев&nbsp;Евгений&nbsp;Игоревич
-              </a>
-            </p>
-            <div style={{ display: "flex" }}>
-              <DoctorCard
-                className="news__doctor-card"
-                imgSrc={img_doctor1}
-                imgAlt={"Доктор Балахонов Василий Васильевич"}
-                title={"Балахонов Василий Васильевич"}
-                subtitle={"врач cердечно-сосудистый хирург"}
-                link={"/team/doctor_balahonov"}
-                showMore={true}
-              />
-              <DoctorCard
-                className="news__doctor-card"
-                imgSrc={img_doctor2}
-                imgAlt={"Доктор Зубарев Евгений Игоревич"}
-                title={"Зубарев Евгений Игоревич"}
-                subtitle={"врач cердечно-сосудистый хирург, аритмолог"}
-                link={"/team/doctor_zubarev"}
-                showMore={true}
-              />
-            </div>
           </div>
         </div>
         <hr />

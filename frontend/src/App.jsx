@@ -24,7 +24,10 @@ import Sorokin from "./pages/doctors/Sorokin";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Balahonov from "./pages/doctors/Balahonov";
+import Shmatov from "./pages/doctors/Shmatov";
 import Ateroskleros from "./pages/diagnostics/Ateroskleros";
+import Stolyarov from "./pages/doctors/Stolyarov";
+import Kamenskih from "./pages/doctors/Kamenskih";
 
 function App() {
   return (
@@ -76,6 +79,9 @@ function App() {
           <Route path="/team/doctor_kotova/" component={Kotova} />
           <Route path="/team/doctor_sorokin/" component={Sorokin} />
           <Route path="/team/doctor_balahonov/" component={Balahonov} />
+          <Route path="/team/doctor_shmatov/" component={Shmatov} />
+          <Route path="/team/doctor_stolyarov/" component={Stolyarov} />
+          <Route path="/team/doctor_kamenskih/" component={Kamenskih} />
           <Route path="/team" component={OurTeam} />
           <Route path="/licenses" component={Licenses} />
           <Route exact path="/" component={Landing} />

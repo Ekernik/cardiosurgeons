@@ -24,7 +24,7 @@ function NewsSlider() {
       <SwiperSlide key={news.id}>
         <NewsCard
           id={news.id}
-          pretitle={news.pretitle}
+          subtitle={news.pretitle}
           title={news.title}
           date={news.date}
           link={`/news/${news.link}`}
