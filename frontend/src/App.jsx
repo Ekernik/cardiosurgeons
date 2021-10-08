@@ -36,7 +36,7 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route path="/treatment/coronarographia" component={Coronarography} />
+          <Route path="/diagnostics/coronarographia" component={Coronarography} />
           <Route
             path="/treatment/stentirovanie-koronarnih-arteriy"
             component={Stentirovanie}

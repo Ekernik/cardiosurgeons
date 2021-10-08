@@ -138,7 +138,7 @@ function Header(props) {
               <span className="menu__link">Диагностика</span>
               <div className="menu__drop-down">
                 <div className="link-container">
-                  <a href="/treatment/coronarographia">Коронарография</a>
+                  <a href="/diagnostics/coronarographia">Коронарография</a>
                 </div>
                 <div className="link-container">
                   <a href="/diagnostics/ateroskleros">Атеросклероз</a>
