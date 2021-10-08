@@ -16,6 +16,8 @@
 
   &:hover {
     background-color: var(--color-P);
+    cursor: pointer;
+    transform: rotateZ(15deg);
   }
 
   &__container {
