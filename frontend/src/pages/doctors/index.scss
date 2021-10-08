@@ -51,6 +51,11 @@
     line-height: 1.4em;
   }
 
+  &__subsection {
+    margin: 2em 0 .5em;
+    font-size: .8em;
+  }
+
   &__flex {
     display: flex;
     flex-direction: column;
@@ -97,6 +102,10 @@
 
     &__text {
       font-size: var(--text-md);
+    }
+
+    &__subsection {
+      font-size: var(--text-regular);
     }
 
     &__info {
