@@ -290,6 +290,10 @@
         }
       }
 
+      & .link-container.no-hover:hover {
+        background-color: var(--color-P--tint);
+      }
+
       & a {
         color: var(--color-dark);
         text-decoration: none;

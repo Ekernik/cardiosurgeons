@@ -9,9 +9,7 @@ export default function Treatment() {
       <div className="container container__services">
         <h1 className="services__header">Лечение</h1>
         <div className="services__list">
-          <a className="services__link" href="/treatment/coronarographia">
-            Коронарография
-          </a>
+          
           <a className="services__link" href="/treatment/stentirovanie-koronarnih-arteriy">
             Стентирование коронарных артерий
           </a>

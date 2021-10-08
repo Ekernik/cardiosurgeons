@@ -100,9 +100,6 @@ function Header(props) {
               </a>
               <div className="menu__drop-down">
                 <div className="link-container">
-                  <a href="/treatment/coronarographia">Коронарография</a>
-                </div>
-                <div className="link-container">
                   <a href="/treatment/stentirovanie-koronarnih-arteriy">
                     Стентирование коронарных артерий
                   </a>
@@ -133,12 +130,20 @@ function Header(props) {
                     Радиочастотная абляция
                   </a>
                 </div>
+                <div className="link-container no-hover">
+                </div>
               </div>
             </li>
             <li className="menu__item">
-              <a href="/diagnostics" className="menu__link">
-                Диагностика
-              </a>
+              <span className="menu__link">Диагностика</span>
+              <div className="menu__drop-down">
+                <div className="link-container">
+                  <a href="/treatment/coronarographia">Коронарография</a>
+                </div>
+                <div className="link-container">
+                  <a href="/diagnostics/ateroskleros">Атеросклероз</a>
+                </div>
+              </div>
             </li>
             <li className="menu__item">
               <a href="/team" className="menu__link">
