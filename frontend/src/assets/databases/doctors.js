@@ -14,6 +14,7 @@ import img_Zubarev from '../images/doctors/doctor_Zubarev.jpg';
 import img_Sheremet from '../images/doctors/doctor_Sheremet.jpg';
 import img_Pyagai from '../images/doctors/doctor_Pyagai.jpg';
 import img_Asadullin from '../images/doctors/doctor_Asadullin.jpg';
+import img_Starosockaya from '../images/doctors/doctor_Starosockaya.jpg';
 import img_Suhanova from '../images/doctors/doctor_Suhanova.jpg';
 
 const doctors = [
@@ -117,6 +118,14 @@ const doctors = [
     img: img_Asadullin,
     alt: 'Доктор Асадуллин Ильшат Шамилевич',
     link: '/team/doctor_asadullin'
+  },
+  { // Старосоцкая Мария Владимировна
+    id: 'd_13',
+    name: 'Старосоцкая Мария Владимировна',
+    title: 'Врач-кардиолог Центра кардиохирургии и интервенционной кардиологии, к.м.н.',
+    img: img_Starosockaya,
+    alt: 'Доктор Старосоцкая Мария Владимировна',
+    link: '/team/doctor_starosockaya'
   },
   { // Суханова Ольга Викторовна
     id: 'd_14',
