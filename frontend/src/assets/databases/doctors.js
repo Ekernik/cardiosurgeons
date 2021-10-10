@@ -12,6 +12,7 @@ import img_Sorokin from '../images/doctors/doctor_Sorokin.jpg';
 import img_Kappushev from '../images/doctors/doctor_Kappushev.jpg';
 import img_Zubarev from '../images/doctors/doctor_Zubarev.jpg';
 import img_Sheremet from '../images/doctors/doctor_Sheremet.jpg';
+import img_Pyagai from '../images/doctors/doctor_Pyagai.jpg';
 
 const doctors = [
   { // Шматов Дмитрий Викторович 
@@ -99,8 +100,16 @@ const doctors = [
     alt: 'Доктор Шеремет Антон Андреевич',
     link: '/team/doctor_sheremet'
   },
-  {
+  { // Пягай Виктор Александрович
     id: 'd_11',
+    name: 'Пягай Виктор Александрович',
+    title: 'Сердечно-сосудистый хирург Центра кардиохирургии и интервенционной кардиологии',
+    img: img_Pyagai,
+    alt: 'Доктор Пягай Виктор Александрович',
+    link: '/team/doctor_pyagai'
+  },
+  {
+    id: 'd_12',
     name: 'Котова Анна Сергеевна',
     title: 'Врач-кардиолог Центра кардиохирургии и интервенционной кардиологии',
     img: img_doctor_woman,
