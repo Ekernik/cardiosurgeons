@@ -29,6 +29,7 @@ import Ateroskleros from "./pages/diagnostics/Ateroskleros";
 import Stolyarov from "./pages/doctors/Stolyarov";
 import Kamenskih from "./pages/doctors/Kamenskih";
 import Kim from "./pages/doctors/Kim";
+import Vasilev from "./pages/doctors/Vasilev";
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
           <Route path="/team/doctor_stolyarov/" component={Stolyarov} />
           <Route path="/team/doctor_kamenskih/" component={Kamenskih} />
           <Route path="/team/doctor_kim/" component={Kim} />
+          <Route path="/team/doctor_vasilev/" component={Vasilev} />
           <Route path="/team" component={OurTeam} />
           <Route path="/licenses" component={Licenses} />
           <Route exact path="/" component={Landing} />
