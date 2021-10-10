@@ -65,7 +65,7 @@ const doctors = [
     alt: 'Доктор Васильев Алексей Сергеевич',
     link: '/team/doctor_vasilev'
   },
-  {
+  { // Сорокин Андрей Александрович
     id: 'd_7',
     name: 'Сорокин Андрей Александрович',
     title:
@@ -73,18 +73,15 @@ const doctors = [
     img: img_Sorokin,
     alt: 'Доктор Сорокин Андрей Александрович',
     link: '/team/doctor_sorokin',
-    personaLinks: [],
-    personaDetails: [],
   },
-  {
+  { // Каппушев Руслан Юсуфович
     id: 'd_8',
     name: 'Каппушев Руслан Юсуфович',
     title:
       'Врач сердечно-сосудистый хирург, специалист по рентгенэндоваскулярным методам диагностики и лечения',
     img: img_Kappushev,
     alt: 'Доктор Каппушев Руслан Юсуфович',
-    personaLinks: [],
-    personaDetails: [],
+    link: '/team/doctor_kappushev'
   },
   {
     id: 'd_9',
