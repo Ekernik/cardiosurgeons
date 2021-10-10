@@ -34,6 +34,7 @@ import Kappushev from './pages/doctors/Kappushev';
 import Zubarev from './pages/doctors/Zubarev';
 import Sheremet from './pages/doctors/Sheremet';
 import Pyagai from './pages/doctors/Pyagai';
+import Asadullin from './pages/doctors/Asadullin';
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
           <Route path="/team/doctor_zubarev/" component={Zubarev} />
           <Route path="/team/doctor_sheremet/" component={Sheremet} />
           <Route path="/team/doctor_pyagai/" component={Pyagai} />
+          <Route path="/team/doctor_asadullin/" component={Asadullin} />
           <Route path="/team" component={OurTeam} />
           <Route path="/licenses" component={Licenses} />
           <Route exact path="/" component={Landing} />

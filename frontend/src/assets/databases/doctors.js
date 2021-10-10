@@ -13,6 +13,7 @@ import img_Kappushev from '../images/doctors/doctor_Kappushev.jpg';
 import img_Zubarev from '../images/doctors/doctor_Zubarev.jpg';
 import img_Sheremet from '../images/doctors/doctor_Sheremet.jpg';
 import img_Pyagai from '../images/doctors/doctor_Pyagai.jpg';
+import img_Asadullin from '../images/doctors/doctor_Asadullin.jpg';
 
 const doctors = [
   { // Шматов Дмитрий Викторович 
@@ -108,8 +109,16 @@ const doctors = [
     alt: 'Доктор Пягай Виктор Александрович',
     link: '/team/doctor_pyagai'
   },
-  {
+  { // Асадуллин Ильшат Шамилевич
     id: 'd_12',
+    name: 'Асадуллин Ильшат Шамилевич',
+    title: 'Врач сердечно-сосудистый хирург Центра кардиохирургии и интервенционной кардиологии',
+    img: img_Asadullin,
+    alt: 'Доктор Асадуллин Ильшат Шамилевич',
+    link: '/team/doctor_asadullin'
+  },
+  {
+    id: 'd_15',
     name: 'Котова Анна Сергеевна',
     title: 'Врач-кардиолог Центра кардиохирургии и интервенционной кардиологии',
     img: img_doctor_woman,
