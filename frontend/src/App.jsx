@@ -1,36 +1,37 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.scss";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.scss';
 
-import Landing from "./pages/Landing.jsx";
-import Coronarography from "./pages/treatments/Coronarography";
-import News from "./pages/news/";
-import Licenses from "./pages/Licenses";
-import PageNotFound from "./pages/404/PageNotFound";
-import OurTeam from "./pages/OurTeam/OurTeam";
-import Stentirovanie from "./pages/treatments/Stentirovanie";
-import Shuntirovanie from "./pages/treatments/Shuntirovanie";
-import PlastikaMK from "./pages/treatments/PlastikaMK";
-import Karodit from "./pages/treatments/Karotid";
-import RadioAblacia from "./pages/treatments/RadioAblacia";
-import Treatment from "./pages/Treatment/Treatment";
-import OurContacts from "./pages/OurContacts/OurContacts";
-import Diagnostics from "./pages/Diagnostic/Diagnostics";
-import AboutUs from "./pages/AboutUs/AboutUs";
-import miniinvisiv from "./pages/treatments/Miniinvisiv";
+import Landing from './pages/Landing.jsx';
+import Coronarography from './pages/treatments/Coronarography';
+import News from './pages/news/';
+import Licenses from './pages/Licenses';
+import PageNotFound from './pages/404/PageNotFound';
+import OurTeam from './pages/OurTeam/OurTeam';
+import Stentirovanie from './pages/treatments/Stentirovanie';
+import Shuntirovanie from './pages/treatments/Shuntirovanie';
+import PlastikaMK from './pages/treatments/PlastikaMK';
+import Karodit from './pages/treatments/Karotid';
+import RadioAblacia from './pages/treatments/RadioAblacia';
+import Treatment from './pages/Treatment/Treatment';
+import OurContacts from './pages/OurContacts/OurContacts';
+import Diagnostics from './pages/Diagnostic/Diagnostics';
+import AboutUs from './pages/AboutUs/AboutUs';
+import miniinvisiv from './pages/treatments/Miniinvisiv';
 
-import news from "./assets/databases/news";
-import Kotova from "./pages/doctors/Kotova";
-import Sorokin from "./pages/doctors/Sorokin";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Balahonov from "./pages/doctors/Balahonov";
-import Shmatov from "./pages/doctors/Shmatov";
-import Ateroskleros from "./pages/diagnostics/Ateroskleros";
-import Stolyarov from "./pages/doctors/Stolyarov";
-import Kamenskih from "./pages/doctors/Kamenskih";
-import Kim from "./pages/doctors/Kim";
-import Vasilev from "./pages/doctors/Vasilev";
-import Kappushev from "./pages/doctors/Kappushev";
+import news from './assets/databases/news';
+import Kotova from './pages/doctors/Kotova';
+import Sorokin from './pages/doctors/Sorokin';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Balahonov from './pages/doctors/Balahonov';
+import Shmatov from './pages/doctors/Shmatov';
+import Ateroskleros from './pages/diagnostics/Ateroskleros';
+import Stolyarov from './pages/doctors/Stolyarov';
+import Kamenskih from './pages/doctors/Kamenskih';
+import Kim from './pages/doctors/Kim';
+import Vasilev from './pages/doctors/Vasilev';
+import Kappushev from './pages/doctors/Kappushev';
+import Zubarev from './pages/doctors/Zubarev';
 
 function App() {
   return (
@@ -39,7 +40,10 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route path="/diagnostics/coronarographia" component={Coronarography} />
+          <Route
+            path="/diagnostics/coronarographia"
+            component={Coronarography}
+          />
           <Route
             path="/treatment/stentirovanie-koronarnih-arteriy"
             component={Stentirovanie}
@@ -56,7 +60,7 @@ function App() {
             path="/treatment/miniinvisivnoe-protezirovanie-klapanov"
             component={miniinvisiv}
           />
-          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />{" "}
+          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />{' '}
           {/* TODO */}
           <Route
             path="/treatment/karotidnaya-endarterektomiya"
@@ -88,6 +92,7 @@ function App() {
           <Route path="/team/doctor_kim/" component={Kim} />
           <Route path="/team/doctor_vasilev/" component={Vasilev} />
           <Route path="/team/doctor_kappushev/" component={Kappushev} />
+          <Route path="/team/doctor_zubarev/" component={Zubarev} />
           <Route path="/team" component={OurTeam} />
           <Route path="/licenses" component={Licenses} />
           <Route exact path="/" component={Landing} />
