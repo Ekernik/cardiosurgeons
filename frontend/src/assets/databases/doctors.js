@@ -14,6 +14,7 @@ import img_Zubarev from '../images/doctors/doctor_Zubarev.jpg';
 import img_Sheremet from '../images/doctors/doctor_Sheremet.jpg';
 import img_Pyagai from '../images/doctors/doctor_Pyagai.jpg';
 import img_Asadullin from '../images/doctors/doctor_Asadullin.jpg';
+import img_Suhanova from '../images/doctors/doctor_Suhanova.jpg';
 
 const doctors = [
   { // Шматов Дмитрий Викторович 
@@ -116,6 +117,14 @@ const doctors = [
     img: img_Asadullin,
     alt: 'Доктор Асадуллин Ильшат Шамилевич',
     link: '/team/doctor_asadullin'
+  },
+  { // Суханова Ольга Викторовна
+    id: 'd_14',
+    name: 'Суханова Ольга Викторовна',
+    title: 'Врач-кардиолог Центра кардиохирургии и интервенционной кардиологии',
+    img: img_Suhanova,
+    alt: 'Доктор Суханова Ольга Викторовна',
+    link: '/team/doctor_suhanova'
   },
   {
     id: 'd_15',
