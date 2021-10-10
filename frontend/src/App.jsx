@@ -37,6 +37,7 @@ import Pyagai from './pages/doctors/Pyagai';
 import Asadullin from './pages/doctors/Asadullin';
 import Suhanova from './pages/doctors/Suhanova';
 import Starosockaya from './pages/doctors/Starosockaya';
+import Povarenkina from './pages/doctors/Povarenkina';
 
 function App() {
   return (
@@ -102,6 +103,7 @@ function App() {
           <Route path="/team/doctor_pyagai/" component={Pyagai} />
           <Route path="/team/doctor_asadullin/" component={Asadullin} />
           <Route path="/team/doctor_starosockaya/" component={Starosockaya} />
+          <Route path="/team/doctor_povarenkina/" component={Povarenkina} />
           <Route path="/team/doctor_suhanova/" component={Suhanova} />
           <Route path="/team" component={OurTeam} />
           <Route path="/licenses" component={Licenses} />
