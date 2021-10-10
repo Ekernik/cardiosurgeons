@@ -91,14 +91,13 @@ const doctors = [
     alt: 'Доктор Зубарев Евгений Игоревич',
     link: '/team/doctor_zubarev'
   },
-  {
+  { // Шеремет Антон Андреевич
     id: 'd_10',
     name: 'Шеремет Антон Андреевич',
     title: 'Врач сердечно-сосудистый хирург, аритмолог',
     img: img_Sheremet,
     alt: 'Доктор Шеремет Антон Андреевич',
-    personaLinks: [],
-    personaDetails: [],
+    link: '/team/doctor_sheremet'
   },
   {
     id: 'd_11',
