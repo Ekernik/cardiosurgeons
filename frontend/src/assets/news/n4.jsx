@@ -1,19 +1,20 @@
-import React from "react";
+import React from 'react';
 import {
   YMaps,
   Map,
   Placemark,
   FullscreenControl,
   ZoomControl,
-} from "react-yandex-maps";
-import DoctorCard from "../../organisms/DoctorCard/DoctorCard";
-import img_doctor1 from "../images/doctors/doctor_Balahonov.jpg";
-import img_doctor2 from "../images/doctors/doctor_Zubarev.jpg";
-import ButtonCTA from "../../atoms/ButtonCTA";
+} from 'react-yandex-maps';
+import DoctorCard from '../../organisms/DoctorCard/DoctorCard';
+import img_doctor1 from '../images/doctors/doctor_Balahonov.jpg';
+import img_doctor2 from '../images/doctors/doctor_Zubarev.jpg';
+import ButtonCTA from '../../atoms/ButtonCTA';
 
-import "./index.scss";
+import './index.scss';
 
 export default function NewsArticle(props) {
+  // Арзамас - 16 октября 2021
   return (
     <section className="section__news-article">
       <div className="container container__news-article">
@@ -81,11 +82,15 @@ export default function NewsArticle(props) {
             <p className="news__p">
               Стоимость приёма <strong>2000 рублей</strong>.
             </p>
+            <ButtonCTA
+              styling="greetings__cta news__cta"
+              text="Записаться на прием"
+            />
           </div>
           <div className="news__help-flex">
             <p className="news__p">
-              прием ведут специалисты Центра кардиохирургии
-              и&nbsp;интервенционной кардиологии:{" "}
+              Прием ведут специалисты Центра кардиохирургии
+              и&nbsp;интервенционной кардиологии:{' '}
               <a href="/team/doctor_balahonov" target="_blank">
                 Балахонов&nbsp;Василий&nbsp;Васильевич
               </a>
@@ -95,23 +100,23 @@ export default function NewsArticle(props) {
               </a>
               <br />— врач сердечно-сосудистый хирург, аритмолог
             </p>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: 'flex' }}>
               <DoctorCard
                 className="news__doctor-card"
                 imgSrc={img_doctor1}
-                imgAlt={"Доктор Балахонов Василий Васильевич"}
-                title={"Балахонов Василий Васильевич"}
-                subtitle={"врач cердечно-сосудистый хирург, к.м.н."}
-                link={"/team/doctor_balahonov"}
+                imgAlt={'Доктор Балахонов Василий Васильевич'}
+                title={'Балахонов Василий Васильевич'}
+                subtitle={'врач cердечно-сосудистый хирург, к.м.н.'}
+                link={'/team/doctor_balahonov'}
                 showMore={true}
               />
               <DoctorCard
                 className="news__doctor-card"
                 imgSrc={img_doctor2}
-                imgAlt={"Доктор Зубарев Евгений Игоревич"}
-                title={"Зубарев Евгений Игоревич"}
-                subtitle={"врач cердечно-сосудистый хирург, аритмолог"}
-                link={"/team/doctor_zubarev"}
+                imgAlt={'Доктор Зубарев Евгений Игоревич'}
+                title={'Зубарев Евгений Игоревич'}
+                subtitle={'врач cердечно-сосудистый хирург, аритмолог'}
+                link={'/team/doctor_zubarev'}
                 showMore={true}
               />
             </div>
@@ -121,11 +126,11 @@ export default function NewsArticle(props) {
         <div className="news__main-flex">
           <div className="news__help-flex">
             <p className="news__p">
-              Прием будет проводиться:{" "}
+              Прием будет проводиться:{' '}
               <strong>16&#160;октября&#160;2021&#160;г</strong>
             </p>
             <p className="news__p">
-              По адресу:{" "}
+              По адресу:{' '}
               <a
                 href="https://yandex.ru/maps/-/CCUqq6DZCA"
                 target="_blank"
@@ -135,14 +140,14 @@ export default function NewsArticle(props) {
                 Медицинский&nbsp;Центр&nbsp;«Лор&nbsp;+»
               </a>
             </p>
-            <YMaps query={{ lang: "ru_RU" }}>
+            <YMaps query={{ lang: 'ru_RU' }}>
               <Map
-                width={"100%"}
-                height={"30vh"}
+                width={'100%'}
+                height={'30vh'}
                 defaultState={{
                   center: [55.401693, 43.843023],
                   zoom: 15,
-                  behaviors: ["default", "scrollZoom"],
+                  behaviors: ['default', 'scrollZoom'],
                   controls: [],
                 }}
               >
@@ -152,15 +157,11 @@ export default function NewsArticle(props) {
               </Map>
             </YMaps>
             <p className="news__p">
-              тел. для записи:{" "}
+              тел. для записи:{' '}
               <a href="tel:+79992380136">
                 8&nbsp;(999)&nbsp;238&#8209;01&#8209;36
               </a>
             </p>
-            <ButtonCTA
-              styling="greetings__cta news__cta"
-              text="Записаться на прием"
-            />
           </div>
         </div>
         <hr />

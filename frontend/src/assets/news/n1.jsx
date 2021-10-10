@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react';
 import {
   YMaps,
   Map,
   Placemark,
   FullscreenControl,
   ZoomControl,
-} from "react-yandex-maps";
-import DoctorCard from "../../organisms/DoctorCard/DoctorCard";
-import doctor_balahonov from "../images/doctors/doctor_Balahonov.jpg";
-import ButtonCTA from "../../atoms/ButtonCTA";
+} from 'react-yandex-maps';
+import DoctorCard from '../../organisms/DoctorCard/DoctorCard';
+import doctor_balahonov from '../images/doctors/doctor_Balahonov.jpg';
+import ButtonCTA from '../../atoms/ButtonCTA';
 
-import "./index.scss";
+import './index.scss';
 
 export default function NewsArticle(props) {
+  // Нижний Новгород 15 октября
   return (
     <section className="section__news-article">
       <div className="container container__news-article">
@@ -67,9 +68,8 @@ export default function NewsArticle(props) {
             </ul>
           </div>
           <div className="news__help-flex">
-            <p className="news__p">
-              Принимает врач – сердечно-сосудистый хирург Центра кардиохирургии
-              и интервенционной кардиологии{" "}
+            <p className="news__p" style={{textAlign: 'center'}}>
+              Прием ведет специалист Центра <br />
               <a href="/team/doctor_balahonov" target="_blank">
                 Балахонов Василий Васильевич
               </a>
@@ -77,10 +77,10 @@ export default function NewsArticle(props) {
             <DoctorCard
               className="news__doctor-card"
               imgSrc={doctor_balahonov}
-              imgAlt={"Доктор Балахонов Василий Васильевич"}
-              title={"Балахонов Василий Васильевич"}
-              subtitle={"сердечно-сосудистый хирург"}
-              link={"/team/doctor_balahonov"}
+              imgAlt={'Доктор Балахонов Василий Васильевич'}
+              title={'Балахонов Василий Васильевич'}
+              subtitle={'Врач сердечно-сосудистый хирург, к.м.н.'}
+              link={'/team/doctor_balahonov'}
               showMore={true}
             />
           </div>
@@ -109,7 +109,7 @@ export default function NewsArticle(props) {
         <p className="news__p">
           Стоимость приёма <strong>1500 рублей</strong>.
         </p>
-        <div className="marked-container flex" style={{ alignItems: "center" }}>
+        <div className="marked-container flex" style={{ alignItems: 'center' }}>
           <p className="news__p" style={{ flex: 1 }}>
             Для госпитализации в Клинику ВМТ им. Н.И.Пирогова форма 057-у не
             требуется.
@@ -125,11 +125,11 @@ export default function NewsArticle(props) {
         <div className="news__main-flex">
           <div className="news__help-flex">
             <p className="news__p">
-              Прием будет проводиться:{" "}
+              Прием будет проводиться:{' '}
               <strong>15&#160;октября&#160;2021&#160;г</strong>
             </p>
             <p className="news__p">
-              По адресу:{" "}
+              По адресу:{' '}
               <a
                 href="https://yandex.ru/maps/-/CCUqq6GSwA"
                 target="_blank"
@@ -139,14 +139,14 @@ export default function NewsArticle(props) {
                 "Александрия"
               </a>
             </p>
-            <YMaps query={{ lang: "ru_RU" }}>
+            <YMaps query={{ lang: 'ru_RU' }}>
               <Map
-                width={"100%"}
-                height={"30em"}
+                width={'100%'}
+                height={'30em'}
                 defaultState={{
                   center: [56.255322, 43.852258],
                   zoom: 15,
-                  behaviors: ["default", "scrollZoom"],
+                  behaviors: ['default', 'scrollZoom'],
                   controls: [],
                 }}
               >
