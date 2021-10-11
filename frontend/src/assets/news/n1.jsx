@@ -107,7 +107,7 @@ export default function NewsArticle(props) {
           </li>
         </ul>
         <p className="news__p">
-          Стоимость приёма <strong>1500 рублей</strong>.
+          Стоимость приёма <strong>2500 рублей</strong>.
         </p>
         <div className="marked-container flex" style={{ alignItems: 'center' }}>
           <p className="news__p" style={{ flex: 1 }}>
