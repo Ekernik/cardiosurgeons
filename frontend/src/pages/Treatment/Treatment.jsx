@@ -22,6 +22,9 @@ export default function Treatment() {
           <a className="services__link" href="/treatment/miniinvisivnoe-protezirovanie-klapanov">
             Миниинвизивное протезирование клапанов
           </a>
+          <a className="services__link" href="/treatment/implantacia-kardiostimulyatorov">
+            Имплантация кардиостимуляторов
+          </a>
           {/* <a className="services__link" href="/treatment/protezirovanie-aorti">
             Протезирование аорты
           </a> */}

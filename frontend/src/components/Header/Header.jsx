@@ -117,6 +117,11 @@ function Header(props) {
                     Миниинвизивное протезирование клапанов
                   </a>
                 </div>
+                <div className="link-container">
+                  <a href="/treatment/implantacia-kardiostimulyatorov">
+                    Имплантация кардиостимуляторов
+                  </a>
+                </div>
                 {/* <div className="link-container">
                   <a href="/treatment/protezirovanie-aorti">Протезирование аорты</a>
                 </div> */}

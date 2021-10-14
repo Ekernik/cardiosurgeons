@@ -12,6 +12,7 @@ import Shuntirovanie from './pages/treatments/Shuntirovanie';
 import PlastikaMK from './pages/treatments/PlastikaMK';
 import Karodit from './pages/treatments/Karotid';
 import RadioAblacia from './pages/treatments/RadioAblacia';
+import Implantacia from './pages/treatments/Implantacia';
 import Treatment from './pages/Treatment/Treatment';
 import OurContacts from './pages/OurContacts/OurContacts';
 import Diagnostics from './pages/Diagnostic/Diagnostics';
@@ -75,6 +76,10 @@ function App() {
           <Route
             path="/treatment/radiochastotnaya-ablyaciya"
             component={RadioAblacia}
+          />
+          <Route
+            path="/treatment/implantacia-kardiostimulyatorov"
+            component={Implantacia}
           />
           <Route exact path="/treatment" component={Treatment} />
           <Route path="/diagnostics/ateroskleros" component={Ateroskleros} />

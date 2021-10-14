@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 
-function Banner(props) {
+function Banner() {
   return (
     <div className="banner">
       <div className="container flex">

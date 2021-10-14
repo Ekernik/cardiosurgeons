@@ -13,29 +13,22 @@ function Advantages() {
         <div className="adv__item">
           <img className="adv__img" src={doctors_2} alt="" />
           <div>
-            <h4 className="adv__title">59 врачей</h4>
-            <p className="adv__subtitle">Врачи разных специальностей</p>
+            <h4 className="adv__title">3800</h4>
+            <p className="adv__subtitle">операций кардиохирургического профиля</p>
           </div>
         </div>
         <div className="adv__item">
           <img className="adv__img" src={doctors_3} alt="" />
           <div>
-            <h4 className="adv__title">15 докторов</h4>
-            <p className="adv__subtitle">медицинских наук</p>
+            <h4 className="adv__title">900+</h4>
+            <p className="adv__subtitle">операций на открытом сердце</p>
           </div>
         </div>
         <div className="adv__item">
           <img className="adv__img" src={doctors_4} alt="" />
           <div>
-            <h4 className="adv__title">60 кандидатов</h4>
-            <p className="adv__subtitle">медицинских наук</p>
-          </div>
-        </div>
-        <div className="adv__item">
-          <img className="adv__img" src={surgery_1} alt="" />
-          <div>
-            <h4 className="adv__title">18717 операции</h4>
-            <p className="adv__subtitle">выполнено в 2020 г.</p>
+            <h4 className="adv__title">1600</h4>
+            <p className="adv__subtitle">рентгенхирургических вмешательств</p>
           </div>
         </div>
       </div>
