@@ -1,14 +1,5 @@
-.section {
-  &__why-us {
-    width: 100%;
-  }
-
-  &__header {
-    width: 100%;
-    font-size: 1.3em;
-    text-align: center;
-    margin: 1.4rem 0;
-  }
+.section__why-us {
+  width: 100%;
 }
 
 .why-us {
@@ -45,11 +36,6 @@
 
 // Tablet media query
 @media (min-width: 768px) {
-  .section__header {
-    margin-top: 1.5rem;
-    font-size: 1.5em;
-  }
-
   .why-us {
     &__flex-main,
     &__flex-main--reversed {
@@ -66,10 +52,6 @@
 
 // Laptops media query
 @media (min-width: 992px) {
-  .section__header {
-    margin: 1.5rem 0;
-  }
-
   .why-us {
     &__flex-main,
     &__flex-main--reversed {
@@ -86,13 +68,5 @@
     &__divider {
       display: none;
     }
-  }
-}
-
-// Full Desktops media query
-@media (min-width: 1400px) {
-  .section__header {
-    font-size: 1.7rem;
-    margin: 1.5rem 0;
   }
 }
