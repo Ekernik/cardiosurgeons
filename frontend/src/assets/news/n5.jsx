@@ -13,13 +13,13 @@ import ButtonCTA from '../../atoms/ButtonCTA';
 import './index.scss';
 
 export default function NewsArticle(props) {
-  // Старый Оскол - 12 октября 2021
+  // Старый Оскол - 16 ноября 2021
   return (
     <section className="section__news-article">
       <div className="container container__news-article">
         <h6 className="news__date">{props.date}</h6>
         <h2 className="news__title">
-          12 октября 2021 г. в&nbsp;МДЦ «Медтест» проводится отбор
+          16 ноября 2021 г. в&nbsp;МДЦ «Медтест» проводится отбор
           на&nbsp;бесплатное <strong>хирургическое лечение</strong>{' '}
           в&nbsp;Санкт-Петербурге пациентов с&nbsp;заболеваниями:
         </h2>
@@ -83,7 +83,7 @@ export default function NewsArticle(props) {
           <div className="news__help-flex">
             <p className="news__p">
               Прием будет проводиться:{' '}
-              <strong>12&#160;октября&#160;2021&#160;г</strong>
+              <strong>16&#160;ноября&#160;2021&#160;г</strong>
             </p>
             <p className="news__p">
               По адресу:{' '}
