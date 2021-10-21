@@ -1,44 +1,45 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.scss";
 
-import Landing from './pages/Landing.jsx';
-import Coronarography from './pages/treatments/Coronarography';
-import News from './pages/news/';
-import Licenses from './pages/Licenses';
-import PageNotFound from './pages/404/PageNotFound';
-import OurTeam from './pages/OurTeam/OurTeam';
-import Stentirovanie from './pages/treatments/Stentirovanie';
-import Shuntirovanie from './pages/treatments/Shuntirovanie';
-import PlastikaMK from './pages/treatments/PlastikaMK';
-import Karodit from './pages/treatments/Karotid';
-import RadioAblacia from './pages/treatments/RadioAblacia';
-import Implantacia from './pages/treatments/Implantacia';
-import Treatment from './pages/Treatment/Treatment';
-import OurContacts from './pages/OurContacts/OurContacts';
-import Diagnostics from './pages/Diagnostic/Diagnostics';
-import AboutUs from './pages/AboutUs/AboutUs';
-import miniinvisiv from './pages/treatments/Miniinvisiv';
+import Landing from "./pages/Landing.jsx";
+import Coronarography from "./pages/treatments/Coronarography";
+import News from "./pages/news/";
+import Licenses from "./pages/Licenses";
+import PageNotFound from "./pages/404/PageNotFound";
+import OurTeam from "./pages/OurTeam/OurTeam";
+import Stentirovanie from "./pages/treatments/Stentirovanie";
+import Shuntirovanie from "./pages/treatments/Shuntirovanie";
+import PlastikaMK from "./pages/treatments/PlastikaMK";
+import Karodit from "./pages/treatments/Karotid";
+import RadioAblacia from "./pages/treatments/RadioAblacia";
+import Implantacia from "./pages/treatments/Implantacia";
+import Treatment from "./pages/Treatment/Treatment";
+import OurContacts from "./pages/OurContacts/OurContacts";
+import Diagnostics from "./pages/Diagnostic/Diagnostics";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import miniinvisiv from "./pages/treatments/Miniinvisiv";
 
-import news from './assets/databases/news';
-import Kotova from './pages/doctors/Kotova';
-import Sorokin from './pages/doctors/Sorokin';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Balahonov from './pages/doctors/Balahonov';
-import Shmatov from './pages/doctors/Shmatov';
-import Ateroskleros from './pages/diagnostics/Ateroskleros';
-import Stolyarov from './pages/doctors/Stolyarov';
-import Kamenskih from './pages/doctors/Kamenskih';
-import Kim from './pages/doctors/Kim';
-import Vasilev from './pages/doctors/Vasilev';
-import Kappushev from './pages/doctors/Kappushev';
-import Zubarev from './pages/doctors/Zubarev';
-import Sheremet from './pages/doctors/Sheremet';
-import Pyagai from './pages/doctors/Pyagai';
-import Asadullin from './pages/doctors/Asadullin';
-import Suhanova from './pages/doctors/Suhanova';
-import Starosockaya from './pages/doctors/Starosockaya';
-import Povarenkina from './pages/doctors/Povarenkina';
+import news from "./assets/databases/news";
+import Kotova from "./pages/doctors/Kotova";
+import Sorokin from "./pages/doctors/Sorokin";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Balahonov from "./pages/doctors/Balahonov";
+import Shmatov from "./pages/doctors/Shmatov";
+import Ateroskleros from "./pages/diagnostics/Ateroskleros";
+import Stolyarov from "./pages/doctors/Stolyarov";
+import Kamenskih from "./pages/doctors/Kamenskih";
+import Kim from "./pages/doctors/Kim";
+import Vasilev from "./pages/doctors/Vasilev";
+import Kappushev from "./pages/doctors/Kappushev";
+import Zubarev from "./pages/doctors/Zubarev";
+import Sheremet from "./pages/doctors/Sheremet";
+import Pyagai from "./pages/doctors/Pyagai";
+import Asadullin from "./pages/doctors/Asadullin";
+import Suhanova from "./pages/doctors/Suhanova";
+import Starosockaya from "./pages/doctors/Starosockaya";
+import Povarenkina from "./pages/doctors/Povarenkina";
+import Tavi from "./pages/treatments/Tavi";
 
 function App() {
   return (
@@ -67,7 +68,7 @@ function App() {
             path="/treatment/miniinvisivnoe-protezirovanie-klapanov"
             component={miniinvisiv}
           />
-          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />{' '}
+          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />{" "}
           {/* TODO */}
           <Route
             path="/treatment/karotidnaya-endarterektomiya"
@@ -80,6 +81,10 @@ function App() {
           <Route
             path="/treatment/implantacia-kardiostimulyatorov"
             component={Implantacia}
+          />
+          <Route
+            path="/treatment/transkatetornaya-implantaciya-aortalnogo-klapana"
+            component={Tavi}
           />
           <Route exact path="/treatment" component={Treatment} />
           <Route path="/diagnostics/ateroskleros" component={Ateroskleros} />

@@ -2,20 +2,19 @@ import React from "react";
 
 import Greetings from "../../components/Greetings";
 import Banner from "../../organisms/Banner";
-import Operation06 from "../../components/Abouts/Operation_06";
 import Contacts from "../../components/Contacts";
+import AboutTAVI from "../../components/Abouts/TAVI";
 
-export default function miniinvisiv() {
+export default function Tavi() {
   return (
     <main className="page__miniinvisiv">
       <Greetings
-        header="Миниинвизивное протезирование клапанов"
+        header="Транскатетерная имплантация аортального клапана"
         subheader=""
         buttonText="записаться на бесплатный прием"
       />
       <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-      <Operation06 />
-      {/* <Advantages /> */}
+      <AboutTAVI />
       <Contacts />
     </main>
   );
