@@ -1,8 +1,8 @@
 import React from "react";
 
 import Greetings from "../components/Greetings/";
-import WhyUs from "../components/WhyUs/";
-import OurServices from "../components/OurServices/";
+// import WhyUs from "../components/WhyUs/";
+// import OurServices from "../components/OurServices/";
 import Contacts from "../components/Contacts/";
 import NewsSlider from "../components/NewsSlider/";
 import Banner from "../organisms/Banner/";

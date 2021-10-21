@@ -68,8 +68,7 @@ function App() {
             path="/treatment/miniinvisivnoe-protezirovanie-klapanov"
             component={miniinvisiv}
           />
-          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />{" "}
-          {/* TODO */}
+          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />
           <Route
             path="/treatment/karotidnaya-endarterektomiya"
             component={Karodit}
@@ -91,9 +90,10 @@ function App() {
           <Route path="/diagnostics" component={Diagnostics} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/contacts" component={OurContacts} />
-          {news.map((news) => {
+          {news.map((news, i) => {
             return (
               <Route
+                key={Date.now() + i}
                 path={`/news/${news.link}`}
                 render={(props) => <News newsId={news.id} {...props} />}
               />

@@ -3,7 +3,6 @@ import './index.scss';
 import doctors_2 from '../../assets/svg/doctors_2.svg';
 import doctors_3 from '../../assets/svg/doctors_3.svg';
 import doctors_4 from '../../assets/svg/doctors_4.svg';
-import surgery_1 from '../../assets/svg/surgery.svg';
 
 
 function Advantages() {

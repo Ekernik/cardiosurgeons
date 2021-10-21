@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.scss";
-import skleroz from "../../../assets/images/ateroskleroz.jpg";
 
 export default function Operation07() {
   return (

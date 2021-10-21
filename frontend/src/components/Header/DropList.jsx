@@ -8,8 +8,12 @@ const DropList = ({ mainLink, links }) => {
         {mainLink.text}
       </a>
       <div className="menu__drop-down">
-        {links.map((link) => (
-          <DropListItem link={link.link} text={link.text} />
+        {links.map((link, i) => (
+          <DropListItem
+            link={link.link}
+            text={link.text}
+            key={Date.now() + i}
+          />
         ))}
       </div>
     </li>
