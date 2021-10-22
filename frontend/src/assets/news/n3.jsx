@@ -58,6 +58,48 @@ export default function NewsArticle(props) {
               <li className="news__list-item">— СНИЛС</li>
             </ul>
             <p className="news__p">А также медицинские документы:</p>
+            <p className="news__p">
+              <b>
+                Обследования для кардиохирургических больных (ИБС, клапаны,
+                аорта):
+              </b>
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">— ЭКГ (описание)</li>
+              <li className="news__list-item">— Эхокардиография</li>
+              <li className="news__list-item">
+                — Осмотр кардиолога (по&nbsp;возможности)
+              </li>
+              <li className="news__list-item">
+                — Коронарография (по&nbsp;возможности)
+              </li>
+              <li className="news__list-item">
+                — При наличии сопутствующих заболеваний - консультации
+                врачей-специалистов (по&nbsp;возможности)
+              </li>
+            </ul>
+            <p className="news__p">
+              <b>
+                При сосудистой патологии, дополнительно к&nbsp;вышесказанному:
+              </b>
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">
+                — Дуплексное сканирование брахиоцефальных артерий, аорты,
+                артерий нижних конечностей.
+              </li>
+            </ul>
+            <p className="news__p">
+              <b>
+                При нарушении ритма сердца, дополнительно
+                к&nbsp;вышенаписанному:
+              </b>
+            </p>
+            <ul className="news__list">
+              <li className="news__list-item">
+                — Суточный мониторинг ЭКГ по&nbsp;Холтеру.
+              </li>
+            </ul>
           </div>
           <div className="news__help-flex">
             <p className="news__p" style={{ textAlign: "center" }}>
@@ -77,44 +119,7 @@ export default function NewsArticle(props) {
             />
           </div>
         </div>
-        <p className="news__p">
-          <b>
-            Обследования для кардиохирургических больных (ИБС, клапаны, аорта):
-          </b>
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">— ЭКГ (описание)</li>
-          <li className="news__list-item">— Эхокардиография</li>
-          <li className="news__list-item">
-            — Осмотр кардиолога (по&nbsp;возможности)
-          </li>
-          <li className="news__list-item">
-            — Коронарография (по&nbsp;возможности)
-          </li>
-          <li className="news__list-item">
-            — При наличии сопутствующих заболеваний - консультации
-            врачей-специалистов (по&nbsp;возможности)
-          </li>
-        </ul>
-        <p className="news__p">
-          <b>При сосудистой патологии, дополнительно к&nbsp;вышесказанному:</b>
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">
-            — Дуплексное сканирование брахиоцефальных артерий, аорты, артерий
-            нижних конечностей.
-          </li>
-        </ul>
-        <p className="news__p">
-          <b>
-            При нарушении ритма сердца, дополнительно к&nbsp;вышенаписанному:
-          </b>
-        </p>
-        <ul className="news__list">
-          <li className="news__list-item">
-            — Суточный мониторинг ЭКГ по&nbsp;Холтеру.
-          </li>
-        </ul>
+
         <div className="marked-container">
           <p className="news__p">
             Большинство операций в Клинике ВМТ им.&nbsp;Н.И.Пирогова выполняются
