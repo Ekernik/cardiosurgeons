@@ -18,7 +18,7 @@ let newsArr = [
     date: "6 октября 2021",
     setting: {},
     buttonText: "Записаться на приём",
-    link: "priem-v-gorode-stavropol-11-11-2021",
+    link: "priem-v-gorode-stavropol-02-11-2021",
     hot: true,
   },
   {
