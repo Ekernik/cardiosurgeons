@@ -8,9 +8,9 @@ import logo from "../../assets/images/logo_1.png";
 import listenToScroll from "./scroll.js";
 import LinkItem from "./LinkItem";
 import DropList from "./DropList";
-import { diagnos, treatments } from "../../assets/databases/links";
+import { treatments } from "../../assets/databases/links";
 
-function Header(props) {
+function Header() {
   let handleClick = () => {
     const headerBurger = document.querySelector(".header__menu-burger");
     const headerMenu = document.querySelector(".header__burger-nav");
@@ -65,7 +65,7 @@ function Header(props) {
             <LinkItem link="/" text="Главная" />
             <LinkItem link="/about-us" text="О нас" />
             <DropList mainLink={treatments.mainLink} links={treatments.links} />
-            <DropList mainLink={diagnos.mainLink} links={diagnos.links} />
+            <LinkItem link="/diagnostics" text="Диагностика" />
             <LinkItem link="/team" text="Команда" />
             <LinkItem link="/contacts" text="Контакты" />
           </ul>

@@ -3,6 +3,7 @@ import Greetings from "../../components/Greetings";
 import About from "../../components/Abouts/Diagnostic_01";
 import Advantages from "../../organisms/Advantages/Advantages";
 import Contacts from "../../components/Contacts";
+import "./index.scss";
 
 export default function Ateroskleros() {
   return (

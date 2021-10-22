@@ -33,7 +33,7 @@
 
   &__p {
     margin: 1em 0;
-    font-size: var(--text-md);
+    font-size: var(--text-regular);
   }
 
   &__main-flex {
@@ -77,9 +77,6 @@
 
     &__p {
       margin: 1em 0;
-    }
-    &__list-item {
-      font-size: var(--text-md);
     }
     &__cta {
       width: 70%;

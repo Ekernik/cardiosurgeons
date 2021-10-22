@@ -25,6 +25,13 @@
     font-size: 1em;
   }
 
+  &__text {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    line-height: 1.3em;
+    font-weight: 600;
+  }
+
   &__cta {
     background-color: var(--color-P);
     border: none;
@@ -103,10 +110,7 @@
     }
 
     &__text {
-      color: var(--color-white);
       font-size: var(--text-xl);
-      line-height: 1.3em;
-      font-weight: 600;
     }
 
     &__subheader {
