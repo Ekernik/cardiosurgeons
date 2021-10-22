@@ -11,6 +11,17 @@ let newsArr = [
     hot: true,
   },
   {
+    id: "n3",
+    title: "11 ноября",
+    subtitle: "В городе Ставрополе",
+    pretitle: "город Ставрополь",
+    date: "6 октября 2021",
+    setting: {},
+    buttonText: "Записаться на приём",
+    link: "priem-v-gorode-stavropol-11-11-2021",
+    hot: true,
+  },
+  {
     id: "n2",
     title: "9 ноября",
     subtitle: "В городе Владимире",
@@ -21,17 +32,7 @@ let newsArr = [
     link: "priem-v-gorode-vladimir-09-11-2021",
     hot: true,
   },
-  {
-    id: "n3",
-    title: "2 ноября",
-    subtitle: "В городе Ставрополе",
-    pretitle: "город Ставрополь",
-    date: "6 октября 2021",
-    setting: {},
-    buttonText: "Записаться на приём",
-    link: "priem-v-gorode-stavropol-02-11-2021",
-    hot: true,
-  },
+
   // {
   //   id: "n4",
   //   title: "16 октября",
