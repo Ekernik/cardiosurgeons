@@ -159,7 +159,7 @@ export default function NewsArticle(props) {
             <p className="news__p">
               тел. для записи:{' '}
               <a href="tel:+79992380136">
-                8&nbsp;(999)&nbsp;238&#8209;01&#8209;36
+                +7&nbsp;(999)&nbsp;238&#8209;01&#8209;36
               </a>
             </p>
           </div>

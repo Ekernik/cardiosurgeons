@@ -68,24 +68,24 @@ function Contacts() {
           </a>
           <ul className="contacts-info">
             <li className="contacts-info__item">
-              <img src={icon_map} lodaing="lazy" alt="" />
+              <img src={icon_map} loading="lazy" alt="" />
               Санкт-Петербург, наб. р. Фонтанки, д. 154
             </li>
             <li className="contacts-info__item">
               <span>
-                <img src={icon_metro} lodaing="lazy" alt="" />
+                <img src={icon_metro} loading="lazy" alt="" />
               </span>
               Балтийская, Технологический институт
             </li>
             <li className="contacts-info__item">
               <span>
-                <img src={icon_clock} lodaing="lazy" alt="" />
+                <img src={icon_clock} loading="lazy" alt="" />
               </span>
               09:00 - 21:00
             </li>
             <li className="contacts-info__item">
               <span>
-                <img src={icon_mail} lodaing="lazy" alt="" />
+                <img src={icon_mail} loading="lazy" alt="" />
               </span>
               <p className="our-contacts__info-text">
                 <a href="mailto:heartteam.spb@gmail.com">
@@ -95,10 +95,10 @@ function Contacts() {
             </li>
             <li className="contacts-info__item">
               <span>
-                <img src={icon_phone} lodaing="lazy" alt="" />
+                <img src={icon_phone} loading="lazy" alt="" />
               </span>
               <p>
-                <a href="tel:+79992380136">8 (999) 238-01-36</a> (9:00-21:00)
+                <a href="tel:+79992380136">+7 (999) 238-01-36</a> (9:00-21:00)
               </p>
             </li>
           </ul>

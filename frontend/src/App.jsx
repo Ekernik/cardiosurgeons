@@ -9,7 +9,6 @@ import PageNotFound from "./pages/404/PageNotFound";
 import OurTeam from "./pages/OurTeam/OurTeam";
 import Stentirovanie from "./pages/treatments/Stentirovanie";
 import Shuntirovanie from "./pages/treatments/Shuntirovanie";
-import PlastikaMK from "./pages/treatments/PlastikaMK";
 import Karodit from "./pages/treatments/Karotid";
 import RadioAblacia from "./pages/treatments/RadioAblacia";
 import Implantacia from "./pages/treatments/Implantacia";
@@ -27,6 +26,7 @@ import Footer from "./components/Footer";
 import Balahonov from "./pages/doctors/Balahonov";
 import Shmatov from "./pages/doctors/Shmatov";
 import Ateroskleros from "./pages/diagnostics/Ateroskleros";
+import OpuholiSerdca from "./pages/treatments/OpuholiSerdca";
 import Stolyarov from "./pages/doctors/Stolyarov";
 import Kamenskih from "./pages/doctors/Kamenskih";
 import Kim from "./pages/doctors/Kim";
@@ -40,6 +40,7 @@ import Suhanova from "./pages/doctors/Suhanova";
 import Starosockaya from "./pages/doctors/Starosockaya";
 import Povarenkina from "./pages/doctors/Povarenkina";
 import Tavi from "./pages/treatments/Tavi";
+import ProtezirovanieAorti from "./pages/treatments/ProtezirovanieAorti";
 
 function App() {
   return (
@@ -61,14 +62,9 @@ function App() {
             component={Shuntirovanie}
           />
           <Route
-            path="/treatment/plastika-mitralnogo-klapana"
-            component={PlastikaMK}
-          />
-          <Route
             path="/treatment/miniinvisivnoe-protezirovanie-klapanov"
             component={miniinvisiv}
           />
-          <Route path="/treatment/protezirovanie-aorti" component={Treatment} />
           <Route
             path="/treatment/karotidnaya-endarterektomiya"
             component={Karodit}
@@ -84,6 +80,11 @@ function App() {
           <Route
             path="/treatment/transkatetornaya-implantaciya-aortalnogo-klapana"
             component={Tavi}
+          />
+          <Route path="/treatment/opuholi-serdca" component={OpuholiSerdca} />
+          <Route
+            path="/treatment/protezirovanie-aorti"
+            component={ProtezirovanieAorti}
           />
           <Route exact path="/treatment" component={Treatment} />
           <Route path="/diagnostics/ateroskleros" component={Ateroskleros} />

@@ -39,7 +39,7 @@ function Header() {
             </a>
           </div>
           <div className="header__phone">
-            <a href="tel:+79992380136">8 (999) 238-01-36</a>
+            <a href="tel:+79992380136">+7 (999) 238-01-36</a>
           </div>
           <Button styling="header__cta" text="Записаться на прием" />
         </nav>

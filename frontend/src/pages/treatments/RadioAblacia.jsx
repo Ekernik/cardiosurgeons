@@ -5,10 +5,18 @@ import Greetings from "../../components/Greetings";
 import Contacts from "../../components/Contacts";
 import Banner from "../../organisms/Banner";
 import Advantages from "../../organisms/Advantages";
+import { Helmet } from "react-helmet";
 
 function RadioAblacia() {
   return (
     <div className="Coronarography-page">
+      <Helmet>
+        <title>Радиочатотная абляция. Операция РЧА на сердце.</title>
+        <meta
+          name="description"
+          content="Радиочастотная катетерная абляция (РЧА) - для пациентов с наличием аритмии и др. проблем с сердцем. Записывайтесь на осмотр и консультацию."
+        />
+      </Helmet>
       <Greetings
         header="Радиочастотная абляция"
         subheader="молодой, эффективный и малоинвазивный метод радикального лечения тахикардий"

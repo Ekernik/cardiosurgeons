@@ -1,23 +1,25 @@
 import React from "react";
-
-import Operation04 from "../../components/Abouts/Operation_04";
 import Greetings from "../../components/Greetings";
-import Contacts from "../../components/Contacts";
 import Banner from "../../organisms/Banner";
-import Advantages from "../../organisms/Advantages";
+import About from "../../components/Abouts/ProtezirovanieAorti";
+import Advantages from "../../organisms/Advantages/Advantages";
+import Contacts from "../../components/Contacts";
+import "./index.scss";
 
-export default function Stentirovanie() {
+const ProtesirovanieAorti = () => {
   return (
-    <main className="page__stentirovanie">
+    <div id="page__protezirovanie-aorti">
       <Greetings
-        header="Пластика митрального клапана"
+        header="Протезирование аорты"
         subheader=""
         buttonText="записаться на бесплатный прием"
       />
       <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-      <Operation04 />
+      <About />
       <Advantages />
       <Contacts />
-    </main>
+    </div>
   );
-}
+};
+
+export default ProtesirovanieAorti;

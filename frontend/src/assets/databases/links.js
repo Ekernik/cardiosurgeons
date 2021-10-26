@@ -32,7 +32,14 @@ export const treatments = {
       link: "/treatment/transkatetornaya-implantaciya-aortalnogo-klapana",
       text: "Транскатетерная имплантация аортального клапана",
     },
-    {},
+    {
+      link: "/treatment/opuholi-serdca",
+      text: "Опухоли сердца",
+    },
+    {
+      link: "/treatment/protezirovanie-aorti",
+      text: "Протезирование аорты",
+    },
   ],
 };
 

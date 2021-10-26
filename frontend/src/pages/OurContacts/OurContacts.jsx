@@ -51,7 +51,7 @@ export default function OurContacts() {
           <div className="our-contacts__other-flex">
             <h3 className="our-contacts__info-title">Колл-центр</h3>
             <p className="our-contacts__info-text">
-              <a href="tel:+79992380136">8 (999) 238-01-36</a> (9:00-21:00)
+              <a href="tel:+79992380136">+7 (999) 238-01-36</a> (9:00-21:00)
             </p>
             <h3 className="our-contacts__info-title">Электронная почта</h3>
             <p className="our-contacts__info-text">

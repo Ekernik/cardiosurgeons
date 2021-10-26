@@ -4,7 +4,9 @@ import "./index.scss";
 export default function Operation03() {
   return (
     <section className="section__about-op-03 container">
-      <h2 className="section__header text-center">О процедуре</h2>
+      <h1 className="section__header text-center">
+        Аортокоронарное шунтирование (АКШ)
+      </h1>
       <p className="operation__p">
         Аортокоронарное шунтирование (АКШ) - операция, позволяющая восстановить
         нормальный кровоток в артериях сердца (коронарных артериях), путём

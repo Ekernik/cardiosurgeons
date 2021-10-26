@@ -4,10 +4,18 @@ import Greetings from "../../components/Greetings";
 import Contacts from "../../components/Contacts";
 import Banner from "../../organisms/Banner";
 import Advantages from "../../organisms/Advantages";
+import { Helmet } from "react-helmet";
 
 export default function Stentirovanie() {
   return (
     <main className="page__stentirovanie">
+      <Helmet>
+        <title>Каротидная эндартерэктомия</title>
+        <meta
+          name="description"
+          content="Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия."
+        />
+      </Helmet>
       <Greetings
         header="Каротидная эндартерэктомия"
         subheader="один из способов устранения стеноза внутренней сонной артерии"

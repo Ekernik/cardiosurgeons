@@ -4,7 +4,7 @@ import "./index.scss";
 export default function Operation08() {
   return (
     <section className="section__about-op-03 container">
-      <h2 className="section__header text-center">О процедуре</h2>
+      <h1 className="section__header text-center">Радиочастотая абляция</h1>
       <p className="operation__p">
         Данная страница предназначена для тех, кто испытывает дискомфорт и страх
         от таких симптомов как приступы учащенного сердцебиения, “замирание” в

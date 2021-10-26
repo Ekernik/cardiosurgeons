@@ -4,7 +4,7 @@ import "./index.scss";
 export default function Operation07() {
   return (
     <section className="section__about-op-03 container">
-      <h2 className="section__header text-center">О болезни</h2>
+      <h1 className="section__header text-center">Каротидная эндартерэктомия</h1>
       <p className="operation__p">
         Каротидная эндартерэктомия – хирургическая операция, которая применяется
         у больных со стенозом (сужением) общей или внутренней сонной артерии

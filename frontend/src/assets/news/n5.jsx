@@ -119,7 +119,7 @@ export default function NewsArticle(props) {
               <br />
               тел. МДЦ «Медтест»:{' '}
               <a href="tel:+74725452503">
-                8&nbsp;(4725)&nbsp;45&#8209;25&#8209;03
+                +7&nbsp;(4725)&nbsp;45&#8209;25&#8209;03
               </a>
             </p>
           </div>

@@ -15,6 +15,7 @@ const DropList = ({ mainLink, links }) => {
             key={Date.now() + i}
           />
         ))}
+        {links.length % 2 !== 0 ? <DropListItem /> : <></>}
       </div>
     </li>
   );

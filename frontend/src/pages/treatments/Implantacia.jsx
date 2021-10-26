@@ -4,10 +4,21 @@ import Greetings from "../../components/Greetings";
 import Banner from "../../organisms/Banner";
 import Operation05 from "../../components/Abouts/Operation_05";
 import Contacts from "../../components/Contacts";
+import { Helmet } from "react-helmet";
 
 export default function miniinvisiv() {
   return (
     <main className="page__miniinvisiv">
+      <Helmet>
+        <title>
+          Имплантация кардиостимуляторов. Операции по установке
+          кардиостимулятора сердца
+        </title>
+        <meta
+          name="description"
+          content="Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля."
+        />
+      </Helmet>
       <Greetings
         header="Имплантация кардиостимуляторов"
         subheader=""

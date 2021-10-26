@@ -156,7 +156,7 @@ export default function NewsArticle(props) {
               </Map>
             </YMaps>
             <p className="news__p">
-              тел. для записи: <a href="tel:+79992380136">8 (999) 238-01-36</a>
+              тел. для записи: <a href="tel:+79992380136">+7 (999) 238-01-36</a>
             </p>
             <hr />
           </div>
