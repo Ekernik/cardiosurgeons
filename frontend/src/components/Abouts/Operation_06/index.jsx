@@ -5,7 +5,7 @@ import "./index.scss";
 export default function Operation06() {
   return (
     <section className="section__operation container">
-      <h1 className="section__header">
+      <h1 className="article__header">
         Миниинвазивное протезирование клапанов
       </h1>
       <p className="article__p">
