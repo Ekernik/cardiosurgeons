@@ -5,7 +5,7 @@ import "./index.scss";
 export default function Operation02() {
   return (
     <section className="container">
-      <h1 className="section__header">Стентирование коронарных артерий</h1>
+      <h1 className="article__header">Стентирование коронарных артерий</h1>
       <p className="article__p">
         Стентирование коронарных артерий и баллонная ангиопластика артерий
         являются современной малотравматичной операцией, направленной на
@@ -78,7 +78,7 @@ export default function Operation02() {
         Для уточнения стоимости стентирования в нашей клинике, позвоните нам по
         телефону{" "}
         <a className="article__link" href="tel:+79992380196">
-          +7 (999) 238-01-96
+          +7&nbsp;(999)&nbsp;238&#8209;01&#8209;96
         </a>
         .
       </p>

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 
 import Landing from "./pages/Landing.jsx";
-import Coronarography from "./pages/treatments/Coronarography";
+import Coronarography from "./pages/diagnostics/Coronarography";
 import News from "./pages/news/";
 import Licenses from "./pages/Licenses";
 import PageNotFound from "./pages/404/PageNotFound";

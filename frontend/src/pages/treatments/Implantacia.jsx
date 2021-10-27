@@ -18,6 +18,19 @@ export default function miniinvisiv() {
           name="description"
           content="Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля."
         />
+        <meta
+          property="og:description"
+          content="Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля."
+        />
+        <meta
+          property="og:title"
+          content="Имплантация кардиостимуляторов. Операции по установке
+          кардиостимулятора сердца."
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/treatment/implantacia-kardiostimulyatorov"
+        />
       </Helmet>
       <Greetings
         header="Имплантация кардиостимуляторов"

@@ -18,6 +18,19 @@ export default function miniinvisiv() {
           name="description"
           content="Проводим кардиохирургические операции любой степени сложности. Протезирование клапана аорты, митрального клапана, трехстворчатого клапана."
         />
+        <meta
+          property="og:title"
+          content="Миниинвазивное протезирование клапанов: аорты, митрального,
+          трикуспидального."
+        />
+        <meta
+          property="og:description"
+          content="Проводим кардиохирургические операции любой степени сложности. Протезирование клапана аорты, митрального клапана, трехстворчатого клапана."
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/treatment/miniinvisivnoe-protezirovanie-klapanov"
+        />
       </Helmet>
       <Greetings
         header="Миниинвазивное протезирование клапанов"

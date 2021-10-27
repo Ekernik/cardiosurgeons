@@ -15,6 +15,15 @@ export default function Stentirovanie() {
           name="description"
           content="Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия."
         />
+        <meta
+          property="og:description"
+          content="Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия."
+        />
+        <meta property="og:title" content="Каротидная эндартерэктомия." />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/treatment/karotidnaya-endarterektomiya"
+        />
       </Helmet>
       <Greetings
         header="Каротидная эндартерэктомия"

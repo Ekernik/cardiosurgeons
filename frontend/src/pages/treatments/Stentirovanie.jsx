@@ -16,6 +16,18 @@ export default function Stentirovanie() {
           name="description"
           content="Операции по стентированию коронарных артерий и сосудов. Записывайтесь на прием к кардиохирургам Центра кардиохуриругии и интервенционной кардиологии им. Н.И. Пирогова."
         />
+        <meta
+          property="og:description"
+          content="Операции по стентированию коронарных артерий и сосудов. Записывайтесь на прием к кардиохирургам Центра кардиохуриругии и интервенционной кардиологии им. Н.И. Пирогова."
+        />
+        <meta
+          property="og:title"
+          content="Стентирование коронарных артерий и сосудов."
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/treatment/stentirovanie-koronarnih-arteriy"
+        />
       </Helmet>
       <Greetings
         header="Стентирование коронарных артерий"
