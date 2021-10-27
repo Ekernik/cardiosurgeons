@@ -20,7 +20,7 @@ export default function miniinvisiv() {
         />
       </Helmet>
       <Greetings
-        header="Миниинвизивное протезирование клапанов"
+        header="Миниинвазивное протезирование клапанов"
         subheader=""
         buttonText="записаться на бесплатный прием"
       />
