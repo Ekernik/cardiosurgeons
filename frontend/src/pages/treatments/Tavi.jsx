@@ -4,6 +4,7 @@ import Greetings from "../../components/Greetings";
 import Banner from "../../organisms/Banner";
 import Contacts from "../../components/Contacts";
 import AboutTAVI from "../../components/Abouts/TAVI";
+import './index.scss';
 
 export default function Tavi() {
   return (

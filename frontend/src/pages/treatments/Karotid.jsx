@@ -5,6 +5,7 @@ import Contacts from "../../components/Contacts";
 import Banner from "../../organisms/Banner";
 import Advantages from "../../organisms/Advantages";
 import { Helmet } from "react-helmet";
+import './index.scss';
 
 export default function Stentirovanie() {
   return (

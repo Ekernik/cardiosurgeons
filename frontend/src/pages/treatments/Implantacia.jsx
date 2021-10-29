@@ -5,6 +5,7 @@ import Banner from "../../organisms/Banner";
 import Operation05 from "../../components/Abouts/Operation_05";
 import Contacts from "../../components/Contacts";
 import { Helmet } from "react-helmet";
+import './index.scss';
 
 export default function miniinvisiv() {
   return (
