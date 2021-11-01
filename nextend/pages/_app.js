@@ -9,6 +9,8 @@ import '../styles/contacts.scss';
 import '../styles/aboutUs.scss';
 import '../styles/treatment.scss';
 import '../styles/404.scss';
+import '../styles/diagnostic.scss';
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Contacts from '../components/Contacts';
-import Footer from '../components/Footer/Footer';
-import team from '../public/static/images/team.jpg';
-import operation01 from '../public/static/images/operation_01.jpg';
-import operation02 from '../public/static/images/operation_02.jpg';
+import Image from "next/image";
+import Head from "next/head";
+import Header from "../components/Header/Header";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer/Footer";
+import team from "../public/static/images/team.jpg";
+import operation01 from "../public/static/images/operation_01.jpg";
+import operation02 from "../public/static/images/operation_02.jpg";
 
 export default function AboutUs() {
   return (
@@ -15,29 +15,18 @@ export default function AboutUs() {
         <meta
           name="description"
           content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
-          data-react-helmet="true"
         />
         <meta
           property="og:title"
           content="Центр кардиологии и интервенционной кардиологии."
-          data-react-helmet="true"
         />
-        <meta property="og:type" content="website" data-react-helmet="true" />
-        <meta
-          property="og:image"
-          content="./image.webp"
-          data-react-helmet="true"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
         <meta
           property="og:description"
           content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
-          data-react-helmet="true"
         />
-        <meta
-          property="og:url"
-          content="heartteamspb.com"
-          data-react-helmet="true"
-        />
+        <meta property="og:url" content="heartteamspb.com" />
       </Head>
       <div className="App">
         <div id="curtain"></div>
@@ -56,7 +45,7 @@ export default function AboutUs() {
             <p className="about-us__p">
               <strong>
                 Центр кардиохирургии и интервенционной кардиологии
-              </strong>{' '}
+              </strong>{" "}
               основан в 2014 году на базе “Клиники высоких технологий им. Н.И.
               Пирогова” Санкт-Петербургского Государственного Университета. За
               короткий срок наш Центр стал одним из ведущих учреждений в России

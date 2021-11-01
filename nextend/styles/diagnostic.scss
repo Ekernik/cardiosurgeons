@@ -1,0 +1,110 @@
+.page__diagnostics {
+  width: 100%;
+}
+
+.section__diagnostics {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.illness-subsection {
+  margin: 0 0.7rem;
+}
+
+.illness-list {
+  &__header {
+    font-size: var(--text-regular);
+    margin: 1.5rem 0;
+  }
+
+  &__item {
+    font-size: var(--text-sm);
+    margin: 0.9em 0;
+  }
+}
+
+.list-container__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+
+  &--hidden {
+    display: none;
+  }
+
+  & hr {
+    border: none;
+    border-bottom: 1px solid black;
+    opacity: 0.3;
+  }
+}
+
+.diagnostics {
+  &__header {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  &__link > a:any-link {
+    color: var(--color-P--darkest);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-P--dark);
+    }
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .section__diagnostics {
+    margin-top: 7.5em;
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .illness-subsection {
+    width: 280px;
+    margin: 0;
+  }
+  .list-container__list {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    max-height: 1150px;
+
+    &:not(:first-child) {
+      align-items: center;
+    }
+  }
+}
+
+// Full Desktops media query
+@media (min-width: 1400px) {
+  .illness-list {
+    &__header {
+      font-size: var(--text-md);
+      margin: 1.5rem 0;
+    }
+
+    &__item {
+      font-size: var(--text-regular);
+      margin: 0.7rem 0;
+    }
+  }
+
+  .list-container__list {
+    max-height: 1300px;
+    flex-wrap: wrap;
+  }
+
+  .illness-subsection {
+    width: 350px;
+    margin: 0;
+  }
+}

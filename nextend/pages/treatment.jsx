@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import Contacts from '../components/Contacts';
-import { treatments } from '../public/static/databases/links';
+import Link from "next/link";
+import Head from "next/head";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Contacts from "../components/Contacts";
+import { treatments } from "../public/static/databases/links";
 
 export default function Treatment() {
   return (
@@ -13,29 +13,18 @@ export default function Treatment() {
         <meta
           name="description"
           content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
-          data-react-helmet="true"
         />
         <meta
           property="og:title"
           content="Центр кардиологии и интервенционной кардиологии."
-          data-react-helmet="true"
         />
-        <meta property="og:type" content="website" data-react-helmet="true" />
-        <meta
-          property="og:image"
-          content="./image.webp"
-          data-react-helmet="true"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
         <meta
           property="og:description"
           content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
-          data-react-helmet="true"
         />
-        <meta
-          property="og:url"
-          content="heartteamspb.com"
-          data-react-helmet="true"
-        />
+        <meta property="og:url" content="heartteamspb.com" />
       </Head>
       <div className="App">
         <div id="curtain"></div>
@@ -53,9 +42,9 @@ export default function Treatment() {
               ))}
             </div>
           </div>
-          <Contacts />
-          <Footer />
         </main>
+        <Contacts />
+        <Footer />
       </div>
     </>
   );

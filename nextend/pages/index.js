@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import Greetings from '../components/Greetings';
-import Banner from '../components/Banner';
+import Head from "next/head";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Greetings from "../components/Greetings";
+import Banner from "../components/Banner";
 // import NewsSlider from '../components/NewsSlider/NewsSlider';
-import Contacts from '../components/Contacts';
+import Contacts from "../components/Contacts";
 
 function App() {
   return (
@@ -51,8 +51,8 @@ function App() {
           {/* <NewsSlider /> */}
           {/* <WhyUs /> */}
           {/* <OurServices /> */}
-          <Contacts />
         </main>
+        <Contacts />
         <Footer />
       </div>
     </>
