@@ -13,6 +13,8 @@ import "../styles/diagnostic.scss";
 import "../styles/team.scss";
 import "../styles/doctorCard.scss";
 import "../styles/page_contacts.scss";
+import "../styles/component_Advantages.scss";
+import "../styles/articles.scss";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

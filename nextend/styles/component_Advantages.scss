@@ -1,0 +1,71 @@
+.advantages-section {
+  width: 100%;
+  padding-top: 2em;
+  background-color: var(--color-P--tint);
+}
+
+.adv {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  &__img {
+    border-radius: 10px;
+    margin-bottom: 0.6em;
+    display: flex;
+    flex: 1;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .adv {
+    &__item {
+      margin-bottom: 2em;
+      flex: 50%;
+    }
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .advantages-section {
+    padding: 2em 0 1em;
+  }
+
+  .adv {
+    &__item {
+      margin-bottom: 0;
+      flex: 25%;
+    }
+  }
+}
+
+// Full Desktops media query
+@media (min-width: 1400px) {
+  .adv {
+    &__item {
+      flex-direction: row;
+      justify-content: center;
+
+      & div {
+        width: 60%;
+      }
+    }
+
+    &__img {
+      justify-content: center;
+    }
+  }
+}
