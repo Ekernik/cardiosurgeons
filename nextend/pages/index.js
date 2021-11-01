@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Greetings from "../components/Greetings";
 import Banner from "../components/Banner";
-// import NewsSlider from '../components/NewsSlider/NewsSlider';
+import NewsSlider from '../components/NewsSlider/NewsSlider';
 import Contacts from "../components/Contacts";
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
             buttonText="Записаться на прием"
           />
           <Banner />
-          {/* <NewsSlider /> */}
+          <NewsSlider />
           {/* <WhyUs /> */}
           {/* <OurServices /> */}
         </main>

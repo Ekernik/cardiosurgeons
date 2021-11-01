@@ -1,22 +1,23 @@
-import styles from './index.module.scss';
+import Link from "next/link";
+import styles from "./index.module.scss";
 
 export default function NewsCard(props) {
-  let titleColor = props.hot ? { color: '#b30404', fontWeight: '600' } : {};
+  let titleColor = props.hot ? { color: "#b30404", fontWeight: "600" } : {};
 
   return (
-    <div className="card__container">
-      <div className="card-news">
+    <div className={styles.card__container}>
+      <div className={styles.card__news}>
         <div style={{}}>
-          <p style={titleColor} className="card__text">
+          <p style={titleColor} className={styles.card__text}>
             {props.title}
           </p>
-          <p className="card__text">
+          <p className={styles.card__text}>
             <strong>{props.subtitle}</strong>
           </p>
         </div>
-        <a href={props.link} className="card__read-more">
-          читать подробнее
-        </a>
+        <Link href={props.link}>
+          <a className={styles.card__read_more}>читать подробнее</a>
+        </Link>
       </div>
     </div>
   );
