@@ -12,6 +12,7 @@ import "../styles/404.scss";
 import "../styles/diagnostic.scss";
 import "../styles/team.scss";
 import "../styles/doctorCard.scss";
+import "../styles/page_contacts.scss";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
