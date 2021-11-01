@@ -5,11 +5,9 @@ export default function DoctorCard(props) {
   const btnMore = (props) => {
     if (props.showMore) {
       return (
-        <div className="doc-card__about-link">
-          <Link href={props.link}>
-            <a>читать подробнее</a>
-          </Link>
-        </div>
+        <Link href={props.link}>
+          <a className="doc-card__about-link">читать подробнее</a>
+        </Link>
       );
     }
   };
@@ -24,13 +22,11 @@ export default function DoctorCard(props) {
           />
         </a>
       </Link>
-      <div className="doc-card__title">
-        <Link href={props.link || "#TODO"}>
-          <a>
-            <h2>{props.title}</h2>
-          </a>
-        </Link>
-      </div>
+      <Link href={props.link || "#TODO"}>
+        <a className="doc-card__title">
+          <h2>{props.title}</h2>
+        </a>
+      </Link>
 
       <h3 className="doc-card__subtitle">{props.subtitle}</h3>
       {btnMore(props)}

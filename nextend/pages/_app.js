@@ -17,6 +17,7 @@ import "../styles/component_Advantages.scss";
 import "../styles/articles.scss";
 import "../styles/licenses.scss";
 import "../styles/doctors.scss";
+import "../styles/announcements.scss";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
