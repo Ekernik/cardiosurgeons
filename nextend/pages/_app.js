@@ -15,6 +15,8 @@ import "../styles/doctorCard.scss";
 import "../styles/page_contacts.scss";
 import "../styles/component_Advantages.scss";
 import "../styles/articles.scss";
+import "../styles/licenses.scss";
+import "../styles/doctors.scss";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

@@ -31,7 +31,7 @@ export default function Treatment() {
         <Header />
         <main className="page__services">
           <div className="container container__services">
-            <h1 className="services__header">Лечение</h1>
+            <h1 className="article__header">Лечение</h1>
             <div className="services__list">
               {treatments.links.map((treatment, i) => (
                 <div className="services__link" key={Date.now() + i}>

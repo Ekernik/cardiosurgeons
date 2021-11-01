@@ -33,7 +33,7 @@ export default function AboutUs() {
         <main className="page__about-us">
           <Header />
           <section className="container section__about-us">
-            <h1 className="section__header">О нас</h1>
+            <h1 className="article__header">О нас</h1>
             <div className="about-us__cover-img">
               <Image
                 src={team}
@@ -42,7 +42,7 @@ export default function AboutUs() {
                 quality={100}
               />
             </div>
-            <p className="about-us__p">
+            <p className="article__p">
               <strong>
                 Центр кардиохирургии и интервенционной кардиологии
               </strong>{" "}
@@ -53,26 +53,26 @@ export default function AboutUs() {
               взрослого населения.
             </p>
             <h2 className="section__subheader">Структура центра</h2>
-            <ul className="about-us__list">
-              <li className="about-us__list-item">
+            <ul className="article__ul">
+              <li className="article__li">
                 — Кардиохирургическое отделение
               </li>
-              <li className="about-us__list-item">
+              <li className="article__li">
                 — Отдел рентгенэндоваскулярных методов диагностики и лечения
               </li>
-              <li className="about-us__list-item">
+              <li className="article__li">
                 — Отделение кардиоанастезиологии и реаниматологии
               </li>
-              <li className="about-us__list-item">
+              <li className="article__li">
                 — Амбулаторно-диагностическое отделение кардиологии и
                 функциональной диагностики
               </li>
-              <li className="about-us__list-item">
+              <li className="article__li">
                 — Отделение функциональной диагностики
               </li>
             </ul>
             <div className="about-us__flex-main">
-              <p className="about-us__p">
+              <p className="article__p">
                 Результаты лечения в нашей клинике высоко оценены не только
                 пациентами и ведущими российскими специалистами, но и именитыми
                 врачами из Германии, Италии, Дании, с которыми Центр регулярно
@@ -90,20 +90,20 @@ export default function AboutUs() {
                 />
               </div>
             </div>
-            <p className="about-us__p">
+            <p className="article__p">
               Центр кардиохирургии и интервенционной кардиологии — прекрасный
               пример эффективной деятельности на всех уровнях, — от руководства
               до младшего медицинского персонала, главной целью работы которого
               является следование интересам нашего пациента.
             </p>
-            <p className="about-us__p">
+            <p className="article__p">
               Кроме хирургического лечения врачи Центра выполняют значительный
               объем работы по диагностике сердечно-сосудистых заболеваний,
               оформлению документации пациентам (талоны ОМС и ВМП), а также
               осуществляют амбулаторное ведение этих пациентов.
             </p>
             <div className="about-us__flex-main">
-              <p className="about-us__p">
+              <p className="article__p">
                 Современные операционные и палаты реанимации, оснащенные
                 новейшим зарубежным и отечественным оборудованием, весь спектр
                 расходных материалов и лекарственных препаратов позволяют нашим
@@ -118,7 +118,7 @@ export default function AboutUs() {
                 />
               </div>
             </div>
-            <p className="about-us__p">
+            <p className="article__p">
               Среди сотрудников Центра — доктора и кандидаты медицинских наук,
               регулярно выезжающие на стажировки в ведущие клиники Северной
               Америки и Европы. Наши специалисты активно участвуют в работе
@@ -127,7 +127,7 @@ export default function AboutUs() {
               сотрудников Центра публикуются в ведущих европейских и российских
               журналах.
             </p>
-            <p className="about-us__p">
+            <p className="article__p">
               Являясь важным звеном в системе здравоохранения, активным образом
               улучшая продуктивность, снижая экономические затраты и оказывая
               необходимое влияние, Центр кардиохирургии и интервенционной

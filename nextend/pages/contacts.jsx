@@ -35,7 +35,7 @@ export default function OurContacts() {
         <Header />
         <main className="page__our-contacts">
           <section className="container section__our-contacts">
-            <h1 className="section__header">Контакты</h1>
+            <h1 className="article__header">Контакты</h1>
             <h2 className="our-contacts__title">
               Центр кардиохирургии и интервенционной кардиологии
             </h2>
@@ -59,10 +59,11 @@ export default function OurContacts() {
                 </YMaps>
                 <div className="our-contacts__address-bar-flex">
                   <h3 className="our-contacts__info-title">Адрес</h3>
-                  <p className="our-contacts__info-text">
+                  <p className="article__p">
                     <a
                       href="https://yandex.ru/maps/-/CCUiJDQodD"
                       target="_blank"
+                      className="article__link"
                       rel="noreferrer noopenner"
                     >
                       190103, Санкт-Петербург, набережная реки Фонтанки, дом 154
@@ -72,17 +73,23 @@ export default function OurContacts() {
               </div>
               <div className="our-contacts__other-flex">
                 <h3 className="our-contacts__info-title">Колл-центр</h3>
-                <p className="our-contacts__info-text">
-                  <a href="tel:+79992380136">+7 (999) 238-01-36</a> (9:00-21:00)
+                <p className="article__p">
+                  <a href="tel:+79992380136" className="article__link">
+                    +7 (999) 238-01-36
+                  </a>{" "}
+                  (9:00-21:00)
                 </p>
                 <h3 className="our-contacts__info-title">Электронная почта</h3>
-                <p className="our-contacts__info-text">
-                  <a href="mailto:heartteam.spb@gmail.com">
+                <p className="article__p">
+                  <a
+                    href="mailto:heartteam.spb@gmail.com"
+                    className="article__link"
+                  >
                     heartteam.spb@gmail.com
                   </a>
                 </p>
-                <p className="our-contacts__info-text">
-                  <a href="mailto:gosmed@inbox.ru">gosmed@inbox.ru</a>
+                <p className="article__p">
+                  <a href="mailto:gosmed@inbox.ru" className='article__link'>gosmed@inbox.ru</a>
                 </p>
               </div>
             </div>
@@ -91,11 +98,9 @@ export default function OurContacts() {
               <strong>от ст. метро Садовая:</strong>
             </p>
             <div className="our-contacts__routes">
-              <p className="our-contacts__info-text">
-                маршрутное такси 7, 212,
-              </p>
-              <p className="our-contacts__info-text">трамвай 3,</p>
-              <p className="our-contacts__info-text">
+              <p className="article__p">маршрутное такси 7, 212,</p>
+              <p className="article__p">трамвай 3,</p>
+              <p className="article__p">
                 автобусы 49, 181 до остановки наб. реки Фонтанки (ул. Садовая).
               </p>
             </div>
@@ -103,10 +108,10 @@ export default function OurContacts() {
               <strong>от ст. метро Василеостровская:</strong>
             </p>
             <div className="our-contacts__routes">
-              <p className="our-contacts__info-text">
+              <p className="article__p">
                 маршрутное такси 154 до Старо-Калинкиного моста,
               </p>
-              <p className="our-contacts__info-text">
+              <p className="article__p">
                 автобус 6 до остановки площадь Репина.
               </p>
             </div>
@@ -114,7 +119,7 @@ export default function OurContacts() {
               <strong>от Московского вокзала:</strong>
             </p>
             <div className="our-contacts__routes">
-              <p className="our-contacts__info-text">
+              <p className="article__p">
                 автобус 181 до остановки площадь Репина.
               </p>
             </div>
@@ -122,7 +127,7 @@ export default function OurContacts() {
               <strong>от Витебского вокзала:</strong>
             </p>
             <div className="our-contacts__routes">
-              <p className="our-contacts__info-text">
+              <p className="article__p">
                 трамвай 16 до остановки Рижский проспект (Старо-Петергофский
                 проспект)
               </p>
