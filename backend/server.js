@@ -14,6 +14,7 @@ const root = path.join(__dirname, "../frontend", "build");
 app.use(express.static(root));
 app.use(cors());
 app.use(express.json());
+app.disable('x-powered-by');
 
 app.get("*", (req, res) => {
   res.sendFile("index.html", { root });
