@@ -1,0 +1,68 @@
+.page__page-not-found {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.section__page-not-found {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  & img {
+    max-width: 80vw;
+    max-height: 50vh;
+  }
+
+  & h1 {
+    font-size: 5em;
+  }
+
+  & div {
+    margin-bottom: 1em;
+  }
+
+  & p {
+    font-size: var(--text-regular);
+    text-align: center;
+    margin: 0.3em 0;
+  }
+
+  & a {
+    background-color: var(--color-P);
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: var(--border-radius-secondary);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .section__page-not-found {
+    margin-top: 10vh;
+
+    & img {
+      max-width: 35vw;
+      max-height: 40vh;
+    }
+
+    & p {
+      font-size: var(--text-regular);
+      text-align: center;
+      margin: 0.3em 0;
+    }
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .section__page-not-found {
+    margin-top: 8vh;
+  }
+}

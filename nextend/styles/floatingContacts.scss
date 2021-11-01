@@ -1,0 +1,269 @@
+.floating-contacts {
+  position: absolute;
+  height: 90vh;
+  width: 90vw;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, 5%);
+  padding: 2rem;
+  background-color: var(--color-white);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-main);
+  animation: floating-contacts--drop 0.5s ease-in-out forwards;
+  overflow: hidden;
+
+  &__cta {
+    padding: 1em 2em;
+    background-color: var(--color-P--dark);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    border-radius: var(--border-radius-secondary);
+  }
+
+  // closing cross
+  &-cross {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    display: block;
+    height: 1.5em;
+    width: 2em;
+    z-index: 3;
+
+    & span,
+    &::after,
+    &::before {
+      height: 0.25em;
+      width: 100%;
+      position: absolute;
+      background: var(--color-black);
+      margin: 0 auto;
+    }
+
+    & span {
+      opacity: 0;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      transition: 0.4s ease-out;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      bottom: 10px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      top: 10px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: var(--text-lg);
+    text-align: center;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.floating-form__curtain {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100vh;
+  background-color: var(--color-success);
+  z-index: 2;
+}
+
+.curtain {
+  &__svg {
+    max-height: 20vh;
+    max-width: 50vw;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    height: auto;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  &__message {
+    text-align: center;
+    padding: 0 2em;
+    height: auto;
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .floating-contacts {
+    padding: 4rem;
+
+    & h3 {
+      width: 60%;
+      font-size: var(--text-xl);
+    }
+
+    & .contact-form {
+      width: 60%;
+    }
+  }
+}
+
+// Full Desktops media query
+@media (min-width: 1400px) {
+  .floating-contacts {
+    width: 55vw;
+
+    &-cross {
+      top: 2em;
+      right: 2em;
+      height: 1.5em;
+      width: 2.5em;
+    }
+
+    & h3 {
+      width: 90%;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    & .contact-form {
+      width: 90%;
+      padding: 2.5em 1.5em;
+
+      &__group {
+        margin-bottom: 2em;
+      }
+
+      &__label {
+        font-size: var(--text-md);
+        top: 0.2em;
+      }
+
+      & input,
+      textarea {
+        font-size: var(--text-md);
+      }
+
+      & input[type="checkbox"] {
+        height: 1.2em;
+        width: 1.2em;
+      }
+
+      &__textfield {
+        max-height: 350px;
+        min-height: 4em;
+      }
+
+      &__input:focus ~ label,
+      &__input:valid ~ label,
+      &:focus ~ label,
+      &__textfield:focus ~ label,
+      &__textfield:valid ~ label,
+      &:focus ~ label {
+        top: -20px;
+        font-size: var(--text-regular);
+      }
+    }
+
+    & .label-for-terms {
+      font-size: var(--text-regular);
+    }
+
+    & .cta-make-appointment {
+      font-size: var(--text-md);
+      padding: 1em 1.5em;
+    }
+  }
+}
+
+@keyframes floating-contacts--drop {
+  0% {
+    // height: 0;
+    left: -150vw;
+    opacity: 0;
+    color: var(--color-white);
+  }
+
+  25% {
+    opacity: 1;
+    color: var(--color-white);
+  }
+
+  50% {
+    opacity: 1;
+    color: var(--color-white);
+  }
+
+  100% {
+    left: 50%;
+    opacity: 1;
+    color: var(--color-black);
+  }
+}
+
+@keyframes text-fade-in {
+  0% {
+    opacity: 0;
+    top: 100vh;
+  }
+  85% {
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes group-fade-out {
+  0% {
+    opacity: 1;
+    display: block;
+    height: auto;
+  }
+  80% {
+    opacity: 0;
+    display: none;
+    height: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes padding-none {
+  0% {
+  }
+  100% {
+    padding: 0;
+  }
+}

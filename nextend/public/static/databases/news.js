@@ -1,0 +1,60 @@
+let newsArr = [
+  {
+    id: "n5",
+    title: "16 ноября",
+    subtitle: "В городе Старом Осколе",
+    pretitle: "Старый Оскол",
+    date: "21 октября 2021",
+    setting: {},
+    buttonText: "Записаться на приём",
+    link: "priem-v-gorode-stariy-oskol-16.11.2021",
+    hot: true,
+  },
+  {
+    id: "n3",
+    title: "11 ноября",
+    subtitle: "В городе Ставрополе",
+    pretitle: "город Ставрополь",
+    date: "6 октября 2021",
+    setting: {},
+    buttonText: "Записаться на приём",
+    link: "priem-v-gorode-stavropol-02-11-2021",
+    hot: true,
+  },
+  {
+    id: "n2",
+    title: "9 ноября",
+    subtitle: "В городе Владимире",
+    pretitle: "город Владимир",
+    date: "06 октября 2021",
+    setting: {},
+    buttonText: "Записаться на консультацию",
+    link: "priem-v-gorode-vladimir-09-11-2021",
+    hot: true,
+  },
+
+  // {
+  //   id: "n4",
+  //   title: "16 октября",
+  //   subtitle: "В городе Арзамасе",
+  //   pretitle: "город Арзамас",
+  //   date: "06 октября 2021",
+  //   setting: {},
+  //   buttonText: "Записаться на приём",
+  //   link: "priem-v-gorode-arzamas-16-10-2021",
+  //   hot: true,
+  // },
+  // {
+  //   id: "n1",
+  //   title: "15 октября",
+  //   subtitle: "В Нижнем Новгороде",
+  //   pretitle: "Нижний Новгород",
+  //   date: "06 октября 2021",
+  //   setting: {},
+  //   buttonText: "Записаться на приём",
+  //   link: "priem-v-nizhnem-novgorode-15-10-2021",
+  //   hot: true,
+  // }
+];
+
+export default newsArr;
