@@ -14,6 +14,8 @@ export default function miniinvisiv() {
           Миниинвазивное протезирование клапанов: аорты, митрального,
           трикуспидального
         </title>
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
         <meta
           name="description"
           content="Миниинвазивное протезирование клапанов: аорты, митрального,
