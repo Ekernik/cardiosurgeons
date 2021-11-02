@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../../components/Header/Header";
 import Greetings from "../../components/Greetings";
 import Footer from "../../components/Footer/Footer";

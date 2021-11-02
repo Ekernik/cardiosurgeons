@@ -5,6 +5,11 @@ import Footer from "../components/Footer/Footer";
 export default function Confidential() {
   return (
     <>
+      <Head>
+        <title>
+          Положения о политике обработки и защиты персональных данных
+        </title>
+      </Head>
       <Header />
       <section className="section__confidential">
         <div className="container container__confidential">

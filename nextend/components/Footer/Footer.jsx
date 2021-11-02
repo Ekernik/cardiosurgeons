@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import styles from './footer.module.scss';
-// import reestr from './reestr.pdf'; #TODO
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./footer.module.scss";
 // import FAB from '../FAB/FAB'; #TODO
-import insta_logo from '../../public/static/svg/instagram.svg';
+import insta_logo from "../../public/static/svg/instagram.svg";
 
 export default function Footer() {
   return (
@@ -16,23 +16,21 @@ export default function Footer() {
             className={styles.social_links__link}
             rel="noreferrer"
           >
-            <Image
-              src={insta_logo}
-              alt="ссылка на наш instagram"
-            />
+            <Image src={insta_logo} alt="ссылка на наш instagram" />
             <span className={styles.social_links__icon}>heartteam.spb</span>
           </a>
         </div>
         <hr className={styles.footer__hr} />
         <span className={styles.footer__copyright}>© copyright 2021</span>
-        {/* <a #TODO
-          href={reestr}
-          target="_blank"
-          className="footer__mark"
-          rel="noreferrer"
-        >
-          выписка из реестра лицензий по состоянию на 23.04.2021
-        </a> */}
+        <Link href="/reestr.pdf">
+          <a
+            target="_blank"
+            className={styles.footer__mark}
+            rel="noreferrer noopenner"
+          >
+            выписка из реестра лицензий по состоянию на 23.04.2021
+          </a>
+        </Link>
       </div>
     </footer>
   );
