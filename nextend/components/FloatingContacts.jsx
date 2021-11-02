@@ -1,54 +1,55 @@
-import Image from 'next/image';
-import success from '../public/static/svg/success.svg';
-import formSettings from '../public/static/databases/googleForm';
+import Image from "next/image";
+import Link from "next/link";
+import success from "../public/static/svg/success.svg";
+import formSettings from "../public/static/databases/googleForm";
 
 let handleSubmit = () => {
   if (formSettings.checkValues(0, 4)) {
-    const formTitle = document.querySelector('.floating-contacts__title');
-    const floatingForm = document.querySelector('.floating-contacts__form');
-    const curtain = document.querySelector('.floating-form__curtain');
-    formTitle.style.animation = 'group-fade-out .3s ease-in forwards';
-    floatingForm.style.animation = 'group-fade-out .3s ease-in forwards';
-    curtain.style.display = 'flex';
-    curtain.style.animation = 'text-fade-in 1s ease-in forwards';
+    const formTitle = document.querySelector(".floating-contacts__title");
+    const floatingForm = document.querySelector(".floating-contacts__form");
+    const curtain = document.querySelector(".floating-form__curtain");
+    formTitle.style.animation = "group-fade-out .3s ease-in forwards";
+    floatingForm.style.animation = "group-fade-out .3s ease-in forwards";
+    curtain.style.display = "flex";
+    curtain.style.animation = "text-fade-in 1s ease-in forwards";
   }
 };
 
 let resetStyling = () => {
-  const formTitle = document.querySelector('.floating-contacts__title');
-  const floatingForm = document.querySelector('.floating-contacts__form');
-  const floatingCurtain = document.querySelector('.floating-form__curtain');
-  const formCurtain = document.querySelector('.contact-form__curtain');
+  const formTitle = document.querySelector(".floating-contacts__title");
+  const floatingForm = document.querySelector(".floating-contacts__form");
+  const floatingCurtain = document.querySelector(".floating-form__curtain");
+  const formCurtain = document.querySelector(".contact-form__curtain");
   if (formCurtain) {
-    formCurtain.style.display = 'none';
+    formCurtain.style.display = "none";
     console.log(formCurtain);
   }
   if (floatingCurtain) {
-    floatingCurtain.style.display = 'none';
+    floatingCurtain.style.display = "none";
     console.log(floatingCurtain);
   }
-  formTitle.style.animation = '';
-  floatingForm.style.animation = '';
+  formTitle.style.animation = "";
+  floatingForm.style.animation = "";
 };
 
 let handleClose = () => {
-  const body = document.querySelector('body');
-  const curtain = document.getElementById('curtain');
-  const floatingContacts = document.querySelector('.floating-contacts');
-  const headerContainer = document.querySelector('.header__container');
-  const headerNav = document.querySelector('.header__nav');
-  const header = document.querySelector('.header');
-  headerContainer.classList.toggle('hidden');
-  headerNav.classList.toggle('hidden');
-  header.classList.toggle('darken');
-  body.classList.toggle('fixed-page');
-  curtain.classList.toggle('curtain--opened');
-  floatingContacts.classList.toggle('floating-contacts--hidden');
+  const body = document.querySelector("body");
+  const curtain = document.getElementById("curtain");
+  const floatingContacts = document.querySelector(".floating-contacts");
+  const headerContainer = document.querySelector(".header__container");
+  const headerNav = document.querySelector(".header__nav");
+  const header = document.querySelector(".header");
+  headerContainer.classList.toggle("hidden");
+  headerNav.classList.toggle("hidden");
+  header.classList.toggle("darken");
+  body.classList.toggle("fixed-page");
+  curtain.classList.toggle("curtain--opened");
+  floatingContacts.classList.toggle("floating-contacts--hidden");
   resetStyling();
 };
 
 export default function FloatingContacts() {
-  const frameStyle = { display: 'none' };
+  const frameStyle = { display: "none" };
 
   return (
     <div className="floating-contacts floating-contacts--hidden">
@@ -66,7 +67,12 @@ export default function FloatingContacts() {
       ></iframe>
       <div className="floating-form__curtain">
         <div className="curtain__svg">
-          <Image src={success} alt="Иконка успешно выполненного действия" width={100} height={100} />
+          <Image
+            src={success}
+            alt="Иконка успешно выполненного действия"
+            width={100}
+            height={100}
+          />
         </div>
 
         <h3 className="curtain__title">Спасибо!</h3>
@@ -124,9 +130,11 @@ export default function FloatingContacts() {
             <input type="checkbox" required />
             <label className="label-for-terms">
               Я согласен на {` `}
-              <a href="/licenses" target="_blank" className="tac-link">
-                обработку персональных данных
-              </a>
+              <Link href="/licenses">
+                <a target="_blank" className="tac-link">
+                  обработку персональных данных
+                </a>
+              </Link>
             </label>
           </div>
         </div>
