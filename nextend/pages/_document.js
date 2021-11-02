@@ -27,8 +27,10 @@ class MyDocument extends Document {
             <div>
               <Image
                 src="https://mc.yandex.ru/watch/83857552"
-                style={{ position: "absolute", left: "-9999px" }}
+                className="yandex__img"
                 alt=""
+                width={0}
+                height={0}
               />
             </div>
           </noscript>

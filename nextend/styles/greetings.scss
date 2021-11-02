@@ -1,7 +1,8 @@
 .greetings {
   &__section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-      url('../public/static/images/bg-doctors.webp') no-repeat center center scroll;
+      url("../public/static/images/bg-doctors.webp") no-repeat center center
+        scroll;
     background-size: cover;
     margin-top: 3em;
     height: 100%;
@@ -55,11 +56,10 @@
 }
 
 @media (min-width: 768px) {
-  #greetings-section {
-    margin-top: 5em;
-  }
-
   .greetings {
+    &__section {
+      margin-top: 5em;
+    }
     &__header,
     &__subheader {
       margin-bottom: 1rem;
@@ -93,10 +93,10 @@
 }
 
 @media (min-width: 1400px) {
-  #greetings-section {
-    padding: 3em 0;
-  }
   .greetings {
+    &__section {
+      padding: 3em 0;
+    }
     &__header,
     &__subheader {
       margin-bottom: 1.5rem;
