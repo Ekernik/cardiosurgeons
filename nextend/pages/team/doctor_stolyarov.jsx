@@ -32,9 +32,9 @@ export default function Stolyarov() {
                 height="470"
                 src="https://www.youtube.com/embed/I9j36StFBcg"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <section className="doctor__theme-section">
                 <h3 className="doctor__theme">Направление деятельности</h3>
@@ -56,13 +56,14 @@ export default function Stolyarov() {
                 </p>
                 <p className="article__p">
                   — 2011 - 2016 гг. - Заведующий отделением сердечно-сосудистой
-                  хирургии ФГБУ "СПМЦ" Минздрава России.
+                  хирургии ФГБУ &quot;СПМЦ&quot; Минздрава России.
                 </p>
                 <p className="article__p">
                   — 2008-2011 гг. – Врач сердечно-сосудистый хирург
                   кардиохирургического отделения ФГУ «Северо-Западный окружной
                   медицинский центр» Минздравсоцразвития России (сейчас СПКК
-                  ФГБУ "НМХЦ им. Н.И.Пирогова" Минздравсоцразвития России).
+                  ФГБУ &quot;НМХЦ им. Н.И.Пирогова&quot; Минздравсоцразвития
+                  России).
                 </p>
                 <p className="article__p">
                   — 2006–2008 гг. - Научный сотрудник группы ангиохирургии
@@ -106,8 +107,8 @@ export default function Stolyarov() {
               <section className="doctor__theme-section">
                 <h3 className="doctor__theme">Повышение квалификации</h3>
                 <p className="article__p">
-                  — 2020 г. - Повышение квалификации "Актуальные вопросы
-                  сердечно-сосудистой хирургии".
+                  — 2020 г. - Повышение квалификации &quot;Актуальные вопросы
+                  сердечно-сосудистой хирургии&quot;.
                 </p>
                 <p className="article__p">
                   — 2010 г. – Специализация по специальности «Клиническая
@@ -138,8 +139,8 @@ export default function Stolyarov() {
                 <h3 className="doctor__theme">Сертификат</h3>
                 <p className="article__p">
                   — Сердечно-сосудистая хирургия. Годен до 07.10.2025. Выдан:
-                  ФГБОУ ВО "Северо-Западный государственный медицинский
-                  университет им. И. И. Мечникова" МЗ РФ.
+                  ФГБОУ ВО &quot;Северо-Западный государственный медицинский
+                  университет им. И.И.Мечникова&quot; МЗ РФ.
                 </p>
               </section>
             </div>

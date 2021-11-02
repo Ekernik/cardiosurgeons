@@ -108,7 +108,7 @@ export default function Announcement() {
                   rel="noreferrer noopenner"
                 >
                   г. Владимир, ул. Добросельская, д. 36-б, Медицинский центр
-                  "Палитра"
+                  &quot;Палитра&quot;
                 </a>
               </p>
               <YMaps query={{ lang: "ru_RU" }}>

@@ -31,9 +31,9 @@ export default function Kim() {
                 height="470px"
                 src="https://www.youtube.com/embed/GHcS-M2Nw40"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <section className="doctor__theme-section">
                 <h3 className="doctor__theme">Направление деятельности</h3>
@@ -324,7 +324,7 @@ export default function Kim() {
                 </p>
                 <p className="article__p">
                   — 2012 г. - International Congress of European Society of
-                  Cardiology “ESC CONGRESS 2012", г. Мюнхен.
+                  Cardiology &quot;ESC CONGRESS 2012&quot;, г. Мюнхен.
                 </p>
                 <p className="article__p">
                   — 2011 г. - Всероссийская студенческая научная конференция

@@ -34,9 +34,9 @@ export default function Shmatov() {
                 height="470px"
                 src="https://www.youtube.com/embed/iQdefk-KsrM"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <section className="doctor__theme-section">
                 <h3 className="doctor__theme">Врачебная деятельность</h3>

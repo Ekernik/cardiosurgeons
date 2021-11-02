@@ -32,9 +32,9 @@ export default function Zubarev() {
                 height="470px"
                 src="https://www.youtube.com/embed/7Q29yqPRlS8"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <section className="doctor__theme-section">
                 <h3 className="doctor__theme">Направление деятельности</h3>
@@ -159,7 +159,7 @@ export default function Zubarev() {
                 <h3 className="doctor__theme">Сертификат</h3>
                 <p className="article__p">
                   — Сердечно-сосудистая хирургия. Годен до 09.12.2024. Выдан:
-                  ФГБУ "ФМИЦ им В.А. Алмазова".
+                  ФГБУ &quot;ФМИЦ им В.А. Алмазова&quot;.
                 </p>
               </section>
               <section className="doctor__theme-section">
@@ -277,9 +277,9 @@ export default function Zubarev() {
                 </p>
                 <p className="article__p">
                   — III Всероссийская научно-практическая конференция с
-                  международным участием "Некоронарогенные заболевания сердца:
-                  диагностика, лечение, и профилактика", 15-16 сентября 2011,
-                  Санкт-Петербург: доклад «Отдаленные результаты
+                  международным участием &quot;Некоронарогенные заболевания
+                  сердца: диагностика, лечение, и профилактика&quot;, 15-16
+                  сентября 2011, Санкт-Петербург: доклад «Отдаленные результаты
                   кардиоресинхронизирующей терапии».
                 </p>
                 <p className="article__p">

@@ -24,7 +24,7 @@ class MyDocument extends Document {
           ></script>
           <noscript>
             <div>
-              <img
+              <Image
                 src="https://mc.yandex.ru/watch/83857552"
                 style={{ position: "absolute", left: "-9999px" }}
                 alt=""
