@@ -1,15 +1,14 @@
 const https = require("https");
 const http = require("http");
-const express = require('express')
+const express = require("express");
 const { parse } = require("url");
 const next = require("next");
 const fs = require("fs");
 
 const dev = process.env.NODE_ENV !== "production";
-const httpsApp = next({ dev });
+const httpsApp = next(false); // { dev }
 const httpApp = express();
 const handleSSL = httpsApp.getRequestHandler();
-
 const SSLPORT = 443;
 const PORT = 80;
 
@@ -22,9 +21,7 @@ const httpServer = http.createServer(httpApp);
 httpApp.all("*", (req, res) =>
   res.redirect(308, "https://heartteamspb.com/" + req.originalUrl)
 );
-httpServer.listen(PORT, () =>
-  console.log(`HTTP server listening: ${PORT}`)
-);
+httpServer.listen(PORT, () => console.log(`HTTP server listening: ${PORT}`));
 
 httpsApp.prepare().then(() => {
   https
