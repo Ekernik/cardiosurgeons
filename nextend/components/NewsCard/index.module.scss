@@ -6,7 +6,7 @@
   width: 100%;
   height: 130px;
   padding: 1.5em 1.2em;
-  border: 1px solid var(--color-P);
+  border: 2px solid var(--color-P);
   border-radius: var(--border-radius-secondary);
   transition: 0.2s ease-in-out;
   display: flex;
@@ -26,15 +26,6 @@
     margin: 1em 0;
   }
 
-  &__title {
-    font-size: var(--text-sm);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.6rem;
-    text-align: center;
-  }
-
   &__text {
     font-size: var(--text-regular);
     line-height: 1.2em;
@@ -50,8 +41,8 @@
     padding: 0.4em 1em;
     background-color: white;
     border: 1px solid var(--color-P);
+    border-radius: 5px;
     font-size: var(--text-sm);
-    text-transform: uppercase;
     transition: 0.4s ease-in-out;
     letter-spacing: 0.2em;
     text-align: center;
@@ -81,10 +72,6 @@
       width: 50%;
     }
 
-    &__title {
-      font-size: var(--text-sm);
-    }
-
     &__text {
       font-size: var(--text-regular);
       line-height: 1.2em;
@@ -110,14 +97,10 @@
       height: auto;
       width: 30%;
     }
-// Иванов в Мечниково
+
     &__news {
       width: 100%;
       height: auto;
-    }
-
-    &__title {
-      margin-bottom: 0.4rem;
     }
 
     &__text {
@@ -135,11 +118,6 @@
 // Full Desktops media query
 @media (min-width: 1400px) {
   .card {
-    &__title {
-      font-size: var(--text-sm);
-      margin-bottom: 1em;
-    }
-
     &__text {
       font-size: var(--text-lg);
       line-height: 1.2em;
