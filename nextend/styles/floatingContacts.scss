@@ -25,6 +25,12 @@
     border: none;
     width: 100%;
     border-radius: var(--border-radius-secondary);
+    transition: 0.2s;
+
+    &:hover {
+      background-color: var(--color-P--darkest);
+      cursor: pointer;
+    }
   }
 
   // closing cross
@@ -132,6 +138,12 @@
 
     & .contact-form {
       width: 60%;
+
+      &__group > input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        outline-color: var(--color-P);
+      }
     }
   }
 }
@@ -206,7 +218,6 @@
 
 @keyframes floating-contacts--drop {
   0% {
-    // height: 0;
     left: -150vw;
     opacity: 0;
     color: var(--color-white);

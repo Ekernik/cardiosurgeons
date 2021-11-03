@@ -22,11 +22,9 @@ let resetStyling = () => {
   const formCurtain = document.querySelector(".contact-form__curtain");
   if (formCurtain) {
     formCurtain.style.display = "none";
-    console.log(formCurtain);
   }
   if (floatingCurtain) {
     floatingCurtain.style.display = "none";
-    console.log(floatingCurtain);
   }
   formTitle.style.animation = "";
   floatingForm.style.animation = "";
@@ -139,7 +137,7 @@ export default function FloatingContacts() {
             <label className="label-for-terms">
               Я согласен на {` `}
               <Link href="/licenses">
-                <a target="_blank" className="tac-link">
+                <a target="_blank" className="article__link">
                   обработку персональных данных
                 </a>
               </Link>

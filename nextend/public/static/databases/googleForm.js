@@ -1,4 +1,7 @@
 const formSettings = {
+  TEST_submit_link:
+    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdOifwVekKhMgITAZwIR_eZAZ4YPsuqHKpLMDfP-b063L3ctw/formResponse",
+  TEST_name_entry: "entry.127199314",
   submit_link:
     "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7t2cJf7YhztRgyaMtT61FTlbRINIUeJGBRs6IWkOMPBOzlw/formResponse",
   name_entry: "entry.887370446",
@@ -23,7 +26,6 @@ const formSettings = {
       .call(document.querySelectorAll("input[required]"))
       .slice(cutA, cutB);
     let valid = inputs.filter((input) => input.checkValidity() === true);
-    console.log(inputs);
     return inputs.length === valid.length ? true : false;
   },
 };
