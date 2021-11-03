@@ -1,10 +1,23 @@
 const formSettings = {
-  email_entry: "entry.1879504940",
-  phone_entry: "entry.1859320754",
-  message_entry: "entry.1529901543",
-  name_entry: "entry.1552386635",
   submit_link:
-    "https://docs.google.com/forms/u/0/d/e/1FAIpQLScZ7vKD_Cgav2R21Zgmex2vnBGro2HMYpV0F9_wWG9qF_HHww/formResponse",
+    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7t2cJf7YhztRgyaMtT61FTlbRINIUeJGBRs6IWkOMPBOzlw/formResponse",
+  name_entry: "entry.887370446",
+  ref_link: "entry.1034264162",
+  phone_entry: "entry.1023395244",
+  email_entry: "entry.1597334997",
+  message_entry: "entry.1730993424",
+  ref_origin: function () {
+    if (typeof window !== "undefined") {
+      const hostname = window.location.pathname;
+      const url_oskol = "/news/priem-v-gorode-stariy-oskol-16.11.2021";
+      const url_vladimir = "/news/priem-v-gorode-vladimir-09-11-2021";
+      const url_stavropol = "/news/priem-v-gorode-stavropol-02-11-2021";
+      if (hostname === url_oskol) return "Старый Оскол";
+      else if (hostname === url_vladimir) return "Владимир";
+      else if (hostname === url_stavropol) return "Ставрополь";
+      else return hostname;
+    }
+  },
   checkValues: function (cutA = 0, cutB = 10) {
     let inputs = Array.prototype.slice
       .call(document.querySelectorAll("input[required]"))

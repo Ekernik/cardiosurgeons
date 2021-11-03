@@ -113,6 +113,14 @@ export default function FloatingContacts() {
             className="contact-form__input"
             required
           />
+          <input
+            type="text"
+            style={{ display: "none" }}
+            name={formSettings.ref_link}
+            value={formSettings.ref_origin()}
+            readOnly
+            required
+          />
           <label className="contact-form__label">
             Адрес Вашей электронной почты
             <span className="must-have">*</span>
