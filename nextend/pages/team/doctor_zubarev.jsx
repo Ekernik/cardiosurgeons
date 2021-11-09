@@ -1,12 +1,29 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Zubarev.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Zubarev.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Zubarev() {
   return (
     <>
+      <Head>
+        <title>Сердечно-сосудистый хирург Зубарев Евгений Игоревич</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Zubarev.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Сердечно-сосудистый хирург Зубарев Евгений Игоревич"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/team/doctor_zubarev"
+        />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -16,14 +33,11 @@ export default function Zubarev() {
               <Image
                 className="doctor__image"
                 src={img_doctor}
-                alt="Доктор Зубарев Евгений Игоревич
-"
+                alt="Доктор Зубарев Евгений Игоревич"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Врач сердечно-сосудистый хирург Центра кардиохирургии и
-                  интервенционной кардиологии, к.м.н.
-                </h2>
+                <p className="doctor__position">Сердечно-сосудистый хирург,</p>
+                <p className="doctor__position">Кандидат медицинских наук</p>
               </div>
             </div>
             <div className="doctor__info">

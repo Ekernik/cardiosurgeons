@@ -1,12 +1,29 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Povarenkina.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Povarenkina.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Povarenkina() {
   return (
     <>
+      <Head>
+        <title>Кардиолог Поварёнкина Вера Валерьевна</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Povarenkina.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Кардиолог Поварёнкина Вера Валерьевна"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/team/doctor_povarenkina"
+        />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,10 +36,7 @@ export default function Povarenkina() {
                 alt="Доктор Поварёнкина Вера Валерьевна"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Врач-кардиолог Центра кардиохирургии и интервенционной
-                  кардиологии
-                </h2>
+                <p className="doctor__position">Кардиолог</p>
               </div>
             </div>
             <div className="doctor__info">

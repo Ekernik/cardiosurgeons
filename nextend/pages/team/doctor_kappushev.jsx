@@ -1,12 +1,29 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Kappushev.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Kappushev.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Kappushev() {
   return (
     <>
+      <Head>
+        <title>Cердечно-сосудистый хирург Каппушев Руслан Юсуфович</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Kappushev.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Cердечно-сосудистый хирург Каппушев Руслан Юсуфович"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/team/doctor_kappushev"
+        />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -16,16 +33,16 @@ export default function Kappushev() {
               <Image
                 className="doctor__image"
                 src={img_doctor}
-                alt="Доктор Каппушев Руслан Юсуфович
-"
+                alt="Доктор Каппушев Руслан Юсуфович"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Врач сердечно-сосудистый хирург 1-ой квалификационной
-                  категории, врач по рентгенэндоваскуляным диагностике и лечению
-                  1-ой квалификационной категории Центра кардиохирургии и
-                  интервенционной кардиологии
-                </h2>
+                <p className="doctor__position">
+                  Сердечно-сосудистый хирург 1-ой квалификационной категории,
+                </p>
+                <p className="doctor__position">
+                  врач по рентгенэндоваскуляным диагностике и лечению 1-ой
+                  квалификационной категории
+                </p>
               </div>
             </div>
             <div className="doctor__info">

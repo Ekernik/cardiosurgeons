@@ -1,12 +1,26 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Pyagai.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Pyagai.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Pyagai() {
   return (
     <>
+      <Head>
+        <title>Сердечно-сосудистый хирург Пягай Виктор Александрович</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Pyagai.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Сердечно-сосудистый хирург Пягай Виктор Александрович"
+        />
+        <meta property="og:url" content="heartteamspb.com/team/doctor_pyagai" />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,10 +33,7 @@ export default function Pyagai() {
                 alt="Доктор Пягай Виктор Александрович"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Сердечно-сосудистый хирург Центра кардиохирургии и
-                  интервенционной кардиологии
-                </h2>
+                <p className="doctor__position">Сердечно-сосудистый хирург</p>
               </div>
             </div>
             <div className="doctor__info">

@@ -10,7 +10,7 @@ export default function ProtesirovanieAorti() {
   return (
     <>
       <Head>
-        <title>Опухоли сердца. Миксома сердца. Опухоли сосудов сердца</title>
+        <title>Протезирование аорты</title>
       </Head>
       <div className="App">
         <div id="curtain"></div>

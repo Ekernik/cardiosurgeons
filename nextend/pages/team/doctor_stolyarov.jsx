@@ -1,12 +1,32 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Stolyarov.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Stolyarov.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Stolyarov() {
   return (
     <>
+      <Head>
+        <title>
+          Заведующий отделением кардиохирургии с кабинетом РЭВДиЛ Столяров
+          Максим Станиславович
+        </title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Stolyarov.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Заведующий отделением кардиохирургии с кабинетом РЭВДиЛ Столяров Максим Станиславович"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/team/doctor_stolyarov"
+        />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,11 +39,14 @@ export default function Stolyarov() {
                 alt="Доктор Столяров Максим Станиславович"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Заведующий отделением кардиохирургии с кабинетом РЭВДиЛ, врач
-                  сердечно-сосудистый хирург высшей категории,
-                  <br /> кандидат медицинских наук.
-                </h2>
+                <p className="doctor__position">
+                  Заведующий отделением кардиохирургии с&nbsp;кабинетом РЭВДиЛ,
+                </p>
+                <p className="doctor__position">
+                  сердечно-сосудистый хирург <br />
+                  высшей категории,
+                </p>
+                <p className="doctor__position">кандидат медицинских наук</p>
               </div>
             </div>
             <div className="doctor__info">

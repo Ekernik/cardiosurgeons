@@ -1,12 +1,26 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Kim.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Kim.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Kim() {
   return (
     <>
+      <Head>
+        <title>Cердечно-сосудистый хирург Ким Глеб Ирламович</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Kim.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Cердечно-сосудистый хирург Ким Глеб Ирламович"
+        />
+        <meta property="og:url" content="heartteamspb.com/team/doctor_kim" />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,10 +33,8 @@ export default function Kim() {
                 alt="Доктор Ким Глеб Ирламович"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Сердечно-сосудистый хирург Центра кардиохирургии и
-                  интервенционной кардиологии, к.м.н.
-                </h2>
+                <p className="doctor__position">Сердечно-сосудистый хирург,</p>
+                <p className="doctor__position">кандидат медицинских наук</p>
               </div>
             </div>
             <div className="doctor__info">

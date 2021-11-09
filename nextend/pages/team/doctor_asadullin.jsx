@@ -1,12 +1,29 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Asadullin.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Asadullin.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Asadullin() {
   return (
     <>
+      <Head>
+        <title>Сердечно-сосудистый хирург Асадуллин Ильшат Шамилевич</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Asadullin.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Сердечно-сосудистый хирург Асадуллин Ильшат Шамилевич"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/team/doctor_asadullin"
+        />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,10 +36,7 @@ export default function Asadullin() {
                 alt="Доктор Асадуллин Ильшат Шамилевич"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Врач сердечно-сосудистый хирург Центра кардиохирургии и
-                  интервенционной кардиологии
-                </h2>
+                <p className="doctor__position">Сердечно-сосудистый хирург</p>
               </div>
             </div>
             <div className="doctor__info">

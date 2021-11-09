@@ -1,12 +1,29 @@
-import Image from "next/dist/client/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Balahonov.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Balahonov.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Balahonov() {
   return (
     <>
+      <Head>
+        <title>Сердечно-сосудистый хирург Балахонов Василий Васильевич</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Balahonov.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Сердечно-сосудистый хирург Балахонов Василий Васильевич"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/team/doctor_balahonov"
+        />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,11 +36,10 @@ export default function Balahonov() {
                 alt="Доктор Балахонов Василий Васильевич"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Врач сердечно-сосудистый хирург высшей категории Центра
-                  кардиохирургии и&nbsp;интервенционной кардиологии,
-                  <br /> кандидат медицинских наук.
-                </h2>
+                <p className="doctor__position">
+                  Сердечно-сосудистый хирург высшей категории,
+                </p>
+                <p className="doctor__position">кандидат медицинских наук</p>
               </div>
             </div>
             <div className="doctor__info">

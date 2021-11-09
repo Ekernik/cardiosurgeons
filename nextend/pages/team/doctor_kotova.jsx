@@ -1,12 +1,23 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/svg/doctor_woman.svg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/svg/doctor_woman.svg';
+import Contacts from '../../components/Contacts';
 
 export default function Kotova() {
   return (
     <>
+      <Head>
+        <title>Кардиолог Котова Анна Сергеевна</title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/svg/doctor_woman.jpg"
+        />
+        <meta property="og:title" content="Кардиолог Котова Анна Сергеевна" />
+        <meta property="og:url" content="heartteamspb.com/team/doctor_kotova" />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,10 +30,7 @@ export default function Kotova() {
                 alt="Доктор Котова Анна Сергеевна"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
-                  Врач-кардиолог Центра кардиохирургии и&nbsp;интервенционной
-                  кардиологии
-                </h2>
+                <p className="doctor__position">Кардиолог</p>
               </div>
             </div>
             <div className="doctor__info">

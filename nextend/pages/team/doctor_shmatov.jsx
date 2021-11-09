@@ -1,12 +1,32 @@
-import Image from "next/image";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Shmatov.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Shmatov.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Shmatov() {
   return (
     <>
+      <Head>
+        <title>
+          Руководитель Центра кардиохирургии и интервенционной кардиологии
+          Шматов Дмитрий Викторович
+        </title>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://heartteamspb.com/static/images/doctors/doctor_Shmatov.jpg"
+        />
+        <meta
+          property="og:title"
+          content="Руководитель Центра кардиохирургии и интервенционной кардиологии Шматов Дмитрий Викторович"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/team/doctor_shmatov"
+        />
+      </Head>
       <Header />
       <main className="page__doctor">
         <section className="section__doctor container">
@@ -19,13 +39,18 @@ export default function Shmatov() {
                 alt="Доктор Шматов Дмитрий Викторович"
               />
               <div className="marked-container doctor__about">
-                <h2 className="doctor__position">
+                <p className="doctor__position">
                   Заместитель директора по медицинской части (кардиохирургия),
+                </p>
+                <p className="doctor__position">
                   руководитель Центра кардиохирургии и&nbsp;интервенционной
-                  кардиологии, профессор кафедры госпитальной
-                  хирургии&nbsp;СПбГУ, врач сердечно-сосудистый хирург, доктор
-                  медицинских наук.
-                </h2>
+                  кардиологии,
+                </p>
+                <p className="doctor__position">
+                  профессор кафедры госпитальной хирургии&nbsp;СПбГУ,
+                </p>
+                <p className="doctor__position">сердечно-сосудистый хирург,</p>
+                <p className="doctor__position">доктор медицинских наук</p>
               </div>
             </div>
             <div className="doctor__info">
