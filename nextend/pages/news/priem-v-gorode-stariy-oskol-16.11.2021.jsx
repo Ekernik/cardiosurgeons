@@ -88,9 +88,10 @@ export default function Announcement() {
                   imgSrc={img_doctor}
                   imgAlt={"Доктор Сорокин Андрей Александрович"}
                   title={"Сорокин Андрей Александрович"}
-                  subtitle={
-                    "Cердечно-сосудистый хирург, интервенционный радиолог"
-                  }
+                  subtitle={[
+                    "Cердечно-сосудистый хирург,",
+                    "интервенционный радиолог",
+                  ]}
                   link={"/team/doctor_sorokin"}
                   showMore={true}
                 />

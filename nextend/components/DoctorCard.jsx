@@ -27,8 +27,12 @@ export default function DoctorCard(props) {
           <h2>{props.title}</h2>
         </a>
       </Link>
-
-      <h3 className="doc-card__subtitle">{props.subtitle}</h3>
+      <div className="doc__subtitles">
+        {props.subtitle.map((title) => (
+          <h3 className="doctor__position">{title}</h3>
+        ))}
+      </div>
+      {/* <h3 className="doc-card__subtitle">{props.subtitle}</h3> */}
       {btnMore(props)}
     </div>
   );

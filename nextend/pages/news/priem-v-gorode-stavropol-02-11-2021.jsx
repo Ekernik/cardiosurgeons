@@ -133,7 +133,7 @@ export default function Announcement() {
                   imgSrc={img_doctor}
                   imgAlt={"Доктор Балахонов Василий Васильевич"}
                   title={"Балахонов Василий Васильевич"}
-                  subtitle={"Сердечно-сосудистый хирург, к.м.н."}
+                  subtitle={["Сердечно-сосудистый хирург,", "кандидат медицинских наук"]}
                   link={"/team/doctor_balahonov"}
                   showMore={true}
                 />

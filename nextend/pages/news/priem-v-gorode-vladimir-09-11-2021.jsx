@@ -91,7 +91,7 @@ export default function Announcement() {
                   imgSrc={doctor}
                   imgAlt={"Доктор Пягай Виктор Александрович"}
                   title={"Пягай Виктор Александрович"}
-                  subtitle={"Врач сердечно-сосудистый хирург"}
+                  subtitle={["Cердечно-сосудистый хирург"]}
                   link={"/team/doctor_pyagai"}
                   showMore={true}
                 />
