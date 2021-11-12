@@ -15,7 +15,7 @@ class MyDocument extends Document {
           />
           <meta name="yandex-verification" content="3934e55935fc3382" />
           {/* Search Engine Breadcrumbs */}
-          <script type="application/ld+json">
+          {/* <script type="application/ld+json">
             {{
               "@context": "http://schema.org/",
               "@type": "BreadcrumbList",
@@ -118,7 +118,7 @@ class MyDocument extends Document {
                 },
               ],
             }}
-          </script>
+          </script> */}
         </Head>
         <body>
           <Main />
