@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Greetings from "../../components/Greetings";
 import Footer from "../../components/Footer/Footer";
@@ -18,6 +19,9 @@ import ButtonCTA from "../../components/ButtonCTA";
 export default function Announcement() {
   return (
     <>
+      <Head>
+        <title>Прием в Старом Осколе</title>
+      </Head>
       <div className="App">
         <div id="curtain"></div>
         <Header />
@@ -85,7 +89,7 @@ export default function Announcement() {
                   imgAlt={"Доктор Сорокин Андрей Александрович"}
                   title={"Сорокин Андрей Александрович"}
                   subtitle={
-                    "Врач сердечно-сосудистый хирург, интервенционный радиолог"
+                    "Cердечно-сосудистый хирург, интервенционный радиолог"
                   }
                   link={"/team/doctor_sorokin"}
                   showMore={true}
