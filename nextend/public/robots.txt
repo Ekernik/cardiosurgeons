@@ -27,6 +27,16 @@ Allow: /*/media/*.png
 Allow: /*/media/*.gif
 
 User-agent: *
+Disallow: /news/operacionnaya/
+Disallow: /news/conference_20/
+Disallow: /news/XXIII_Bakuleva/
+Disallow: /news/Università_di_Bologna/
+Disallow: /news/kongress_ssh/
+Disallow: /news/conference_itogi/
+Disallow: /news/ESC_congress/
+Disallow: /news/news1/
+Disallow: /service/
+Disallow: /employees/
 Disallow: /*utm
 Disallow: /*clid=
 Disallow: /*openstat
