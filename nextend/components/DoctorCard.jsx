@@ -28,8 +28,10 @@ export default function DoctorCard(props) {
         </a>
       </Link>
       <div className="doc__subtitles">
-        {props.subtitle.map((title) => (
-          <h3 className="doctor__position">{title}</h3>
+        {props.subtitle.map((title, i) => (
+          <h3 className="doctor__position" key={Date.now() + i}>
+            {title}
+          </h3>
         ))}
       </div>
       {/* <h3 className="doc-card__subtitle">{props.subtitle}</h3> */}
