@@ -11,7 +11,25 @@ export default function Coronarography() {
   return (
     <>
       <Head>
-        <title>Коронарография</title>
+      <title>Коронарография. Коронарография сердца и сосудов.</title>
+        <meta
+          name="description"
+          content="Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!"
+        />
+        <meta
+          property="og:title"
+          content="Коронарография. Коронарография сердца и сосудов."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
+        <meta
+          property="og:description"
+          content="Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!"
+        />
+        <meta
+          property="og:url"
+          content="heartteamspb.com/diagnostics/coronarographia"
+        />
       </Head>
       <div className="App">
         <div id="curtain"></div>
