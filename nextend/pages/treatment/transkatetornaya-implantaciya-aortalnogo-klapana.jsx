@@ -11,6 +11,21 @@ export default function Tavi() {
     <>
       <Head>
         <title>Транскатетерная имплантация аортального клапана</title>
+        <meta
+          name="description"
+          content="Проводим малоинвазивные операции по транскатетерной имплантации аортального клапана. Записывайтесь на прием к специалистам нашей клиники."
+        />
+        <meta
+          property="og:title"
+          content="Транскатетерная имплантация аортального клапана"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
+        <meta
+          property="og:description"
+          content="Проводим малоинвазивные операции по транскатетерной имплантации аортального клапана. Записывайтесь на прием к специалистам нашей клиники."
+        />
+        <meta property="og:url" content="https://heartteamspb.com/treatment/transkatetornaya-implantaciya-aortalnogo-klapana" />
       </Head>
       <div className="App">
         <div id="curtain"></div>
