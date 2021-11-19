@@ -1,5 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import Image from "next/image";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Image from 'next/image';
 
 class MyDocument extends Document {
   render() {
