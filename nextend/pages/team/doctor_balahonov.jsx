@@ -10,6 +10,14 @@ export default function Balahonov() {
     <>
       <Head>
         <title>Сердечно-сосудистый хирург Балахонов Василий Васильевич</title>
+        <meta
+          name="description"
+          content="Сердечно-сосудистый хирург высшей категории, кандидат медицинских наук, автор 36 печатных работ."
+        />
+        <meta
+          property="og:description"
+          content="Сердечно-сосудистый хирург высшей категории, кандидат медицинских наук, автор 36 печатных работ."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

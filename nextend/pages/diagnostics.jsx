@@ -31,22 +31,25 @@ export default function Diagnostics() {
   return (
     <>
       <Head>
-        <title>Центр кардиохирургии и интервенционной кардиологии</title>
+        <title>Диагностика сердечно-сосудистых заболеваний.</title>
         <meta
           name="description"
-          content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
+          content="Нарушения ритма сердца. Кардиохирургия. Врожденные пороки сердца. Сердечно-сосудистая хирургия."
         />
         <meta
           property="og:title"
-          content="Центр кардиологии и интервенционной кардиологии."
+          content="Диагностика сердечно-сосудистых заболеваний."
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="./image.webp" />
         <meta
           property="og:description"
-          content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
+          content="Нарушения ритма сердца. Кардиохирургия. Врожденные пороки сердца. Сердечно-сосудистая хирургия."
         />
-        <meta property="og:url" content="heartteamspb.com" />
+        <meta
+          property="og:url"
+          content="https://heartteamspb.com/diagnostics"
+        />
       </Head>
       <div className="App">
         <div id="curtain"></div>

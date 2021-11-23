@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Stolyarov.jpg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/images/doctors/doctor_Stolyarov.jpg";
+import Contacts from "../../components/Contacts";
 
 export default function Stolyarov() {
   return (
@@ -13,6 +13,14 @@ export default function Stolyarov() {
           Заведующий отделением кардиохирургии с кабинетом РЭВДиЛ Столяров
           Максим Станиславович
         </title>
+        <meta
+          name="description"
+          content="Сердечно-сосудистый хирург высшей категории, кандидат медицинских наук."
+        />
+        <meta
+          property="og:description"
+          content="Сердечно-сосудистый хирург высшей категории, кандидат медицинских наук."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

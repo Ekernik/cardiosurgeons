@@ -20,7 +20,25 @@ export default function Announcement() {
   return (
     <>
       <Head>
-        <title>прием в городе Владимире</title>
+        <title>Прием сердечно-сосудистого хирурга в городе Владимире</title>
+        <meta
+          name="description"
+          content="Приглашаем пациентов с заболеваниями органов сердечно-сосудистой системы для отбора на дальнейшее оказание бесплатной оперативной помощи в г. Санкт-Петербурге."
+        />
+        <meta
+          property="og:description"
+          content="Приглашаем пациентов с заболеваниями органов сердечно-сосудистой системы для отбора на дальнейшее оказание бесплатной оперативной помощи в г. Санкт-Петербурге."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
+        <meta
+          property="og:title"
+          content="Прием сердечно-сосудистого хирурга в городе Владимире"
+        />
+        <meta
+          property="og:url"
+          content="https://heartteamspb.com/news/priem-v-gorode-vladimir-09-11-2021"
+        />
       </Head>
       <div className="App">
         <div id="curtain"></div>

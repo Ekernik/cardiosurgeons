@@ -13,22 +13,24 @@ export default function OurContacts() {
   return (
     <>
       <Head>
-        <title>Центр кардиохирургии и интервенционной кардиологии</title>
+        <title>
+          Контакты Центра кардиохирургии и интервенционной кардиологии.
+        </title>
         <meta
           name="description"
-          content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
+          content="Телефон Центра кардиохирургии. Адрес кардиохирургической клиники, как добраться к нам."
         />
         <meta
           property="og:title"
-          content="Центр кардиологии и интервенционной кардиологии."
+          content="Контакты Центра кардиохирургии и интервенционной кардиологии."
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="./image.webp" />
         <meta
           property="og:description"
-          content="Кардиология, кардиохирургия, сосудистая хирургия, аритмология - в клинике ВМТ им. Н.И.Пирогова. Хирургическое лечение заболеваний органов сердечно-сосудистой системы."
+          content="Телефон Центра кардиохирургии. Адрес кардиохирургической клиники, как добраться к нам."
         />
-        <meta property="og:url" content="heartteamspb.com" />
+        <meta property="og:url" content="https://heartteamspb.com/contacts" />
       </Head>
       <div className="App">
         <div id="curtain"></div>
@@ -89,7 +91,9 @@ export default function OurContacts() {
                   </a>
                 </p>
                 <p className="article__p">
-                  <a href="mailto:gosmed@inbox.ru" className='article__link'>gosmed@inbox.ru</a>
+                  <a href="mailto:gosmed@inbox.ru" className="article__link">
+                    gosmed@inbox.ru
+                  </a>
                 </p>
               </div>
             </div>

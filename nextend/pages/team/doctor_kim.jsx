@@ -10,6 +10,14 @@ export default function Kim() {
     <>
       <Head>
         <title>Cердечно-сосудистый хирург Ким Глеб Ирламович</title>
+        <meta
+          name="description"
+          content="Реконструктивная хирургия митрального клапана, аорты, клапаносберегающие операции. Мини-инвазивная хирургия."
+        />
+        <meta
+          property="og:description"
+          content="Реконструктивная хирургия митрального клапана, аорты, клапаносберегающие операции. Мини-инвазивная хирургия."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

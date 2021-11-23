@@ -10,6 +10,14 @@ export default function Sheremet() {
     <>
       <Head>
         <title>Сердечно-сосудистый хирург Шеремет Антон Андреевич</title>
+        <meta
+          name="description"
+          content="Аритмолог. Интервенционное лечение нарушений ритма сердца и проводимости."
+        />
+        <meta
+          property="og:description"
+          content="Аритмолог. Интервенционное лечение нарушений ритма сердца и проводимости."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

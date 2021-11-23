@@ -1,15 +1,23 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/svg/doctor_woman.svg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/svg/doctor_woman.svg";
+import Contacts from "../../components/Contacts";
 
 export default function Kotova() {
   return (
     <>
       <Head>
         <title>Кардиолог Котова Анна Сергеевна</title>
+        <meta
+          name="description"
+          content="Врач-кардиолог, специалист Центра кардиохирургии и интервенционной кардиологии Н.И.Пирогова."
+        />
+        <meta
+          property="og:description"
+          content="Врач-кардиолог, специалист Центра кардиохирургии и интервенционной кардиологии Н.И.Пирогова."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

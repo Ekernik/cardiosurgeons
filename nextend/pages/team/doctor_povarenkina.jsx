@@ -1,15 +1,23 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Povarenkina.jpg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/images/doctors/doctor_Povarenkina.jpg";
+import Contacts from "../../components/Contacts";
 
 export default function Povarenkina() {
   return (
     <>
       <Head>
         <title>Кардиолог Поварёнкина Вера Валерьевна</title>
+        <meta
+          name="description"
+          content="Направление деятельности: подготовка больных к эндоваскулярным вмешательствам, ведение пациентов после операций."
+        />
+        <meta
+          property="og:description"
+          content="Направление деятельности: подготовка больных к эндоваскулярным вмешательствам, ведение пациентов после операций."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

@@ -10,6 +10,14 @@ export default function Vasilev() {
     <>
       <Head>
         <title>Сердечно-сосудистый хирург Васильев Алексей Сергеевич</title>
+        <meta
+          name="description"
+          content="Специалист по рентгенэндоваскулярным диагностике и лечению."
+        />
+        <meta
+          property="og:description"
+          content="Специалист по рентгенэндоваскулярным диагностике и лечению."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

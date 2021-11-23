@@ -1,15 +1,23 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Pyagai.jpg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/images/doctors/doctor_Pyagai.jpg";
+import Contacts from "../../components/Contacts";
 
 export default function Pyagai() {
   return (
     <>
       <Head>
         <title>Сердечно-сосудистый хирург Пягай Виктор Александрович</title>
+        <meta
+          name="description"
+          content="Врач сердечно-сосудистый хирург. Специалист Центра кардиохирургии и интервенционной кардиологии клиники ВМТ им. Н.И. Пирогова СПБГУ."
+        />
+        <meta
+          property="og:description"
+          content="Врач сердечно-сосудистый хирург. Специалист Центра кардиохирургии и интервенционной кардиологии клиники ВМТ им. Н.И. Пирогова СПБГУ."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

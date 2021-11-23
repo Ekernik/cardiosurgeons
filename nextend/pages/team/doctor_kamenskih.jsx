@@ -1,15 +1,23 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Kamenskih.jpg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/images/doctors/doctor_Kamenskih.jpg";
+import Contacts from "../../components/Contacts";
 
 export default function Kamenskih() {
   return (
     <>
       <Head>
         <title>Кардиохирург Каменских Максим Сергеевич</title>
+        <meta
+          name="description"
+          content="Специальности: сердечно-сосудистая хирургия, лечение заболеваний аорты и магистральных артерий, хирургическое лечение и профилактика церебро-васкулярных болезней."
+        />
+        <meta
+          property="og:description"
+          content="Специальности: сердечно-сосудистая хирургия, лечение заболеваний аорты и магистральных артерий, хирургическое лечение и профилактика церебро-васкулярных болезней."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"

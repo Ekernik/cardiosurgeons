@@ -20,7 +20,25 @@ export default function Announcement() {
   return (
     <>
       <Head>
-        <title>Прием в Ставрополе</title>
+        <title>Прием сердечно-сосудистого хирурга в городе Ставрополь</title>
+        <meta
+          name="description"
+          content="Обследование для кардиохирургических больных. Лечение по федеральным квотам и ОМС."
+        />
+        <meta
+          property="og:description"
+          content="Обследование для кардиохирургических больных. Лечение по федеральным квотам и ОМС."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
+        <meta
+          property="og:title"
+          content="Прием сердечно-сосудистого хирурга в городе Ставрополь"
+        />
+        <meta
+          property="og:url"
+          content="https://heartteamspb.com/news/priem-v-gorode-stavropol-02-11-2021"
+        />
       </Head>
       <div className="App">
         <div id="curtain"></div>
@@ -133,7 +151,10 @@ export default function Announcement() {
                   imgSrc={img_doctor}
                   imgAlt={"Доктор Балахонов Василий Васильевич"}
                   title={"Балахонов Василий Васильевич"}
-                  subtitle={["Сердечно-сосудистый хирург,", "кандидат медицинских наук"]}
+                  subtitle={[
+                    "Сердечно-сосудистый хирург,",
+                    "кандидат медицинских наук",
+                  ]}
                   link={"/team/doctor_balahonov"}
                   showMore={true}
                 />

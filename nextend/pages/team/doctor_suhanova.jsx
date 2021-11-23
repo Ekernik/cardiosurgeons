@@ -1,15 +1,23 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Suhanova.jpg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/images/doctors/doctor_Suhanova.jpg";
+import Contacts from "../../components/Contacts";
 
 export default function Suhanova() {
   return (
     <>
       <Head>
         <title>Кардиолог Суханова Ольга Викторовна</title>
+        <meta
+          name="description"
+          content="Врач - кардиолог Центра кардиохирургии и интервенционной кардиологии."
+        />
+        <meta
+          property="og:description"
+          content="Врач - кардиолог Центра кардиохирургии и интервенционной кардиологии."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
