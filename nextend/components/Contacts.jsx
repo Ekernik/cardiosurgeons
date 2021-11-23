@@ -78,7 +78,10 @@ function Contacts() {
                 <Image src={icon_mail} alt="" width={32} height={32} />
               </span>
               <p className="our-contacts__info-text">
-                <a href="mailto:heartteam.spb@gmail.com">
+                <a
+                  href="mailto:heartteam.spb@gmail.com"
+                  className="article__link"
+                >
                   heartteam.spb@gmail.com
                 </a>
               </p>{" "}
@@ -88,7 +91,10 @@ function Contacts() {
                 <Image src={icon_phone} alt="" width={32} height={32} />
               </span>
               <p>
-                <a href="tel:+79992380136">+7 (999) 238-01-36</a> (9:00-21:00)
+                <a href="tel:+79992380136" className="article__link">
+                  +7 (999) 238-01-36
+                </a>{" "}
+                (9:00-21:00)
               </p>
             </li>
           </ul>
