@@ -1,26 +1,30 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import './scroll.js';
+import Image from "next/image";
+import Link from "next/link";
+import "./scroll.js";
 import FloatingContacts from "../FloatingContacts";
 import Button from "../ButtonCTA";
-import logo from '../../public/static/images/logo_1.png';
-import listenToScroll from './scroll.js';
-import LinkItem from './LinkItem';
-import DropList from './DropList';
-import { treatments } from '../../public/static/databases/links';
+import logo from "../../public/static/images/logo_1.png";
+import listenToScroll from "./scroll.js";
+import LinkItem from "./LinkItem";
+import DropList from "./DropList";
+import { treatments } from "../../public/static/databases/links";
 
 export default function Header() {
   let handleClick = () => {
-    const headerBurger = document.querySelector('.header__menu-burger');
-    const headerMenu = document.querySelector('.header__burger-nav');
-    const body = document.querySelector('body');
-    body.classList.toggle('fixed-page');
-    headerMenu.classList.toggle('menu--opened');
-    headerBurger.classList.toggle('menu--opened');
+    const headerBurger = document.querySelector(".header__menu-burger");
+    const headerMenu = document.querySelector(".header__burger-nav");
+    const body = document.querySelector("body");
+    body.classList.toggle("fixed-page");
+    headerMenu.classList.toggle("menu--opened");
+    headerBurger.classList.toggle("menu--opened");
+  };
+  let handleClose = () => {
+    const body = document.querySelector("body");
+    body.classList.remove("fixed-page");
   };
 
   return (
-    <header className='header' onLoad={listenToScroll}>
+    <header className="header" onLoad={listenToScroll}>
       <div className="container header__container">
         <nav className="header__navbar">
           <div className="header__brand">
@@ -32,7 +36,7 @@ export default function Header() {
                     alt="Логотип Центра кардиохирургии и интервенционной кардиологии"
                     height={40}
                     width={40}
-                    layout='intrinsic'
+                    layout="intrinsic"
                   />
                 </div>
               </a>
@@ -58,12 +62,16 @@ export default function Header() {
         </div>
         <nav className="header__burger-nav">
           <ul className="burger__menu">
-            <LinkItem link="/" text="Главная" />
-            <LinkItem link="/about-us" text="О нас" />
-            <LinkItem link="/treatment" text="Лечение" />
-            <LinkItem link="/diagnostics" text="Диагностика" />
-            <LinkItem link="/team" text="Команда" />
-            <LinkItem link="/contacts" text="Контакты" />
+            <LinkItem click={handleClose} link="/" text="Главная" />
+            <LinkItem click={handleClose} link="/about-us" text="О нас" />
+            <LinkItem click={handleClose} link="/treatment" text="Лечение" />
+            <LinkItem
+              click={handleClose}
+              link="/diagnostics"
+              text="Диагностика"
+            />
+            <LinkItem click={handleClose} link="/team" text="Команда" />
+            <LinkItem click={handleClose} link="/contacts" text="Контакты" />
           </ul>
         </nav>
       </div>
