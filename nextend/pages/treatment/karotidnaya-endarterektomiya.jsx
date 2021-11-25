@@ -11,8 +11,7 @@ export default function Stentirovanie() {
     <>
       <Head>
         <title>Каротидная эндартерэктомия</title>
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
+        <meta property="og:title" content="Каротидная эндартерэктомия." />
         <meta
           name="description"
           content="Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия."
@@ -21,11 +20,12 @@ export default function Stentirovanie() {
           property="og:description"
           content="Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия."
         />
-        <meta property="og:title" content="Каротидная эндартерэктомия." />
         <meta
           property="og:url"
           content="heartteamspb.com/treatment/karotidnaya-endarterektomiya"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>

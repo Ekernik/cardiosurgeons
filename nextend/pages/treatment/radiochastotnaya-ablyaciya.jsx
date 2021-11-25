@@ -11,8 +11,10 @@ export default function RadioAblacia() {
     <>
       <Head>
         <title>Радиочатотная абляция. Операция РЧА на сердце</title>
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
+        <meta
+          property="og:title"
+          content="Радиочатотная абляция. Операция РЧА на сердце."
+        />
         <meta
           name="description"
           content="Радиочастотная катетерная абляция (РЧА) - для пациентов с наличием аритмии и др. проблем с сердцем. Записывайтесь на осмотр и консультацию."
@@ -22,13 +24,11 @@ export default function RadioAblacia() {
           content="Радиочастотная катетерная абляция (РЧА) - для пациентов с наличием аритмии и др. проблем с сердцем. Записывайтесь на осмотр и консультацию."
         />
         <meta
-          property="og:title"
-          content="Радиочатотная абляция. Операция РЧА на сердце."
-        />
-        <meta
           property="og:url"
           content="heartteamspb.com/treatment/radiochastotnaya-ablyaciya"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>

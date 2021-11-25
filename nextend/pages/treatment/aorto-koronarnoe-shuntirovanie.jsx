@@ -15,8 +15,11 @@ export default function Shuntirovanie() {
           Аортокоронарное шунтирование сердца. Операции аорто-коронарного
           шунтирования
         </title>
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
+        <meta
+          property="og:title"
+          content="Аортокоронарное шунтирование сердца. Операции аорто-коронарного
+          шунтирования."
+        />
         <meta
           name="description"
           content="Проводим операции коронарного шунтирования в Санкт-Петербурге. Профессиональные врачи, современное оборудование. Обратитесь к нам за консультацией по вопросам аортокоронарного шунтирования."
@@ -26,14 +29,11 @@ export default function Shuntirovanie() {
           content="Проводим операции коронарного шунтирования в Санкт-Петербурге. Профессиональные врачи, современное оборудование. Обратитесь к нам за консультацией по вопросам аортокоронарного шунтирования."
         />
         <meta
-          property="og:title"
-          content="Аортокоронарное шунтирование сердца. Операции аорто-коронарного
-          шунтирования."
-        />
-        <meta
           property="og:url"
           content="heartteamspb.com/treatment/aorto-koronarnoe-shuntirovanie"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>

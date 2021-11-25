@@ -12,12 +12,12 @@ export default function OpuholiSerdca() {
       <Head>
         <title>Опухоли сердца. Миксома сердца. Опухоли сосудов сердца</title>
         <meta
-          name="description"
-          content="Проводим операции по устранению опухолей сердца: как доброкачественных, так и злокачественных. Устранение миксомы сердца. Записывайтесь на прием!"
-        />
-        <meta
           property="og:title"
           content="Опухоли сердца. Миксома сердца. Опухоли сосудов сердца."
+        />
+        <meta
+          name="description"
+          content="Проводим операции по устранению опухолей сердца: как доброкачественных, так и злокачественных. Устранение миксомы сердца. Записывайтесь на прием!"
         />
         <meta
           property="og:description"
@@ -27,6 +27,8 @@ export default function OpuholiSerdca() {
           property="og:url"
           content="heartteamspb.com/treatment/opuholi-serdca"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>

@@ -14,15 +14,13 @@ export default function miniinvisiv() {
           Миниинвазивное протезирование клапанов: аорты, митрального,
           трикуспидального
         </title>
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
         <meta
-          name="description"
+          property="og:title"
           content="Миниинвазивное протезирование клапанов: аорты, митрального,
           трикуспидального."
         />
         <meta
-          property="og:title"
+          name="description"
           content="Миниинвазивное протезирование клапанов: аорты, митрального,
           трикуспидального."
         />
@@ -35,6 +33,8 @@ export default function miniinvisiv() {
           property="og:url"
           content="heartteamspb.com/treatment/miniinvisivnoe-protezirovanie-klapanov"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>

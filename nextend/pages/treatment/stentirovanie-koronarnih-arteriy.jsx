@@ -12,23 +12,23 @@ export default function Stentirovanie() {
       <Head>
         <title>Стентирование коронарных артерий и сосудов</title>
         <meta
+          property="og:title"
+          content="Стентирование коронарных артерий и сосудов."
+        />
+        <meta
           name="description"
           content="Операции по стентированию коронарных артерий и сосудов. Записывайтесь на прием к кардиохирургам Центра кардиохуриругии и интервенционной кардиологии им. Н.И. Пирогова."
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
         <meta
           property="og:description"
           content="Операции по стентированию коронарных артерий и сосудов. Записывайтесь на прием к кардиохирургам Центра кардиохуриругии и интервенционной кардиологии им. Н.И. Пирогова."
         />
         <meta
-          property="og:title"
-          content="Стентирование коронарных артерий и сосудов."
-        />
-        <meta
           property="og:url"
           content="heartteamspb.com/treatment/stentirovanie-koronarnih-arteriy"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>

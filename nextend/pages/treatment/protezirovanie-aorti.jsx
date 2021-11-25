@@ -11,6 +11,21 @@ export default function ProtesirovanieAorti() {
     <>
       <Head>
         <title>Протезирование аорты</title>
+        <meta property="og:title" content="Протезирование аорты." />
+        <meta
+          name="description"
+          content="Выполняем операции по протезированию аорты. Пройдите лечение в нашей клинике кардиохирургии и кардиологии."
+        />
+        <meta
+          property="og:description"
+          content="Выполняем операции по протезированию аорты. Пройдите лечение в нашей клинике кардиохирургии и кардиологии."
+        />
+        <meta
+          property="og:url"
+          content="https://heartteamspb.com/treatment/protezirovanie-aorti"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>
@@ -23,9 +38,7 @@ export default function ProtesirovanieAorti() {
           />
           <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
           <section className="section__about-op-03 container">
-            <h1 className="article__header">
-              Протезирование аорты
-            </h1>
+            <h1 className="article__header">Протезирование аорты</h1>
             <p className="article__p">
               Аорта является главным сосудом и по ней кровь поступает от сердца
               ко всем жизненно важным органам человека. Проблемы могут возникать

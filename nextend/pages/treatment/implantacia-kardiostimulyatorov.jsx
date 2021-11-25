@@ -14,8 +14,11 @@ export default function miniinvisiv() {
           Имплантация кардиостимуляторов. Операции по установке
           кардиостимулятора сердца
         </title>
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
+        <meta
+          property="og:title"
+          content="Имплантация кардиостимуляторов. Операции по установке
+          кардиостимулятора сердца."
+        />
         <meta
           name="description"
           content="Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля."
@@ -25,14 +28,11 @@ export default function miniinvisiv() {
           content="Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля."
         />
         <meta
-          property="og:title"
-          content="Имплантация кардиостимуляторов. Операции по установке
-          кардиостимулятора сердца."
-        />
-        <meta
           property="og:url"
           content="heartteamspb.com/treatment/implantacia-kardiostimulyatorov"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./image.webp" />
       </Head>
       <div className="App">
         <div id="curtain"></div>
