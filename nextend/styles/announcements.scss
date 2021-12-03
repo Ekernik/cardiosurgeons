@@ -5,19 +5,9 @@
 .container__news-article {
   display: flex;
   flex-direction: column;
-
-  & a:any-link {
-    text-decoration: none;
-    color: var(--color-P--dark);
-  }
 }
 
 .news {
-  &__p,
-  &__list-item {
-    line-height: 1.4em;
-  }
-
   &__date {
     margin: 1em 0;
     letter-spacing: 0.1em;
@@ -31,11 +21,6 @@
     margin: 1em 0;
   }
 
-  &__p {
-    margin: 1em 0;
-    font-size: var(--text-regular);
-  }
-
   &__main-flex {
     display: flex;
     flex-direction: column;
@@ -44,40 +29,21 @@
   &__help-flex {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   &__doctor-card {
     align-self: center;
-  }
-
-  &__list {
-    list-style-type: none;
-    padding-left: 1.5em;
-    margin-bottom: 1em;
-
-    &-item {
-      margin: 0.8em 0;
-      font-size: var(--text-regular);
-    }
   }
 }
 
 // Tablet media query
 @media (min-width: 768px) {
   .news {
-    &__p,
-    &__list-item {
-      line-height: 1.4em;
-    }
-
     &__date {
       margin-top: 0.3em;
     }
 
-    &__p {
-      margin: 1em 0;
-    }
     &__cta {
       width: 70%;
       align-self: center;

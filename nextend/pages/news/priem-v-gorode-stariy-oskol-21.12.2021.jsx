@@ -15,45 +15,67 @@ import DoctorCard from "../../components/DoctorCard";
 import img_doctor from "../../public/static/images/doctors/doctor_Sorokin.jpg";
 import ButtonCTA from "../../components/ButtonCTA";
 
-// Старый Оскол - 16 ноября 2021
+// Старый Оскол - 21 декабя 2021
 export default function Announcement() {
   return (
     <>
       <Head>
-        <title>Прием в Старом Осколе</title>
+        <title>Прием сердечно-сосудистого хирурга в г. Старом Осколе</title>
+        <meta
+          property="og:title"
+          content="Прием сердечно-сосудистого хирурга в г. Старом Осколе"
+        />
+        <meta
+          name="description"
+          content="Отбор на бесплатное кардиохирургическое лечение в Петербурге - записывайтесь на прием!"
+        />
+        <meta
+          property="og:description"
+          content="Отбор на бесплатное кардиохирургическое лечение в Петербурге - записывайтесь на прием!"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="./image.webp" />
+        <meta property="og:url" content="heartteamspb.com" />
       </Head>
       <div className="App">
         <div id="curtain"></div>
         <Header />
         <Greetings
-          header={{ title: "16 ноября", pretitle: "город Старый Оскол" }}
+          header={{ title: "21 декабря", pretitle: "город Старый Оскол" }}
           buttonText="Записаться на консультацию"
         />
         <section className="section__news-article">
           <div className="container container__news-article">
-            <h6 className="news__date">Новость от 21 октября 2021 года</h6>
+            <p className="news__date">Новость от 03 декабря 2021 года</p>
             <h2 className="news__title">
-              16 ноября 2021 г. в&nbsp;МДЦ «Медтест» проводится отбор
-              на&nbsp;бесплатное <strong>хирургическое лечение</strong>{" "}
-              в&nbsp;Санкт-Петербурге пациентов с&nbsp;заболеваниями:
+              21 декабря 2021&nbsp;г. в&nbsp;МДЦ «Медтест» (г.&nbsp;Старый Оскол)
+              состоится прием и&nbsp;отбор пациентов на&nbsp;бесплатное
+              хирургическое лечение в&nbsp;Санкт-Петербурге.
             </h2>
             <div className="flex">
               <div style={{ flex: 1 }}>
+                <p className="article__p">
+                  <strong>
+                    Проводим отбор пациентов со следующими заболеваниями:
+                  </strong>
+                </p>
                 <ul className="article__ul">
-                  <li className="article__li">— ИБС</li>
-                  <li className="article__li">— Аневризма аорты</li>
+                  <li className="article__li">
+                    — Ишемическая болезнь сердца&nbsp;(ИБС)
+                  </li>
                   <li className="article__li">
                     — Окклюзии и&nbsp;стенозы магистральных артерий
                   </li>
+                  <li className="article__li">— Аневризма аорты</li>
                   <li className="article__li">— Иная артериальная патология</li>
                 </ul>
                 <p className="article__p">
-                  На прием пациенты должны взять с собой:
+                  Для приема в МДЦ «Медтест» пациенту необходимы документы:
                 </p>
                 <ul className="article__ul">
                   <li className="article__li">— паспорт</li>
-                  <li className="article__li">— полис ОМС</li>
                   <li className="article__li">— СНИЛС</li>
+                  <li className="article__li">— полис ОМС</li>
                   <li className="article__li">
                     — имеющиеся медицинские документы.
                   </li>
@@ -105,7 +127,7 @@ export default function Announcement() {
               <div className="news__help-flex">
                 <p className="article__p">
                   Прием будет проводиться:{" "}
-                  <strong>16&#160;ноября&#160;2021&#160;г</strong>
+                  <strong>21&#160;декабря&#160;2021&#160;г</strong>
                 </p>
                 <p className="article__p">
                   По адресу:{" "}
@@ -137,7 +159,7 @@ export default function Announcement() {
                 <p className="article__p">
                   тел. для записи:{" "}
                   <a href="tel:+79992380136" className="article__link">
-                    8&nbsp;(999)&nbsp;238&#8209;01&#8209;36
+                    +7&nbsp;(999)&nbsp;238&#8209;01&#8209;36
                   </a>
                   <br />
                   тел. МДЦ «Медтест»:{" "}

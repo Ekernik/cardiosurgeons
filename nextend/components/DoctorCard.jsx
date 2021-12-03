@@ -13,7 +13,7 @@ export default function DoctorCard(props) {
   };
   return (
     <div className={`doc-card__doctor ${props.className}`}>
-      <Link href={props.link || "#TODO"}>
+      <Link href={props.link || "#doctor_not_found"}>
         <a>
           <Image
             className="doc-card__img"
@@ -22,7 +22,7 @@ export default function DoctorCard(props) {
           />
         </a>
       </Link>
-      <Link href={props.link || "#TODO"}>
+      <Link href={props.link || "#doctor_not_found"}>
         <a className="doc-card__title">
           <h2>{props.title}</h2>
         </a>

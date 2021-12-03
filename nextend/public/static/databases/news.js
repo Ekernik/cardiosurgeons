@@ -1,6 +1,17 @@
 let newsArr = [
   {
-    id: "n5",
+    id: "n4",
+    title: "21 декабря",
+    subtitle: "В городе Старом Осколе",
+    pretitle: "Старый Оскол",
+    date: "03 декабря 2021",
+    setting: {},
+    buttonText: "Записаться на приём",
+    link: "priem-v-gorode-stariy-oskol-21.12.2021",
+    hot: true,
+  },
+  {
+    id: "n3",
     title: "16 ноября",
     subtitle: "В городе Старом Осколе",
     pretitle: "Старый Оскол",
@@ -11,7 +22,7 @@ let newsArr = [
     hot: true,
   },
   {
-    id: "n3",
+    id: "n2",
     title: "11 ноября",
     subtitle: "В городе Ставрополе",
     pretitle: "город Ставрополь",
@@ -22,7 +33,7 @@ let newsArr = [
     hot: true,
   },
   {
-    id: "n2",
+    id: "n1",
     title: "9 ноября",
     subtitle: "В городе Владимире",
     pretitle: "город Владимир",

@@ -83,7 +83,7 @@ export default function Announcement() {
                 <p className="article__p">
                   При себе необходимо иметь следующие копии документов:
                 </p>
-                <ul className="news__list">
+                <ul className="article__ul">
                   <li className="article__li">
                     — паспорт (1-я страница и&nbsp;прописка)
                   </li>
@@ -99,7 +99,7 @@ export default function Announcement() {
                     аорта):
                   </b>
                 </p>
-                <ul className="news__list">
+                <ul className="article__ul">
                   <li className="article__li">— ЭКГ (описание)</li>
                   <li className="article__li">— Эхокардиография</li>
                   <li className="article__li">
@@ -119,7 +119,7 @@ export default function Announcement() {
                     к&nbsp;вышесказанному:
                   </b>
                 </p>
-                <ul className="news__list">
+                <ul className="article__ul">
                   <li className="article__li">
                     — Дуплексное сканирование брахиоцефальных артерий, аорты,
                     артерий нижних конечностей.
@@ -131,14 +131,14 @@ export default function Announcement() {
                     к&nbsp;вышенаписанному:
                   </b>
                 </p>
-                <ul className="news__list">
+                <ul className="article__ul">
                   <li className="article__li">
                     — Суточный мониторинг ЭКГ по&nbsp;Холтеру.
                   </li>
                 </ul>
               </div>
               <div className="news__help-flex">
-                <p className="news__p" style={{ textAlign: "center" }}>
+                <p className="article__p" style={{ textAlign: "center", flex: 'none' }}>
                   Прием ведет специалист Центра <br />
                   <Link href="/team/doctor_balahonov">
                     <a className="article__link">

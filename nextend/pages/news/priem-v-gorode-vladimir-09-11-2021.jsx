@@ -98,7 +98,10 @@ export default function Announcement() {
                 </div>
               </div>
               <div className="news__help-flex">
-                <p className="news__p" style={{ textAlign: "center" }}>
+                <p
+                  className="article__p"
+                  style={{ textAlign: "center", flex: "none" }}
+                >
                   Прием ведет специалист Центра <br />
                   <Link href="/team/doctor_pyagai">
                     <a className="article__link">Пягай Виктор Александрович</a>
