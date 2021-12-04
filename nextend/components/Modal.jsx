@@ -13,7 +13,7 @@ export default function Modal({ open, onClose, content }) {
           <h3 className={styles.heading}>Отзыв</h3>
           <div className={styles.container}>
             <button onClick={onClose} className={styles.button}>
-              <Image src={close_img} className={styles.close__btn} />
+              <Image src={close_img} alt="" className={styles.close__btn} />
             </button>
           </div>
           <Suspense fallback={<div>loading...</div>}>
