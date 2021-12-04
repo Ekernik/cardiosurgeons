@@ -59,3 +59,16 @@ export const diagnos = {
     },
   ],
 };
+
+export const about = {
+  mainLink: {
+    link: "/about-us",
+    text: "О нас",
+  },
+  links: [
+    {
+      link: "/feedback",
+      text: "Отзывы",
+    },
+  ],
+};

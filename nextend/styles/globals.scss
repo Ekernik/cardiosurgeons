@@ -59,6 +59,10 @@ code {
   overflow: visible;
 }
 
+.fixed {
+  overflow-y: hidden;
+}
+
 .hidden {
   display: none !important;
 }

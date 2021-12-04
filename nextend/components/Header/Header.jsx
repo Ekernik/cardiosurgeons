@@ -1,26 +1,51 @@
-import Image from "next/image";
-import Link from "next/link";
-import "./scroll.js";
-import FloatingContacts from "../FloatingContacts";
-import Button from "../ButtonCTA";
-import logo from "../../public/static/images/logo_1.png";
-import listenToScroll from "./scroll.js";
-import LinkItem from "./LinkItem";
-import DropList from "./DropList";
-import { treatments } from "../../public/static/databases/links";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect } from 'react';
+import './scroll.js';
+import FloatingContacts from '../FloatingContacts';
+import Button from '../ButtonCTA';
+import logo from '../../public/static/images/logo_1.png';
+import listenToScroll from './scroll.js';
+import LinkItem from './LinkItem';
+import DropList from './DropList';
+import { treatments, about } from '../../public/static/databases/links';
+import DropButtonAboutUs from './DropButtonAboutUs.jsx';
+import DropButtonTreatment from './DropButtonTreatment.jsx';
+import styles from './dropdown.module.scss';
 
 export default function Header() {
+  useEffect(() => {
+    document.addEventListener('click', (e) => {
+      let currentDropdown;
+      const isDropdownButton = e.target.matches('[data-dropdown-button]');
+      if (!isDropdownButton && e.target.closest('[data-dropdown]') != null)
+        return;
+
+      if (isDropdownButton) {
+        currentDropdown = e.target.closest('[data-dropdown]');
+        currentDropdown.classList.toggle(styles.active);
+      }
+
+      document
+        .querySelectorAll(`[data-dropdown].${styles.active}`)
+        .forEach((dropdown) => {
+          if (dropdown === currentDropdown) return;
+          dropdown.classList.remove(styles.active);
+        });
+    });
+  }, []);
+
   let handleClick = () => {
-    const headerBurger = document.querySelector(".header__menu-burger");
-    const headerMenu = document.querySelector(".header__burger-nav");
-    const body = document.querySelector("body");
-    body.classList.toggle("fixed-page");
-    headerMenu.classList.toggle("menu--opened");
-    headerBurger.classList.toggle("menu--opened");
+    const headerBurger = document.querySelector('.header__menu-burger');
+    const headerMenu = document.querySelector('.header__burger-nav');
+    const body = document.querySelector('body');
+    body.classList.toggle('fixed-page');
+    headerMenu.classList.toggle('menu--opened');
+    headerBurger.classList.toggle('menu--opened');
   };
   let handleClose = () => {
-    const body = document.querySelector("body");
-    body.classList.remove("fixed-page");
+    const body = document.querySelector('body');
+    body.classList.remove('fixed-page');
   };
 
   return (
@@ -63,7 +88,7 @@ export default function Header() {
         <nav className="header__burger-nav">
           <ul className="burger__menu">
             <LinkItem click={handleClose} link="/" text="Главная" />
-            <LinkItem click={handleClose} link="/about-us" text="О нас" />
+            <LinkItem click={handleClose} link="/about-us" text="О клинике" />
             <LinkItem click={handleClose} link="/treatment" text="Лечение" />
             <LinkItem
               click={handleClose}
@@ -72,6 +97,7 @@ export default function Header() {
             />
             <LinkItem click={handleClose} link="/team" text="Команда" />
             <LinkItem click={handleClose} link="/contacts" text="Контакты" />
+            <LinkItem click={handleClose} link="/feedback" text="Отзывы" />
           </ul>
         </nav>
       </div>
@@ -79,8 +105,11 @@ export default function Header() {
         <div className="container flex overflow">
           <ul className="header__menu">
             <LinkItem link="/" text="Главная" />
-            <LinkItem link="/about-us" text="О нас" />
-            <DropList mainLink={treatments.mainLink} links={treatments.links} />
+            {/* <LinkItem link="/about-us" text="О нас" /> */}
+            {/* <DropList mainLink={about.mainLink} links={about.links} /> */}
+            <DropButtonAboutUs styles={styles} />
+            <DropButtonTreatment styles={styles} />
+            {/* <DropList mainLink={treatments.mainLink} links={treatments.links} /> */}
             <LinkItem link="/diagnostics" text="Диагностика" />
             <LinkItem link="/team" text="Команда" />
             <LinkItem link="/contacts" text="Контакты" />

@@ -1,0 +1,21 @@
+.container {
+  margin-top: 3em;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+///////////// TABLET VIEW
+@media (min-width: 768px) {
+  .container {
+    margin-top: 9em;
+  }
+}
