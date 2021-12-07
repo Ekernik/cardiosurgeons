@@ -1,16 +1,20 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-export default function Review() {
+export default function Review({ onClose }) {
   return (
     <div>
       <p className="article__p">
-        Мне операцию сделали два врача{' '}
-        <Link href="https://heartteamspb.com/team/doctor_kamenskih">
-          <a className="article__link">Каменских М.С.</a>
-        </Link>{' '}
-        и{' '}
-        <Link href="https://heartteamspb.com/team/doctor_shmatov">
-          <a className="article__link">Шматов Д.В.</a>
+        Мне операцию сделали два врача{" "}
+        <Link href="/team/doctor_kamenskih">
+          <a onClick={onClose} className="article__link">
+            Каменских М.С.
+          </a>
+        </Link>{" "}
+        и{" "}
+        <Link href="/team/doctor_shmatov">
+          <a onClick={onClose} className="article__link">
+            Шматов Д.В.
+          </a>
         </Link>
       </p>
       <p className="article__p">

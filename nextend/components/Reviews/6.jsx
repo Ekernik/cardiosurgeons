@@ -1,14 +1,16 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-export default function Review() {
+export default function Review({ onClose }) {
   return (
     <div>
       <p className="article__p">
         Выражаю искреннюю благодарность руководству Клиники высоких медицинских
         технологий им. Н.И.Пирогова СПбГУ в лице заместителя директора,
-        кардиохирурга д.м.н{' '}
-        <Link href="https://heartteamspb.com/team/doctor_shmatov">
-          <a className="article__link">Шматова Дмитрия Викторовича</a>
+        кардиохирурга д.м.н{" "}
+        <Link href="/team/doctor_shmatov">
+          <a onClick={onClose} className="article__link">
+            Шматова Дмитрия Викторовича
+          </a>
         </Link>
         , за профессионализм и высокий уровень организации
         лечебно-диагностического процесса Центра кардиохирургии.
@@ -19,34 +21,43 @@ export default function Review() {
         как единое целое.
       </p>
       <p className="article__p">
-        После детального обследования консилиумом врачей во главе со{' '}
-        <Link href="https://heartteamspb.com/team/doctor_shmatov">
-          <a className="article__link"> Шматовым Д.В.</a>
+        После детального обследования консилиумом врачей во главе со{" "}
+        <Link href="/team/doctor_shmatov">
+          <a onClick={onClose} className="article__link">
+            {" "}
+            Шматовым Д.В.
+          </a>
         </Link>
         , был найден нужный подход к решению моей проблемы и выполнена сложная
         операция.
       </p>
       <p className="article__p">
         Я искренне благодарна коллективу отделения кардиохирургии во главе с
-        зав. отделением{' '}
-        <Link href="https://heartteamspb.com/team/doctor_stolyarov">
-          <a className="article__link">Столяровым Максимом Станиславовичем</a>
-        </Link>{' '}
+        зав. отделением{" "}
+        <Link href="/team/doctor_stolyarov">
+          <a onClick={onClose} className="article__link">
+            Столяровым Максимом Станиславовичем
+          </a>
+        </Link>{" "}
         за согласованную, квалифицированную работу врачебно-сестринского и
         младшего медицинского персонала.
       </p>
       <p className="article__p">
-        Я признательна лечащему врачу{' '}
-        <Link href="https://heartteamspb.com/team/doctor_kotova">
-          <a className="article__link">Котовой Анне Сергеевне</a>
+        Я признательна лечащему врачу{" "}
+        <Link href="/team/doctor_kotova">
+          <a onClick={onClose} className="article__link">
+            Котовой Анне Сергеевне
+          </a>
         </Link>
         , врачу УЗИ Загатиной Анжеле Васильевне, рентгенхирургам, операционной и
         анестезиологической бригадам, всему коллективу отделения реанимации.
       </p>
       <p className="article__p">
-        Особенно, благодарю кардиохирурга{' '}
-        <Link href="https://heartteamspb.com/team/doctor_kamenskih">
-          <a className="article__link">Каменских Максима Сергеевича</a>
+        Особенно, благодарю кардиохирурга{" "}
+        <Link href="/team/doctor_kamenskih">
+          <a onClick={onClose} className="article__link">
+            Каменских Максима Сергеевича
+          </a>
         </Link>
         , специалиста высокого класса и который, как я чувствовала, помогал мне
         выздоравливать и после выписки.

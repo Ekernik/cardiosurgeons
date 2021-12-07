@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import React, { Suspense } from 'react';
-import close_img from '../public/static/svg/x-mark.png';
-import styles from '../styles/modal.module.scss';
+import Image from "next/image";
+import React, { Suspense } from "react";
+import close_img from "../public/static/svg/x-mark.png";
+import styles from "../styles/modal.module.scss";
 
 export default function Modal({ open, onClose, content }) {
   if (!open) return null;
@@ -16,8 +16,8 @@ export default function Modal({ open, onClose, content }) {
               <Image src={close_img} alt="" className={styles.close__btn} />
             </button>
           </div>
-          <Suspense fallback={<div>loading...</div>}>
-            <ContentfullComponent></ContentfullComponent>
+          <Suspense fallback={<div>Отзыв загружается...</div>}>
+            <ContentfullComponent onClose={onClose} />
           </Suspense>
         </div>
       </div>
