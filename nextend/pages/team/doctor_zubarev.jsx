@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Zubarev.jpg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/images/doctors/doctor_Zubarev.jpg";
+import Contacts from "../../components/Contacts";
 
 export default function Zubarev() {
   return (
@@ -47,6 +48,11 @@ export default function Zubarev() {
                 <p className="doctor__position">Сердечно-сосудистый хирург,</p>
                 <p className="doctor__position">Кандидат медицинских наук</p>
               </div>
+              <Link
+                href={{ pathname: "/feedback", query: { doctor: "zubarev" } }}
+              >
+                <a className="doctor__feedback">отзывы о враче</a>
+              </Link>
             </div>
             <div className="doctor__info">
               <iframe

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -60,6 +61,11 @@ export default function Shmatov() {
                 <p className="doctor__position">сердечно-сосудистый хирург,</p>
                 <p className="doctor__position">доктор медицинских наук</p>
               </div>
+              <Link
+                href={{ pathname: "/feedback", query: { doctor: "shmatov" } }}
+              >
+                <a className="doctor__feedback">отзывы о враче</a>
+              </Link>
             </div>
             <div className="doctor__info">
               <iframe

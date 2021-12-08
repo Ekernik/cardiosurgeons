@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Sheremet.jpg';
-import Contacts from '../../components/Contacts';
+import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import img_doctor from "../../public/static/images/doctors/doctor_Sheremet.jpg";
+import Contacts from "../../components/Contacts";
 
 export default function Sheremet() {
   return (
@@ -47,16 +48,21 @@ export default function Sheremet() {
                 <p className="doctor__position">Сердечно-сосудистый хирург,</p>
                 <p className="doctor__position">аритмолог</p>
               </div>
+              <Link
+                href={{ pathname: "/feedback", query: { doctor: "sheremet" } }}
+              >
+                <a className="doctor__feedback">отзывы о враче</a>
+              </Link>
             </div>
             <div className="doctor__info">
               <section className="doctor__theme-section">
                 <h3 className="doctor__theme">Направление деятельности</h3>
                 <p className="article__p">
-                  —{' '}
+                  —{" "}
                   <strong>
                     Интервенционное лечение нарушений ритма сердца и
                     проводимости:
-                  </strong>{' '}
+                  </strong>{" "}
                   Катетерная аблация и электрофизиологические исследования в том
                   числе в условиях 3D навигационного картирования, при
                   нарушениях ритма сердца: синдром WPW, предсердная тахикардия,

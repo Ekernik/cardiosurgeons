@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -47,6 +48,11 @@ export default function Kamenskih() {
               <div className="marked-container doctor__about">
                 <h2 className="doctor__position">Кардиохирург</h2>
               </div>
+              <Link
+                href={{ pathname: "/feedback", query: { doctor: "kamenskih" } }}
+              >
+                <a className="doctor__feedback">отзывы о враче</a>
+              </Link>
             </div>
             <div className="doctor__info">
               <section className="doctor__theme-section">
