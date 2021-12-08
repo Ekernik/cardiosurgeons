@@ -52,7 +52,6 @@ export default function ContactsForm() {
           name={formSettings.email_entry}
           type="email"
           className="contact-form__input"
-          required
         />
         <input
           type="text"
@@ -62,19 +61,14 @@ export default function ContactsForm() {
           readOnly
           required
         />
-        <label className="contact-form__label">
-          Адрес Вашей электронной почты
-          <span className="must-have">*</span>
-        </label>
+        <label className="contact-form__label">Ваша электронная почта</label>
       </div>
       <div className="contact-form__group">
         <textarea
           name={formSettings.message_entry}
           className="contact-form__textfield"
         ></textarea>
-        <label className="contact-form__label">
-          Ваше сообщение<span className="must-have">*</span>
-        </label>
+        <label className="contact-form__label">Ваше сообщение</label>
       </div>
       <div className="contact-form__sm-section">
         <div className="contact-form__group">

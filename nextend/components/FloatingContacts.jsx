@@ -109,7 +109,6 @@ export default function FloatingContacts() {
             name={formSettings.email_entry}
             type="email"
             className="contact-form__input"
-            required
           />
           <input
             type="text"
@@ -120,8 +119,7 @@ export default function FloatingContacts() {
             required
           />
           <label className="contact-form__label">
-            Адрес Вашей электронной почты
-            <span className="must-have">*</span>
+            Ваша электронная почта <span className='contact-form__small-text'>(необязательно)</span>
           </label>
         </div>
         <div className="contact-form__group">
