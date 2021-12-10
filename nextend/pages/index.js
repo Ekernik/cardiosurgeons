@@ -6,6 +6,7 @@ import Greetings from '../components/Greetings';
 import Banner from '../components/Banner';
 import NewsSlider from '../components/NewsSlider/NewsSlider';
 import Contacts from '../components/Contacts';
+import ReviewSlider from '../components/ReviewSlider';
 
 function App() {
   return (
@@ -93,8 +94,7 @@ function App() {
             </p>
           </section>
           <NewsSlider />
-          {/* <WhyUs /> */}
-          {/* <OurServices /> */}
+          <ReviewSlider />
         </main>
         <Contacts />
         <Footer />
