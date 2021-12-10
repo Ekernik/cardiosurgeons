@@ -7,8 +7,6 @@ import Button from '../ButtonCTA';
 import logo from '../../public/static/images/logo_1.png';
 import listenToScroll from './scroll.js';
 import LinkItem from './LinkItem';
-import DropList from './DropList';
-import { treatments, about } from '../../public/static/databases/links';
 import DropButtonAboutUs from './DropButtonAboutUs.jsx';
 import DropButtonTreatment from './DropButtonTreatment.jsx';
 import styles from './dropdown.module.scss';
@@ -105,11 +103,8 @@ export default function Header() {
         <div className="container flex overflow">
           <ul className="header__menu">
             <LinkItem link="/" text="Главная" />
-            {/* <LinkItem link="/about-us" text="О нас" /> */}
-            {/* <DropList mainLink={about.mainLink} links={about.links} /> */}
             <DropButtonAboutUs styles={styles} />
             <DropButtonTreatment styles={styles} />
-            {/* <DropList mainLink={treatments.mainLink} links={treatments.links} /> */}
             <LinkItem link="/diagnostics" text="Диагностика" />
             <LinkItem link="/team" text="Команда" />
             <LinkItem link="/contacts" text="Контакты" />
