@@ -1,0 +1,13 @@
+.review__container {
+  display: flex;
+  flex-direction: column;
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .review__container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
