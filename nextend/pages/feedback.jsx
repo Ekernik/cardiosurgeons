@@ -15,6 +15,7 @@ export default function Feedback() {
   }, []);
 
   const getReviews = (search) => {
+    const reviews = [...REVIEWS].reverse();
     if (search === 'shmatov') {
       return <ReviewBox review={REVIEWS[0]} />;
     } else if (search === 'kamenskih') {
@@ -26,7 +27,7 @@ export default function Feedback() {
     } else if (search === 'zubarev') {
       return <ReviewBox review={REVIEWS[3]} />;
     } else
-      return REVIEWS.map((review, i) => (
+      return reviews.map((review, i) => (
         <ReviewBox key={i + Date.now()} review={review} />
       ));
   };

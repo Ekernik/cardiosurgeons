@@ -18,8 +18,9 @@ export default function ReviewBox({ review }) {
       />
       <div className={style.box}>
         <div className={style.header}>
-          <p className={style.date}>{review.author || 'Анонимно'}</p>
+          <p className={style.author}>{review.author || 'Анонимно'}</p>
         </div>
+        <p className={style.city}>{review.city}</p>
         <div className={style.message}>
           {review.message.map((par, i) => (
             <p className="article__p" key={i + Date.now()}>

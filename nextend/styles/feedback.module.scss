@@ -19,3 +19,14 @@
     margin-top: 9em;
   }
 }
+
+///////////// LAPTOP VIEW
+@media (min-width: 992px) {
+  .container {
+    margin-top: 8em;
+  }
+
+  .h1 {
+    margin-bottom: 1em;
+  }
+}
