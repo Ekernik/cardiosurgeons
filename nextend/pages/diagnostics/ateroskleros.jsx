@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Greetings from "../../components/Greetings";
-import Banner from "../../components/Banner";
-import Advantages from "../../components/Advantages";
-import Contacts from "../../components/Contacts";
-import Footer from "../../components/Footer/Footer";
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Greetings from '../../components/Greetings';
+import Banner from '../../components/Banner';
+import Advantages from '../../components/Advantages';
+import Contacts from '../../components/Contacts';
+import Footer from '../../components/Footer';
 
 export default function Ateroskleros() {
   return (
@@ -64,7 +64,7 @@ export default function Ateroskleros() {
               на&nbsp;генетических предпосылках нарушения обмена холестерина
               и&nbsp;отложения его в&nbsp;стенках сосудов. Основная причина
               смертности и&nbsp;инвалидизации взрослого населения нашей планеты
-              – сердечно-сосудистые заболевания, обусловленные атеросклерозом.{" "}
+              – сердечно-сосудистые заболевания, обусловленные атеросклерозом.{' '}
             </p>
             <p className="article__p">
               Атеросклероз - это процесс отложения холестерина в&nbsp;стенке
@@ -217,7 +217,7 @@ export default function Ateroskleros() {
                   операция позволяет локально удалить бляшку из бедренной
                   артерии (эндартерэктомия) и одномоментно эндоваскулярно
                   расширить подвздошную артерию с последующим её стентированием,
-                  вместо более травматичного аортобедренного шунтирования.{" "}
+                  вместо более травматичного аортобедренного шунтирования.{' '}
                 </p>
                 <p className="article__p">
                   При наличии аневризмы брюшной аорты гибридные методики
@@ -235,7 +235,7 @@ export default function Ateroskleros() {
             </ul>
             <div className="marked-container">
               <h4 className="article__header">Пример 1</h4>
-              <div style={{ textAlign: "left", paddingLeft: "1em" }}>
+              <div style={{ textAlign: 'left', paddingLeft: '1em' }}>
                 <p className="article__p">
                   Частный случай атеросклеротического поражения артерий.
                 </p>
@@ -263,7 +263,7 @@ export default function Ateroskleros() {
             </div>
             <div className="marked-container">
               <h4 className="article__header">Пример 2</h4>
-              <div style={{ textAlign: "left", paddingLeft: "1em" }}>
+              <div style={{ textAlign: 'left', paddingLeft: '1em' }}>
                 <p className="article__p">
                   Частный случай атеросклеротического поражения артерий. Стеноз
                   сонных артерий. Ишемический инсульт.

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./footer.module.scss";
+import Image from 'next/image';
+import Link from 'next/link';
+import insta_logo from '../public/static/svg/instagram.svg';
+import styles from '../styles/footer.module.scss';
 // import FAB from '../FAB/FAB'; #TODO
-import insta_logo from "../../public/static/svg/instagram.svg";
 
 export default function Footer() {
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
             href="https://www.instagram.com/heartteam.spb/"
             target="_blank"
             className={styles.social_links__link}
-            rel="noreferrer"
+            rel="noreferrer noopenner"
           >
             <Image src={insta_logo} alt="ссылка на наш instagram" />
             <span className={styles.social_links__icon}>heartteam.spb</span>

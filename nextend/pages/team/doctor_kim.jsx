@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+import Footer from '../../components/Footer';
 import img_doctor from '../../public/static/images/doctors/doctor_Kim.jpg';
 import Contacts from '../../components/Contacts';
 

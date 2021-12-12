@@ -1,15 +1,18 @@
-import Link from "next/link";
-import Head from "next/head";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Contacts from "../components/Contacts";
-import { treatments } from "../public/static/databases/links";
+import Link from 'next/link';
+import Head from 'next/head';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer';
+import Contacts from '../components/Contacts';
+import { treatments } from '../public/static/databases/links';
 
 export default function Treatment() {
   return (
     <>
       <Head>
-        <title>Лечение болезней сердца и сосудов. Кардиохирургические операции на сердце.</title>
+        <title>
+          Лечение болезней сердца и сосудов. Кардиохирургические операции на
+          сердце.
+        </title>
         <meta
           name="description"
           content="Записывайтесь на лечение болезней сердца к ведущим кардиологам и кардиохирургам нашей клиники. Прием по федеральным квотам и ОМС."
@@ -50,7 +53,7 @@ export default function Treatment() {
               </p>
               <p className="article__p">
                 Мы проводим полный спектр хирургических, гибридных и
-                эндоваскулярных операций при{" "}
+                эндоваскулярных операций при{' '}
                 <Link href="https://heartteamspb.com/diagnostics/ateroskleros">
                   <a className="article__link">
                     атеросклерозе коронарных артерий
@@ -69,11 +72,11 @@ export default function Treatment() {
               <p className="article__p">
                 Более подробную информацию о кардиохирургических операциях и
                 лечении вы можете получить, обратившись к специалистам нашей
-                клиники по номеру телефона{" "}
+                клиники по номеру телефона{' '}
                 <a href="tel:+79992380136" className="article__link">
                   +7 (999) 238-01-36
                 </a>
-                , или написав нам на электронную почту:{" "}
+                , или написав нам на электронную почту:{' '}
                 <a
                   href="mailto:heartteam.spb@gmail.com"
                   className="article__link"

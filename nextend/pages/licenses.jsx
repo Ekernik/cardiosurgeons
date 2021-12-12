@@ -1,6 +1,6 @@
-import Head from "next/head";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Head from 'next/head';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer';
 
 export default function Confidential() {
   return (
@@ -201,16 +201,16 @@ export default function Confidential() {
             данных конкретному субъекту персональных данных;
           </p>
           <p className="article__p">
-            2.9.{" "}
+            2.9.{' '}
             <strong>Автоматизированная обработка персональных данных</strong> –
             обработка персональных данных с помощью средств вычислительной
             техники;
           </p>
           <p className="article__p">
-            2.10.{" "}
+            2.10.{' '}
             <strong>
               Информационная система персональных данных (далее - ИСПД)
-            </strong>{" "}
+            </strong>{' '}
             – совокупность содержащихся в базах данных персональных данных и
             обеспечивающих их обработку информационных технологий и технических
             средств;

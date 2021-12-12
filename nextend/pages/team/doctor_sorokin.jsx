@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Sorokin.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Sorokin.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Sorokin() {
   return (

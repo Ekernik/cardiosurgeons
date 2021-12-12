@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Shmatov.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Shmatov.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Shmatov() {
   return (
@@ -62,7 +62,7 @@ export default function Shmatov() {
                 <p className="doctor__position">доктор медицинских наук</p>
               </div>
               <Link
-                href={{ pathname: "/feedback", query: { doctor: "shmatov" } }}
+                href={{ pathname: '/feedback', query: { doctor: 'shmatov' } }}
               >
                 <a className="doctor__feedback">отзывы о враче</a>
               </Link>

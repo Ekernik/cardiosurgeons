@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Greetings from "../../components/Greetings";
-import Banner from "../../components/Banner";
-import Advantages from "../../components/Advantages";
-import Contacts from "../../components/Contacts";
-import Footer from "../../components/Footer/Footer";
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Greetings from '../../components/Greetings';
+import Banner from '../../components/Banner';
+import Advantages from '../../components/Advantages';
+import Contacts from '../../components/Contacts';
+import Footer from '../../components/Footer';
 
 export default function miniinvisiv() {
   return (

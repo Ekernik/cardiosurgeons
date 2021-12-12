@@ -1,13 +1,13 @@
-import Head from "next/head";
+import Head from 'next/head';
 import {
   YMaps,
   Map,
   Placemark,
   FullscreenControl,
   ZoomControl,
-} from "react-yandex-maps";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+} from 'react-yandex-maps';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer';
 
 export default function OurContacts() {
   return (
@@ -43,14 +43,14 @@ export default function OurContacts() {
             </h2>
             <div className="our-contacts__main-flex">
               <div className="our-contacts__address-flex">
-                <YMaps query={{ lang: "ru_RU" }}>
+                <YMaps query={{ lang: 'ru_RU' }}>
                   <Map
-                    width={"100%"}
-                    height={"30vh"}
+                    width={'100%'}
+                    height={'30vh'}
                     defaultState={{
                       center: [59.915765, 30.28255],
                       zoom: 16,
-                      behaviors: ["default", "scrollZoom"],
+                      behaviors: ['default', 'scrollZoom'],
                       controls: [],
                     }}
                   >
@@ -78,7 +78,7 @@ export default function OurContacts() {
                 <p className="article__p">
                   <a href="tel:+79992380136" className="article__link">
                     +7 (999) 238-01-36
-                  </a>{" "}
+                  </a>{' '}
                   (9:00-21:00)
                 </p>
                 <h3 className="our-contacts__info-title">Электронная почта</h3>

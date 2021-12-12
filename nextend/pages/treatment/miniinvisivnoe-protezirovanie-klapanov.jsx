@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Greetings from "../../components/Greetings";
-import Banner from "../../components/Banner";
-import Advantages from "../../components/Advantages";
-import Contacts from "../../components/Contacts";
-import Footer from "../../components/Footer/Footer";
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Greetings from '../../components/Greetings';
+import Banner from '../../components/Banner';
+import Advantages from '../../components/Advantages';
+import Contacts from '../../components/Contacts';
+import Footer from '../../components/Footer';
 
 export default function miniinvisiv() {
   return (
@@ -115,7 +115,7 @@ export default function miniinvisiv() {
             </p>
             <p className="article__p">
               По вопросам протезирования клапанов, стоимости данной услуги и
-              консультации обращайтесь по телефону{" "}
+              консультации обращайтесь по телефону{' '}
               <a href="tel:+79992380136" className="article__link">
                 +7&nbsp;(999)&nbsp;238&#8209;01&#8209;36
               </a>

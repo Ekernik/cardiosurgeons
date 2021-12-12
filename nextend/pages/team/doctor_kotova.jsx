@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/svg/doctor_woman.svg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
+import img_doctor from '../../public/static/svg/doctor_woman.svg';
+import Contacts from '../../components/Contacts';
 
 export default function Kotova() {
   return (
@@ -42,7 +42,7 @@ export default function Kotova() {
                 <p className="doctor__position">Кардиолог</p>
               </div>
               <Link
-                href={{ pathname: "/feedback", query: { doctor: "kotova" } }}
+                href={{ pathname: '/feedback', query: { doctor: 'kotova' } }}
               >
                 <a className="doctor__feedback">отзывы о враче</a>
               </Link>

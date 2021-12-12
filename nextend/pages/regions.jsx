@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Contacts from '../components/Contacts';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer';
 import NewsCard from '../components/NewsCard/NewsCard';
 import newsArr from '../public/static/databases/news';
 import styles from '../styles/regions.module.scss';
@@ -44,7 +44,7 @@ export default function OurTeam() {
       <div className="App">
         <div id="curtain"></div>
         <Header />
-        <main className='section'>
+        <main className="section">
           <div className="container">
             <h1 className="article__header">
               Прием кардиохирургов и&nbsp;кардиологов в&nbsp;городах&nbsp;РФ

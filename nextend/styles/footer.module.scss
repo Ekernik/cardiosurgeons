@@ -1,33 +1,21 @@
 .footer {
-  clear: both;
-  bottom: 0;
-  width: 100%;
   padding: 1em 0;
   background-color: var(--color-dark);
   color: var(--color-white);
 
   &__copyright {
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0.5em;
   }
 
-  &__mark {
+  &__mark:any-link {
     color: var(--color-gray);
     font-size: var(--text-sm);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.15s ease-in;
-
-    &:any-link {
-      text-decoration: none;
-      text-align: center;
-    }
+    text-decoration: none;
+    text-align: center;
+    transition: 100ms ease-in;
 
     &:hover {
       color: var(--color-P--tint);
@@ -42,8 +30,6 @@
 }
 
 .social_links {
-  width: auto;
-  margin: 0 auto 0.3em;
   display: flex;
   justify-content: center;
 
@@ -54,13 +40,15 @@
     align-items: center;
     color: #fff;
     text-decoration: none;
+    margin: 0 1em;
+    padding: 0.8em;
 
     &:hover {
       opacity: 1;
     }
   }
 
-  &__icon{
+  &__icon {
     margin-left: 0.5rem;
   }
 }

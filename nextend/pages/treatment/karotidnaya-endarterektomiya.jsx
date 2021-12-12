@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Greetings from "../../components/Greetings";
-import Contacts from "../../components/Contacts";
-import Banner from "../../components/Banner";
-import Advantages from "../../components/Advantages";
-import Footer from "../../components/Footer/Footer";
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Greetings from '../../components/Greetings';
+import Contacts from '../../components/Contacts';
+import Banner from '../../components/Banner';
+import Advantages from '../../components/Advantages';
+import Footer from '../../components/Footer';
 
 export default function Stentirovanie() {
   return (

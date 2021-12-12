@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
-import Header from "../components/Header/Header";
-import Contacts from "../components/Contacts";
-import Footer from "../components/Footer/Footer";
-import team from "../public/static/images/team.jpg";
-import operation01 from "../public/static/images/operation_01.jpg";
-import operation02 from "../public/static/images/operation_02.jpg";
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
+import Header from '../components/Header/Header';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
+import team from '../public/static/images/team.jpg';
+import operation01 from '../public/static/images/operation_01.jpg';
+import operation02 from '../public/static/images/operation_02.jpg';
 
 export default function AboutUs() {
   return (
@@ -49,7 +49,7 @@ export default function AboutUs() {
             <p className="article__p">
               <strong>
                 Центр кардиохирургии и интервенционной кардиологии
-              </strong>{" "}
+              </strong>{' '}
               основан в 2014 году на базе “Клиники высоких технологий
               им.&nbsp;Н.И.Пирогова” Санкт-Петербургского Государственного
               Университета. За короткий срок наш Центр стал одним из ведущих
@@ -100,10 +100,10 @@ export default function AboutUs() {
             </p>
             <p className="article__p">
               Кроме хирургического лечения врачи Центра выполняют значительный
-              объем работы по{" "}
+              объем работы по{' '}
               <Link href="https://heartteamspb.com/diagnostics">
                 <a className="article__link">
-                  {" "}
+                  {' '}
                   диагностике сердечно-сосудистых заболеваний
                 </a>
               </Link>
@@ -138,10 +138,10 @@ export default function AboutUs() {
             <p className="article__p">
               Являясь важным звеном в системе здравоохранения, активным образом
               улучшая продуктивность, снижая экономические затраты и оказывая
-              необходимое влияние,{" "}
+              необходимое влияние,{' '}
               <Link href="https://heartteamspb.com/">
                 <a className="article__link">
-                  Центр кардиохирургии и интервенционной кардиологии{" "}
+                  Центр кардиохирургии и интервенционной кардиологии{' '}
                 </a>
               </Link>
               создает возможность и в будущем успешно лечить пациентов с
@@ -149,7 +149,7 @@ export default function AboutUs() {
             </p>
             <p className="article__p">
               Если вы хотите узнать стоимость коронарографии в нашей клинике,
-              позвоните нам по телефону{" "}
+              позвоните нам по телефону{' '}
               <a href="tel:+79992380136">+7 (999) 238-01-36</a>.
             </p>
           </section>

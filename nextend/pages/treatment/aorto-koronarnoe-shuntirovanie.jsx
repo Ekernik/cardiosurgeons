@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Link from "next/link";
-import Header from "../../components/Header/Header";
-import Greetings from "../../components/Greetings";
-import Contacts from "../../components/Contacts";
-import Banner from "../../components/Banner";
-import Footer from "../../components/Footer/Footer";
-import Advantages from "../../components/Advantages";
+import Head from 'next/head';
+import Link from 'next/link';
+import Header from '../../components/Header/Header';
+import Greetings from '../../components/Greetings';
+import Contacts from '../../components/Contacts';
+import Banner from '../../components/Banner';
+import Footer from '../../components/Footer';
+import Advantages from '../../components/Advantages';
 
 export default function Shuntirovanie() {
   return (
@@ -65,7 +65,7 @@ export default function Shuntirovanie() {
               мире отмечается более 15 миллионов новых случаев инфаркта
               миокарда, особенно актуальной является проблема высокой смертности
               среди трудоспособного населения. “Золотым” стандартом диагностики
-              ИБС является{" "}
+              ИБС является{' '}
               <Link href="../diagnostics/coronarographia">
                 <a className="article__link">коронарография</a>
               </Link>
@@ -131,10 +131,10 @@ export default function Shuntirovanie() {
               шунтирования, записаться на предварительный осмотр в нашу клинику
               или узнать, сколько стоит операция по шунтированию сердца и есть
               ли возможность получения данной процедуры по Федеральной квоте или
-              ОМС, позвоните нам по телефону{" "}
+              ОМС, позвоните нам по телефону{' '}
               <a href="tel:+79992380136" className="article__link">
                 +7&nbsp;(999)&nbsp;238&#8209;01&#8209;36
-              </a>{" "}
+              </a>{' '}
               (09:00&#8209;21:00).
             </p>
           </section>

@@ -1,17 +1,17 @@
-import Head from "next/head";
-import Link from "next/link";
-import Header from "../../components/Header/Header";
-import Greetings from "../../components/Greetings";
-import Banner from "../../components/Banner";
-import Advantages from "../../components/Advantages";
-import Contacts from "../../components/Contacts";
-import Footer from "../../components/Footer/Footer";
+import Head from 'next/head';
+import Link from 'next/link';
+import Header from '../../components/Header/Header';
+import Greetings from '../../components/Greetings';
+import Banner from '../../components/Banner';
+import Advantages from '../../components/Advantages';
+import Contacts from '../../components/Contacts';
+import Footer from '../../components/Footer';
 
 export default function Coronarography() {
   return (
     <>
       <Head>
-      <title>Коронарография. Коронарография сердца и сосудов.</title>
+        <title>Коронарография. Коронарография сердца и сосудов.</title>
         <meta
           name="description"
           content="Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!"
@@ -90,19 +90,19 @@ export default function Coronarography() {
               резерв кровотока), цель которого измерить различие давления в
               суженной (стенозированной) коронарной артерии, с целью определения
               вероятности ишемии мышечной ткани сердца - миокарда. И наконец, на
-              основании полученной картины{" "}
+              основании полученной картины{' '}
               <Link href="https://heartteamspb.com/team">
                 <a className="article__link">
                   команда кардиохирургов и кардиологов
                 </a>
-              </Link>{" "}
+              </Link>{' '}
               определит наилучшее для Вас лечение, будь то медикаментозная
               терапия или оперативное лечение направленное на реваскуляризацию
               миокарда (
               <Link href="https://heartteamspb.com/treatment/aorto-koronarnoe-shuntirovanie">
                 <a className="article__link">коронарное шунтирование</a>
-              </Link>{" "}
-              или{" "}
+              </Link>{' '}
+              или{' '}
               <Link href="https://heartteamspb.com/treatment/stentirovanie-koronarnih-arteriy">
                 <a className="article__link">стентирование</a>
               </Link>

@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import img_doctor from "../../public/static/images/doctors/doctor_Kamenskih.jpg";
-import Contacts from "../../components/Contacts";
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
+import img_doctor from '../../public/static/images/doctors/doctor_Kamenskih.jpg';
+import Contacts from '../../components/Contacts';
 
 export default function Kamenskih() {
   return (
@@ -49,7 +49,7 @@ export default function Kamenskih() {
                 <h2 className="doctor__position">Кардиохирург</h2>
               </div>
               <Link
-                href={{ pathname: "/feedback", query: { doctor: "kamenskih" } }}
+                href={{ pathname: '/feedback', query: { doctor: 'kamenskih' } }}
               >
                 <a className="doctor__feedback">отзывы о враче</a>
               </Link>

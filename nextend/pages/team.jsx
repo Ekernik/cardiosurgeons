@@ -1,9 +1,9 @@
-import Head from "next/head";
-import Header from "../components/Header/Header";
-import DoctorCard from "../components/DoctorCard";
-import Contacts from "../components/Contacts";
-import Footer from "../components/Footer/Footer";
-import doctors from "../public/static/databases/doctors";
+import Head from 'next/head';
+import Header from '../components/Header/Header';
+import DoctorCard from '../components/DoctorCard';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
+import doctors from '../public/static/databases/doctors';
 
 export default function OurTeam() {
   return (
@@ -86,7 +86,7 @@ export default function OurTeam() {
               </p>
               <p className="article__p">
                 Если вы хотите записаться на прием к ведущим кардиохирургам и
-                кардиологам, звоните{" "}
+                кардиологам, звоните{' '}
                 <a href="tel:+79992380136" className="article__link">
                   +7 (999) 238-01-36
                 </a>

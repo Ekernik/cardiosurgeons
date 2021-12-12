@@ -1,13 +1,13 @@
-import Head from "next/head";
-import Link from "next/link";
-import Header from "../components/Header/Header";
-import Contacts from "../components/Contacts";
-import Footer from "../components/Footer/Footer";
-import illnesses from "../public/static/databases/illnesses";
+import Head from 'next/head';
+import Link from 'next/link';
+import Header from '../components/Header/Header';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
+import illnesses from '../public/static/databases/illnesses';
 
 export default function Diagnostics() {
   const renderItems = (object, illness, isLastItem) => {
-    const isObject = typeof illness === "object";
+    const isObject = typeof illness === 'object';
     const illnessLink = (
       <div className="diagnostics__link">
         <Link href={`/diagnostics${illness.link}`}>
@@ -23,7 +23,7 @@ export default function Diagnostics() {
         <li className="illness-list__item">
           {isObject ? illnessLink : illness}
         </li>
-        {isLastItem ? "" : <hr />}
+        {isLastItem ? '' : <hr />}
       </div>
     );
   };

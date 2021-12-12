@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Contacts from '../components/Contacts';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer';
 
 export default function Structure() {
   return (
@@ -61,29 +61,25 @@ export default function Structure() {
                 </Link>
               </li>
               <li className="article__li">
-                —{' '}
-                {/* <Link href="/structure/endovascular-diagnostics"> */}
-                  {/* <a className="article__link"> */}
-                    Отделение рентгенэндоваскулярных методов диагностики и
-                    лечения
-                  {/* </a> */}
+                — {/* <Link href="/structure/endovascular-diagnostics"> */}
+                {/* <a className="article__link"> */}
+                Отделение рентгенэндоваскулярных методов диагностики и лечения
+                {/* </a> */}
                 {/* </Link> */}
               </li>
               <li className="article__li">
-                —{' '}
-                {/* <Link href="/structure/outpatient-diagnostics"> */}
-                  {/* <a className="article__link"> */}
-                    Амбулаторно-диагностическое отделение кардиологии
-                    и&nbsp;функциональной диагностики
-                  {/* </a> */}
+                — {/* <Link href="/structure/outpatient-diagnostics"> */}
+                {/* <a className="article__link"> */}
+                Амбулаторно-диагностическое отделение кардиологии
+                и&nbsp;функциональной диагностики
+                {/* </a> */}
                 {/* </Link> */}
               </li>
               <li className="article__li">
-                —{' '}
-                {/* <Link href="/structure/functional-diagnostics"> */}
-                  {/* <a className="article__link"> */}
-                    Отделение функциональной диагностики
-                  {/* </a> */}
+                — {/* <Link href="/structure/functional-diagnostics"> */}
+                {/* <a className="article__link"> */}
+                Отделение функциональной диагностики
+                {/* </a> */}
                 {/* </Link> */}
               </li>
             </ul>

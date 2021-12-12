@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Greetings from "../../components/Greetings";
-import Contacts from "../../components/Contacts";
-import Banner from "../../components/Banner";
-import Advantages from "../../components/Advantages";
-import Footer from "../../components/Footer/Footer";
+import Head from 'next/head';
+import Header from '../../components/Header/Header';
+import Greetings from '../../components/Greetings';
+import Contacts from '../../components/Contacts';
+import Banner from '../../components/Banner';
+import Advantages from '../../components/Advantages';
+import Footer from '../../components/Footer';
 
 export default function Stentirovanie() {
   return (
@@ -48,13 +48,13 @@ export default function Stentirovanie() {
               Стентирование коронарных артерий и баллонная ангиопластика артерий
               являются современной малотравматичной операцией, направленной на
               восстановление просвета артерий. Чаще всего нормальному току крови
-              препятствуют{" "}
+              препятствуют{' '}
               <a
                 className="article__link"
                 href="https://heartteamspb.com/diagnostics/ateroskleros"
               >
                 атеросклеротические изменения
-              </a>{" "}
+              </a>{' '}
               на внутренней поверхности стенки сосуда, которые приводят к
               образованию бляшек, замедляющих или вовсе прекращающих поступление
               кислорода и питательных веществ в ткани организма.
@@ -119,7 +119,7 @@ export default function Stentirovanie() {
             </p>
             <p className="article__p">
               Для уточнения стоимости стентирования в нашей клинике, позвоните
-              нам по телефону{" "}
+              нам по телефону{' '}
               <a className="article__link" href="tel:+79992380196">
                 +7&nbsp;(999)&nbsp;238&#8209;01&#8209;96
               </a>
