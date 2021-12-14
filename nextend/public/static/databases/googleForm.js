@@ -12,7 +12,7 @@ const formSettings = {
   ref_origin: function () {
     if (typeof window !== "undefined") {
       const hostname = window.location.pathname;
-      const url_oskol = "/news/priem-v-gorode-stariy-oskol-16.11.2021";
+      const url_oskol = "/news/priem-v-gorode-stariy-oskol-21.12.2021";
       const url_vladimir = "/news/priem-v-gorode-vladimir-09-11-2021";
       const url_stavropol = "/news/priem-v-gorode-stavropol-02-11-2021";
       if (hostname === url_oskol) return "Старый Оскол";
