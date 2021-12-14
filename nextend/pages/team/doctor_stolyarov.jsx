@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
@@ -56,6 +57,11 @@ export default function Stolyarov() {
                 </p>
                 <p className="doctor__position">кандидат медицинских наук</p>
               </div>
+              <Link
+                href={{ pathname: '/feedback', query: { doctor: 'stolyarov' } }}
+              >
+                <a className="doctor__feedback">отзывы о враче</a>
+              </Link>
             </div>
             <div className="doctor__info">
               <iframe

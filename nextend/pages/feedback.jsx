@@ -8,7 +8,7 @@ import style from '../styles/feedback.module.scss';
 import { useEffect, useState } from 'react';
 
 export default function Feedback() {
-  const [search, setSearch] = useState('all');
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     setSearch(window?.location?.search?.slice(8));
@@ -16,20 +16,18 @@ export default function Feedback() {
 
   const getReviews = (search) => {
     const reviews = [...REVIEWS].reverse();
-    if (search === 'shmatov') {
-      return <ReviewBox review={REVIEWS[0]} />;
-    } else if (search === 'kamenskih') {
-      return <ReviewBox review={REVIEWS[0]} />;
-    } else if (search === 'kotova') {
-      return <ReviewBox review={REVIEWS[2]} />;
-    } else if (search === 'sheremet') {
-      return <ReviewBox review={REVIEWS[3]} />;
-    } else if (search === 'zubarev') {
-      return <ReviewBox review={REVIEWS[3]} />;
-    } else
+    if (search === '') {
       return reviews.map((review, i) => (
         <ReviewBox key={i + Date.now()} review={review} />
       ));
+    } else {
+      let filteredReviews = reviews.filter((review) =>
+        review.doctors.includes(search),
+      );
+      return filteredReviews.map((review, i) => (
+        <ReviewBox key={i + Date.now()} review={review} />
+      ));
+    }
   };
 
   return (

@@ -25,7 +25,7 @@ let newsArr = [
     id: "n2",
     title: "11 ноября",
     subtitle: "В городе Ставрополе",
-    pretitle: "город Ставрополь",
+    pretitle: "Ставрополь",
     date: "6 октября 2021",
     setting: {},
     buttonText: "Записаться на приём",

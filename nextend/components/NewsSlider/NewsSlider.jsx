@@ -1,6 +1,6 @@
-import styles from "./index.module.scss";
-import NewsCard from "../NewsCard/NewsCard";
-import newsArr from "../../public/static/databases/news";
+import styles from './index.module.scss';
+import NewsCard from '../NewsCard';
+import newsArr from '../../public/static/databases/news';
 
 export default function NewsSlider() {
   let renderNews = (news) => {
@@ -8,12 +8,9 @@ export default function NewsSlider() {
     return arr.map((news) => (
       <NewsCard
         key={news.id}
-        id={news.id}
         subtitle={news.pretitle}
         title={news.title}
-        date={news.date}
         link={`/news/${news.link}`}
-        hot={news.hot}
       />
     ));
   };

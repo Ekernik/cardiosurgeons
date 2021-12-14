@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Contacts from '../components/Contacts';
 import Footer from '../components/Footer';
-import NewsCard from '../components/NewsCard/NewsCard';
+import NewsCard from '../components/NewsCard';
 import newsArr from '../public/static/databases/news';
 import styles from '../styles/regions.module.scss';
 
@@ -11,13 +11,10 @@ export default function OurTeam() {
     return news.map((news) => (
       <NewsCard
         key={news.id}
-        id={news.id}
         subtitle={news.pretitle}
         title={news.title}
-        date={news.date}
         link={`/news/${news.link}`}
-        hot={news.hot}
-        regionsPage={true}
+        isRegions={true}
       />
     ));
   };

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
 import img_doctor from '../../public/static/images/doctors/doctor_Sorokin.jpg';
@@ -47,6 +48,11 @@ export default function Sorokin() {
                 <p className="doctor__position">Сердечно-сосудистый хирург,</p>
                 <p className="doctor__position">интервенционный радиолог</p>
               </div>
+              <Link
+                href={{ pathname: '/feedback', query: { doctor: 'sorokin' } }}
+              >
+                <a className="doctor__feedback">отзывы о враче</a>
+              </Link>
             </div>
             <div className="doctor__info">
               <section className="doctor__theme-section">

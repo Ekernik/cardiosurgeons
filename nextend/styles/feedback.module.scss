@@ -3,9 +3,11 @@
 }
 
 .section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 1em
 }
 
 .h1 {
@@ -18,6 +20,10 @@
   .container {
     margin-top: 9em;
   }
+
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 ///////////// LAPTOP VIEW
@@ -28,5 +34,9 @@
 
   .h1 {
     margin-bottom: 1em;
+  }
+
+  .section {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

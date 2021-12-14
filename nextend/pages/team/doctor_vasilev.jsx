@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
@@ -49,6 +50,11 @@ export default function Vasilev() {
                   специалист по рентгенэндоваскулярным диагностике и лечению
                 </p>
               </div>
+              <Link
+                href={{ pathname: '/feedback', query: { doctor: 'vasilev' } }}
+              >
+                <a className="doctor__feedback">отзывы о враче</a>
+              </Link>
             </div>
             <div className="doctor__info">
               <section className="doctor__theme-section">

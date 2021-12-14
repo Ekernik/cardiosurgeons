@@ -5,7 +5,7 @@ export default function Review() {
     <div>
       <p className="article__p">
         Очень благодарна врачу{' '}
-        <Link href="">
+        <Link href="/team/doctor_sorokin">
           <a className="article__link">Сорокину Андрею Александровичу</a>
         </Link>{' '}
         за его чуткость, внимательность к пациентам.
