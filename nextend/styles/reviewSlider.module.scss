@@ -1,13 +1,20 @@
 .review__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 1em;
 }
 
 // Tablet media query
 @media (min-width: 768px) {
   .review__container {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .review__container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
