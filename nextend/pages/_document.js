@@ -6,27 +6,28 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel='preconnect' href='https://fonts.gstatic.com' />
+          <link rel='icon' type='image/png' href='favicon.png' />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-            rel="stylesheet"
+            href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap'
+            rel='stylesheet'
           />
-          <meta name="yandex-verification" content="3934e55935fc3382" />
+          <meta name='yandex-verification' content='3934e55935fc3382' />
         </Head>
         <body>
           <Main />
           <NextScript />
           {/* <!-- Yandex.Metrika counter --> */}
           <script
-            type="text/javascript"
+            type='text/javascript'
             dangerouslySetInnerHTML={{ __html: process.env.yandexMetrika }}
           ></script>
           <noscript>
             <div>
               <Image
-                src="https://mc.yandex.ru/watch/83857552"
-                className="yandex__img"
-                alt=""
+                src='https://mc.yandex.ru/watch/83857552'
+                className='yandex__img'
+                alt=''
                 width={0}
                 height={0}
               />
