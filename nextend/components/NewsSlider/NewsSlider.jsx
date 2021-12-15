@@ -4,7 +4,7 @@ import newsArr from '../../public/static/databases/news';
 
 export default function NewsSlider() {
   let renderNews = (news) => {
-    let arr = [news[0], news[1], news[2]];
+    let arr = [news[2], news[3], news[4]];
     return arr.map((news) => (
       <NewsCard
         key={news.id}
