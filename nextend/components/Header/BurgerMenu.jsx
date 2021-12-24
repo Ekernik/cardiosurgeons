@@ -14,6 +14,12 @@ const handleClose = () => {
   body.classList.remove('fixed-page');
 };
 
+const handleScroll = () => {
+  const menu = document.querySelector('.burger__menu');
+  menu.classList.toggle('menu__scroll-down');
+  menu.classList.toggle('menu__scroll-up');
+}
+
 export default function BurgerMenu() {
   return (
     <>
@@ -23,9 +29,9 @@ export default function BurgerMenu() {
         </div>
       </div>
       <nav className="header__burger-nav">
-        <ul className="burger__menu">
+        <ul className="burger__menu menu__scroll-up">
           <LinkItem click={handleClose} link="/" text="Главная" />
-          <LinkItem click={handleClose} link="/about-us" text="О клинике" />
+          <p className='menu__link' onClick={handleScroll}>О нас</p>
           <LinkItem click={handleClose} link="/treatment" text="Лечение" />
           <LinkItem
             click={handleClose}
@@ -34,6 +40,21 @@ export default function BurgerMenu() {
           />
           <LinkItem click={handleClose} link="/team" text="Команда" />
           <LinkItem click={handleClose} link="/contacts" text="Контакты" />
+          <LinkItem click={handleClose} link="/feedback" text="Отзывы" />
+        </ul>
+        <ul className="burger__menu">
+          <p className='menu__link' onClick={handleScroll}>Назад</p>
+          <LinkItem click={handleClose} link="/about-us" text="О клинике" />
+          <LinkItem
+            click={handleClose}
+            link="/structure"
+            text="Структура центра"
+          />
+          <LinkItem
+            click={handleClose}
+            link="/regions"
+            text="Приемы врачей в регионах"
+          />
           <LinkItem click={handleClose} link="/feedback" text="Отзывы" />
         </ul>
       </nav>
