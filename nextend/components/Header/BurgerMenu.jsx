@@ -40,7 +40,6 @@ export default function BurgerMenu() {
           />
           <LinkItem click={handleClose} link="/team" text="Команда" />
           <LinkItem click={handleClose} link="/contacts" text="Контакты" />
-          <LinkItem click={handleClose} link="/feedback" text="Отзывы" />
         </ul>
         <ul className="burger__menu">
           <p className='menu__link' onClick={handleScroll}>Назад</p>
