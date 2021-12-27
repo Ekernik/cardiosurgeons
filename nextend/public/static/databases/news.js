@@ -1,5 +1,14 @@
 let newsArr = [
   {
+    id: 'n8',
+    title: '18 января',
+    pretitle: 'Ставрополь',
+    date: '18 января 2022',
+    setting: {},
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-stavropol-18.01.2022',
+  },
+  {
     id: 'n7',
     title: '22 декабря',
     pretitle: 'Арзамас',
