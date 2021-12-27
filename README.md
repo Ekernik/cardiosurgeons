@@ -2,6 +2,8 @@
 
 ## Technologies used:
 
+- Next.js
 - React
 - Express
 - SCSS
+- Yandex.maps
