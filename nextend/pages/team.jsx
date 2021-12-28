@@ -3,7 +3,7 @@ import Header from '../components/Header/Header';
 import DoctorCard from '../components/DoctorCard';
 import Contacts from '../components/Contacts';
 import Footer from '../components/Footer';
-import doctors from '../public/static/databases/doctors';
+import { doctors } from '../public/static/databases/doctors';
 
 export default function OurTeam() {
   return (
@@ -14,28 +14,28 @@ export default function OurTeam() {
           интервенционной кардиологии им. Н.И.Пирогова
         </title>
         <meta
-          name="description"
-          content="Ведущие кардиологи и кардиохирурги России работают у нас. Диагностируем и лечим заболевания сердца и сердечно-сосудистой системы. Опытные специалисты, большой практический опыт."
+          name='description'
+          content='Ведущие кардиологи и кардиохирурги России работают у нас. Диагностируем и лечим заболевания сердца и сердечно-сосудистой системы. Опытные специалисты, большой практический опыт.'
         />
         <meta
-          property="og:title"
-          content="Команда кардиохирургов и кардиологов Центра кардиохирургии и интервенционной кардиологии им. Н.И.Пирогова"
+          property='og:title'
+          content='Команда кардиохирургов и кардиологов Центра кардиохирургии и интервенционной кардиологии им. Н.И.Пирогова'
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
+        <meta property='og:type' content='website' />
+        <meta property='og:image' content='./image.webp' />
         <meta
-          property="og:description"
-          content="Ведущие кардиологи и кардиохирурги России работают у нас. Диагностируем и лечим заболевания сердца и сердечно-сосудистой системы. Опытные специалисты, большой практический опыт."
+          property='og:description'
+          content='Ведущие кардиологи и кардиохирурги России работают у нас. Диагностируем и лечим заболевания сердца и сердечно-сосудистой системы. Опытные специалисты, большой практический опыт.'
         />
-        <meta property="og:url" content="heartteamspb.com/team" />
+        <meta property='og:url' content='heartteamspb.com/team' />
       </Head>
-      <div className="App">
-        <div id="curtain"></div>
+      <div className='App'>
+        <div id='curtain'></div>
         <Header />
-        <main className="section__our-team">
-          <div className="container">
-            <h1 className="doctors__header">Наша команда</h1>
-            <div className="doctors__list">
+        <main className='section__our-team'>
+          <div className='container'>
+            <h1 className='doctors__header'>Наша команда</h1>
+            <div className='doctors__list'>
               {doctors.map((doctor) => (
                 <DoctorCard
                   key={doctors.id}
@@ -48,21 +48,21 @@ export default function OurTeam() {
               ))}
             </div>
             <div>
-              <p className="article__p">
+              <p className='article__p'>
                 Команда специалистов Центра кардиохирургии и интервенционной
                 кардиологии клиники ВМТ им Н.И. Пирогова – практикующие
                 специалисты, которые провели более 4000 операций
                 кардиохирургического профиля, более 900 операций на открытом
                 сердце, и свыше 1600 рентгенохирургических вмешательств.
               </p>
-              <p className="article__p">
+              <p className='article__p'>
                 Кардиологи и кардиохирурги нашей клиники регулярно проводят
                 совместную работы с коллегами из России и Европы. Основываясь на
                 принципах доказательной медицины, происходит совершенствование
                 клинических подходов в диагностике и лечении различных видов
                 заболеваний сердечно-сосудистой системы.
               </p>
-              <p className="article__p">
+              <p className='article__p'>
                 Также специалистами Центра во главе с процессором кафедры
                 госпитальной хирургии СПБГУ Шматовым Дмитрием Викторовичем
                 проводится обучение студентов и клинических ординаторов. Лекции
@@ -70,24 +70,24 @@ export default function OurTeam() {
                 медицинских технологий им. Н.И. Пирогова в лекционных залах
                 СПБГУ.
               </p>
-              <p className="article__p">
+              <p className='article__p'>
                 Операционный блок Центра оборудован специализированной системой
                 камер и мониторов для ведения образовательной работы
                 непосредственно по время операций. Контроль опытных наставников
                 позволяет получать только актуальную информацию и постоянно
                 оттачивать мастерство.
               </p>
-              <p className="article__p">
+              <p className='article__p'>
                 Студенты и ординаторы могут получить углубленные знания в таких
                 направлениях нашей работы как кардиохирургия, ангиология,
                 аритмология, кардиология, рентгенэндоваскулярная хирургия,
                 кардиоанестезиология и перфузиология, функциональная
                 диагностика.
               </p>
-              <p className="article__p">
+              <p className='article__p'>
                 Если вы хотите записаться на прием к ведущим кардиохирургам и
                 кардиологам, звоните{' '}
-                <a href="tel:+79992380136" className="article__link">
+                <a href='tel:+79992380136' className='article__link'>
                   +7 (999) 238-01-36
                 </a>
                 .

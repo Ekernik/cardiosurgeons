@@ -50,12 +50,7 @@ export default function Starosockaya() {
                 <p className='doctor__position'>Кардиолог</p>
                 <p className='doctor__position'>кандидат медицинских наук</p>
               </div>
-              <Link
-                href={{
-                  pathname: '/feedback',
-                  query: { doctor: 'starosockaya' },
-                }}
-              >
+              <Link href='/feedback/starosockaya'>
                 <a className='doctor__feedback'>отзывы о враче</a>
               </Link>
             </div>
