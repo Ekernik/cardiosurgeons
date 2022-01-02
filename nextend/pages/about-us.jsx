@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Contacts from '../components/Contacts';
-import Footer from '../components/Footer';
-import team from '../public/static/images/team.jpg';
-import operation01 from '../public/static/images/operation_01.jpg';
-import operation02 from '../public/static/images/operation_02.jpg';
+import Header from '@/components/Header/Header';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
+import team from '@/public/static/images/team.jpg';
+import operation01 from '@/public/static/images/operation_01.jpg';
+import operation02 from '@/public/static/images/operation_02.jpg';
 
 export default function AboutUs() {
   return (

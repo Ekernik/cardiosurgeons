@@ -1,7 +1,7 @@
 import LinkItem from './LinkItem';
 import DropButtonAboutUs from './DropButtonAboutUs';
 import DropButtonTreatment from './DropButtonTreatment';
-import styles from '../../styles/dropdown.module.scss';
+import styles from '@/styles/dropdown.module.scss';
 
 export default function HeaderNav() {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import doctors_2 from "../public/static/svg/doctors_2.svg";
-import doctors_3 from "../public/static/svg/doctors_3.svg";
-import doctors_4 from "../public/static/svg/doctors_4.svg";
+import doctors_2 from "@/public/static/svg/doctors_2.svg";
+import doctors_3 from "@/public/static/svg/doctors_3.svg";
+import doctors_4 from "@/public/static/svg/doctors_4.svg";
 
 export default function Advantages() {
   return (

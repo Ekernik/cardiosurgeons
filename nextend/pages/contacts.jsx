@@ -6,8 +6,8 @@ import {
   FullscreenControl,
   ZoomControl,
 } from 'react-yandex-maps';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer';
 
 export default function OurContacts() {
   return (

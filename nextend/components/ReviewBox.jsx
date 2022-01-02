@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Modal from './Modal';
-import style from '../styles/reviewBox.module.scss';
+import style from '@/styles/reviewBox.module.scss';
 
 export default function ReviewBox({ review }) {
   const isDoctorMentioned = review.doctors.length > 0;

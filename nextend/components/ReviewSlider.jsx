@@ -1,6 +1,6 @@
-import REVIEWS from '../public/static/databases/reviews';
+import REVIEWS from '@/public/static/databases/reviews';
 import ReviewBox from './ReviewBox';
-import styles from '../styles/reviewSlider.module.scss';
+import styles from '@/styles/reviewSlider.module.scss';
 
 export default function ReviewSlider() {
   const reviews = [...REVIEWS].reverse().slice(0, 3);

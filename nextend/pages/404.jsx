@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
-import lost from "../public/static/svg/lost.svg";
+import lost from "@/public/static/svg/lost.svg";
 
 export default function PageNotFound() {
   return (

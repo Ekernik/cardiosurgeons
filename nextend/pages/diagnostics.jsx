@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/Header/Header';
-import Contacts from '../components/Contacts';
-import Footer from '../components/Footer';
-import illnesses from '../public/static/databases/illnesses';
+import Header from '@/components/Header/Header';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
+import illnesses from '@/public/static/databases/illnesses';
 
 export default function Diagnostics() {
   const renderItems = (object, illness, isLastItem) => {

@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 import NewsCard from '../NewsCard';
-import newsArr from '../../public/static/databases/news';
+import newsArr from '@/public/static/databases/news';
 
 export default function NewsSlider() {
   let renderNews = (news) => {

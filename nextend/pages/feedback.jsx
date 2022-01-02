@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Contacts from '../components/Contacts';
-import Footer from '../components/Footer';
-import REVIEWS from '../public/static/databases/reviews';
-import ReviewBox from '../components/ReviewBox';
-import style from '../styles/feedback.module.scss';
+import Header from '@/components/Header/Header';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
+import REVIEWS from '@/public/static/databases/reviews';
+import ReviewBox from '@/components/ReviewBox';
+import style from '@/styles/feedback.module.scss';
 
 export default function Feedback() {
   const getReviews = () => {

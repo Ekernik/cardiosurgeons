@@ -10,13 +10,13 @@ import {
 import ContactsForm from "./Forms/ContactsForm";
 
 // ICONS
-import icon_mail from "../public/static/svg/mail.svg";
-import icon_map from "../public/static/svg/pin.svg";
-import icon_metro from "../public/static/svg/metro.svg";
-import icon_phone from "../public/static/svg/phone.svg";
-import icon_clock from "../public/static/svg/clock.svg";
-import icon_external from "../public/static/svg/external.svg";
-import success from "../public/static/svg/success.svg";
+import icon_mail from "@/public/static/svg/mail.svg";
+import icon_map from "@/public/static/svg/pin.svg";
+import icon_metro from "@/public/static/svg/metro.svg";
+import icon_phone from "@/public/static/svg/phone.svg";
+import icon_clock from "@/public/static/svg/clock.svg";
+import icon_external from "@/public/static/svg/external.svg";
+import success from "@/public/static/svg/success.svg";
 
 function Contacts() {
   const frameStyle = { display: "none" };

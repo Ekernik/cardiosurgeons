@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import arrowRight from '../public/static/svg/chevron-right.svg';
-import styles from '../styles/newsCard.module.scss';
+import arrowRight from '@/public/static/svg/chevron-right.svg';
+import styles from '@/styles/newsCard.module.scss';
 
 export default function NewsCard(props) {
   const { title, subtitle, link, isRegions = false } = props;

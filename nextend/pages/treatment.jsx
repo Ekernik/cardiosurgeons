@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer';
-import Contacts from '../components/Contacts';
-import { treatments } from '../public/static/databases/links';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer';
+import Contacts from '@/components/Contacts';
+import { treatments } from '@/public/static/databases/links';
 
 export default function Treatment() {
   return (

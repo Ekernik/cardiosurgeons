@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo_instagram from '../public/static/svg/instagram.svg';
-import logo_vk from '../public/static/svg/vk.svg';
-import styles from '../styles/footer.module.scss';
+import logo_instagram from '@/public/static/svg/instagram.svg';
+import logo_vk from '@/public/static/svg/vk.svg';
+import styles from '@/styles/footer.module.scss';
 
 const SocialMediaLink = ({ props }) => {
   const { link, logo, alt, socialID } = props;

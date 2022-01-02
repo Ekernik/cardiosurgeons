@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { Suspense } from "react";
-import close_img from "../public/static/svg/x-mark.png";
-import styles from "../styles/modal.module.scss";
+import close_img from "@/public/static/svg/x-mark.png";
+import styles from "@/styles/modal.module.scss";
 
 export default function Modal({ open, onClose, content }) {
   if (!open) return null;

@@ -5,7 +5,7 @@ import BurgerMenu from './BurgerMenu';
 import HeaderNav from './HeaderNav';
 import FloatingContacts from '../FloatingContacts';
 import Button from '../ButtonCTA';
-import styles from '../../styles/dropdown.module.scss';
+import styles from '@/styles/dropdown.module.scss';
 import { listenToScroll } from './watchScroll.js';
 
 const mountDropdownListeners = () => {

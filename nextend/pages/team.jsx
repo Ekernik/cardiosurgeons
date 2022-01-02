@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Header from '../components/Header/Header';
-import DoctorCard from '../components/DoctorCard';
-import Contacts from '../components/Contacts';
-import Footer from '../components/Footer';
-import { doctors } from '../public/static/databases/doctors';
+import Header from '@/components/Header/Header';
+import DoctorCard from '@/components/DoctorCard';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
+import { doctors } from '@/public/static/databases/doctors';
 
 export default function OurTeam() {
   return (

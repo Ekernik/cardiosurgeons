@@ -1,5 +1,5 @@
 import Link from "next/link";
-import formSettings from "../../public/static/databases/googleForm";
+import formSettings from "@/public/static/databases/googleForm";
 
 export default function ContactsForm() {
   const handleSubmit = () => {

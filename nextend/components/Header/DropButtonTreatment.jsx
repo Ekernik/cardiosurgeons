@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { treatments } from '../../public/static/databases/links';
+import { treatments } from '@/public/static/databases/links';
 
 export default function DropButtonTreatment({ styles }) {
   return (

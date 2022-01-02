@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Header from '../components/Header/Header';
-import Contacts from '../components/Contacts';
-import Footer from '../components/Footer';
+import Header from '@/components/Header/Header';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
 
 export default function Structure() {
   return (
