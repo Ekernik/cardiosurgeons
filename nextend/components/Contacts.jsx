@@ -7,7 +7,7 @@ import {
   FullscreenControl,
   ZoomControl,
 } from "react-yandex-maps";
-import ContactsForm from "./Forms/ContactsForm";
+import ContactsForm from "./ContactsForm";
 
 // ICONS
 import icon_mail from "@/public/static/svg/mail.svg";
