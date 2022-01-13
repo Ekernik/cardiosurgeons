@@ -1,5 +1,13 @@
 let newsArr = [
   {
+    id: 'n9',
+    title: '25 января',
+    pretitle: 'Старый Оскол',
+    setting: {},
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-stariy-oskol-25.01.2022',
+  },
+  {
     id: 'n8',
     title: '18 января',
     pretitle: 'Ставрополь',
