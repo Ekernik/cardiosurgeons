@@ -6,34 +6,18 @@ import Banner from '../../components/Banner';
 import Advantages from '../../components/Advantages';
 import Contacts from '../../components/Contacts';
 import Footer from '../../components/Footer';
+import SEO from '@/components/SEO';
 
 export default function Coronarography() {
-  const title = 'Коронарография. Коронарография сердца и сосудов.';
-  const description = 'Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!';
-  const link = 'heartteamspb.com/diagnostics/coronarographia';
+  const SEODetails = {
+    title: 'Коронарография. Коронарография сердца и сосудов.',
+    description: 'Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!',
+    pageLink: 'heartteamspb.com/diagnostics/coronarographia',
+    type: 'article',
+  }
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta
-          property="og:title"
-          content={title}
-        />
-        <meta
-          name="description"
-          content={description}
-        />
-        <meta
-          property="og:description"
-          content={description}
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://heartteamspb.com/static/images/bg-doctors.webp" />
-        <meta
-          property="og:url"
-          content={link}
-        />
-      </Head>
+      <SEO details={SEODetails}/>
       <div className="App">
         <div id="curtain"></div>
         <Header />
