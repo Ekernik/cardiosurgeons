@@ -8,27 +8,30 @@ import Contacts from '../../components/Contacts';
 import Footer from '../../components/Footer';
 
 export default function Coronarography() {
+  const title = 'Коронарография. Коронарография сердца и сосудов.';
+  const description = 'Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!';
+  const link = 'heartteamspb.com/diagnostics/coronarographia';
   return (
     <>
       <Head>
-        <title>Коронарография. Коронарография сердца и сосудов.</title>
-        <meta
-          name="description"
-          content="Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!"
-        />
+        <title>{title}</title>
         <meta
           property="og:title"
-          content="Коронарография. Коронарография сердца и сосудов."
+          content={title}
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
+        <meta
+          name="description"
+          content={description}
+        />
         <meta
           property="og:description"
-          content="Проводим операции коронарографии в Санкт-Петербурге в Центре кардиохирургии и кардиологии им. Н.И. Пирогова. Сделайте коронарографию у нас!"
+          content={description}
         />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://heartteamspb.com/static/images/bg-doctors.webp" />
         <meta
           property="og:url"
-          content="heartteamspb.com/diagnostics/coronarographia"
+          content={link}
         />
       </Head>
       <div className="App">
@@ -107,6 +110,10 @@ export default function Coronarography() {
                 <a className="article__link">стентирование</a>
               </Link>
               )
+            </p>
+            <p className="article__p">
+              Если вы хотите узнать стоимость коронарографии в нашей клинике, позвоните нам по телефону{' '}
+              <a href="tel:+79992380136" className='article__link'>+7 (999) 238-01-36</a>.
             </p>
           </section>
           <Advantages />
