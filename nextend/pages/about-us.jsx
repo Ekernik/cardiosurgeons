@@ -9,28 +9,30 @@ import operation01 from '@/public/static/images/operation_01.jpg';
 import operation02 from '@/public/static/images/operation_02.jpg';
 
 export default function AboutUs() {
+  const title = 'Кардиохирургия и интервенционная кардиология клиники ВМТ им. Н.И.Пирогова СПБГУ';
+  const description = 'Центр кардиологии и кардиохирургии находится в Санкт-Петербурге и принимает пациентов со всех регионов России и мира.';
+  const link = 'https://heartteamspb.com/about-us'
   return (
     <>
       <Head>
         <title>
-          Кардиохирургия и интервенционная кардиология клиники ВМТ им.
-          Н.И.Пирогова СПБГУ
+          {title}
         </title>
         <meta
-          name="description"
-          content="Центр кардиологии и кардиохирургии находится в Санкт-Петербурге и принимает пациентов со всех регионов России и мира."
+          property="og:title"
+          content={title}
         />
         <meta
-          property="og:title"
-          content="Кардиохирургия и интервенционная кардиология клиники ВМТ им. Н.И.Пирогова СПБГУ"
+          name="description"
+          content={description}
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
         <meta
           property="og:description"
-          content="Центр кардиологии и кардиохирургии находится в Санкт-Петербурге и принимает пациентов со всех регионов России и мира."
+          content={description}
         />
-        <meta property="og:url" content="https://heartteamspb.com/about-us" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://heartteamspb.com/static/images/bg-doctors.webp" />
+        <meta property="og:url" content={link} />
       </Head>
       <div className="App">
         <div id="curtain"></div>
@@ -148,9 +150,8 @@ export default function AboutUs() {
               заболевания сердечно-сосудистой системы.
             </p>
             <p className="article__p">
-              Если вы хотите узнать стоимость коронарографии в нашей клинике,
-              позвоните нам по телефону{' '}
-              <a href="tel:+79992380136">+7 (999) 238-01-36</a>.
+              Для консультации по всем вопросам, звоните нашим специалистам по телефону кардиохирургии{' '}
+              <a href="tel:+79992380136" className='article__link'>+7 (999) 238-01-36</a>.
             </p>
           </section>
           <Contacts />
