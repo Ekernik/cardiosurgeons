@@ -5,7 +5,7 @@
 .dropdown__menu {
   position: absolute;
   left: 0;
-  top: calc(100%);
+  top: 100%;
   background-color: var(--color-P--tint);
   padding: 0.75rem;
   border-radius: 0.25rem;
@@ -59,6 +59,7 @@
   display: grid;
   grid-template-columns: repeat(3, max-content);
   gap: 0.5em;
+  align-items: center;
 }
 
 .link__button:any-link {
@@ -68,6 +69,7 @@
   background-color: var(--color-P--tint);
   transition: 0.2s;
   padding: 1em;
+  max-width: 20vw;
 
   &:hover {
     color: var(--color-P--darkest);

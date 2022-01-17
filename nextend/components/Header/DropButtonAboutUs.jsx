@@ -14,7 +14,7 @@ export default function DropButtonAboutUs({ styles }) {
           <a className={styles.link__button}>Структура центра</a>
         </Link>
         <Link href="/regions">
-          <a className={styles.link__button}>Приемы врачей в регионах</a>
+          <a className={styles.link__button}>Приемы врачей в&nbsp;регионах</a>
         </Link>
         {/* <Link href="/news">
           <a className={styles.link__button}>Новости</a>
