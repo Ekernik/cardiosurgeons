@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Head from 'next/head';
+import SEO from '@/components/SEO'
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
@@ -9,31 +9,15 @@ import operation01 from '@/public/static/images/operation_01.jpg';
 import operation02 from '@/public/static/images/operation_02.jpg';
 
 export default function AboutUs() {
-  const title = 'Кардиохирургия и интервенционная кардиология клиники ВМТ им. Н.И.Пирогова СПБГУ';
-  const description = 'Центр кардиологии и кардиохирургии находится в Санкт-Петербурге и принимает пациентов со всех регионов России и мира.';
-  const link = 'https://heartteamspb.com/about-us'
+  const SEODetails = {
+    title: 'Кардиохирургия и интервенционная кардиология клиники ВМТ им. Н.И.Пирогова СПБГУ',
+    description: 'Центр кардиологии и кардиохирургии находится в Санкт-Петербурге и принимает пациентов со всех регионов России и мира.',
+    pageLink: 'https://heartteamspb.com/diagnostics/about-us',
+    type: 'article',
+  }
   return (
     <>
-      <Head>
-        <title>
-          {title}
-        </title>
-        <meta
-          property="og:title"
-          content={title}
-        />
-        <meta
-          name="description"
-          content={description}
-        />
-        <meta
-          property="og:description"
-          content={description}
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://heartteamspb.com/static/images/bg-doctors.webp" />
-        <meta property="og:url" content={link} />
-      </Head>
+      <SEO details={SEODetails} />
       <div className="App">
         <div id="curtain"></div>
         <main className="page__about-us">
