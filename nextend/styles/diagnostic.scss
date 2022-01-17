@@ -48,15 +48,6 @@
     text-align: center;
     margin-bottom: 0.5em;
   }
-
-  &__link > a:any-link {
-    color: var(--color-P--darkest);
-    text-decoration: none;
-
-    &:hover {
-      color: var(--color-P--dark);
-    }
-  }
 }
 
 // Tablet media query
