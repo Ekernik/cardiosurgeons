@@ -28,6 +28,17 @@ export default function OurContacts() {
             <h2 className='our-contacts__title'>
               Центр кардиохирургии и интервенционной кардиологии
             </h2>
+            <p className='article__p'>
+              Приглашаем пациентов на диагностику и лечение органов
+              сердечно-сосудистой системы.{' '}
+            </p>
+            <p className='article__p'>
+              Проводим операции по федеральным квотам и ОМС.
+            </p>
+            <p className='article__p'>
+              Получите консультацию наших кардиологов и кардиохирургов уже
+              сегодня!
+            </p>
             <div className='our-contacts__main-flex'>
               <div className='our-contacts__address-flex'>
                 <YMaps query={{ lang: 'ru_RU' }}>
