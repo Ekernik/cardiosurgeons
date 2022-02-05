@@ -50,7 +50,7 @@ code {
 }
 
 .mt {
-  margin-top: 9em;
+  margin-top: 4em;
 }
 
 .flex {
@@ -116,6 +116,9 @@ code {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  .mt {
+    margin-top: 9em;
   }
   .flex {
     flex-direction: row;
