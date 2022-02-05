@@ -26,28 +26,12 @@ const handleClose = () => {
 
 const handleScroll = position => {
   const menus = document.querySelectorAll('.burger__menu');
-  switch (position) {
-    case 'top':
-      menus[0].classList.add('active');
-      menus[1].classList.remove('active');
-      menus[2].classList.remove('active');
-      break;
-
-    case 'middle':
-      menus[0].classList.remove('active');
-      menus[1].classList.add('active');
-      menus[2].classList.remove('active');
-      break;
-
-    case 'bottom':
-      menus[0].classList.remove('active');
-      menus[1].classList.remove('active');
-      menus[2].classList.add('active');
-      break;
-
-    default:
-      break;
-  }
+  menus.forEach(menu => menu.classList.remove('active'));
+  if (position === 'top') menus[0].classList.add('active');
+  if (position === 'middle') menus[1].classList.add('active');
+  if (position === 'bottom') menus[2].classList.add('active');
+  if (position === 'disieses') menus[3].classList.add('active');
+  if (position === 'diagnostics') menus[4].classList.add('active');
 };
 
 export default function BurgerMenu() {
@@ -64,15 +48,17 @@ export default function BurgerMenu() {
           <p className='menu__link' onClick={() => handleScroll('middle')}>
             О нас
           </p>
+          <p className='menu__link' onClick={() => handleScroll('disieses')}>
+            Заболевания
+          </p>
+          <p className='menu__link' onClick={() => handleScroll('diagnostics')}>
+            Диагностика
+          </p>
           <LinkItem click={handleClose} link='/treatment' text='Операции' />
-          <LinkItem
-            click={handleClose}
-            link='/diagnostics'
-            text='Диагностика'
-          />
           <LinkItem click={handleClose} link='/team' text='Команда' />
           <LinkItem click={handleClose} link='/contacts' text='Контакты' />
         </ul>
+
         <ul className='burger__menu'>
           <p className='menu__link' onClick={() => handleScroll('top')}>
             Назад
@@ -93,6 +79,7 @@ export default function BurgerMenu() {
           </p>
           <LinkItem click={handleClose} link='/feedback' text='Отзывы' />
         </ul>
+
         <ul className='burger__menu'>
           <p className='menu__link' onClick={() => handleScroll('middle')}>
             Назад
@@ -116,6 +103,35 @@ export default function BurgerMenu() {
             click={handleClose}
             link='/protezirovanie-klapanov-chto-nuzhno-znat'
             text='Протезирование клапанов: что нужно знать'
+          />
+        </ul>
+
+        {/* Заболевания */}
+        <ul className='burger__menu'>
+          <p className='menu__link' onClick={() => handleScroll('top')}>
+            Назад
+          </p>
+          <LinkItem
+            click={handleClose}
+            link='/diagnostics/ateroskleros'
+            text='Атеросклероз'
+          />
+        </ul>
+
+        {/* Диагностика */}
+        <ul className='burger__menu'>
+          <p className='menu__link' onClick={() => handleScroll('top')}>
+            Назад
+          </p>
+          <LinkItem
+            click={handleClose}
+            link='/diagnostics/coronarographia'
+            text='Коронарография'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diagnostics/computer-tomography'
+            text='Компьютерная томография'
           />
         </ul>
       </nav>
