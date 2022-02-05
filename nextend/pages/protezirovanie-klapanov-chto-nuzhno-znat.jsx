@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
-import SEO from '../components/SEO';
+import SEO from '@/components/SEO';
 
 export default function Treatment() {
   const SEODetails = {

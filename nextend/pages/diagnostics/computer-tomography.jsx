@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import Header from '../../components/Header/Header';
-import Advantages from '../../components/Advantages';
-import Contacts from '../../components/Contacts';
-import Footer from '../../components/Footer';
-import SEO from '../../components/SEO';
+import Header from '@/components/Header/Header';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 export default function KT() {
   const SEODetails = {
