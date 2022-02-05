@@ -7,7 +7,7 @@ export default function DropButtonTreatment({ styles }) {
       <button className={styles.link} data-dropdown-button>
         <Link href="/treatment">
           <a className={styles.button_link} data-dropdown-button>
-            Лечение
+            Операции
           </a>
         </Link>
       </button>
