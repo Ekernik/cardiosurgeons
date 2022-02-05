@@ -14,7 +14,7 @@
     text-decoration: none;
     color: var(--color-P--dark);
     font-weight: 600;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
       color: var(--color-P--darkest);
@@ -24,6 +24,10 @@
 
   &__ul {
     list-style-type: none;
+    padding-left: 1.5em;
+  }
+
+  &__ol {
     padding-left: 1.5em;
   }
 
