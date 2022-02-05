@@ -13,6 +13,7 @@ const formSettings = {
     if (typeof window !== 'undefined') {
       const hostname = window.location.pathname;
       const url_oskol = '/news/priem-v-gorode-stariy-oskol';
+      const url_saransk = '/news/priem-v-gorode-saransk';
       const url_vladimir = '/news/priem-v-gorode-vladimir';
       const url_stavropol = '/news/priem-v-gorode-stavropol';
       const url_arzamas = '/news/priem-v-gorode-arzamas';
@@ -20,6 +21,7 @@ const formSettings = {
       const url_nizhniy_novgorod = '/news/priem-v-gorode-nizhniy-novgorod';
       const url_velikie_luki = '/news/priem-v-gorode-velikie-luki';
       if (hostname.includes(url_oskol)) return 'Старый Оскол';
+      else if (hostname.includes(url_saransk)) return 'Саранск';
       else if (hostname.includes(url_vladimir)) return 'Владимир';
       else if (hostname.includes(url_stavropol)) return 'Ставрополь';
       else if (hostname.includes(url_arzamas)) return 'Арзамас';
@@ -34,7 +36,7 @@ const formSettings = {
     let inputs = Array.prototype.slice
       .call(document.querySelectorAll('input[required]'))
       .slice(cutA, cutB);
-    let valid = inputs.filter((input) => input.checkValidity() === true);
+    let valid = inputs.filter(input => input.checkValidity() === true);
     return inputs.length === valid.length ? true : false;
   },
 };

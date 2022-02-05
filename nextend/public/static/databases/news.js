@@ -1,5 +1,29 @@
 let newsArr = [
   {
+    id: 'n12',
+    title: '10 февраля',
+    pretitle: 'Саранск',
+    setting: {},
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-saransk-10.02.2022',
+  },
+  {
+    id: 'n11',
+    title: '09 февраля',
+    pretitle: 'Арзамас',
+    setting: {},
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-arzamas-09.02.2022',
+  },
+  {
+    id: 'n10',
+    title: '08 февраля',
+    pretitle: 'Нижний Новгород',
+    setting: {},
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-nizhniy-novgorod-08.02.2022',
+  },
+  {
     id: 'n9',
     title: '25 января',
     pretitle: 'Старый Оскол',
