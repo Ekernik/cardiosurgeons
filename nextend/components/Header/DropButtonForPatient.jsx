@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 
 export default function DropButtonForPatient({ styles }) {
   return (
@@ -12,20 +12,26 @@ export default function DropButtonForPatient({ styles }) {
       <div
         className={`${styles.dropdown__menu} ${styles.dropdown__menu___aside} ${styles.about__grid}`}
       >
-        <Link href='/besplatnoe-lechenie-po-kvotam'>
-          <a className={styles.link__button}>Бесплатное лечение по квотам</a>
-        </Link>
-        <Link href='/operacii-na-serdce'>
-          <a className={styles.link__button}>Операции на сердце</a>
-        </Link>
-        <Link href='/kak-zapisatsya-k-kardiohirurgu'>
-          <a className={styles.link__button}>Как записаться к кардиохирургу</a>
-        </Link>
-        <Link href='/protezirovanie-klapanov-chto-nuzhno-znat'>
-          <a className={styles.link__button}>
-            Протезирование клапанов: что нужно знать
-          </a>
-        </Link>
+        <Link
+          href='/besplatnoe-lechenie-po-kvotam'
+          text='Бесплатное лечение по квотам'
+          classes={styles.link__button}
+        />
+        <Link
+          href='/operacii-na-serdce'
+          text='Операции на сердце'
+          classes={styles.link__button}
+        />
+        <Link
+          href='/kak-zapisatsya-k-kardiohirurgu'
+          text='Как записаться к кардиохирургу'
+          classes={styles.link__button}
+        />
+        <Link
+          href='/protezirovanie-klapanov-chto-nuzhno-znat'
+          text='Протезирование клапанов: что нужно знать'
+          classes={styles.link__button}
+        />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { showFullHeader } from './watchScroll';
 
 export default function LinkItem({ link, text, click }) {
@@ -12,10 +12,8 @@ export default function LinkItem({ link, text, click }) {
   };
 
   return (
-    <li className="menu__item" onClick={handleClick}>
-      <Link href={link}>
-        <a className="menu__link">{text}</a>
-      </Link>
+    <li className='menu__item' onClick={handleClick}>
+      <Link href={link} text={text} classes='menu__link' />
     </li>
   );
 }

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 
 export default function DropButtonDiseases({ styles }) {
   return (
@@ -7,9 +7,11 @@ export default function DropButtonDiseases({ styles }) {
         Заболевания
       </button>
       <div className={`${styles.dropdown__menu} ${styles.treatment__grid}`}>
-        <Link href='/diagnostics/ateroskleros'>
-          <a className={styles.link__button}>Атеросклероз</a>
-        </Link>
+        <Link
+          href='/diagnostics/ateroskleros'
+          text='Атеросклероз'
+          classes={styles.link__button}
+        />
       </div>
     </div>
   );

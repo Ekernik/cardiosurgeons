@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 import DropButtonForPatient from './DropButtonForPatient';
 
 export default function DropButtonAboutUs({ styles }) {
@@ -8,22 +8,19 @@ export default function DropButtonAboutUs({ styles }) {
         О нас
       </button>
       <div className={`${styles.dropdown__menu} ${styles.about__grid}`}>
-        <Link href='/about-us'>
-          <a className={styles.link__button}>О клинике</a>
-        </Link>
-        <Link href='/structure'>
-          <a className={styles.link__button}>Структура центра</a>
-        </Link>
-        <Link href='/regions'>
-          <a className={styles.link__button}>Приемы врачей в&nbsp;регионах</a>
-        </Link>
+        <Link href='/about-us' text='О клинике' classes={styles.link__button} />
+        <Link
+          href='/structure'
+          text='Структура центра'
+          classes={styles.link__button}
+        />
+        <Link
+          href='/regions'
+          text='Приемы врачей в&nbsp;регионах'
+          classes={styles.link__button}
+        />
         <DropButtonForPatient styles={styles} />
-        {/* <Link href="/news">
-          <a className={styles.link__button}>Новости</a>
-        </Link> */}
-        <Link href='/feedback'>
-          <a className={styles.link__button}>Отзывы</a>
-        </Link>
+        <Link href='/feedback' text='Отзывы' classes={styles.link__button} />
       </div>
     </div>
   );

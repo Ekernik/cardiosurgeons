@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 
 export default function DropButtonDiagnostics({ styles }) {
   return (
@@ -7,12 +7,16 @@ export default function DropButtonDiagnostics({ styles }) {
         Диагностика
       </button>
       <div className={`${styles.dropdown__menu} ${styles.treatment__grid}`}>
-        <Link href='/diagnostics/coronarographia'>
-          <a className={styles.link__button}>Коронарография</a>
-        </Link>
-        <Link href='/diagnostics/computer-tomography'>
-          <a className={styles.link__button}>Компьютерная томография</a>
-        </Link>
+        <Link
+          href='/diagnostics/coronarographia'
+          text='Коронарография'
+          classes={styles.link__button}
+        />
+        <Link
+          href='/diagnostics/computer-tomography'
+          text='Компьютерная томография'
+          classes={styles.link__button}
+        />
       </div>
     </div>
   );

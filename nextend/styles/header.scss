@@ -172,7 +172,7 @@
   }
 
   &.menu--closed {
-    animation: burger-menu-drop__phone .4s ease-in-out reverse;
+    animation: burger-menu-drop__phone 0.4s ease-in-out reverse;
   }
 }
 
@@ -241,16 +241,8 @@
       justify-content: center;
       align-items: center;
       font-size: var(--text-sm);
-
-      & a:any-link {
-        color: black;
-        text-decoration: none;
-        margin-bottom: 0.3em;
-      }
-
-      & p {
-        font-size: var(--text-xs);
-      }
+      color: black;
+      text-decoration: none;
     }
 
     &__cta {
@@ -354,10 +346,6 @@
     &__phone {
       margin: 0 2rem;
       font-size: var(--text-lg);
-
-      & p {
-        font-size: var(--text-sm);
-      }
     }
 
     &__cta {

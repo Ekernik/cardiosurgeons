@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { useEffect } from 'react';
 import HeaderBrand from './HeaderBrand';
 import BurgerMenu from './BurgerMenu';
@@ -9,7 +9,7 @@ import styles from '@/styles/dropdown.module.scss';
 import { listenToScroll } from './watchScroll.js';
 
 const mountDropdownListeners = () => {
-  document.addEventListener('click', (e) => {
+  document.addEventListener('click', e => {
     let currentDropdown;
     const isDropdownButton = e.target.matches('[data-dropdown-button]');
     if (!isDropdownButton && e.target.closest('[data-dropdown]') != null)
@@ -22,7 +22,7 @@ const mountDropdownListeners = () => {
 
     document
       .querySelectorAll(`[data-dropdown].${styles.active}`)
-      .forEach((dropdown) => {
+      .forEach(dropdown => {
         if (dropdown === currentDropdown) return;
         dropdown.classList.remove(styles.active);
       });
@@ -36,16 +36,14 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="header" onLoad={listenToScroll}>
-      <div className="container header__container">
-        <div className="header__navbar">
+    <header className='header' onLoad={listenToScroll}>
+      <div className='container header__container'>
+        <div className='header__navbar'>
           <HeaderBrand />
-          <div className="header__phone">
-            <Link href="tel:+79992380136">
-              <a>+7 (999) 238-01-36</a>
-            </Link>
-          </div>
-          <Button styling="header__cta" text="Записаться на прием" />
+          <a href='tel:+79992380136' className='header__phone'>
+            +7 (999) 238-01-36
+          </a>
+          <Button styling='header__cta' text='Записаться на прием' />
         </div>
         <BurgerMenu />
       </div>
