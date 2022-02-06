@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 
 export default function Review({ onClose }) {
   return (
-    <div>
+    <article>
       <p className='article__p'>
         Центр кардиохирургии и&nbsp;инновационной кардиологии очень понравился.
       </p>
@@ -15,11 +15,11 @@ export default function Review({ onClose }) {
       </p>
       <p className='article__p'>
         Особенно хочется отметить работу кардиолога{' '}
-        <Link href='/team/doctor_kotova'>
-          <a onClick={onClose} className='article__link'>
-            Котовой Анны Сергеевны
-          </a>
-        </Link>
+        <Link
+          href='/team/doctor_kotova'
+          text='Котовой Анны Сергеевны'
+          onClick={onClose}
+        />
         , хирурга Алиева Сергея Васильевича и&nbsp;медицинской сестры
         Михайловской Юлии Викторовны.
       </p>
@@ -31,6 +31,6 @@ export default function Review({ onClose }) {
         Если&nbsp;бы по&nbsp;всей стране были такие клиники и&nbsp;врачи,
         то&nbsp;население страны было бы в&nbsp;два раза больше.
       </p>
-    </div>
+    </article>
   );
 }

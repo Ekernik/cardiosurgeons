@@ -1,49 +1,49 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 
 export default function Review({ onClose }) {
   return (
-    <div>
+    <article>
       <p className='article__p'>
         Выражаем огромную благодарность сотрудникам отделения кардиохирургии:
         кардиохирургу{' '}
-        <Link href='/team/doctor_zubarev'>
-          <a onClick={onClose} className='article__link'>
-            Зубареву Евгению Игоревичу
-          </a>
-        </Link>
+        <Link
+          href='/team/doctor_zubarev'
+          text='Зубареву Евгению Игоревичу'
+          onClick={onClose}
+        />
         ;{' '}
-        <Link href='/team/doctor_sheremet'>
-          <a onClick={onClose} className='article__link'>
-            Шереметову Антону Андреевичу
-          </a>
-        </Link>
+        <Link
+          href='/team/doctor_sheremet'
+          text='Шереметову Антону Андреевичу'
+          onClick={onClose}
+        />
         ;{' '}
-        <Link href='/team/doctor_vasilev'>
-          <a onClick={onClose} className='article__link'>
-            Васильеву Алексею Сергеевичу
-          </a>
-        </Link>
+        <Link
+          href='/team/doctor_vasilev'
+          text='Васильеву Алексею Сергеевичу'
+          onClick={onClose}
+        />
         ;{' '}
-        <Link href='/team/doctor_stolyarov'>
-          <a onClick={onClose} className='article__link'>
-            Столярову Максиму Станиславовичу
-          </a>
-        </Link>
+        <Link
+          href='/team/doctor_stolyarov'
+          text='Столярову Максиму Станиславовичу'
+          onClick={onClose}
+        />
         ; координатору Давыдовой Светлане Федоровне; кардиологу отделения{' '}
-        <Link href='/team/doctor_starosockaya'>
-          <a onClick={onClose} className='article__link'>
-            Старосоцкой Марии Владимировне
-          </a>
-        </Link>
+        <Link
+          href='/team/doctor_starosockaya'
+          text='Старосоцкой Марии Владимировне'
+          onClick={onClose}
+        />
         ; всем операционным медсестрам; медсестрам отделения: Шаламовой А.В.;
         Михайловской Ю.В; Юшкиной Т.; Мироненко Анастасии; санитарке Ивлевой
         Валентине; сотрудникам кухни: Горелыщивой Елене Николаевне; врача
         кардиолога{' '}
-        <Link href='/team/doctor_suhanova'>
-          <a onClick={onClose} className='article__link'>
-            Суханова Ольга Викторовна
-          </a>
-        </Link>
+        <Link
+          href='/team/doctor_suhanova'
+          text='Суханова Ольга Викторовна'
+          onClick={onClose}
+        />
         .
       </p>
       <p className='article__p'>
@@ -59,6 +59,6 @@ export default function Review({ onClose }) {
         Александровна, Чугунова Наталья Александровна, Васильева Мария и
         Максимова Оксана Николаевна
       </p>
-    </div>
+    </article>
   );
 }

@@ -1,15 +1,15 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 
 export default function Review({ onClose }) {
   return (
-    <div>
+    <article>
       <p className='article__p'>
         Очень благодарна врачу{' '}
-        <Link href='/team/doctor_sorokin'>
-          <a onClick={onClose} className='article__link'>
-            Сорокину Андрею Александровичу
-          </a>
-        </Link>{' '}
+        <Link
+          href='/team/doctor_sorokin'
+          text='Сорокину Андрею Александровичу'
+          onClick={onClose}
+        />{' '}
         за его чуткость, внимательность к пациентам.
       </p>
       <p className='article__p'>
@@ -20,6 +20,6 @@ export default function Review({ onClose }) {
         И еще большое спасибо медперсоналу всего отделения за очень хорошее
         отношение к больным. Спасибо всем большое!
       </p>
-    </div>
+    </article>
   );
 }

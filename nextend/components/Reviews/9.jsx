@@ -1,6 +1,6 @@
 export default function Review() {
   return (
-    <div>
+    <article>
       <p className="article__p">
         Отзывчивые и высококвалифицированные работники, желающие здоровья
         пациентам, служат в&nbsp;этом Центре.
@@ -9,6 +9,6 @@ export default function Review() {
         Хорошая организация лечения. Вере Васильевне - отдельное спасибо.
       </p>
       <p className="article__p">С уважением, Захаров.</p>
-    </div>
+    </article>
   );
 }
