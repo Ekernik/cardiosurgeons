@@ -16,9 +16,10 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@/atoms/*": ["atoms/*"],
       "@/components/*": ["components/*"],
       "@/styles/*": ["styles/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
