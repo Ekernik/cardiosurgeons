@@ -1,9 +1,4 @@
 import Link from 'next/link';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Greetings from '../../components/Greetings';
-import Footer from '../../components/Footer';
-import Contacts from '../../components/Contacts';
 import {
   YMaps,
   Map,
@@ -11,18 +6,17 @@ import {
   FullscreenControl,
   ZoomControl,
 } from 'react-yandex-maps';
-import DoctorCard from '../../components/DoctorCard';
-import img_doctor from '../../public/static/images/doctors/doctor_Balahonov.jpg';
-import ButtonCTA from '../../components/ButtonCTA';
+import Header from '@/components/Header/Header';
+import Greetings from '@/components/Greetings';
+import Footer from '@/components/Footer';
+import Contacts from '@/components/Contacts';
+import DoctorCard from '@/components/DoctorCard';
+import ButtonCTA from '@/components/ButtonCTA';
+import SEO from '@/components/SEO';
+import img_doctor from '@/public/static/images/doctors/doctor_Balahonov.jpg';
 
 // Нижний Новгород - 08 февраля 2022
 export default function Announcement() {
-  const titleContent =
-    'Кардиохирург в Нижнем Новгороде. Сердечно-сосудистая хирургия';
-  const descriptionContent =
-    'Прием специалистов клиники кардиохирургии и кардиологии ВМТ им. Н.И. Пирогова';
-  const linkToArticle =
-    'https://heartteamspb.com/news/priem-v-gorode-nizhniy-novgorod-08.02.2022';
   const dayOfVisit = '08';
   const monthOfVisit = 'февраля';
   const yearOfVisit = '2022';
@@ -38,23 +32,19 @@ export default function Announcement() {
   const price = '2500 рублей';
   const mapsLink = 'https://yandex.ru/maps/-/CCUyUOv7WD';
   const mapsGeometry = [56.255322, 43.852258];
-
+  const SEODetails = {
+    title: 'Кардиохирург Нижний Новгород. Записаться к кардиохирургу на прием.',
+    description:
+      'Прием кардиохирурга в городе Нижний Новгород. Лечение бесплатно в клинике кардиохирургии Петербурга. Записывайтесь!',
+    pageLink:
+      'https://heartteamspb.com/news/priem-v-gorode-nizhniy-novgorod-08.02.2022',
+    type: 'article',
+  };
   return (
     <>
-      <Head>
-        <title>{titleContent}</title>
-        <meta property='og:title' content={titleContent} />
-        <meta name='description' content={descriptionContent} />
-        <meta property='og:description' content={descriptionContent} />
-        <meta property='og:type' content='article' />
-        <meta
-          property='og:image'
-          content='https://heartteamspb.com/static/images/bg-doctors.webp'
-        />
-        <meta property='og:url' content={linkToArticle} />
-      </Head>
+      <SEO details={SEODetails} />
+      <div id='curtain' />
       <div className='App'>
-        <div id='curtain'></div>
         <Header />
         <Greetings
           header={{ title: `${dayOfVisit} ${monthOfVisit}`, pretitle: city }}
