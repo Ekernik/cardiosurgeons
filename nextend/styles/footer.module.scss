@@ -29,38 +29,7 @@
   }
 }
 
-.social_links {
-  &__container {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__link:any-link {
-    opacity: 0.3;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5em;
-    padding: 0.8em;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  &__icon {
-    margin-left: 0.5rem;
-    display: none;
-  }
-}
-
-///////////// TABLET VIEW
-@media (min-width: 768px) {
-  .social_links {
-    &__icon {
-      display: inline-block;
-    }
-  }
+.social_links__container {
+  display: flex;
+  justify-content: center;
 }
