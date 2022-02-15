@@ -9,7 +9,7 @@ const Page = () => {
     title: 'Синдром WPW. Диагностика и лечение синдрома WPW.',
     description:
       'Лечение синдрома WPW в больнице кардиохирургии в Санкт-Петербурге. Пройдите комплексную диагностику в нашей клинике.',
-    pageLink: 'https://heartteamspb.com/deseases/sindrom-wpw',
+    pageLink: 'https://heartteamspb.com/diseases/sindrom-wpw',
     type: 'article',
   };
   return (
