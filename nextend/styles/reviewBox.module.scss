@@ -41,15 +41,6 @@
   }
 }
 
-.author {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.city {
-  color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 0.4em;
-}
-
 .doc_tag:any-link {
   color: rgba($color: #000, $alpha: 0.7);
   text-decoration: none;
@@ -66,7 +57,10 @@
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0.4em;
 }
 
 // MODAL

@@ -1,11 +1,24 @@
 import { useState } from 'react';
-import Modal from './Modal';
+import Modal from '@/components/Modal';
 import style from '@/styles/reviewBox.module.scss';
 
-export default function ReviewBox({ review }) {
-  const isDoctorMentioned = review.doctors.length > 0;
+const ReviewBox = ({ review }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
+
+  const renderMessage = () =>
+    review.message.map((message, i) => (
+      <p className='article__p' key={i + Date.now()}>
+        {message}
+      </p>
+    ));
+
+  const handleClick = () => {
+    setIsModalOpen(true);
+    document.querySelector('body').classList.add('fixed');
+    setModalContent(review.id);
+  };
+
   return (
     <>
       <Modal
@@ -18,30 +31,18 @@ export default function ReviewBox({ review }) {
       />
       <div className={style.box}>
         <div className={style.header}>
-          <p className={style.author}>{review.author || 'Анонимно'}</p>
+          <p>{review.author || 'Анонимно'}</p>
+          <p>{review.city}</p>
         </div>
-        <p className={style.city}>{review.city}</p>
-        <div className={style.message}>
-          {review.message.map((par, i) => (
-            <p className="article__p" key={i + Date.now()}>
-              {par}
-            </p>
-          ))}
-        </div>
+        <div className={style.message}>{renderMessage()}</div>
         {review.readmore && (
-          <button
-            className={style.btn_more}
-            onClick={() => {
-              console.log(isModalOpen);
-              setIsModalOpen(true);
-              document.querySelector('body').classList.add('fixed');
-              setModalContent(review.id);
-            }}
-          >
+          <button className={style.btn_more} onClick={handleClick}>
             читать полностью
           </button>
         )}
       </div>
     </>
   );
-}
+};
+
+export default ReviewBox;
