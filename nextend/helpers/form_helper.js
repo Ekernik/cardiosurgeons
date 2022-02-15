@@ -1,4 +1,21 @@
-const formSettings = {
+export const handleSubmit = () => {
+  console.log('отправляем форму');
+  try {
+    formSettings.checkValues(4, 8);
+    // Make success animation
+    const floatingForm = document.querySelector('.contact-form');
+    const curtain = document.querySelector('.contact-form__curtain');
+    floatingForm.style.animation = 'group-fade-out .3s ease-in forwards';
+    floatingForm.style.display = 'none';
+    curtain.style.display = 'flex';
+    curtain.style.animation = 'contact-form--fade-in 1.5s ease-in forwards';
+    console.log('Форма отправленна');
+  } catch {
+    console.log('Форма не отправленна');
+  }
+};
+
+export const formSettings = {
   TEST_submit_link:
     'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdOifwVekKhMgITAZwIR_eZAZ4YPsuqHKpLMDfP-b063L3ctw/formResponse',
   TEST_name_entry: 'entry.127199314',
@@ -40,5 +57,3 @@ const formSettings = {
     return inputs.length === valid.length ? true : false;
   },
 };
-
-export default formSettings;

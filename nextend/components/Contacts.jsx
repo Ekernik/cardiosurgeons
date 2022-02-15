@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from '@/components/Link';
 import Map from '@/components/Map';
 import ContactsForm from '@/components/ContactsForm';
 
@@ -21,18 +21,18 @@ function Contacts() {
         <div className='our-location'>
           <h3 className='subheader'>Где нас найти в г. Санкт-Петербурге</h3>
           <Map position={[59.915765, 30.28255]} />
-          <Link href='/map-route.png'>
-            <a
-              className='advanced-route'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Подробный маршрут
-              <span className='contacts-external-icon'>
-                <Image src={icon_external} alt='' width={13} height={13} />
-              </span>
-            </a>
-          </Link>
+          <Link
+            href='/map-route.png'
+            classes='advanced-route'
+            text={
+              <>
+                <span>Подробный маршрут</span>
+                <span className='contacts-external-icon'>
+                  <Image src={icon_external} alt='' width={13} height={13} />
+                </span>
+              </>
+            }
+          />
           <ul className='contacts-info'>
             <li className='contacts-info__item'>
               <span className='contacts-bottom-icon'>

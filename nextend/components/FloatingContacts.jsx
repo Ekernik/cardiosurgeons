@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import success from "@/public/static/svg/success.svg";
-import formSettings from "@/public/static/databases/googleForm";
+import {formSettings} from "@/helpers/form_helper";
 
 let handleSubmit = () => {
   if (formSettings.checkValues(0, 4)) {
