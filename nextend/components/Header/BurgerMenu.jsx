@@ -30,8 +30,10 @@ const handleScroll = position => {
   if (position === 'top') menus[0].classList.add('active');
   if (position === 'middle') menus[1].classList.add('active');
   if (position === 'bottom') menus[2].classList.add('active');
-  if (position === 'disieses') menus[3].classList.add('active');
-  if (position === 'diagnostics') menus[4].classList.add('active');
+  if (position === 'diseases') menus[3].classList.add('active');
+  if (position === 'heart-diseases') menus[4].classList.add('active');
+  if (position === 'heart-rythm') menus[5].classList.add('active');
+  if (position === 'diagnostics') menus[6].classList.add('active');
 };
 
 export default function BurgerMenu() {
@@ -43,12 +45,13 @@ export default function BurgerMenu() {
         </div>
       </div>
       <nav className='header__burger-nav'>
+        {/* Главная */}
         <ul className='burger__menu'>
           <LinkItem click={handleClose} link='/' text='Главная' />
           <p className='menu__link' onClick={() => handleScroll('middle')}>
             О нас
           </p>
-          <p className='menu__link' onClick={() => handleScroll('disieses')}>
+          <p className='menu__link' onClick={() => handleScroll('diseases')}>
             Заболевания
           </p>
           <p className='menu__link' onClick={() => handleScroll('diagnostics')}>
@@ -59,9 +62,10 @@ export default function BurgerMenu() {
           <LinkItem click={handleClose} link='/contacts' text='Контакты' />
         </ul>
 
+        {/* О нас */}
         <ul className='burger__menu'>
           <p className='menu__link' onClick={() => handleScroll('top')}>
-            Назад
+            <b>Назад</b>
           </p>
           <LinkItem click={handleClose} link='/about-us' text='О клинике' />
           <LinkItem
@@ -80,9 +84,10 @@ export default function BurgerMenu() {
           <LinkItem click={handleClose} link='/feedback' text='Отзывы' />
         </ul>
 
+        {/* Информация для пациента */}
         <ul className='burger__menu'>
           <p className='menu__link' onClick={() => handleScroll('middle')}>
-            Назад
+            <b>Назад</b>
           </p>
           <LinkItem
             click={handleClose}
@@ -109,7 +114,23 @@ export default function BurgerMenu() {
         {/* Заболевания */}
         <ul className='burger__menu'>
           <p className='menu__link' onClick={() => handleScroll('top')}>
-            Назад
+            <b>Назад</b>
+          </p>
+          <p
+            className='menu__link'
+            onClick={() => handleScroll('heart-diseases')}
+          >
+            Болезни сердца
+          </p>
+          <p className='menu__link' onClick={() => handleScroll('heart-rythm')}>
+            Нарушения ритма сердца
+          </p>
+        </ul>
+
+        {/* Болезни сердца */}
+        <ul className='burger__menu'>
+          <p className='menu__link' onClick={() => handleScroll('diseases')}>
+            <b>Назад</b>
           </p>
           <LinkItem
             click={handleClose}
@@ -118,10 +139,55 @@ export default function BurgerMenu() {
           />
         </ul>
 
+        {/* Нарушения ритма сердца */}
+        <ul className='burger__menu'>
+          <p className='menu__link' onClick={() => handleScroll('diseases')}>
+            <b>Назад</b>
+          </p>
+          <LinkItem
+            click={handleClose}
+            link='/diseases/sindrom-wpw'
+            text='Синдром Вольфа–Паркинсона–Уайта'
+            style={{ textAlign: 'center' }}
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/avurt'
+            text='Атриовентрикулярная узловая реципрокная тахикардия (АВУРТ)'
+            style={{ textAlign: 'center' }}
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/fibrilyaciya-predcerdiy'
+            text='Фибрилляция предсердий (ФП)'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/zheludochkovaya-tahikardiya'
+            text='Желудочковая тахикардия (ЖТ)'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/trepetanie-predserdiy'
+            text='Трепетание предсердий'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/ekstrasistoliya'
+            text='Экстрасистолия'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/vnezapnaya-serdechnaya-smert'
+            text='Внезапная сердечная смерть (ВСС)'
+            style={{ textAlign: 'center' }}
+          />
+        </ul>
+
         {/* Диагностика */}
         <ul className='burger__menu'>
           <p className='menu__link' onClick={() => handleScroll('top')}>
-            Назад
+            <b>Назад</b>
           </p>
           <LinkItem
             click={handleClose}
