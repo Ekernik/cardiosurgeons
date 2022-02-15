@@ -1,29 +1,6 @@
 import Link from '@/components/Link';
+import FormGroup from '@/components/FormGroup';
 import { handleSubmit, formSettings } from '@/helpers/form_helper';
-
-const FormGroup = (
-  name,
-  type = 'text',
-  required = true,
-  text,
-  inputOptions,
-) => {
-  return (
-    <div className='contact-form__group'>
-      <input
-        className='contact-form__input'
-        name={name}
-        type={type}
-        required={required}
-        {...inputOptions}
-      />
-      <label className='contact-form__label'>
-        {text}
-        {required && <span className='must-have'>*</span>}
-      </label>
-    </div>
-  );
-};
 
 const ContactsForm = () => (
   <form
@@ -47,7 +24,7 @@ const ContactsForm = () => (
     <FormGroup
       name={formSettings.ref_link}
       value={formSettings.ref_origin()}
-      inputOptions={{ readonly: true }}
+      inputOptions={{ readOnly: true }}
     />
     <div className='contact-form__group'>
       <textarea
