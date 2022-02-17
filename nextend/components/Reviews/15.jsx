@@ -4,7 +4,7 @@ export default function Review({ onClose }) {
   return (
     <article>
       <p className='article__p'>
-        Я - Вааг Ирма Фридрихвна хочу сказать огромное спасибо{' '}
+        Я - Вааг Ирма Фридриховна хочу сказать огромное спасибо{' '}
         <Link
           href='/team/doctor_zubarev'
           text='Зубареву Евгению Игоревичу'
