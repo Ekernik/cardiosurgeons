@@ -34,7 +34,11 @@ export const formSettings = {
       const url_vladimir = '/news/priem-v-gorode-vladimir';
       const url_stavropol = '/news/priem-v-gorode-stavropol';
       const url_arzamas = '/news/priem-v-gorode-arzamas';
+      const url_hasavyurt = 'priem-v-gorode-hasavyurt';
+      const url_zheleznogorsk = 'priem-v-gorode-zheleznogorsk-10.03.2022';
       const url_volhov = '/news/priem-v-gorode-volhov';
+      const url_shahti = '/news/priem-v-gorode-shahti';
+      const url_cherkessk = '/news/priem-v-gorode-cherkessk';
       const url_nizhniy_novgorod = '/news/priem-v-gorode-nizhniy-novgorod';
       const url_velikie_luki = '/news/priem-v-gorode-velikie-luki';
       if (hostname.includes(url_oskol)) return 'Старый Оскол';
@@ -43,6 +47,10 @@ export const formSettings = {
       else if (hostname.includes(url_stavropol)) return 'Ставрополь';
       else if (hostname.includes(url_arzamas)) return 'Арзамас';
       else if (hostname.includes(url_volhov)) return 'Волхов';
+      else if (hostname.includes(url_shahti)) return 'Шахты';
+      else if (hostname.includes(url_hasavyurt)) return 'Хасавюрт';
+      else if (hostname.includes(url_zheleznogorsk)) return 'Железногорск';
+      else if (hostname.includes(url_cherkessk)) return 'Черкесск';
       else if (hostname.includes(url_nizhniy_novgorod))
         return 'Нижний Новгород';
       else if (hostname.includes(url_velikie_luki)) return 'Великие Луки';
