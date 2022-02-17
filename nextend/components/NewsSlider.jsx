@@ -1,11 +1,11 @@
-import styles from '@/styles/newsSlider.module.scss';
-import NewsCard from './NewsCard';
 import newsArr from '@/public/static/databases/news';
+import NewsCard from '@/components/NewsCard';
+import styles from '@/styles/newsSlider.module.scss';
 
-export default function NewsSlider() {
-  let renderNews = (news) => {
-    let arr = [news[0], news[1], news[2]];
-    return arr.map((news) => (
+const NewsSlider = () => {
+  const renderNews = news => {
+    const arr = [news[0], news[1], news[2]];
+    return arr.map(news => (
       <NewsCard
         key={news.id}
         subtitle={news.pretitle}
@@ -16,13 +16,13 @@ export default function NewsSlider() {
   };
 
   return (
-    <div className="news-section">
-      <div className="container">
-        <h2 className="article__header">
-          Прием специалистов Центра в городах РФ
-        </h2>
-        <div className={styles.newslider__container}>{renderNews(newsArr)}</div>
-      </div>
-    </div>
+    <section className='container'>
+      <h2 className='article__header'>
+        Прием специалистов Центра в городах РФ
+      </h2>
+      <div className={styles.newslider__container}>{renderNews(newsArr)}</div>
+    </section>
   );
-}
+};
+
+export default NewsSlider;
