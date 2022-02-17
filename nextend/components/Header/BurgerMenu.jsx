@@ -137,6 +137,21 @@ export default function BurgerMenu() {
             link='/diagnostics/ateroskleros'
             text='Атеросклероз'
           />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/ishemicheskaya-bolezn-serdca'
+            text='Ишемическая болезнь сердца (ИБС)'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/stenoz-vnutrennei-sonnoi-arterii'
+            text='Стеноз внутренней сонной артерии'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/anevrizma-i-rassloenie-aorti'
+            text='Аневризма и расслоение аорты'
+          />
         </ul>
 
         {/* Нарушения ритма сердца */}

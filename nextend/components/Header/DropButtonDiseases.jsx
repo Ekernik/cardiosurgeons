@@ -22,6 +22,21 @@ export default function DropButtonDiseases({ styles }) {
               text='Атеросклероз'
               classes={styles.link__button}
             />
+            <Link
+              href='/diseases/ishemicheskaya-bolezn-serdca'
+              text='Ишемическая болезнь сердца (ИБС)'
+              classes={styles.link__button}
+            />
+            <Link
+              href='/diseases/stenoz-vnutrennei-sonnoi-arterii'
+              text='Стеноз внутренней сонной артерии'
+              classes={styles.link__button}
+            />
+            <Link
+              href='/diseases/anevrizma-i-rassloenie-aorti'
+              text='Аневризма и расслоение аорты'
+              classes={styles.link__button}
+            />
           </div>
         </div>
         <div className={styles.dropdown} data-dropdown>
