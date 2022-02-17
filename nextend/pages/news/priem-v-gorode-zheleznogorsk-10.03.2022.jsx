@@ -34,11 +34,10 @@ export default function Announcement() {
   const mapsLink = 'https://yandex.ru/maps/-/CCU5RSU7dB';
   const mapsGeometry = [52.346086, 35.337819];
   const SEODetails = {
-    title: 'Прием кардиохирурга в городе Арзамас.',
-    description:
-      'Сердечно-сосудистый хирург из Петербурга. Прием пациентов и бесплатное лечение по федеральным квотам. ',
+    title: 'Прием кардиохирурга - Железногорск',
+    description: `${city} - ${dayOfVisit} ${monthOfVisit} ${yearOfVisit} - Принимает кардиохирург из Петербурга - ${doctorFullName}. Записывайтесь на прием.`,
     pageLink:
-      'https://heartteamspb.com/news/priem-v-gorode-hasavyurt-01.03.2022',
+      'https://heartteamspb.com/news/priem-v-gorode-zheleznogorsk-10.03.2022',
     type: 'article',
   };
   return (
@@ -171,7 +170,6 @@ export default function Announcement() {
                   тел. МДЦ «Матис»:{' '}
                   <a href='tel:+74714845809' className='article__link'>
                     +7&nbsp;(47148)&nbsp;4&#8209;58&#8209;09
-                    
                   </a>
                 </p>
               </div>

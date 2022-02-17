@@ -34,10 +34,9 @@ export default function Announcement() {
   const mapsLink = 'https://yandex.ru/maps/-/CCUmI8TC~D';
   const mapsGeometry = [51.318761, 37.887184];
   const SEODetails = {
-    title: 'Прием кардиохирурга в городе Арзамас.',
-    description:
-      'Сердечно-сосудистый хирург из Петербурга. Прием пациентов и бесплатное лечение по федеральным квотам. ',
-    pageLink: 'https://heartteamspb.com/news/priem-v-gorode-shahti-25.02.2022',
+    title: 'Прием кардиохирурга - Старый Оскол',
+    description: `${city} - ${dayOfVisit} ${monthOfVisit} ${yearOfVisit} - Принимает кардиохирург из Петербурга - ${doctorFullName}. Записывайтесь на прием.`,
+    pageLink: 'https://heartteamspb.com/news/priem-v-gorode-stariy-oskol-01.03.2022',
     type: 'article',
   };
   return (

@@ -37,9 +37,8 @@ export default function Announcement() {
   const mapsLink = 'https://yandex.ru/maps/-/CCU5RGFx9B';
   const mapsGeometry = [47.725381, 40.225984];
   const SEODetails = {
-    title: 'Прием кардиохирурга в городе Арзамас.',
-    description:
-      'Сердечно-сосудистый хирург из Петербурга. Прием пациентов и бесплатное лечение по федеральным квотам. ',
+    title: 'Прием кардиохирургов - Черкесск',
+    description: `${city} - ${dayOfVisit} ${monthOfVisit} ${yearOfVisit} - Принимают кардиохирурги из Петербурга - ${firstDoctorFullName} и ${secondDoctorFullName}. Записывайтесь на прием.`,
     pageLink: 'https://heartteamspb.com/news/priem-v-gorode-shahti-25.02.2022',
     type: 'article',
   };

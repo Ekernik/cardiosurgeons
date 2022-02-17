@@ -18,11 +18,10 @@ import SEO from '@/components/SEO';
 // Ставрополь - 15 марта 2022
 export default function Announcement() {
   const SEODetails = {
-    title: 'Прием кардиохирурга в городе Арзамас.',
-    description:
-      'Сердечно-сосудистый хирург из Петербурга. Прием пациентов и бесплатное лечение по федеральным квотам. ',
+    title: 'Прием кардиохирурга - Ставрополь',
+    description: `Ставрополь - 15 марта 2022 г. - Принимает кардиохирург из Петербурга - Каппушев Руслан Юсуфович. Записывайтесь на прием.`,
     pageLink:
-      'https://heartteamspb.com/news/priem-v-gorode-hasavyurt-01.03.2022',
+      'https://heartteamspb.com/news/priem-v-gorode-stavropol-15.03.2022',
     type: 'article',
   };
   return (
@@ -45,7 +44,7 @@ export default function Announcement() {
             <p className='article__p'>
               Записывайтесь на прием и консультацию к&nbsp;опытному
               сердечно-сосудистому хирургу 1-й категории
-              из&nbsp;Санкт-Петербурга – {' '}
+              из&nbsp;Санкт-Петербурга –{' '}
               <Link href='/team/doctor_kappushev'>
                 <a className='article__link'>Каппушеву Руслану Юсуфовичу</a>
               </Link>

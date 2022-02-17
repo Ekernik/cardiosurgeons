@@ -34,9 +34,8 @@ export default function Announcement() {
   const mapsLink = 'https://yandex.ru/maps/-/CCU5RKt83D';
   const mapsGeometry = [43.248833, 46.590709];
   const SEODetails = {
-    title: 'Прием кардиохирурга в городе Арзамас.',
-    description:
-      'Сердечно-сосудистый хирург из Петербурга. Прием пациентов и бесплатное лечение по федеральным квотам. ',
+    title: 'Прием кардиохирурга - Хасавюрт',
+    description: `${city} - ${dayOfVisit} ${monthOfVisit} ${yearOfVisit} - Принимает кардиохирург из Петербурга - ${doctorFullName}. Записывайтесь на прием.`,
     pageLink:
       'https://heartteamspb.com/news/priem-v-gorode-hasavyurt-01.03.2022',
     type: 'article',

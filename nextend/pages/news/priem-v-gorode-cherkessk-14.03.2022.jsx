@@ -34,11 +34,10 @@ export default function Announcement() {
   const mapsLink = 'https://yandex.ru/maps/-/CCU5RWedxB';
   const mapsGeometry = [44.208295, 42.043796];
   const SEODetails = {
-    title: 'Прием кардиохирурга в городе Арзамас.',
-    description:
-      'Сердечно-сосудистый хирург из Петербурга. Прием пациентов и бесплатное лечение по федеральным квотам. ',
+    title: 'Прием кардиохирурга - Черкесск',
+    description: `${city} - ${dayOfVisit} ${monthOfVisit} ${yearOfVisit} - Принимает кардиохирург из Петербурга - ${doctorFullName}. Записывайтесь на прием.`,
     pageLink:
-      'https://heartteamspb.com/news/priem-v-gorode-hasavyurt-01.03.2022',
+      'https://heartteamspb.com/news/priem-v-gorode-cherkessk-14.03.2022',
     type: 'article',
   };
   return (
