@@ -1,21 +1,24 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import arrowRight from '@/public/static/svg/chevron-right.svg';
+import Link from '@/components/Link';
 import styles from '@/styles/newsCard.module.scss';
 
-export default function NewsCard(props) {
+const NewsCard = props => {
   const { title, subtitle, link, isRegions = false } = props;
+  const cardClass = isRegions ? styles.data_card__regions : styles.data_card;
 
   return (
-    <div className={isRegions ? styles.data_card__regions : styles.data_card}>
+    <div className={cardClass}>
       <h3 className={styles.date}>{title}</h3>
       <h4 className={styles.city}>{subtitle}</h4>
-      <Link href={link}>
-        <a className={styles.link}>
-          Читать подробнее
-          <Image src={arrowRight} alt="" width={24} height={24} />
-        </a>
-      </Link>
+      <Link
+        href={link}
+        text='Читать подробнее'
+        kids={<Image src={arrowRight} alt='' width={24} height={24} />}
+        classes={styles.link}
+      />
     </div>
   );
-}
+};
+
+export default NewsCard;
