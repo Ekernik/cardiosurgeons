@@ -37,6 +37,11 @@ export default function DropButtonDiseases({ styles }) {
               text='Аневризма и расслоение аорты'
               classes={styles.link__button}
             />
+            <Link
+              href='/diseases/poroki-serdca'
+              text='Пороки сердца'
+              classes={styles.link__button}
+            />
           </div>
         </div>
         <div className={styles.dropdown} data-dropdown>

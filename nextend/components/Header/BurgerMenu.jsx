@@ -152,6 +152,11 @@ export default function BurgerMenu() {
             link='/diseases/anevrizma-i-rassloenie-aorti'
             text='Аневризма и расслоение аорты'
           />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/poroki-serdca'
+            text='Пороки сердца'
+          />
         </ul>
 
         {/* Нарушения ритма сердца */}
