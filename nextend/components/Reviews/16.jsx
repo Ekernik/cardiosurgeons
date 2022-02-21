@@ -1,6 +1,4 @@
-import Link from '@/components/Link';
-
-export default function Review({ onClose }) {
+const Review = () => {
   return (
     <article>
       <p className='article__p'>
@@ -13,4 +11,6 @@ export default function Review({ onClose }) {
       <p className='article__p'>Очень доволен. Дай бог им здоровья</p>
     </article>
   );
-}
+};
+
+export default Review;
