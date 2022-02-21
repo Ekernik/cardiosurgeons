@@ -1,16 +1,10 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
 import SEO from '@/components/SEO';
 import Header from '@/components/Header/Header';
 import Greetings from '@/components/Greetings';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
-import {
-  YMaps,
-  Map,
-  Placemark,
-  FullscreenControl,
-  ZoomControl,
-} from 'react-yandex-maps';
+import Map from '@/components/Map';
 import DoctorCard from '@/components/DoctorCard';
 import img_doctor from '@/public/static/images/doctors/doctor_Kappushev.jpg';
 import ButtonCTA from '@/components/ButtonCTA';
@@ -69,9 +63,19 @@ export default function Announcement() {
                 </p>
                 <ul className='article__ul'>
                   <li className='article__li'>
-                    — Ишемическая болезнь сердца&nbsp;(ИБС)
+                    —{' '}
+                    <Link
+                      href='/diseases/ishemicheskaya-bolezn-serdca'
+                      text='Ишемическая болезнь сердца&nbsp;(ИБС)'
+                    />
                   </li>
-                  <li className='article__li'>— Аневризма аорты</li>
+                  <li className='article__li'>
+                    —{' '}
+                    <Link
+                      href='/diseases/anevrizma-i-rassloenie-aorti'
+                      text='Аневризма аорты'
+                    />
+                  </li>
                   <li className='article__li'>
                     — Окклюзии и&nbsp;стенозы магистральных артерий
                   </li>
@@ -110,9 +114,7 @@ export default function Announcement() {
                   style={{ textAlign: 'center', flex: 'none' }}
                 >
                   принимает специалист Центра <br />
-                  <Link href={doctorLink}>
-                    <a className='article__link'>{doctorFullName}</a>
-                  </Link>
+                  <Link href={doctorLink} text={doctorFullName} />
                 </p>
                 <DoctorCard
                   className='news__doctor-card'
@@ -145,22 +147,7 @@ export default function Announcement() {
                     {addressOfVisit}
                   </a>
                 </p>
-                <YMaps query={{ lang: 'ru_RU' }}>
-                  <Map
-                    width={'100%'}
-                    height={'30vh'}
-                    defaultState={{
-                      center: mapsGeometry,
-                      zoom: 15,
-                      behaviors: ['default', 'scrollZoom'],
-                      controls: [],
-                    }}
-                  >
-                    <Placemark defaultGeometry={mapsGeometry} />
-                    <FullscreenControl />
-                    <ZoomControl />
-                  </Map>
-                </YMaps>
+                <Map position={mapsGeometry} />
                 <p className='article__p'>
                   тел. для записи:{' '}
                   <a href='tel:+79992380136' className='article__link'>
