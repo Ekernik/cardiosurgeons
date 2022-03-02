@@ -157,6 +157,21 @@ export default function BurgerMenu() {
             link='/diseases/poroki-serdca'
             text='Пороки сердца'
           />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/ishemicheskaya-kardiomiopatiya'
+            text='Ишемическая кардиомиопатия'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/dilatacionnaya-kardiomiopatiya'
+            text='Дилатационная кардиомиопатия'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/gipertroficheskaya-kardiomiopatiya'
+            text='Гипертрофическая кардиомиопатия'
+          />
         </ul>
 
         {/* Нарушения ритма сердца */}

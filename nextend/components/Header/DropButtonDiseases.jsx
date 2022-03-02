@@ -42,6 +42,21 @@ export default function DropButtonDiseases({ styles }) {
               text='Пороки сердца'
               classes={styles.link__button}
             />
+            <Link
+              href='/diseases/ishemicheskaya-kardiomiopatiya'
+              text='Ишемическая кардиомиопатия'
+              classes={styles.link__button}
+            />
+            <Link
+              href='/diseases/dilatacionnaya-kardiomiopatiya'
+              text='Дилатационная кардиомиопатия'
+              classes={styles.link__button}
+            />
+            <Link
+              href='/diseases/gipertroficheskaya-kardiomiopatiya'
+              text='Гипертрофическая кардиомиопатия'
+              classes={styles.link__button}
+            />
           </div>
         </div>
         <div className={styles.dropdown} data-dropdown>
