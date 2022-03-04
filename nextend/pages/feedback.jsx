@@ -24,7 +24,7 @@ const FeedbackPage = () => {
     <>
       <SEO details={SEODetails} />
       <div className='App'>
-        <div id='curtain'></div>
+        <div id='curtain' />
         <Header />
         <main className={`container ${style.container}`}>
           <h1 className={`article__header ${style.h1}`}>

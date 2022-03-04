@@ -1,6 +1,6 @@
 import Link from '@/components/Link';
 
-const Review = () => (
+const Review = ({ onClose }) => (
   <article>
     <p className='article__p'>
       Я приехала очень в тяжелом состоянии 4.02, 7.02 меня прооперировали врачи
@@ -13,8 +13,13 @@ const Review = () => (
     </p>
     <p className='article__p'>
       Хочется отдать должное лечащему врачу{' '}
-      <Link href='/team/doctor_asadullin' text='Асадуллину И.Ш.' />, который с большим вниманием
-      относится к пациентам, желаю продвижения ему в медицине.
+      <Link
+        href='/team/doctor_asadullin'
+        text='Асадуллину И.Ш.'
+        onClick={onClose}
+      />
+      , который с большим вниманием относится к пациентам, желаю продвижения ему
+      в медицине.
     </p>
     <p className='article__p'>
       Большая благодарность сестрам в реанимации, очень знают свою работу и
