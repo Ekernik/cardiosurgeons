@@ -32,6 +32,7 @@ function Contacts() {
                 </span>
               </>
             }
+            linkOptions={{ target: '_blank' }}
           />
           <ul className='contacts-info'>
             <li className='contacts-info__item'>
