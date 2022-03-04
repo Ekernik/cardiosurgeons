@@ -190,6 +190,9 @@ export const doctors = [
   {
     id: 'd_12',
     name: 'Асадуллин Ильшат Шамилевич',
+    name_about_who: 'Асадуллине Ильшате Шамилевиче',
+    name_whos: 'Асадуллина Ильшата Шамилевича',
+    shortname: 'asadullin',
     title: ['Сердечно-сосудистый хирург'],
     img: img_Asadullin,
     alt: 'Доктор Асадуллин Ильшат Шамилевич',
