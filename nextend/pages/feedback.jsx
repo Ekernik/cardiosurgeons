@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import SEO from '@/components/SEO';
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
@@ -6,34 +6,23 @@ import REVIEWS from '@/public/static/databases/reviews';
 import ReviewBox from '@/components/ReviewBox';
 import style from '@/styles/feedback.module.scss';
 
-export default function Feedback() {
-  const getReviews = () => {
-    const reviews = [...REVIEWS].reverse();
-    return reviews.map((review, i) => (
-      <ReviewBox key={i + Date.now()} review={review} />
-    ));
+const FeedbackPage = () => {
+  const getReviews = () =>
+    [...REVIEWS]
+      .reverse()
+      .map((review, i) => <ReviewBox key={i + Date.now()} review={review} />);
+
+  const SEODetails = {
+    title: 'Отзывы о Центре кардиохирургии и кардиологии.',
+    description:
+      'Отзывы наших пациентов о работе специалистов: врачей, мед. персонала. Отзывы о лечении в нашей клинике кардиохирургии и кардиологии.',
+    pageLink: 'https://heartteamspb.com/feedback',
+    type: 'article',
   };
 
   return (
     <>
-      <Head>
-        <title>Отзывы о Центре кардиохирургии и кардиологии</title>
-        <meta
-          property='og:title'
-          content='Отзывы о Центре кардиохирургии и кардиологии'
-        />
-        <meta
-          name='description'
-          content='Отзывы наших пациентов о работе специалистов: врачей, мед. персонала. Отзывы о лечении в нашей клинике кардиохирургии и кардиологии.'
-        />
-        <meta
-          property='og:description'
-          content='Отзывы наших пациентов о работе специалистов: врачей, мед. персонала. Отзывы о лечении в нашей клинике кардиохирургии и кардиологии.'
-        />
-        <meta property='og:type' content='website' />
-        <meta property='og:image' content='./image.webp' />
-        <meta property='og:url' content='https://heartteamspb.com/feedback' />
-      </Head>
+      <SEO details={SEODetails} />
       <div className='App'>
         <div id='curtain'></div>
         <Header />
@@ -48,4 +37,6 @@ export default function Feedback() {
       </div>
     </>
   );
-}
+};
+
+export default FeedbackPage;
