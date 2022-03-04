@@ -1,70 +1,62 @@
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Greetings from '../../components/Greetings';
-import Contacts from '../../components/Contacts';
-import Banner from '../../components/Banner';
-import Advantages from '../../components/Advantages';
-import Footer from '../../components/Footer';
+import SEO from '@/components/SEO';
+import Link from '@/components/Link';
+import Header from '@/components/Header/Header';
+import Greetings from '@/components/Greetings';
+import Contacts from '@/components/Contacts';
+import Banner from '@/components/Banner';
+import Advantages from '@/components/Advantages';
+import Footer from '@/components/Footer';
 
-export default function Stentirovanie() {
+const Article = () => {
+  const SEODetails = {
+    title: 'Стентирование коронарных артерий и сосудов.',
+    description:
+      'Операции по стентированию коронарных артерий и сосудов. Записывайтесь на прием к кардиохирургам Центра кардиохуриругии и интервенционной кардиологии им. Н.И. Пирогова.',
+    pageLink:
+      'https://heartteamspb.com/treatment/stentirovanie-koronarnih-arteriy',
+    type: 'article',
+  };
   return (
     <>
-      <Head>
-        <title>Стентирование коронарных артерий и сосудов</title>
-        <meta
-          property="og:title"
-          content="Стентирование коронарных артерий и сосудов."
-        />
-        <meta
-          name="description"
-          content="Операции по стентированию коронарных артерий и сосудов. Записывайтесь на прием к кардиохирургам Центра кардиохуриругии и интервенционной кардиологии им. Н.И. Пирогова."
-        />
-        <meta
-          property="og:description"
-          content="Операции по стентированию коронарных артерий и сосудов. Записывайтесь на прием к кардиохирургам Центра кардиохуриругии и интервенционной кардиологии им. Н.И. Пирогова."
-        />
-        <meta
-          property="og:url"
-          content="heartteamspb.com/treatment/stentirovanie-koronarnih-arteriy"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
-      </Head>
-      <div className="App">
-        <div id="curtain"></div>
+      <SEO details={SEODetails} />
+      <div className='App'>
+        <div id='curtain' />
         <Header />
-        <main className="page__stentirovanie">
+        <main className='page__stentirovanie'>
           <Greetings
-            header="Стентирование коронарных артерий"
-            subheader="единственная эффективная и безопасная помощь при текущем инфаркте миокарда"
-            buttonText="записаться на бесплатный прием"
+            header='Стентирование коронарных артерий'
+            subheader='единственная эффективная и безопасная помощь при текущем инфаркте миокарда'
+            buttonText='записаться на бесплатный прием'
           />
-          <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-          <section className="container">
-            <h1 className="article__header">
+          <Banner text='ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)' />
+          <section className='container'>
+            <h1 className='article__header'>
               Стентирование коронарных артерий
             </h1>
-            <p className="article__p">
+            <p className='article__p'>
               Стентирование коронарных артерий и баллонная ангиопластика артерий
               являются современной малотравматичной операцией, направленной на
               восстановление просвета артерий. Чаще всего нормальному току крови
               препятствуют{' '}
-              <a
-                className="article__link"
-                href="https://heartteamspb.com/diagnostics/ateroskleros"
-              >
-                атеросклеротические изменения
-              </a>{' '}
+              <Link
+                href='/diagnostics/ateroskleros'
+                text='атеросклеротические изменения'
+              />{' '}
               на внутренней поверхности стенки сосуда, которые приводят к
               образованию бляшек, замедляющих или вовсе прекращающих поступление
               кислорода и питательных веществ в ткани организма.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Одной из основных точек приложения данного метода лечения являются
               сосуды сердца - коронарные артерии, и как следствие применяются
-              при ишемической болезни сердца (ИБС).
+              при{' '}
+              <Link
+                href='/diseases/ishemicheskaya-bolezn-serdca'
+                text='ишемической болезни сердца (ИБС)'
+              />
+              .
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Очень часто пациентов с ИБС интересует вопрос: назначат коронарное
               шунтирование или операцию на сердце - стентирование? Показания к
               операции определяются командой кардиохирургов и кардиологов.
@@ -75,7 +67,7 @@ export default function Stentirovanie() {
               больному обеспечивает оптимальный результат в отдаленной
               перспективе.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Остановимся более подробно на последовательности выполнения самой
               процедуры стентирования коронарных артерий. Непосредственно перед
               операцией назначают препарат для профилактики тромбообразования в
@@ -86,7 +78,7 @@ export default function Stentirovanie() {
               коронарной артерии. Используется местная и внутривенная анестезия
               для того, чтобы Вы могли более комфортно перенести операцию.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Первый этап - прокалывается крупная артерия на ноге (бедренная
               артерия) в паховой области или кисти (лучевая артерия), выбор
               зависит от каждого конкретного случая. В артерию вводится
@@ -103,7 +95,7 @@ export default function Stentirovanie() {
               доступа к сердцу, конечность ограничивают в движениях на
               непродолжительное время.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Как правило, через 2-3 дня пациент выписывается домой с
               рекомендациями и может вести практически обычный образ жизни.
               Стент через 6-12 месяцев выстилают клетки сосудистой стенки
@@ -117,10 +109,10 @@ export default function Stentirovanie() {
               стентирования зависит не только от ее качества, но и строгого
               соблюдения рекомендаций кардиолога.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Для уточнения стоимости стентирования в нашей клинике, позвоните
               нам по телефону{' '}
-              <a className="article__link" href="tel:+79992380196">
+              <a className='article__link' href='tel:+79992380196'>
                 +7&nbsp;(999)&nbsp;238&#8209;01&#8209;96
               </a>
               .
@@ -133,4 +125,6 @@ export default function Stentirovanie() {
       </div>
     </>
   );
-}
+};
+
+export default Article;

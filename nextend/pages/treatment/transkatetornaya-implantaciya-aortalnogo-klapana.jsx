@@ -1,57 +1,45 @@
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Greetings from '../../components/Greetings';
-import Banner from '../../components/Banner';
-import Contacts from '../../components/Contacts';
-import Advantages from '../../components/Advantages';
-import Footer from '../../components/Footer';
+import SEO from '@/components/SEO';
+import Header from '@/components/Header/Header';
+import Greetings from '@/components/Greetings';
+import Banner from '@/components/Banner';
+import Contacts from '@/components/Contacts';
+import Advantages from '@/components/Advantages';
+import Footer from '@/components/Footer';
 
-export default function Tavi() {
+const Article = () => {
+  const SEODetails = {
+    title: 'Транскатетерная имплантация аортального клапана.',
+    description:
+      'Проводим малоинвазивные операции по транскатетерной имплантации аортального клапана. Записывайтесь на прием к специалистам нашей клиники.',
+    pageLink:
+      'https://heartteamspb.com/treatment/transkatetornaya-implantaciya-aortalnogo-klapana',
+    type: 'article',
+  };
   return (
     <>
-      <Head>
-        <title>Транскатетерная имплантация аортального клапана</title>
-        <meta
-          property="og:title"
-          content="Транскатетерная имплантация аортального клапана"
-        />
-        <meta
-          name="description"
-          content="Проводим малоинвазивные операции по транскатетерной имплантации аортального клапана. Записывайтесь на прием к специалистам нашей клиники."
-        />
-        <meta
-          property="og:description"
-          content="Проводим малоинвазивные операции по транскатетерной имплантации аортального клапана. Записывайтесь на прием к специалистам нашей клиники."
-        />
-        <meta
-          property="og:url"
-          content="https://heartteamspb.com/treatment/transkatetornaya-implantaciya-aortalnogo-klapana"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
-      </Head>
-      <div className="App">
-        <div id="curtain"></div>
+      <SEO details={SEODetails} />
+      <div className='App'>
+        <div id='curtain' />
         <Header />
-        <main className="page__TAVI">
+        <main className='page__TAVI'>
           <Greetings
-            header="Транскатетерная имплантация аортального клапана"
-            subheader=""
-            buttonText="записаться на бесплатный прием"
+            header='Транскатетерная имплантация аортального клапана'
+            subheader=''
+            buttonText='записаться на бесплатный прием'
           />
-          <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-          <section className="section__about-op-03 container">
-            <h1 className="article__header">
+          <Banner text='ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)' />
+          <section className='section__about-op-03 container'>
+            <h1 className='article__header'>
               Транскатетерная имплантация аортального клапана
             </h1>
-            <p className="article__p">
+            <p className='article__p'>
               Транскатетерная имплантация аортального клапана (англ. TAVI) - это
               современный малоинвазивный способ замены пораженного аортального
               клапана искусственным биологическим протезом. С момента первой
               такой операции прошло более 15 лет и сейчас накопленный опыт с
               успехом используют в высокотехнологичных клиниках.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               На сегодняшний день, стеноз аортального клапана считается одним из
               наиболее распространенных и опасных пороков сердца у взрослой
               категории населения. Малоинвазивный транскатетерный способ
@@ -64,14 +52,14 @@ export default function Tavi() {
               сосудов, хронические заболевания легких, печени, эндокринная и
               онкологическая патология и т.д.).
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               В клинике Высоких медицинских технологий СПбГУ, помимо первичной
               транскатетерной имплантации протеза, опытные хирурги выполняют
               повторное протезирование аортального клапана пациентам по методике
               «клапан-в-клапан», которая зачастую является единственным
               вариантом лечения пациентов с дисфункцией биологических протезов.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Как первичные, так и повторные транскатетерные операции проводятся
               в рентгеноперационной и чаще всего длится около 2-2,5 часов. Вы
               будете находиться под общим наркозом и не почувствуете боли.
@@ -97,7 +85,7 @@ export default function Tavi() {
               антиагреганты, препятствующие возникновению тромбов на
               установленном клапане.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Строгое соблюдение рекомендаций поможет Вам избежать осложнений в
               повседневной жизни и обеспечит нормальную функцию нового клапана
               на долгие годы.
@@ -110,4 +98,6 @@ export default function Tavi() {
       </div>
     </>
   );
-}
+};
+
+export default Article;

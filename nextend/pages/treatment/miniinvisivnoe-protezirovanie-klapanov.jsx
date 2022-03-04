@@ -1,63 +1,46 @@
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Greetings from '../../components/Greetings';
-import Banner from '../../components/Banner';
-import Advantages from '../../components/Advantages';
-import Contacts from '../../components/Contacts';
-import Footer from '../../components/Footer';
+import SEO from '@/components/SEO';
+import Header from '@/components/Header/Header';
+import Greetings from '@/components/Greetings';
+import Banner from '@/components/Banner';
+import Advantages from '@/components/Advantages';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
 
-export default function miniinvisiv() {
+const Article = () => {
+  const SEODetails = {
+    title:
+      'Миниинвазивное протезирование клапанов: аорты, митрального, трикуспидального.',
+    description:
+      'Миниинвазивное протезирование клапанов: аорты, митрального, трикуспидального.',
+    pageLink:
+      'https://heartteamspb.com/treatment/miniinvisivnoe-protezirovanie-klapanov',
+    type: 'article',
+  };
   return (
     <>
-      <Head>
-        <title>
-          Миниинвазивное протезирование клапанов: аорты, митрального,
-          трикуспидального
-        </title>
-        <meta
-          property="og:title"
-          content="Миниинвазивное протезирование клапанов: аорты, митрального,
-          трикуспидального."
-        />
-        <meta
-          name="description"
-          content="Миниинвазивное протезирование клапанов: аорты, митрального,
-          трикуспидального."
-        />
-        <meta
-          property="og:description"
-          content="Миниинвазивное протезирование клапанов: аорты, митрального,
-          трикуспидального."
-        />
-        <meta
-          property="og:url"
-          content="heartteamspb.com/treatment/miniinvisivnoe-protezirovanie-klapanov"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
-      </Head>
-      <div className="App">
-        <div id="curtain"></div>
+      <SEO details={SEODetails} />
+      <div className='App'>
+        <div id='curtain' />
         <Header />
-        <main className="page__miniinvisiv">
+        <main className='page__miniinvisiv'>
           <Greetings
-            header="Миниинвазивное протезирование клапанов"
-            subheader=""
-            buttonText="записаться на бесплатный прием"
+            header='Миниинвазивное протезирование клапанов'
+            subheader=''
+            buttonText='записаться на бесплатный прием'
           />
-          <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-          <section className="section__operation container">
-            <h1 className="article__header">
+          <Banner text='ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)' />
+          <section className='section__operation container'>
+            <h1 className='article__header'>
               Миниинвазивное протезирование клапанов
             </h1>
-            <p className="article__p">
+            <p className='article__p'>
               Миниинвазивное протезирование клапанов – одно из направлений
               деятельности специалистов Центра кардиохирургии и интервенционной
               кардиологии клиники ВМТ им Н.И. Пирогова СПБГУ. Мы выполняем
               протезирование клапанов аорты, митрального и трикуспидального
               клапанов.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Приобретенные пороки сердца занимают третье место по частоте
               встречаемости после гипертонической и ишемической заболеваниях
               сердца. Изолированное поражение митрального или аортального
@@ -65,7 +48,7 @@ export default function miniinvisiv() {
               пороками сердца. В качестве решения данной проблемы предлагаем
               своим пациентам операции по протезированию клапанов.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Современные знания и опыт позволяют уменьшить размер раны груди
               для выполнения операции по замене клапанов сердца (с традиционным
               хирургическим доступом к сердцу мы познакомились в предыдущих
@@ -74,7 +57,7 @@ export default function miniinvisiv() {
               Использование малых доступов было предложено в середине 1990-х
               годов.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Техника оперативного вмешательства остаётся прежней, но при этом,
               длина разреза кожи всего около 5-7см и не сопровождается полным
               рассечением грудины (полной срединной стернотомии). Несмотря на
@@ -90,7 +73,7 @@ export default function miniinvisiv() {
               возможность для использования вышеописанного метода хирургической
               коррекции.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               В клинике Высоких Медицинских Технологий чаще всего используются
               доступы: мини-срединная стернотомия (mini-J) при операциях по
               замене аортального клапана и правосторонняя торакотомия, если речь
@@ -102,7 +85,7 @@ export default function miniinvisiv() {
               3см, для канюляции бедренных сосудов и подключения аппарата
               искусственного кровообращения.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               В течение последних двух десятилетий был накоплен достаточный
               опыт, позволяющий утверждать, что операции с использованием
               мини-доступов при протезировании митрального клапана, аортального
@@ -113,10 +96,10 @@ export default function miniinvisiv() {
               способствуя скорейшему возвращению пациентов к обычной
               жизнедеятельности.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               По вопросам протезирования клапанов, стоимости данной услуги и
               консультации обращайтесь по телефону{' '}
-              <a href="tel:+79992380136" className="article__link">
+              <a href='tel:+79992380136' className='article__link'>
                 +7&nbsp;(999)&nbsp;238&#8209;01&#8209;36
               </a>
               .
@@ -129,4 +112,6 @@ export default function miniinvisiv() {
       </div>
     </>
   );
-}
+};
+
+export default Article;

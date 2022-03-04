@@ -1,52 +1,37 @@
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Greetings from '../../components/Greetings';
-import Banner from '../../components/Banner';
-import Advantages from '../../components/Advantages';
-import Contacts from '../../components/Contacts';
-import Footer from '../../components/Footer';
+import SEO from '@/components/SEO';
+import Header from '@/components/Header/Header';
+import Greetings from '@/components/Greetings';
+import Banner from '@/components/Banner';
+import Advantages from '@/components/Advantages';
+import Contacts from '@/components/Contacts';
+import Footer from '@/components/Footer';
 
-export default function miniinvisiv() {
+const Article = () => {
+  const SEODetails = {
+    title:
+      'Имплантация кардиостимуляторов. Операции по установке кардиостимулятора сердца.',
+    description:
+      'Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля.',
+    pageLink:
+      'https://heartteamspb.com/treatment/implantacia-kardiostimulyatorov',
+    type: 'article',
+  };
   return (
     <>
-      <Head>
-        <title>
-          Имплантация кардиостимуляторов. Операции по установке
-          кардиостимулятора сердца
-        </title>
-        <meta
-          property="og:title"
-          content="Имплантация кардиостимуляторов. Операции по установке
-          кардиостимулятора сердца."
-        />
-        <meta
-          name="description"
-          content="Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля."
-        />
-        <meta
-          property="og:description"
-          content="Операции по имплантации кардиостимуляторов проводятся опытными специалистами клиники ВМТ им Н.И.Пирогова. Мы выполнили более 4000 операций кардиохирургического профиля."
-        />
-        <meta
-          property="og:url"
-          content="heartteamspb.com/treatment/implantacia-kardiostimulyatorov"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
-      </Head>
-      <div className="App">
-        <div id="curtain"></div>
+      <SEO details={SEODetails} />
+      <div className='App'>
+        <div id='curtain' />
         <Header />
-        <main className="page__miniinvisiv">
+        <main className='page__miniinvisiv'>
           <Greetings
-            header="Имплантация кардиостимуляторов"
-            subheader=""
-            buttonText="записаться на бесплатный прием"
+            header='Имплантация кардиостимуляторов'
+            subheader=''
+            buttonText='записаться на бесплатный прием'
           />
-          <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-          <section className="section__operation container">
-            <h1 className="article__header">Имплантация кардиостимуляторов</h1>
-            <p className="article__p">
+          <Banner text='ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)' />
+          <section className='section__operation container'>
+            <h1 className='article__header'>Имплантация кардиостимуляторов</h1>
+            <p className='article__p'>
               Имплантация кардиостимуляторов в клинике ВМТ им Н.И. Пирогова
               проводится опытными специалистами – докторами и кандидатами
               медицинских наук, регулярно стажирующимися в ведущих клиниках
@@ -55,18 +40,18 @@ export default function miniinvisiv() {
               Европейской, Мировой, Скандинавской и Азиатской ассоциаций
               сердечно-сосудистых и торакальных хирургов.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               На сегодняшний день более двух миллионов пациентов по всему миру
               являются носителями постоянного имплантируемого устройства и,
               благодаря этому, могут вести практически не ограниченный образ
               жизни.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Основной целью имплантации кардиостимулятора является устранение
               угрожающих Вашей жизни аритмий и, как следствие, улучшение
               качества жизни.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Наиболее распространенное состояние, при котором требуется
               применение электрокардиостимулятора, называется брадикардия -
               слишком низкая частота сердечных сокращений. К возможным симптомам
@@ -85,7 +70,7 @@ export default function miniinvisiv() {
               определяются показания для имплантации электрокардиостимулятора
               (ЭКС).
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Теперь кратко остановимся на самой операции по установке
               кардиостимулятора сердца. Это хирургическая процедура, при которой
               под местной анестезией выполняется небольшой разрез в правой или
@@ -94,7 +79,7 @@ export default function miniinvisiv() {
               электрода будут введены через вену (путем прокола подключичной
               вены) и установлены внутри сердца под контролем рентгенографии.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Одним из самых сложных моментов при операции по установке
               кардиостимулятора является закрепление кончика электрода в
               предсердии и желудочке чтобы получить хороший контакт. Задача
@@ -105,7 +90,7 @@ export default function miniinvisiv() {
               сформированное ложе под фасцией жировой клетчатки или под мышцы
               грудной клетки в области доступа в подключичной области.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Длительность госпитализации чаще всего не превышает 3-х дней,
               после чего пациент выписывается с рекомендациями. Индивидуальные
               особенности каждого имплантируемого устройства подразумевают под
@@ -113,7 +98,7 @@ export default function miniinvisiv() {
               максимально эффективной работы электро кардиостимулятора сердца
               (3-6-12 месяцев).
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               В клинике Высоких медицинских технологий проводится имплантация и
               программирование высокотехнологичных и только импортных
               кардиостимуляторов фирм Medtronic (США) и St.Jude Medical (США).
@@ -126,4 +111,6 @@ export default function miniinvisiv() {
       </div>
     </>
   );
-}
+};
+
+export default Article;

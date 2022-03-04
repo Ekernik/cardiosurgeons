@@ -1,56 +1,46 @@
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Greetings from '../../components/Greetings';
-import Contacts from '../../components/Contacts';
-import Banner from '../../components/Banner';
-import Advantages from '../../components/Advantages';
-import Footer from '../../components/Footer';
+import SEO from '@/components/SEO';
+import Header from '@/components/Header/Header';
+import Greetings from '@/components/Greetings';
+import Contacts from '@/components/Contacts';
+import Banner from '@/components/Banner';
+import Advantages from '@/components/Advantages';
+import Footer from '@/components/Footer';
 
-export default function Stentirovanie() {
+const Article = () => {
+  const SEODetails = {
+    title: 'Каротидная эндартерэктомия.',
+    description:
+      'Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия.',
+    pageLink: 'https://heartteamspb.com/treatment/karotidnaya-endarterektomiya',
+    type: 'article',
+  };
   return (
     <>
-      <Head>
-        <title>Каротидная эндартерэктомия</title>
-        <meta property="og:title" content="Каротидная эндартерэктомия." />
-        <meta
-          name="description"
-          content="Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия."
-        />
-        <meta
-          property="og:description"
-          content="Операция каротидная эндартерэктомия в ВМТ им. Пирогова. Эверсионная эндартерэктомия."
-        />
-        <meta
-          property="og:url"
-          content="heartteamspb.com/treatment/karotidnaya-endarterektomiya"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
-      </Head>
-      <div className="App">
-        <div id="curtain"></div>
+      <SEO details={SEODetails} />
+      <div className='App'>
+        <div id='curtain' />
         <Header />
-        <main className="page__stentirovanie">
+        <main className='page__stentirovanie'>
           <Greetings
-            header="Каротидная эндартерэктомия"
-            subheader="один из способов устранения стеноза внутренней сонной артерии"
-            buttonText="записаться на бесплатный прием"
+            header='Каротидная эндартерэктомия'
+            subheader='один из способов устранения стеноза внутренней сонной артерии'
+            buttonText='записаться на бесплатный прием'
           />
-          <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-          <section className="section__about-op-03 container">
-            <h1 className="article__header">Каротидная эндартерэктомия</h1>
-            <p className="article__p">
+          <Banner text='ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)' />
+          <section className='section__about-op-03 container'>
+            <h1 className='article__header'>Каротидная эндартерэктомия</h1>
+            <p className='article__p'>
               Каротидная эндартерэктомия – хирургическая операция, которая
               применяется у больных со стенозом (сужением) общей или внутренней
               сонной артерии атеросклеротической бляшкой.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Суть процедуры состоит в удалении отложений холестеринового обмена
               (бляшка) из просвета артерии с восстановлением нормального
               кровоснабжения головного мозга, и как следствие, профилактика
               такого грозного осложнения, как ишемический инсульт.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Проведенными многочисленными исследованиями доказано, что стеноз
               внутренней сонной артерии более чем на 70%, повышает риски
               развития ишемического инсульта в 5 раз, что приводит к изменению
@@ -60,7 +50,7 @@ export default function Stentirovanie() {
               шум в ушах или голове, расстройство зрения («пелена», «паутинка»,
               «мушки» перед глазами), внезапно возникшая слабость в руке/ноге.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Показания к операции каротидной эндартерэктомии определяются
               сосудистым хирургом на основании симптомов, данных дуплексного
               исследования (УЗИ) и компьютерной томографии сосудов
@@ -71,18 +61,18 @@ export default function Stentirovanie() {
               - хирург с большей вероятностью отправит Вас на оперативное
               лечение.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Теперь более подробно остановимся на технике выполнения самой
               операции каротидной эндартерэктомии. Совместно с анестезиологом
               определяется тип анестезии, местная (проводниковая) или общая.
             </p>
-            <ul className="article__ul">
-              <li className="article__li">
+            <ul className='article__ul'>
+              <li className='article__li'>
                 При первом варианте на протяжении всей операции пациент остается
                 в сознании, обязательно поддерживается речевой и зрительный
                 контакт.
               </li>
-              <li className="article__li">
+              <li className='article__li'>
                 Во втором случае, Вы будете введены в искусственный сон (общий
                 наркоз), а пробуждение будет происходить только после окончания
                 операции. Традиционный доступ находится по передне-боковой
@@ -107,7 +97,7 @@ export default function Stentirovanie() {
                 лечения в отделении реанимации как правило не требуется.
               </li>
             </ul>
-            <p className="article__p">
+            <p className='article__p'>
               В клинике Высоких Медицинских Технологий разработан четкий
               стандарт, который позволяет выписывать пациентов на следующий день
               после операции, что благоприятно сказывается на ранней
@@ -125,4 +115,6 @@ export default function Stentirovanie() {
       </div>
     </>
   );
-}
+};
+
+export default Article;

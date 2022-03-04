@@ -1,78 +1,61 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Header from '../../components/Header/Header';
-import Greetings from '../../components/Greetings';
-import Contacts from '../../components/Contacts';
-import Banner from '../../components/Banner';
-import Footer from '../../components/Footer';
-import Advantages from '../../components/Advantages';
+import SEO from '@/components/SEO';
+import Link from '@/components/Link';
+import Header from '@/components/Header/Header';
+import Greetings from '@/components/Greetings';
+import Contacts from '@/components/Contacts';
+import Banner from '@/components/Banner';
+import Footer from '@/components/Footer';
+import Advantages from '@/components/Advantages';
 
-export default function Shuntirovanie() {
+const Article = () => {
+  const SEODetails = {
+    title:
+      'Аортокоронарное шунтирование сердца. Операции аорто-коронарного шунтирования.',
+    description:
+      'Проводим операции коронарного шунтирования в Санкт-Петербурге. Профессиональные врачи, современное оборудование. Обратитесь к нам за консультацией по вопросам аортокоронарного шунтирования.',
+    pageLink:
+      'https://heartteamspb.com/treatment/aorto-koronarnoe-shuntirovanie',
+    type: 'article',
+  };
   return (
     <>
-      <Head>
-        <title>
-          Аортокоронарное шунтирование сердца. Операции аорто-коронарного
-          шунтирования
-        </title>
-        <meta
-          property="og:title"
-          content="Аортокоронарное шунтирование сердца. Операции аорто-коронарного
-          шунтирования."
-        />
-        <meta
-          name="description"
-          content="Проводим операции коронарного шунтирования в Санкт-Петербурге. Профессиональные врачи, современное оборудование. Обратитесь к нам за консультацией по вопросам аортокоронарного шунтирования."
-        />
-        <meta
-          property="og:description"
-          content="Проводим операции коронарного шунтирования в Санкт-Петербурге. Профессиональные врачи, современное оборудование. Обратитесь к нам за консультацией по вопросам аортокоронарного шунтирования."
-        />
-        <meta
-          property="og:url"
-          content="heartteamspb.com/treatment/aorto-koronarnoe-shuntirovanie"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./image.webp" />
-      </Head>
-      <div className="App">
-        <div id="curtain"></div>
+      <SEO details={SEODetails} />
+      <div className='App'>
+        <div id='curtain' />
         <Header />
-        <main className="page__shuntirovanie">
+        <main className='page__shuntirovanie'>
           <Greetings
-            header="Аортокоронарное шунтирование"
-            subheader="самая частая кардиохирургическая операция"
-            buttonText="записаться на бесплатный прием"
+            header='Аортокоронарное шунтирование'
+            subheader='самая частая кардиохирургическая операция'
+            buttonText='записаться на бесплатный прием'
           />
-          <Banner text="ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)" />
-          <section className="section__about-op-03 container">
-            <h1 className="article__header">Аортокоронарное шунтирование</h1>
-            <p className="article__p">
+          <Banner text='ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ ПРИЕМ МОГУТ ВСЕ ГРАЖДАНЕ РФ (из любого региона РФ)' />
+          <section className='section__about-op-03 container'>
+            <h1 className='article__header'>Аортокоронарное шунтирование</h1>
+            <p className='article__p'>
               Аортокоронарное шунтирование (АКШ) - операция, позволяющая
               восстановить нормальный кровоток в артериях сердца (коронарных
               артериях), путём обхода места сужения (стеноза) сосуда с помощью
               шунтов.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Операция аортокоронарного шунтирования относится к хирургическим
               методам коррекции ишемической болезни (ИБС), целью которой
               является прямое увеличение кровотока к мышечным клеткам сердца -
               миокарду.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Одним из наиболее грозных осложнений ИБС, характеризующейся
               высокой летальностью, является инфаркт миокарда (ИМ). Ежегодно в
               мире отмечается более 15 миллионов новых случаев инфаркта
               миокарда, особенно актуальной является проблема высокой смертности
               среди трудоспособного населения. “Золотым” стандартом диагностики
               ИБС является{' '}
-              <Link href="../diagnostics/coronarographia">
-                <a className="article__link">коронарография</a>
-              </Link>
+              <Link href='/diagnostics/coronarographia' text='коронарография' />
               , по результатам которой хирург оценивает степень сужения
               коронарных сосудов и возможность для оперативного лечения.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               При поступлении в клинику проводится полный спектр обследований,
               включающий в себя: эхокардиографию (ЭХО сердца), УЗИ
               брахиоцефальных (шейных) сосудов, компьютерная томография (КТ)
@@ -82,13 +65,13 @@ export default function Shuntirovanie() {
               коронарного шунтирования сосудов сердца обычно занимает от 1 до 3
               дней (исключая экстренные показания).
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Кратко об аортокоронарном шунтировании (АКШ). Прежде всего, важно
               подчеркнуть, что коронарное шунтирование сосудов сердца – это
               микрохирургическая операция, поскольку хирург работает на артериях
               диаметром 1,0-3,5мм.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Суть операции заключается в создании обходного пути для крови,
               минуя пораженный (стенозированный или окклюзированный) сегмент
               коронарной артерии. Существует два основных метода создания
@@ -102,7 +85,7 @@ export default function Shuntirovanie() {
               возьмут часть вены или артерии, которая будет использована для
               шунтирования.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Все время операции шунтирования сердца Вы будете находиться под
               общим многокомпонентным наркозом. Пока кардиохирурги выполняют
               свою часть работы, сердце “отдыхает” под защитой аппарата
@@ -118,7 +101,7 @@ export default function Shuntirovanie() {
               от строгого соблюдения всех рекомендаций. Вы будете замечать
               улучшение общего состояния и прилив сил с каждым днем.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Довольно часто больные чувствуют при выписке страх и
               растерянность, ощущая себя в безопасности под присмотром опытных
               врачей в клинике. Вы должны помнить, что лечащий врач не отпустит
@@ -126,13 +109,13 @@ export default function Shuntirovanie() {
               том, что дальнейшее выздоровление должно проходить в домашних
               условиях.
             </p>
-            <p className="article__p">
+            <p className='article__p'>
               Если вы хотите получить консультацию по операции аортокоронарного
               шунтирования, записаться на предварительный осмотр в нашу клинику
               или узнать, сколько стоит операция по шунтированию сердца и есть
               ли возможность получения данной процедуры по Федеральной квоте или
               ОМС, позвоните нам по телефону{' '}
-              <a href="tel:+79992380136" className="article__link">
+              <a href='tel:+79992380136' className='article__link'>
                 +7&nbsp;(999)&nbsp;238&#8209;01&#8209;36
               </a>{' '}
               (09:00&#8209;21:00).
@@ -145,4 +128,6 @@ export default function Shuntirovanie() {
       </div>
     </>
   );
-}
+};
+
+export default Article;

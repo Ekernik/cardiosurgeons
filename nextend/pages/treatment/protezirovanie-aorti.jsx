@@ -18,7 +18,7 @@ const Article = () => {
     <>
       <SEO details={SEODetails} />
       <div className='App'>
-        <div id='curtain'></div>
+        <div id='curtain' />
         <Header />
         <div id='page__protezirovanie-aorti'>
           <Greetings
