@@ -1,11 +1,5 @@
-import Link from 'next/link';
-import {
-  YMaps,
-  Map,
-  Placemark,
-  FullscreenControl,
-  ZoomControl,
-} from 'react-yandex-maps';
+import dynamic from 'next/dynamic';
+import PhoneLink from '@/components/PhoneLink';
 import Header from '@/components/Header/Header';
 import Greetings from '@/components/Greetings';
 import Footer from '@/components/Footer';
@@ -15,6 +9,13 @@ import ButtonCTA from '@/components/ButtonCTA';
 import SEO from '@/components/SEO';
 import first_img_doctor from '@/public/static/images/doctors/doctor_Sheremet.jpg';
 import second_img_doctor from '@/public/static/images/doctors/doctor_Kim.jpg';
+
+const Map = dynamic(() => import('@/components/Map'), {
+  loading: () => <div>Loading...</div>,
+  ssr: false,
+});
+
+const newPhone = '+7 (999) 538-38-21';
 
 // Шахты - 25 февраля 2022 - 2 врача
 export default function Announcement() {
@@ -37,7 +38,7 @@ export default function Announcement() {
   const mapsLink = 'https://yandex.ru/maps/-/CCU5RGFx9B';
   const mapsGeometry = [47.725381, 40.225984];
   const SEODetails = {
-    title: 'Прием кардиохирургов - Черкесск',
+    title: `Прием кардиохирургов - ${city}`,
     description: `${city} - ${dayOfVisit} ${monthOfVisit} ${yearOfVisit} - Принимают кардиохирурги из Петербурга - ${firstDoctorFullName} и ${secondDoctorFullName}. Записывайтесь на прием.`,
     pageLink: 'https://heartteamspb.com/news/priem-v-gorode-shahti-25.02.2022',
     type: 'article',
@@ -60,45 +61,25 @@ export default function Announcement() {
               пациентов на&nbsp;прием к&nbsp;специалистам из Санкт-Петербурга
             </h2>
             <div className='flex'>
-              <div className='flex'>
-                <div className='news__help-flex'>
-                  <p
-                    className='article__p'
-                    style={{ textAlign: 'center', flex: 'none' }}
-                  >
-                    <Link href={firstDoctorLink}>
-                      <a className='article__link'>{firstDoctorFullName}</a>
-                    </Link>
-                  </p>
-                  <DoctorCard
-                    className='news__doctor-card'
-                    imgSrc={first_img_doctor}
-                    imgAlt={`Доктор ${firstDoctorFullName}`}
-                    title={firstDoctorFullName}
-                    subtitle={firstDoctorTitles}
-                    link={firstDoctorLink}
-                    showMore={true}
-                  />
-                </div>
-                <div className='news__help-flex'>
-                  <p
-                    className='article__p'
-                    style={{ textAlign: 'center', flex: 'none' }}
-                  >
-                    <Link href={secondDoctorLink}>
-                      <a className='article__link'>{secondDoctorFullName}</a>
-                    </Link>
-                  </p>
-                  <DoctorCard
-                    className='news__doctor-card'
-                    imgSrc={second_img_doctor}
-                    imgAlt={`Доктор ${secondDoctorFullName}`}
-                    title={secondDoctorFullName}
-                    subtitle={secondDoctorTitles}
-                    link={secondDoctorLink}
-                    showMore={true}
-                  />
-                </div>
+              <div className='flex justify-evenly'>
+                <DoctorCard
+                  className='news__doctor-card news__help-flex news__contained'
+                  imgSrc={first_img_doctor}
+                  imgAlt={`Доктор ${firstDoctorFullName}`}
+                  title={firstDoctorFullName}
+                  subtitle={firstDoctorTitles}
+                  link={firstDoctorLink}
+                  showMore={true}
+                />
+                <DoctorCard
+                  className='news__doctor-card news__help-flex news__contained'
+                  imgSrc={second_img_doctor}
+                  imgAlt={`Доктор ${secondDoctorFullName}`}
+                  title={secondDoctorFullName}
+                  subtitle={secondDoctorTitles}
+                  link={secondDoctorLink}
+                  showMore={true}
+                />
               </div>
               <div>
                 <p className='article__p'>
@@ -165,34 +146,15 @@ export default function Announcement() {
                   </a>{' '}
                   - Медицинский центр «Кардиоплюс»
                 </p>
-                <YMaps query={{ lang: 'ru_RU' }}>
-                  <Map
-                    width={'100%'}
-                    height={'30vh'}
-                    defaultState={{
-                      center: mapsGeometry,
-                      zoom: 15,
-                      behaviors: ['default', 'scrollZoom'],
-                      controls: [],
-                    }}
-                  >
-                    <Placemark defaultGeometry={mapsGeometry} />
-                    <FullscreenControl />
-                    <ZoomControl />
-                  </Map>
-                </YMaps>
-                <p className='article__p'>
-                  тел. для записи:{' '}
-                  <a href='tel:+79992380136' className='article__link'>
-                    +7&nbsp;(999)&nbsp;238&#8209;01&#8209;36
-                  </a>
-                </p>
-                <p className='article__p'>
-                  тел. медицинского центра «Кардиоплюс»:{' '}
-                  <a href='tel:+79604509437' className='article__link'>
-                    +7&nbsp;(960)&nbsp;450&#8209;94&#8209;37
-                  </a>
-                </p>
+                <Map position={mapsGeometry} />
+                <PhoneLink
+                  text='тел. для записи: '
+                  phoneNumber='+7 (999) 238-01-36'
+                />
+                <PhoneLink
+                  text='тел. медицинского центра «Кардиоплюс»: '
+                  phoneNumber='+7 (960) 450-94-37'
+                />
               </div>
             </div>
             <hr />
