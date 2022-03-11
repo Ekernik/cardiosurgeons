@@ -57,6 +57,16 @@ export default function DropButtonDiseases({ styles }) {
               text='Гипертрофическая кардиомиопатия'
               classes={styles.link__button}
             />
+            <Link
+              href='/diseases/aortalniy-stenoz'
+              text='Аортальный стеноз'
+              classes={styles.link__button}
+            />
+            <Link
+              href='/diseases/mitralniy-stenoz'
+              text='Митральный стеноз'
+              classes={styles.link__button}
+            />
           </div>
         </div>
         <div className={styles.dropdown} data-dropdown>

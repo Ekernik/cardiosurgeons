@@ -172,6 +172,16 @@ export default function BurgerMenu() {
             link='/diseases/gipertroficheskaya-kardiomiopatiya'
             text='Гипертрофическая кардиомиопатия'
           />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/aortalniy-stenoz'
+            text='Аортальный стеноз'
+          />
+          <LinkItem
+            click={handleClose}
+            link='/diseases/mitralniy-stenoz'
+            text='Митральный стеноз'
+          />
         </ul>
 
         {/* Нарушения ритма сердца */}
