@@ -10,7 +10,6 @@ import icon_metro from '@/public/static/svg/metro.svg';
 import icon_phone from '@/public/static/svg/phone.svg';
 import icon_clock from '@/public/static/svg/clock.svg';
 import icon_external from '@/public/static/svg/external.svg';
-import success from '@/public/static/svg/success.svg';
 
 function Contacts() {
   const frameStyle = { display: 'none' };
@@ -24,7 +23,7 @@ function Contacts() {
           <Link
             href='/map-route.png'
             classes='advanced-route'
-            text={
+            kids={
               <>
                 <span>Подробный маршрут</span>
                 <span className='contacts-external-icon'>
@@ -86,24 +85,8 @@ function Contacts() {
             name='hidden_iframe'
             id='hidden_iframe'
             style={frameStyle}
-          ></iframe>
-          <div className='form-wrapper'>
-            <div className='contact-form__curtain'>
-              <div className='curtain__svg'>
-                <Image
-                  src={success}
-                  alt='Иконка успешно выполненного действия'
-                  width={40}
-                  height={40}
-                />
-              </div>
-              <h3 className='curtain__title'>Спасибо!</h3>
-              <p className='curtain__message'>
-                Мы свяжемся с Вами в ближайшее время
-              </p>
-            </div>
-            <ContactsForm />
-          </div>
+          />
+          <ContactsForm />
         </div>
       </div>
     </section>

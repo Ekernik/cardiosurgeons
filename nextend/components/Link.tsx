@@ -1,11 +1,12 @@
 import NextLink from 'next/link';
+import { ReactChild } from 'react';
 
 type LinkProps = {
   href: string;
-  text: string;
+  text?: string;
   classes?: string;
   onClick?: () => void;
-  kids?: any;
+  kids?: ReactChild;
   linkOptions?: any;
 };
 

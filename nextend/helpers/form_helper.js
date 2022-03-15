@@ -10,8 +10,8 @@ export const handleSubmit = () => {
     curtain.style.display = 'flex';
     curtain.style.animation = 'contact-form--fade-in 1.5s ease-in forwards';
     console.log('Форма отправленна');
-  } catch {
-    console.log('Форма не отправленна');
+  } catch(err) {
+    console.log(`Форма не отправленна: ${err.message}`);
   }
 };
 
