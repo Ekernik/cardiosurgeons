@@ -81,6 +81,7 @@ export default function BurgerMenu() {
           <p className='menu__link' onClick={() => handleScroll('bottom')}>
             Информация для пациентов
           </p>
+          <LinkItem click={handleClose} link='/announcements' text='Новости' />
           <LinkItem click={handleClose} link='/feedback' text='Отзывы' />
         </ul>
 

@@ -20,6 +20,7 @@ export default function DropButtonAboutUs({ styles }) {
           classes={styles.link__button}
         />
         <DropButtonForPatient styles={styles} />
+        <Link href='/announcements' text='Новости' classes={styles.link__button} />
         <Link href='/feedback' text='Отзывы' classes={styles.link__button} />
       </div>
     </div>
