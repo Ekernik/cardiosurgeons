@@ -13,14 +13,12 @@ export const listenToScroll = () => {
       currentScroll - 5 > lastScroll &&
       !body.classList.contains('scroll-down')
     ) {
-      console.log('I see scrolling down');
       body.classList.remove('scroll-up');
       body.classList.add('scroll-down');
     } else if (
       currentScroll < lastScroll &&
       body.classList.contains('scroll-down')
     ) {
-      console.log('I see scrolling down');
       body.classList.remove('scroll-down');
       body.classList.add('scroll-up');
     }
