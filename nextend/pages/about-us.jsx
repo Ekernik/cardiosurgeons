@@ -7,6 +7,8 @@ import Footer from '@/components/Footer';
 import team from '@/public/static/images/team.jpg';
 import operation01 from '@/public/static/images/operation_01.jpg';
 import operation02 from '@/public/static/images/operation_02.jpg';
+import ImageSlider from '@/components/ImageSlider';
+import { SliderData__aboutUs } from 'public/static/databases/sliderData/about-us';
 
 export default function AboutUs() {
   const SEODetails = {
@@ -144,6 +146,7 @@ export default function AboutUs() {
               </a>
               .
             </p>
+            <ImageSlider props={SliderData__aboutUs} />
           </section>
           <Contacts />
           <Footer />
