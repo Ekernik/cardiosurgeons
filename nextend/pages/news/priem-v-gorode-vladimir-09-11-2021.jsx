@@ -12,7 +12,7 @@ import {
   ZoomControl,
 } from 'react-yandex-maps';
 import DoctorCard from '../../components/DoctorCard';
-import doctor from '@/images/doctors/doctor_pyagai.webp';
+import doctor from '@/images/doctors/doctor_Pyagai.webp';
 import ButtonCTA from '../../components/ButtonCTA';
 
 // Владимир - 09 ноября 2021
