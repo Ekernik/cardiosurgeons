@@ -7,8 +7,8 @@ import Contacts from '@/components/Contacts';
 import DoctorCard from '@/components/DoctorCard';
 import ButtonCTA from '@/components/ButtonCTA';
 import SEO from '@/components/SEO';
-import first_img_doctor from '@/public/static/images/doctors/doctor_Sheremet.jpg';
-import second_img_doctor from '@/public/static/images/doctors/doctor_Kim.jpg';
+import first_img_doctor from '@/public/static/images/doctors/doctor_Sheremet.webp';
+import second_img_doctor from '@/public/static/images/doctors/doctor_Kim.webp';
 
 const Map = dynamic(() => import('@/components/Map'), {
   loading: () => <div>Loading...</div>,

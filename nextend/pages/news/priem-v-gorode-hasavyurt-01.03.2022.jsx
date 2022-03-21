@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
 import Map from '@/components/Map';
 import DoctorCard from '@/components/DoctorCard';
-import img_doctor from '@/public/static/images/doctors/doctor_Kappushev.jpg';
+import img_doctor from '@/public/static/images/doctors/doctor_Kappushev.webp';
 import ButtonCTA from '@/components/ButtonCTA';
 
 // Хасавюрт - 01 марта 2022

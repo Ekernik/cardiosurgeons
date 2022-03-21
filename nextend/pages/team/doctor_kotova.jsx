@@ -22,7 +22,7 @@ export default function Kotova() {
         <meta property='og:type' content='website' />
         <meta
           property='og:image'
-          content='https://heartteamspb.com/static/svg/doctor_woman.jpg'
+          content='https://heartteamspb.com/static/svg/doctor_woman.svg'
         />
         <meta property='og:title' content='Кардиолог Котова Анна Сергеевна' />
         <meta property='og:url' content='heartteamspb.com/team/doctor_kotova' />

@@ -13,7 +13,7 @@ import Contacts from '@/components/Contacts';
 import DoctorCard from '@/components/DoctorCard';
 import ButtonCTA from '@/components/ButtonCTA';
 import SEO from '@/components/SEO';
-import img_doctor from '@/public/static/images/doctors/doctor_Balahonov.jpg';
+import img_doctor from '@/public/static/images/doctors/doctor_Balahonov.webp';
 
 // Арзамас - 22 декабря 2021
 export default function Announcement() {

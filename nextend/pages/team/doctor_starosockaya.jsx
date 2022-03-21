@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Starosockaya.jpg';
+import img_doctor from '../../public/static/images/doctors/doctor_Starosockaya.webp';
 import Contacts from '../../components/Contacts';
 
 export default function Starosockaya() {
@@ -22,7 +22,7 @@ export default function Starosockaya() {
         <meta property='og:type' content='website' />
         <meta
           property='og:image'
-          content='https://heartteamspb.com/static/images/doctors/doctor_Starosockaya.jpg'
+          content='https://heartteamspb.com/static/images/doctors/doctor_Starosockaya.webp'
         />
         <meta
           property='og:title'

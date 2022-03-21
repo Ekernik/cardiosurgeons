@@ -12,7 +12,7 @@ import {
   ZoomControl,
 } from 'react-yandex-maps';
 import DoctorCard from '../../components/DoctorCard';
-import img_doctor from '../../public/static/images/doctors/doctor_Kappushev.jpg';
+import img_doctor from '../../public/static/images/doctors/doctor_Kappushev.webp';
 import ButtonCTA from '../../components/ButtonCTA';
 
 // Ставрополь - 18 января 2022

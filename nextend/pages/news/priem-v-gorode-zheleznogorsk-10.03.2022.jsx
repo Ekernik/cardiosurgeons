@@ -12,7 +12,7 @@ import {
   ZoomControl,
 } from 'react-yandex-maps';
 import DoctorCard from '@/components/DoctorCard';
-import img_doctor from '@/public/static/images/doctors/doctor_Pyagai.jpg';
+import img_doctor from '@/public/static/images/doctors/doctor_Pyagai.webp';
 import ButtonCTA from '@/components/ButtonCTA';
 
 // Желехногорск - 10 марта 2022

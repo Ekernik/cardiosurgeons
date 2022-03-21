@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Povarenkina.jpg';
+import img_doctor from '../../public/static/images/doctors/doctor_Povarenkina.webp';
 import Contacts from '../../components/Contacts';
 
 export default function Povarenkina() {
@@ -22,7 +22,7 @@ export default function Povarenkina() {
         <meta property='og:type' content='website' />
         <meta
           property='og:image'
-          content='https://heartteamspb.com/static/images/doctors/doctor_Povarenkina.jpg'
+          content='https://heartteamspb.com/static/images/doctors/doctor_Povarenkina.webp'
         />
         <meta
           property='og:title'

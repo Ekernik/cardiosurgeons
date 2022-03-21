@@ -7,6 +7,7 @@ Disallow: /*.txt
 Allow: /*/css/*.css
 Allow: /*/js/*.js
 Allow: /*/media/*.jpg
+Allow: /*/media/*.webp
 Allow: /*/media/*.jpeg
 Allow: /*/media/*.png
 Allow: /*/media/*.gif
@@ -22,6 +23,7 @@ Disallow: /*.txt
 Allow: /*/css/*.css
 Allow: /*/js/*.js
 Allow: /*/media/*.jpg
+Allow: /*/media/*.webp
 Allow: /*/media/*.jpeg
 Allow: /*/media/*.png
 Allow: /*/media/*.gif
@@ -65,6 +67,7 @@ Disallow: /*.txt
 Allow: /*/css/*.css
 Allow: /*/js/*.js
 Allow: /*/media/*.jpg
+Allow: /*/media/*.webp
 Allow: /*/media/*.jpeg
 Allow: /*/media/*.png
 Allow: /*/media/*.gif

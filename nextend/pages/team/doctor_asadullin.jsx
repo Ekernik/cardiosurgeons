@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from '@/components/Link';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer';
-import img_doctor from '@/public/static/images/doctors/doctor_Asadullin.jpg';
+import img_doctor from '@/public/static/images/doctors/doctor_Asadullin.webp';
 import Contacts from '@/components/Contacts';
 
 export default function Asadullin() {
@@ -22,7 +22,7 @@ export default function Asadullin() {
         <meta property='og:type' content='website' />
         <meta
           property='og:image'
-          content='https://heartteamspb.com/static/images/doctors/doctor_Asadullin.jpg'
+          content='https://heartteamspb.com/static/images/doctors/doctor_Asadullin.webp'
         />
         <meta
           property='og:title'

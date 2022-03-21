@@ -12,7 +12,7 @@ import {
   ZoomControl,
 } from 'react-yandex-maps';
 import DoctorCard from '../../components/DoctorCard';
-import img_doctor from '../../public/static/images/doctors/doctor_Kim.jpg';
+import img_doctor from '@/images/doctors/doctor_Kim.webp';
 import ButtonCTA from '../../components/ButtonCTA';
 
 // Великие Луки - 20 декабря 2021

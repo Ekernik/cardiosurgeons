@@ -37,7 +37,7 @@ const ImageSlider: React.FC<{ props: imageDataType[] }> = ({ props }) => {
                 src={slide.url}
                 alt={slide.alt}
                 priority={true}
-                placeholder='blur'
+                quality={50}
               />
             </div>
           )}

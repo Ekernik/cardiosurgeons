@@ -12,7 +12,7 @@ import {
   ZoomControl,
 } from 'react-yandex-maps';
 import DoctorCard from '../../components/DoctorCard';
-import img_doctor from '../../public/static/images/doctors/doctor_Balahonov.jpg';
+import img_doctor from '../../public/static/images/doctors/doctor_Balahonov.webp';
 import ButtonCTA from '../../components/ButtonCTA';
 
 // Нижний Новгород - 21 декабря 2021

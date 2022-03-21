@@ -2,21 +2,24 @@
 import img_doctor_woman from '../svg/doctor_woman.svg';
 
 // Фотографии докторов
-import img_Shmatov from '../images/doctors/doctor_Shmatov.jpg';
-import img_Stolyarov from '../images/doctors/doctor_Stolyarov.jpg';
-import img_Kamenskih from '../images/doctors/doctor_Kamenskih.jpg';
-import img_Balahonov from '../images/doctors/doctor_Balahonov.jpg';
-import img_Kim from '../images/doctors/doctor_Kim.jpg';
-import img_Vasilev from '../images/doctors/doctor_Vasilev.jpg';
-import img_Sorokin from '../images/doctors/doctor_Sorokin.jpg';
-import img_Kappushev from '../images/doctors/doctor_Kappushev.jpg';
-import img_Zubarev from '../images/doctors/doctor_Zubarev.jpg';
-import img_Sheremet from '../images/doctors/doctor_Sheremet.jpg';
-import img_Pyagai from '../images/doctors/doctor_Pyagai.jpg';
-import img_Asadullin from '../images/doctors/doctor_Asadullin.jpg';
-import img_Starosockaya from '../images/doctors/doctor_Starosockaya.jpg';
-import img_Suhanova from '../images/doctors/doctor_Suhanova.jpg';
-import img_Povarenkina from '../images/doctors/doctor_Povarenkina.jpg';
+import img_Asadullin from '@/images/doctors/doctor_Asadullin.webp';
+import img_Balahonov from '@/images/doctors/doctor_Balahonov.webp';
+import img_Kamenskih from '@/images/doctors/doctor_Kamenskih.webp';
+import img_Kappushev from '@/images/doctors/doctor_Kappushev.webp';
+import img_Kim from '@/images/doctors/doctor_Kim.webp';
+import img_Povarenkina from '@/images/doctors/doctor_Povarenkina.webp';
+import img_Pyagai from '@/images/doctors/doctor_Pyagai.webp';
+import img_Sheremet from '@/images/doctors/doctor_Sheremet.webp';
+import img_Shmatov from '@/images/doctors/doctor_Shmatov.webp';
+import img_Sorokin from '@/images/doctors/doctor_Sorokin.webp';
+import img_Starosockaya from '@/images/doctors/doctor_Starosockaya.webp';
+import img_Stolyarov from '@/images/doctors/doctor_Stolyarov.webp';
+import img_Suhanova from '@/images/doctors/doctor_Suhanova.webp';
+import img_Vasilev from '@/images/doctors/doctor_Vasilev.webp';
+import img_Zubarev from '@/images/doctors/doctor_Zubarev.webp';
+
+// Type Checks
+import { DoctorType } from '@/types/doctors';
 
 export const doctorsArr = {
   shmatov: 0,
@@ -37,7 +40,7 @@ export const doctorsArr = {
   kotova: 15,
 };
 
-export const doctors = [
+export const doctors: DoctorType[] = [
   // Шматов Дмитрий Викторович
   {
     id: 'd_1',
@@ -88,6 +91,9 @@ export const doctors = [
   {
     id: 'd_4',
     name: 'Балахонов Василий Васильевич',
+    name_about_who: 'Балахонове Василии Васильевиче',
+    name_whos: 'Балахонова Василия Васильевиа',
+    shortname: 'balahonov',
     title: ['Сердечно-сосудистый хирург,', 'кандидат медицинских наук'],
     img: img_Balahonov,
     alt: 'Доктор Балахонов Василий Васильевич',
@@ -98,6 +104,9 @@ export const doctors = [
   {
     id: 'd_5',
     name: 'Ким Глеб Ирламович',
+    name_about_who: 'Ким Глебе Ирламовиче',
+    name_whos: 'Ким Глеба Ирламовича',
+    shortname: 'kim',
     title: ['Сердечно-сосудистый хирург,', 'кандидат медицинских наук'],
     img: img_Kim,
     alt: 'Доктор Ким Глеб Ирламович',
@@ -137,6 +146,9 @@ export const doctors = [
   {
     id: 'd_8',
     name: 'Каппушев Руслан Юсуфович',
+    name_about_who: 'Каппушеве Руслане Юсуфовиче',
+    name_whos: 'Каппушева Руслана Юсуфовича',
+    shortname: 'kappushev',
     title: [
       'Сердечно-сосудистый хирург,',
       'специалист по рентгенэндоваскулярным методам диагностики и лечения',
@@ -180,6 +192,9 @@ export const doctors = [
   {
     id: 'd_11',
     name: 'Пягай Виктор Александрович',
+    name_about_who: 'Пягай Викторе Александровиче',
+    name_whos: 'Пягай Виктора Александровича',
+    shortname: 'pyagai',
     title: ['Сердечно-сосудистый хирург'],
     img: img_Pyagai,
     alt: 'Доктор Пягай Виктор Александрович',
@@ -247,15 +262,5 @@ export const doctors = [
     img: img_doctor_woman,
     alt: 'Доктор Котова Анна Сергеевна',
     link: '/team/doctor_kotova',
-    personaLinks: ['Врачебная деятельность'],
-    personaDetails: [],
   },
-
-  // id: 4,
-  // name: 'Михеева Ксения Юрьевна',
-  // title: 'Врач-кардиолог Центра кардиохирургии и интервенционной кардиологии',
-  // img: img_Miheeva,
-  // alt: 'Доктор Михеева Ксения Юрьевна',
-  // personaLinks: [],
-  // personaDetails: [[],[]],
 ];
