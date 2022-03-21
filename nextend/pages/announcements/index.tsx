@@ -5,13 +5,13 @@ import SEO from '@/components/SEO';
 import announcementsArr from '@/public/static/databases/announcements';
 import { announcementType } from 'types/announcement';
 import AnnouncementCard from '@/components/AnnouncementCard';
+import { NextPage } from 'next';
 
-const Announcements = () => {
-  let renderAnnouncements = (announcementsArr: announcementType[]) => {
-    return announcementsArr.map(announcement => (
+const Announcements: NextPage = () => {
+  let renderAnnouncements = (announcementsArr: announcementType[]) =>
+    announcementsArr.map(announcement => (
       <AnnouncementCard key={announcement.id} {...announcement} />
     ));
-  };
 
   const SEODetails = {
     title: 'Новости центра кардиохирургии и интервенционной кардиологии',

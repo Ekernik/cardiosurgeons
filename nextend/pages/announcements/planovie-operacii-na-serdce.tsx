@@ -4,9 +4,9 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
 import PhoneLink from '@/components/PhoneLink';
+import { NextPage } from 'next';
 
-// Хасавюрт - 01 марта 2022
-export default function Announcement() {
+const Announcement: NextPage = () => {
   const SEODetails = {
     title: 'Плановые операции на сердце',
     description:
@@ -53,4 +53,6 @@ export default function Announcement() {
       </div>
     </>
   );
-}
+};
+
+export default Announcement;
