@@ -12,7 +12,7 @@ import {
   ZoomControl,
 } from 'react-yandex-maps';
 import DoctorCard from '../../components/DoctorCard';
-import img_doctor from '../../public/static/images/doctors/doctor_starosockaya.webp';
+import img_doctor from '@/images/doctors/doctor_starosockaya.webp';
 import ButtonCTA from '../../components/ButtonCTA';
 
 // Волхов - 21 декабря 2021
