@@ -3,8 +3,9 @@ import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
+import { NextPage } from 'next';
 
-export default function KT() {
+const KT: NextPage = () => {
   const SEODetails = {
     title: 'КТ Компьютерная томография',
     description:
@@ -12,11 +13,12 @@ export default function KT() {
     pageLink: 'https://heartteamspb.com/diagnostics/computer-tomography',
     type: 'article',
   };
+
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <div className='App'>
+        <div id='curtain' />
         <Header />
         <article className='mt container'>
           <h1 className='article__header'>КТ – компьютерная томография</h1>
@@ -61,4 +63,6 @@ export default function KT() {
       </div>
     </>
   );
-}
+};
+
+export default KT;

@@ -1,10 +1,12 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
+import PhoneLink from '@/components/PhoneLink';
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
+import { NextPage } from 'next';
 
-export default function Coronarography() {
+const Coronarography: NextPage = () => {
   const SEODetails = {
     title: 'Коронарография. Коронарография сердца и сосудов.',
     description:
@@ -15,8 +17,8 @@ export default function Coronarography() {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <div className='App'>
+        <div id='curtain' />
         <Header />
         <article className='mt container'>
           <h1 className='article__header'>Коронарография</h1>
@@ -66,34 +68,31 @@ export default function Coronarography() {
             суженной (стенозированной) коронарной артерии, с целью определения
             вероятности ишемии мышечной ткани сердца - миокарда. И наконец, на
             основании полученной картины{' '}
-            <Link href='https://heartteamspb.com/team'>
-              <a className='article__link'>
-                команда кардиохирургов и кардиологов
-              </a>
-            </Link>{' '}
+            <Link href='/team' text='команда кардиохирургов и кардиологов' />{' '}
             определит наилучшее для Вас лечение, будь то медикаментозная терапия
             или оперативное лечение направленное на реваскуляризацию миокарда (
-            <Link href='https://heartteamspb.com/treatment/aorto-koronarnoe-shuntirovanie'>
-              <a className='article__link'>коронарное шунтирование</a>
-            </Link>{' '}
+            <Link
+              href='/treatment/aorto-koronarnoe-shuntirovanie'
+              text='коронарное шунтирование'
+            />{' '}
             или{' '}
-            <Link href='https://heartteamspb.com/treatment/stentirovanie-koronarnih-arteriy'>
-              <a className='article__link'>стентирование</a>
-            </Link>
+            <Link
+              href='/treatment/stentirovanie-koronarnih-arteriy'
+              text='стентирование'
+            />
             )
           </p>
-          <p className='article__p'>
-            Если вы хотите узнать стоимость коронарографии в нашей клинике,
-            позвоните нам по телефону{' '}
-            <a href='tel:+79992380136' className='article__link'>
-              +7 (999) 238-01-36
-            </a>
-            .
-          </p>
+          <PhoneLink
+            phoneNumber='+7 (999) 238-01-36'
+            text='Если вы хотите узнать стоимость коронарографии в нашей клинике,
+            позвоните нам по телефону '
+          />
         </article>
         <Contacts />
         <Footer />
       </div>
     </>
   );
-}
+};
+
+export default Coronarography;
