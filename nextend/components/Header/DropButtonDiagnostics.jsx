@@ -17,6 +17,11 @@ export default function DropButtonDiagnostics({ styles }) {
           text='Компьютерная томография'
           classes={styles.link__button}
         />
+        <Link
+          href='/diagnostics/stress-ehokardiographiya'
+          text='Стресс-эхокардиография'
+          classes={styles.link__button}
+        />
       </div>
     </div>
   );

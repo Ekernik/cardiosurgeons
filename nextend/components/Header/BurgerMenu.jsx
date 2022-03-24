@@ -245,6 +245,11 @@ export default function BurgerMenu() {
             link='/diagnostics/computer-tomography'
             text='Компьютерная томография'
           />
+          <LinkItem
+            click={handleClose}
+            link='/diagnostics/stress-ehokardiographiya'
+            text='Cтресс-эхокардиография'
+          />
         </ul>
       </nav>
     </>
