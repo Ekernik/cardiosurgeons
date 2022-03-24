@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Link from '@/components/Link';
+import PhoneLink from '@/components/PhoneLink';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer';
 import Greetings from '@/components/Greetings';
@@ -7,8 +8,9 @@ import NewsSlider from '@/components/NewsSlider';
 import Contacts from '@/components/Contacts';
 import ReviewSlider from '@/components/ReviewSlider';
 import SEO from '@/components/SEO';
+import { NextPage } from 'next';
 
-function App() {
+const App: NextPage = () => {
   const SEODetails = {
     title: 'Центр кардиохирургии и интервенционной кардиологии',
     description:
@@ -20,7 +22,7 @@ function App() {
     <>
       <SEO details={SEODetails} />
       <div className='App'>
-        <div id='curtain'></div>
+        <div id='curtain' />
         <Header />
         <main className='landing-page'>
           <Greetings
@@ -35,16 +37,10 @@ function App() {
             </h2>
             <p className='article__p'>
               Центр кардиохирургии и интервенционной кардиологии приглашает
-              на&nbsp;прием,{' '}
-              <Link href='/diagnostics'>
-                <a className='article__link'>диагностику</a>
-              </Link>{' '}
+              на&nbsp;прием, <Link href='/diagnostics' text='диагностику' />{' '}
               и&nbsp;
-              <Link href='/treatment'>
-                <a className='article__link'>лечение</a>
-              </Link>{' '}
-              пациентов с&nbsp;заболеваниями сердца и&nbsp;сердечно-сосудистой
-              системы.
+              <Link href='/treatment' text='лечение' /> пациентов
+              с&nbsp;заболеваниями сердца и&nbsp;сердечно-сосудистой системы.
             </p>
             <p className='article__p'>
               В нашей клинике работают специалисты разных направлений
@@ -63,14 +59,11 @@ function App() {
               одноместными, двух- и&nbsp;трехместными палатами со&nbsp;всеми
               удобствами.
             </p>
-            <p className='article__p'>
-              Для записи на прием к специалистам Центра кардиохирургии и
-              интервенционной кардиологии, звоните по телефону{' '}
-              <a href='tel:+79992380136' className='article__link'>
-                +7&nbsp;(999)&nbsp;238-01-36
-              </a>
-              .
-            </p>
+            <PhoneLink
+              phoneNumber='+7&nbsp;(999)&nbsp;238-01-36'
+              text='Для записи на прием к специалистам Центра кардиохирургии и
+              интервенционной кардиологии, звоните по телефону '
+            />
           </section>
           <NewsSlider />
           <ReviewSlider />
@@ -80,6 +73,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

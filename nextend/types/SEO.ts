@@ -3,7 +3,7 @@ export type SEOType = {
     title: string;
     description: string;
     pageLink: string;
-    type: string;
+    type?: string;
     imageLink?: string;
   };
 };
