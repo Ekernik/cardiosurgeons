@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '4',
+    publishDate: '27 марта 2022 г.',
+    title: 'Февраль: итоги лечения пациентов из регионов в нашей клинике',
+    options: {},
+    link: 'itogi-fevralya-2022',
+  },
+  {
     id: '3',
     publishDate: '25 марта 2022 г.',
     title: 'Бесплатные операции на сердце для всех жителей России',
