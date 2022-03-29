@@ -7,7 +7,7 @@ type PropsType = {
         title: string;
         pretitle: string;
       };
-  subheader: string;
+  subheader?: string;
   buttonText: string;
 };
 
