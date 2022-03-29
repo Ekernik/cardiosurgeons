@@ -117,6 +117,12 @@ export default function BurgerMenu() {
           <p className='menu__link' onClick={() => handleScroll('top')}>
             <b>Назад</b>
           </p>
+          <LinkItem
+            style={{ maxWidth: '80vw', textAlign: 'center' }}
+            click={handleClose}
+            link='/diseases'
+            text='О заболевания сердца и органов сердечно-сосудистой системы'
+          />
           <p
             className='menu__link'
             onClick={() => handleScroll('heart-diseases')}

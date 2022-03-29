@@ -4,7 +4,12 @@ export default function DropButtonDiseases({ styles }) {
   return (
     <div className={styles.dropdown} data-dropdown>
       <button className={styles.link} data-dropdown-button>
-        Заболевания
+      <Link
+          href='/diseases'
+          text='Заболевания'
+          classes={styles.button_link}
+          data-dropdown-button
+        />
       </button>
       <div className={`${styles.dropdown__menu} ${styles.treatment__grid}`}>
         <div className={styles.dropdown} data-dropdown>
