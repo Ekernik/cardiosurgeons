@@ -10,6 +10,7 @@ const Footer: React.FC = () => (
           href='https://vk.com/heartteam_spb'
           className={styles.link}
           rel='noreferrer noopenner'
+          target='_blank'
         >
           <FaVk className={styles.icon} />
           <span>heartteam_spb</span>
