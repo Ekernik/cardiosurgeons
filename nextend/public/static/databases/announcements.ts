@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '5',
+    publishDate: '29 марта 2022 г.',
+    title: 'Выездные приемы кардиохирургов в городах России – апрель 2022',
+    options: {},
+    link: 'priyomy-vrachej-v-aprele-2022',
+  },
+  {
     id: '4',
     publishDate: '27 марта 2022 г.',
     title: 'Февраль: итоги лечения пациентов из регионов в нашей клинике',
