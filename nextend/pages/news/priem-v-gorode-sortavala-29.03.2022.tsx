@@ -7,18 +7,18 @@ import Contacts from '@/components/Contacts';
 import DoctorCard from '@/components/DoctorCard';
 import ButtonCTA from '@/components/ButtonCTA';
 import SEO from '@/components/SEO';
-import img_doctor from '@/images/doctors/doctor_Balahonov.webp';
+import img_doctor from '@/images/doctors/doctor_Kappushev.webp';
 import PhoneLink from '@/components/PhoneLink';
 import { NextPage } from 'next';
 
 // Сортавала - 29 марта 2022
 const Announcement: NextPage = () => {
   const addressOfVisit = 'г. Сортавала, ул. Бондарева, д. 49';
-  const doctorFullName = 'Балахонов Василий Васильевич';
-  const doctorLink = '/team/doctor_balahonov';
+  const doctorFullName = 'Каппушев Руслан Юсуфович';
+  const doctorLink = '/team/doctor_kappushev';
   const doctorTitles = [
-    'Cердечно-сосудистый хирург высшей категории,',
-    'кандидат медицинских наук',
+    'Cердечно-сосудистый хирург,',
+    'интервенционный радиолог',
   ];
   const price = '1100 рублей';
   const mapsLink = 'https://yandex.ru/maps/-/CCUBR6r~8C';
