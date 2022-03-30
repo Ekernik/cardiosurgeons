@@ -224,29 +224,6 @@ let newsArr = [
     link: 'priem-v-gorode-vladimir-09-11-2021',
     hot: true,
   },
-
-  // {
-  //   id: "n4",
-  //   title: "16 октября",
-  //   subtitle: "В городе Арзамасе",
-  //   pretitle: "город Арзамас",
-  //   date: "06 октября 2021",
-  //   setting: {},
-  //   buttonText: "Записаться на приём",
-  //   link: "priem-v-gorode-arzamas-16-10-2021",
-  //   hot: true,
-  // },
-  // {
-  //   id: "n1",
-  //   title: "15 октября",
-  //   subtitle: "В Нижнем Новгороде",
-  //   pretitle: "Нижний Новгород",
-  //   date: "06 октября 2021",
-  //   setting: {},
-  //   buttonText: "Записаться на приём",
-  //   link: "priem-v-nizhnem-novgorode-15-10-2021",
-  //   hot: true,
-  // }
 ];
 
 export default newsArr;
