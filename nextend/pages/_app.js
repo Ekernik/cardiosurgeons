@@ -4,7 +4,6 @@ import "@/styles/scroll.scss";
 import "@/styles/normalize.css";
 import "@/styles/greetings.scss";
 import "@/styles/floatingContacts.scss";
-import "@/styles/banner.scss";
 import "@/styles/contacts.scss";
 import "@/styles/aboutUs.scss";
 import "@/styles/treatment.scss";

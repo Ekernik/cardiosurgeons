@@ -1,38 +1,22 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer';
-import img_doctor from '../../public/static/images/doctors/doctor_Zubarev.webp';
-import Contacts from '../../components/Contacts';
+import Link from '@/components/Link';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer';
+import img_doctor from '@/images/doctors/doctor_Zubarev.webp';
+import Contacts from '@/components/Contacts';
+import SEO from '@/components/SEO';
 
-export default function Zubarev() {
+const Zubarev = () => {
+  const SEODetails = {
+    title: 'Сердечно-сосудистый хирург Зубарев Евгений Игоревич',
+    description:
+      'Кандидат медицинских наук. Деятельность: предсердная тахикардия, синдром WPW, пароксизмальная фибрилляция предсердий, инцизионные тахикардии, желудочковые аритмии.',
+    pageLink: 'https://heartteamspb.com/team/doctor_zubarev',
+  };
+
   return (
     <>
-      <Head>
-        <title>Сердечно-сосудистый хирург Зубарев Евгений Игоревич</title>
-        <meta
-          name='description'
-          content='Кандидат медицинских наук. Деятельность: предсердная тахикардия, синдром WPW, пароксизмальная фибрилляция предсердий, инцизионные тахикардии, желудочковые аритмии.'
-        />
-        <meta
-          property='og:description'
-          content='Кандидат медицинских наук. Деятельность: предсердная тахикардия, синдром WPW, пароксизмальная фибрилляция предсердий, инцизионные тахикардии, желудочковые аритмии.'
-        />
-        <meta property='og:type' content='website' />
-        <meta
-          property='og:image'
-          content='https://heartteamspb.com/static/images/doctors/doctor_Zubarev.webp'
-        />
-        <meta
-          property='og:title'
-          content='Сердечно-сосудистый хирург Зубарев Евгений Игоревич'
-        />
-        <meta
-          property='og:url'
-          content='heartteamspb.com/team/doctor_zubarev'
-        />
-      </Head>
+      <SEO details={SEODetails} />
       <Header />
       <main className='page__doctor'>
         <section className='section__doctor container'>
@@ -48,9 +32,11 @@ export default function Zubarev() {
                 <p className='doctor__position'>Сердечно-сосудистый хирург,</p>
                 <p className='doctor__position'>Кандидат медицинских наук</p>
               </div>
-              <Link href='/feedback/zubarev'>
-                <a className='doctor__feedback'>отзывы о враче</a>
-              </Link>
+              <Link
+                href='/feedback/zubarev'
+                text='отзывы о враче'
+                classes='doctor__feedback'
+              />
             </div>
             <div className='doctor__info'>
               <iframe
@@ -61,7 +47,16 @@ export default function Zubarev() {
                 frameBorder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                 allowFullScreen
-              ></iframe>
+              />
+              <iframe
+                width='100%'
+                height='470px'
+                src='https://www.youtube.com/embed/vfLySGUlBVY'
+                title='YouTube video player'
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+              />
               <section className='doctor__theme-section'>
                 <h3 className='doctor__theme'>Направление деятельности</h3>
                 <p className='article__p'>
@@ -337,4 +332,6 @@ export default function Zubarev() {
       <Footer />
     </>
   );
-}
+};
+
+export default Zubarev;
