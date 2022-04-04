@@ -6,9 +6,8 @@ import { RiCloseFill } from 'react-icons/ri';
 const Banner = () => {
   const [isOpen, setIsOpen] = useState(true);
   const style = isOpen ? styles.banner : `${styles.banner} ${styles.closed}`;
-  // if (!isOpen) return <></>;
   return (
-    <div className={style}>
+    <section className={style}>
       <div className={`${styles.icon} ${styles.icon__megaphone}`}>
         <BsMegaphone />
       </div>
@@ -21,10 +20,13 @@ const Banner = () => {
           всем&nbsp;гражданам&nbsp;РФ&nbsp;из&nbsp;любых&nbsp;регионов
         </span>
       </p>
-      <div className={`${styles.icon} ${styles.icon__close}`} onClick={() => setIsOpen(false)} >
+      <div
+        className={`${styles.icon} ${styles.icon__close}`}
+        onClick={() => setIsOpen(false)}
+      >
         <RiCloseFill />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -93,15 +93,21 @@
 
 .closed {
   animation: exit 1s forwards ease-in;
+
+  & p, .icon {
+    animation: exitText 0.3s forwards ease-in;
+  }
 }
 
 @keyframes exit {
   0% {
     opacity: 1;
+    height: 5em;
   }
 
-  50% {
-    opacity: 0;
+  30% {
+    opacity: 1;
+    height: 5em;
   }
 
   100% {
@@ -109,5 +115,14 @@
     height: 0;
     padding: 0;
     pointer-events: none;
+  }
+}
+
+@keyframes exitText {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
