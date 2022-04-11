@@ -1,17 +1,10 @@
 import { useState } from 'react';
 import Modal from '@/components/Modal';
-import style from '@/styles/reviewBox.module.scss';
+import style from './feedbackCard.module.scss';
 
-const ReviewBox = ({ review }) => {
+const TextCard = ({ review }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
-
-  const renderMessage = () =>
-    review.message.map((message, i) => (
-      <p className='article__p' key={i + Date.now()}>
-        {message}
-      </p>
-    ));
 
   const handleClick = () => {
     setIsModalOpen(true);
@@ -34,7 +27,9 @@ const ReviewBox = ({ review }) => {
           <p>{review.author || 'Анонимно'}</p>
           <p>{review.city}</p>
         </div>
-        <div className={style.message}>{renderMessage()}</div>
+        <div className={style.message}>
+          <p className='article__p'>{review.message}</p>
+        </div>
         {review.readmore && (
           <button className={style.btn_more} onClick={handleClick}>
             читать полностью
@@ -45,4 +40,4 @@ const ReviewBox = ({ review }) => {
   );
 };
 
-export default ReviewBox;
+export default TextCard;

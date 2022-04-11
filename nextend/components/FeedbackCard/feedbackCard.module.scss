@@ -160,4 +160,31 @@
   .message {
     margin-bottom: 1em;
   }
+
+  .videobox {
+    width: 35vw;
+    height: auto;
+    background-color: rgba($color: #dffdff, $alpha: 0.1);
+    display: flex;
+    margin-bottom: 1em;
+  }
+}
+
+////////
+.videowrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
 }

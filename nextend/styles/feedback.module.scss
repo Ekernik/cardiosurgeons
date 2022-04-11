@@ -1,13 +1,15 @@
 .container {
   margin-top: 3em;
+  height: 100%;
 }
 
-.section {
+.section,
+.section__video {
   display: grid;
   width: auto;
   grid-template-columns: 1fr;
   justify-items: start;
-  gap: 1em
+  gap: 1em;
 }
 
 .h1 {
@@ -38,5 +40,9 @@
 
   .section {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section__video {
+    grid-template-columns: 1fr 1fr;
   }
 }
