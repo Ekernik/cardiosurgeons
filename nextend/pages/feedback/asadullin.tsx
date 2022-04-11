@@ -1,26 +1,15 @@
+import { NextPage } from 'next';
 import Header from '@/components/Header/Header';
 import SEO from '@/components/SEO';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
-import REVIEWS from '@/public/static/databases/reviews';
-import ReviewBox from '@/components/ReviewBox';
-import style from '@/styles/feedback.module.scss';
 import { doctors } from '@/public/static/databases/doctors';
+import { getReviews } from '@/helpers/reviews_helper';
+import style from './styles.module.scss';
 
-export default function Feedback() {
-  const doctorID = 11;
-  const doctorObj = doctors[doctorID];
+const DoctorFeedback: NextPage = () => {
+  const doctorObj = doctors.filter(doc => doc.shortname === 'asadullin')[0];
 
-  const getReviews = doctor => {
-    const reviews = [...REVIEWS].reverse();
-
-    let filteredReviews = reviews.filter(review =>
-      review.doctors.includes(doctor.shortname),
-    );
-    return filteredReviews.map((review, i) => (
-      <ReviewBox key={i + Date.now()} review={review} />
-    ));
-  };
   const SEODetails = {
     title: `Отзывы об ${doctorObj.name_about_who}`,
     description: `Отзывы наших пациентов о работе ${doctorObj.name_whos}.`,
@@ -43,4 +32,6 @@ export default function Feedback() {
       </div>
     </>
   );
-}
+};
+
+export default DoctorFeedback;

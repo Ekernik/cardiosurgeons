@@ -1,26 +1,15 @@
+import { NextPage } from 'next';
+import { useState } from 'react';
 import SEO from '@/components/SEO';
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
-import REVIEWS from '@/public/static/databases/reviews';
-import VIDEO_REVIEWS from '@/public/static/databases/videoReviews';
-import TextCard from '@/components/FeedbackCard/TextCard';
-import VideoCard from '@/components/FeedbackCard/VideoCard';
-import style from '@/styles/feedback.module.scss';
 import Tab from '@/components/Tab';
-import { useState } from 'react';
+import style from './styles.module.scss';
+import { getReviews, getVideos } from '@/helpers/reviews_helper';
 
-const FeedbackPage = () => {
+const FeedbackPage: NextPage = () => {
   const [selected, setSelected] = useState('text');
-  const getReviews = () =>
-    [...REVIEWS]
-      .reverse()
-      .map((review, i) => <TextCard key={i + Date.now()} review={review} />);
-
-  const getVideos = () =>
-    [...VIDEO_REVIEWS]
-      .reverse()
-      .map((review, i) => <VideoCard key={i + Date.now()} review={review} />);
 
   const SEODetails = {
     title: 'Отзывы о Центре кардиохирургии и кардиологии.',
