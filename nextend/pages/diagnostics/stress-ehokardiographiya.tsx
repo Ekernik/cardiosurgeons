@@ -1,10 +1,12 @@
+import { NextPage } from 'next';
 import Link from '@/components/Link';
 import PhoneLink from '@/components/PhoneLink';
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
-import { NextPage } from 'next';
+import Banner from '@/components/Banner';
+import Greetings from '@/components/Greetings';
 
 const StressEho: NextPage = () => {
   const SEODetails = {
@@ -14,13 +16,20 @@ const StressEho: NextPage = () => {
     pageLink: 'https://heartteamspb.com/diagnostics/stress-ehokardiographiya',
     type: 'article',
   };
+  
   return (
     <>
       <SEO details={SEODetails} />
       <div className='App'>
         <div id='curtain' />
         <Header />
-        <article className='mt container'>
+        <Greetings
+          header='Стресс-эхокардиография'
+          subheader='метод диагностики кислородного голодания мышц сердца'
+          buttonText='записаться на бесплатный прием'
+        />
+        <Banner />
+        <article className='container'>
           <h1 className='article__header'>Стресс-эхокардиография</h1>
           <p className='article__p'>
             Диагностика{' '}
@@ -38,7 +47,7 @@ const StressEho: NextPage = () => {
           <p className='article__p'>
             <strong>Стресс-эхокардиография (Стресс-ЭхоКГ)</strong> –
             ультразвуковой метод диагностики ишемии миокарда, или, иными
-            словами, метод диагностики кислородного голодания мышцы сердца. С
+            словами, метод диагностики кислородного голодания мышц сердца. С
             помощью данного метода можно выявить ранние и скрытые нарушения в
             работе сердца, которые в состоянии покоя не видны.
           </p>

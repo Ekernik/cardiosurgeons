@@ -1,6 +1,6 @@
 import Link from '@/components/Link';
 import styles from './styles.module.scss';
-import { FaVk } from 'react-icons/fa';
+import { FaVk, FaYoutube } from 'react-icons/fa';
 
 const Footer: React.FC = () => (
   <footer className={styles.footer}>
@@ -14,6 +14,15 @@ const Footer: React.FC = () => (
         >
           <FaVk className={styles.icon} />
           <span>heartteam_spb</span>
+        </a>
+        <a
+          href='https://www.youtube.com/channel/UCW9mH3UQV5403JwKzHSl0pg'
+          className={styles.link}
+          rel='noreferrer noopenner'
+          target='_blank'
+        >
+          <FaYoutube className={styles.icon} />
+          <span>наш YouTube</span>
         </a>
       </div>
       <hr className={styles.footer__hr} />

@@ -17,7 +17,7 @@ const Greetings: React.FC<PropsType> = ({ header, subheader, buttonText }) => {
   return (
     <section className='greetings__section'>
       <div className='container'>
-        <h1 className='greetings__header'>{title}</h1>
+        <h2 className='greetings__header'>{title}</h2>
         <p className='greetings__text'>{pretitle}</p>
         <h3 className='greetings__subheader'>{subheader}</h3>
         <Button styling={`greetings__cta`} text={buttonText} />

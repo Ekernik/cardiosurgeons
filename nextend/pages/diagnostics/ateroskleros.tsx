@@ -1,8 +1,10 @@
+import { NextPage } from 'next';
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
-import { NextPage } from 'next';
+import Greetings from '@/components/Greetings';
+import Banner from '@/components/Banner';
 
 const Ateroskleros: NextPage = () => {
   const SEODetails = {
@@ -19,7 +21,13 @@ const Ateroskleros: NextPage = () => {
       <SEO details={SEODetails} />
       <div id='curtain' />
       <Header />
-      <article className='mt container'>
+      <Greetings
+        header='Атеросклероз'
+        subheader='системное заболевание, поражающее все артерии'
+        buttonText='записаться на бесплатный прием'
+      />
+      <Banner />
+      <article className='container'>
         <h1 className='article__header'>Атеросклероз</h1>
         <p className='article__p'>
           Атеросклероз — хроническое заболевание артерий эластического

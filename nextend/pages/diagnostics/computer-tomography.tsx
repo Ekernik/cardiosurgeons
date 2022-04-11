@@ -1,9 +1,11 @@
+import { NextPage } from 'next';
 import Link from '@/components/Link';
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
-import { NextPage } from 'next';
+import Greetings from '@/components/Greetings';
+import Banner from '@/components/Banner';
 
 const KT: NextPage = () => {
   const SEODetails = {
@@ -20,7 +22,13 @@ const KT: NextPage = () => {
       <div className='App'>
         <div id='curtain' />
         <Header />
-        <article className='mt container'>
+        <Greetings
+          header='Компьютерная томография'
+          subheader='позволяет хирургам оценить размеры камер сердца и сосудов'
+          buttonText='записаться на бесплатный прием'
+        />
+        <Banner />
+        <article className='container'>
           <h1 className='article__header'>КТ – компьютерная томография</h1>
           <p className='article__p'>
             Неотъемлемой частью современной диагностики является компьютерная

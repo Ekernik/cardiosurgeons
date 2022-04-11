@@ -1,10 +1,12 @@
+import { NextPage } from 'next';
 import Link from '@/components/Link';
 import PhoneLink from '@/components/PhoneLink';
 import Header from '@/components/Header/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
-import { NextPage } from 'next';
+import Banner from '@/components/Banner';
+import Greetings from '@/components/Greetings';
 
 const Coronarography: NextPage = () => {
   const SEODetails = {
@@ -14,13 +16,20 @@ const Coronarography: NextPage = () => {
     pageLink: 'heartteamspb.com/diagnostics/coronarographia',
     type: 'article',
   };
+  
   return (
     <>
       <SEO details={SEODetails} />
       <div className='App'>
         <div id='curtain' />
         <Header />
-        <article className='mt container'>
+        <Greetings
+          header='Коронарография'
+          subheader='«золотой стандарт» в диагностике ишемической болезни сердца'
+          buttonText='записаться на бесплатный прием'
+        />
+        <Banner />
+        <article className='container'>
           <h1 className='article__header'>Коронарография</h1>
           <p className='article__p'>
             Коронарография – малоинвазивный метод рентгенографической
