@@ -5,43 +5,37 @@ import VideoCard from '@/components/FeedbackCard/VideoCard';
 
 export const getThreeReviews = () => {
   const reviews = [...REVIEWS].reverse().slice(0, 3);
-  return reviews.map((review, i) => (
-    <TextCard key={i + Date.now()} review={review} />
-  ));
+  return reviews.map(review => <TextCard key={review.id} review={review} />);
 };
 
 export const getReviews = doctor => {
   const reviews = [...REVIEWS].reverse();
 
   if (!doctor) {
-    return reviews.map((review, i) => (
-      <TextCard key={i + Date.now()} review={review} />
-    ));
+    return reviews.map(review => <TextCard key={review.id} review={review} />);
   }
 
   let filteredReviews = reviews.filter(review =>
     review.doctors.includes(doctor.shortname),
   );
 
-  return filteredReviews.map((review, i) => (
-    <TextCard key={i + Date.now()} review={review} />
+  return filteredReviews.map(review => (
+    <TextCard key={review.id} review={review} />
   ));
 };
 
 export const getVideos = doctor => {
-  const reviews = [...VIDEO_REVIEWS].reverse();
+  const reviews = [...VIDEO_REVIEWS];
 
   if (!doctor) {
-    return reviews.map((review, i) => (
-      <VideoCard key={i + Date.now()} review={review} />
-    ));
+    return reviews.map(review => <VideoCard key={review.id} review={review} />);
   }
 
   let filteredReviews = reviews.filter(review =>
     review.doctors.includes(doctor.shortname),
   );
 
-  return filteredReviews.map((review, i) => (
-    <TextCard key={i + Date.now()} review={review} />
+  return filteredReviews.map(review => (
+    <TextCard key={review.id} review={review} />
   ));
 };
