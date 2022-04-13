@@ -110,6 +110,11 @@ export default function BurgerMenu() {
             link='/protezirovanie-klapanov-chto-nuzhno-znat'
             text='Протезирование клапанов: что нужно знать'
           />
+          <LinkItem
+            click={handleClose}
+            link='/aritmiya-serdca'
+            text='Аритмия сердца'
+          />
         </ul>
 
         {/* Заболевания */}

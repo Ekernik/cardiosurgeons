@@ -32,6 +32,11 @@ export default function DropButtonForPatient({ styles }) {
           text='Протезирование клапанов: что нужно знать'
           classes={styles.link__button}
         />
+        <Link
+          href='/aritmiya-serdca'
+          text='Аритмия сердца'
+          classes={styles.link__button}
+        />
       </div>
     </div>
   );
