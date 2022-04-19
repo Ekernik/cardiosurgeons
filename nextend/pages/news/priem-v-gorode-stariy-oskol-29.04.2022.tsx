@@ -107,7 +107,7 @@ const Announcement: NextPage = () => {
             <div className='news__help-flex'>
               <p className='article__p'>
                 Прием будет проводиться:{' '}
-                <strong>16&#160;ноября&#160;2021&#160;г</strong>
+                <strong>29&#160;апреля&#160;2022&#160;г</strong>
               </p>
               <p className='article__p'>
                 По адресу:{' '}
