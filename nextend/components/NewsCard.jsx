@@ -11,12 +11,9 @@ const NewsCard = props => {
     <div className={cardClass}>
       <h3 className={styles.date}>{title}</h3>
       <h4 className={styles.city}>{subtitle}</h4>
-      <Link
-        href={link}
-        text='Читать подробнее'
-        kids={<Image src={arrowRight} alt='' width={24} height={24} />}
-        classes={styles.link}
-      />
+      <Link href={link} text='Читать подробнее' classes={styles.link}>
+        <Image src={arrowRight} alt='' width={24} height={24} />
+      </Link>
     </div>
   );
 };

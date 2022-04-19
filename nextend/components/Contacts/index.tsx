@@ -23,16 +23,13 @@ const Contacts: React.FC = () => (
         <Link
           href='/map-route.png'
           classes={styles.advanced_route}
-          kids={
-            <>
-              <span className={styles.contacts_external_icon}>
-                Подробный маршрут
-                <BiLinkExternal />
-              </span>
-            </>
-          }
           linkOptions={{ target: '_blank' }}
-        />
+        >
+          <span className={styles.contacts_external_icon}>
+            Подробный маршрут
+            <BiLinkExternal />
+          </span>
+        </Link>
 
         <ul className={styles.contacts_info}>
           <li className={styles.contacts_info__item}>

@@ -98,6 +98,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 // Tablet media query
@@ -121,6 +127,10 @@
         width: 100%;
         height: 336px;
       }
+    }
+
+    &__list {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
@@ -159,6 +169,10 @@
       & > iframe {
         height: 336px;
       }
+    }
+
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }

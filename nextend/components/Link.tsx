@@ -6,8 +6,8 @@ type LinkProps = {
   text?: string;
   classes?: string;
   onClick?: () => void;
-  kids?: ReactChild;
   linkOptions?: any;
+  children?: ReactChild;
 };
 
 export const Link: React.FC<LinkProps> = ({
@@ -15,13 +15,13 @@ export const Link: React.FC<LinkProps> = ({
   text,
   classes = 'article__link',
   onClick,
-  kids,
   linkOptions,
+  children,
 }) => (
   <NextLink href={href}>
     <a onClick={onClick} className={classes} {...linkOptions}>
       {text}
-      {kids}
+      {children}
     </a>
   </NextLink>
 );
