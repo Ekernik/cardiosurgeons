@@ -1,5 +1,13 @@
 let newsArr = [
   {
+    id: 'n26',
+    title: '29 апреля',
+    pretitle: 'Старый Оскол',
+    setting: {},
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-stariy-oskol-29.04.2022',
+  },
+  {
     id: 'n25',
     title: '26 апреля',
     pretitle: 'Ставрополь',
