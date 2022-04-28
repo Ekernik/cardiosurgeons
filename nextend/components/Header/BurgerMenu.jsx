@@ -261,6 +261,11 @@ export default function BurgerMenu() {
             link='/diagnostics/stress-ehokardiographiya'
             text='Cтресс-эхокардиография'
           />
+          <LinkItem
+            click={handleClose}
+            link='/diagnostics/holterovskoe-monitorirovanie-ekg'
+            text='Холтеровское мониторирование ЭКГ'
+          />
         </ul>
       </nav>
     </>

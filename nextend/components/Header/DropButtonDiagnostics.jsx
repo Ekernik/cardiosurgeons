@@ -22,6 +22,11 @@ export default function DropButtonDiagnostics({ styles }) {
           text='Стресс-эхокардиография'
           classes={styles.link__button}
         />
+        <Link
+          href='/diagnostics/holterovskoe-monitorirovanie-ekg'
+          text='Холтеровское мониторирование ЭКГ'
+          classes={styles.link__button}
+        />
       </div>
     </div>
   );
