@@ -266,6 +266,12 @@ export default function BurgerMenu() {
             link='/diagnostics/holterovskoe-monitorirovanie-ekg'
             text='Холтеровское мониторирование ЭКГ'
           />
+          <LinkItem
+            click={handleClose}
+            link='/diagnostics/endokrinalnoe-elektrofizicheskoe-issledovanie-efi'
+            text='Эндокардиальное электрофизиологическое исследование — ЭФИ'
+            style={{ textAlign: 'center' }}
+          />
         </ul>
       </nav>
     </>

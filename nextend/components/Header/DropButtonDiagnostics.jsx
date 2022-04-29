@@ -27,6 +27,11 @@ export default function DropButtonDiagnostics({ styles }) {
           text='Холтеровское мониторирование ЭКГ'
           classes={styles.link__button}
         />
+        <Link
+          href='/diagnostics/endokrinalnoe-elektrofizicheskoe-issledovanie-efi'
+          text='Эндокардиальное электрофизиологическое исследование — ЭФИ'
+          classes={styles.link__button}
+        />
       </div>
     </div>
   );
