@@ -62,6 +62,7 @@ const Announcement: NextPage = () => {
                 <li>Патология периферических сосудов</li>
                 <li>Кардиомиопатии</li>
                 <li>Пороки и аномалии развития сердца</li>
+                <li>Нарушения ритма сердца</li>
               </ul>
               <h3>
                 Стоимость приёма — <strong>бесплатно</strong>.
@@ -98,7 +99,7 @@ const Announcement: NextPage = () => {
             </p>
             <p>
               <PhoneLink
-                phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36'
+                phoneNumber='+7&nbsp;(812)&nbsp;676&#8209;25&#8209;25'
                 text='Тел. для записи: '
               />
             </p>
