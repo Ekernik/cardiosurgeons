@@ -1,5 +1,13 @@
 let newsArr = [
   {
+    id: 'n27',
+    title: '25 мая',
+    pretitle: 'Липецк',
+    setting: {},
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-lipeck-25.05.2022',
+  },
+  {
     id: 'n26',
     title: '29 апреля',
     pretitle: 'Старый Оскол',
