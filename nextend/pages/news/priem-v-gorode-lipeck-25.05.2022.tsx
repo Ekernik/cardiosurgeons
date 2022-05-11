@@ -65,7 +65,7 @@ const Announcement: NextPage = () => {
                 <li>Нарушения ритма сердца</li>
               </ul>
               <h3>
-                Стоимость приёма — <strong>бесплатно</strong>.
+                Стоимость приёма — <strong>бесплатно по ОМС</strong>.
               </h3>
             </div>
             <div>
@@ -99,7 +99,7 @@ const Announcement: NextPage = () => {
             </p>
             <p>
               <PhoneLink
-                phoneNumber='+7&nbsp;(812)&nbsp;676&#8209;25&#8209;25'
+                phoneNumber='+7&nbsp;(474)&nbsp;237&#8209;00&#8209;07'
                 text='Тел. для записи: '
               />
             </p>
