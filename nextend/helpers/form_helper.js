@@ -43,6 +43,7 @@ export const formSettings = {
       const url_lipeck = '/news/priem-v-gorode-lipeck';
       if (hostname.includes(url_oskol)) return 'Старый Оскол';
       else if (hostname.includes(url_saransk)) return 'Саранск';
+      else if (hostname.includes(url_lipeck)) return 'Липецк';
       else if (hostname.includes(url_vladimir)) return 'Владимир';
       else if (hostname.includes(url_stavropol)) return 'Ставрополь';
       else if (hostname.includes(url_arzamas)) return 'Арзамас';
