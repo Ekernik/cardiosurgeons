@@ -22,20 +22,20 @@ const TextCard = ({ review }) => {
         }}
         content={modalContent}
       />
-      <div className={style.box}>
+      <section className={style.box}>
         <div className={style.header}>
           <p>{review.author || 'Анонимно'}</p>
           <p>{review.city}</p>
         </div>
         <div className={style.message}>
-          <p className='article__p'>{review.message}</p>
+          <p>{review.message}</p>
         </div>
         {review.readmore && (
           <button className={style.btn_more} onClick={handleClick}>
             читать полностью
           </button>
         )}
-      </div>
+      </section>
     </>
   );
 };

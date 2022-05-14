@@ -1,4 +1,4 @@
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import SEO from '@/components/SEO';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
@@ -12,21 +12,21 @@ const Structure: NextPage = () => {
     pageLink: 'https://heartteamspb.com/structure/cardiosurgery',
     type: 'article',
   };
+
   return (
     <>
       <SEO details={SEODetails} />
-      <div className='App'>
-        <div id='curtain' />
-        <Header />
-        <main className='container section__about-us'>
-          <h1 className='article__header'>Отделение кардиохирургии</h1>
+      <Header />
+      <main className='container mt'>
+        <article>
+          <h1>Отделение кардиохирургии</h1>
           <div className='marked-container'>
-            <p className='article__p'>Раздел в разработке</p>
+            <p>Раздел в разработке</p>
           </div>
-        </main>
-        <Contacts />
-        <Footer />
-      </div>
+        </article>
+      </main>
+      <Contacts />
+      <Footer />
     </>
   );
 };

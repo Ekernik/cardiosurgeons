@@ -1,11 +1,10 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import img_doctor from '@/public/static/images/doctors/doctor_Kim.webp';
 import Contacts from '@/components/Contacts';
 import SEO from '@/components/SEO';
-import styles from '@/styles/article.module.scss';
 
 const Kim: NextPage = () => {
   const SEODetails = {
@@ -19,9 +18,8 @@ const Kim: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
-      <article className={`mt container ${styles.article} doctor__flex`}>
+      <article className='mt container doctor__flex'>
         <section className='doctor__card'>
           <h1>Ким Глеб Ирламович</h1>
           <Image

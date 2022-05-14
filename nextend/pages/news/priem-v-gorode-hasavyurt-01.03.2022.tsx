@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
 import SEO from '@/components/SEO';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Greetings from '@/components/Greetings';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
@@ -10,7 +10,6 @@ import DoctorCard from '@/components/DoctorCard';
 import ButtonCTA from '@/components/ButtonCTA';
 import PhoneLink from '@/components/PhoneLink';
 import { doctors } from '@/public/static/databases/doctors';
-import global_styles from '@/styles/article.module.scss';
 import local_styles from './styles.module.scss';
 
 // Хасавюрт - 01 марта 2022 - Каппушев
@@ -37,13 +36,12 @@ const Announcement: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header={{ title: `${dayOfVisit} ${monthOfVisit}`, pretitle: city }}
         buttonText='Записаться на консультацию'
       />
-      <article className={`container ${global_styles.article}`}>
+      <article className='container'>
         <p className={local_styles.date}>Новость от {dateOfNews} года</p>
         <div className='flex'>
           <div className={local_styles.text_content}>
@@ -89,10 +87,7 @@ const Announcement: NextPage = () => {
                 по&nbsp;ОМС.
               </p>
             </div>
-            <ButtonCTA
-              styling={`greetings__cta ${local_styles.cta}`}
-              text='Записаться на прием'
-            />
+            <ButtonCTA styling={local_styles.cta} text='Записаться на прием' />
           </div>
           <div className={local_styles.help_flex}>
             <DoctorCard doctor={doctor} />
@@ -119,16 +114,11 @@ const Announcement: NextPage = () => {
               </a>
             </p>
             <p>
-              <PhoneLink
-                phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36'
-                text='Тел. для записи: '
-              />
+              Тел. для записи: <PhoneLink />
             </p>
             <p>
-              <PhoneLink
-                phoneNumber='+7&nbsp;(928)&nbsp;254&#8209;33&#8209;33'
-                text='Тел. МЦ «Медиус»: '
-              />
+              Тел. МЦ «Медиус»:{' '}
+              <PhoneLink phoneNumber='+7&nbsp;(928)&nbsp;254&#8209;33&#8209;33' />
             </p>
             <Map position={mapsGeometry} />
           </div>

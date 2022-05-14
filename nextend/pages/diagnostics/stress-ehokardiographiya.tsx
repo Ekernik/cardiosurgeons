@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
 import PhoneLink from '@/components/PhoneLink';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
@@ -21,7 +21,6 @@ const StressEho: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Стресс-эхокардиография'
@@ -29,7 +28,7 @@ const StressEho: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>Стресс-эхокардиография</h1>
         <p>
           Диагностика{' '}
@@ -191,8 +190,7 @@ const StressEho: NextPage = () => {
           Специалисты нашей клиники проводят диагностику и лечение
           сердечно-сосудистых заболеваний пациентов со всех регионов России.
           Если вы хотите сделать узнать цену стресс-эхокардиографии, звоните по
-          телефону{' '}
-          <PhoneLink phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36' />
+          телефону <PhoneLink />
         </p>
       </article>
       <Contacts />

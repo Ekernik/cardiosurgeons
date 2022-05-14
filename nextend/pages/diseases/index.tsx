@@ -1,6 +1,6 @@
 import SEO from '@/components/SEO';
 import Link from '@/components/Link';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
 import { NextPage } from 'next';
@@ -15,15 +15,15 @@ const Diseases: NextPage = () => {
     pageLink: 'https://heartteamspb.com/diseases',
     type: 'article',
   };
+
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
-      <article className={`mt container ${styles.article}`}>
+      <article className='mt container'>
         <h1>
           Заболевания сердца
-          и&nbsp;органов&nbsp;сердечно&#8209;сосудистой&nbsp;системы
+          и&nbsp;органов сердечно&#8209;сосудистой системы
         </h1>
         <p>
           Заболевания сердца обычно встречаются среди взрослого населения нашей
@@ -100,8 +100,7 @@ const Diseases: NextPage = () => {
         <p>
           В случае, если вы уже знаете точный диагноз и вам необходимо лечение,{' '}
           <Link href='/' text='записывайтесь на прием к кардиохирургам' />{' '}
-          нашего Центра по телефону{' '}
-          <PhoneLink phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36' />.
+          нашего Центра по телефону <PhoneLink />.
         </p>
       </article>
       <Contacts />

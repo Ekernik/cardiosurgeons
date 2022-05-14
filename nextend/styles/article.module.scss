@@ -91,6 +91,12 @@
 
 // Laptops media query
 @media (min-width: 992px) {
+  .article {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
   .marked_container {
     gap: 20px;
     flex-direction: row;

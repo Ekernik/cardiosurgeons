@@ -1,0 +1,20 @@
+.cta {
+  background-color: var(--color-P--dark);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: inherit;
+  padding: 0.8em 2em;
+  text-transform: uppercase;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-P);
+  }
+
+  &:active {
+    background-color: var(--color-P--darkest);
+  }
+}

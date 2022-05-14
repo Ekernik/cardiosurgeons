@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
@@ -20,18 +20,13 @@ const DoctorFeedback: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div className='App'>
-        <div id='curtain' />
-        <Header />
-        <main className={`container ${style.container}`}>
-          <h1 className={`article__header ${style.h1}`}>
-            {`Отзывы о ${doctorObj.name_about_who}`}
-          </h1>
-          <section className={style.section}>{getReviews(doctorObj)}</section>
-        </main>
-        <Contacts />
-        <Footer />
-      </div>
+      <Header />
+      <main className='container mt'>
+        <h1>{`Отзывы о ${doctorObj.name_about_who}`}</h1>
+        <section className={style.section}>{getReviews(doctorObj)}</section>
+      </main>
+      <Contacts />
+      <Footer />
     </>
   );
 };

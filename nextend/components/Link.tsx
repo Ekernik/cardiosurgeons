@@ -13,7 +13,7 @@ type LinkProps = {
 export const Link: React.FC<LinkProps> = ({
   href,
   text,
-  classes = 'article__link',
+  classes,
   onClick,
   linkOptions,
   children,

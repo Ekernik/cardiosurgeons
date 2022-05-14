@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
 import SEO from '@/components/SEO';
@@ -21,7 +21,6 @@ const DiseaseArticle: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Ишемическая болезнь сердца'
@@ -29,7 +28,7 @@ const DiseaseArticle: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>Ишемическая болезнь сердца (ИБС)</h1>
         <p>
           Ишемическая болезнь сердца или ИБС - это заболевание при котором
@@ -121,8 +120,7 @@ const DiseaseArticle: NextPage = () => {
             <p>
               <Link
                 href='/treatment/stentirovanie-koronarnih-arteriy'
-                text='Стентирование сосудов
-              сердца'
+                text='Стентирование сосудов сердца'
               />{' '}
               (коронарное стентирование) проводится в рентгеноперационной как и
               коронарография, не требует применения наркоза и выполняется через
@@ -181,8 +179,7 @@ const DiseaseArticle: NextPage = () => {
         <p>
           В нашей клинике вы можете пройти диагностику и по ее итогам получить
           лечение ишемической болезни сердца. Операции проводятся на регулярной
-          основе, для записи на прием, звоните{' '}
-          <PhoneLink phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36' />
+          основе, для записи на прием, звоните <PhoneLink />
         </p>
       </article>
       <Contacts />

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
 import SEO from '@/components/SEO';
@@ -20,7 +20,6 @@ const DiseaseArticle: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Аортальный стеноз'
@@ -28,7 +27,7 @@ const DiseaseArticle: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>Аортальный стеноз</h1>
         <p>
           Аортальный стеноз — это заболевание, являющееся как врожденным, так и

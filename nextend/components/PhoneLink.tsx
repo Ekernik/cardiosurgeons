@@ -1,22 +1,31 @@
 type PropsType = {
   text?: string;
   text_after?: string;
-  phoneNumber: string;
+  phoneNumber?: string;
   text_classes?: string;
+  link_classes?: string;
 };
 
 const PhoneLink: React.FC<PropsType> = ({
   text,
   phoneNumber,
   text_after,
-  text_classes = 'article__p',
+  text_classes,
+  link_classes,
 }) => (
   <span className={text_classes}>
-    <span>{text}</span>
-    <a href={`tel:${phoneNumber}`} className='article__link'>
-      {phoneNumber}
+    {text}
+    <a
+      href={`tel:${phoneNumber || '+7(999)238-01-36'}`}
+      className={'article__link' && link_classes}
+    >
+      {phoneNumber ? (
+        phoneNumber
+      ) : (
+        <span>+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36</span>
+      )}
     </a>
-    <span className={text_classes}>{text_after}</span>
+    {text_after}
   </span>
 );
 

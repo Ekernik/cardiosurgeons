@@ -1,13 +1,12 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
 import PhoneLink from '@/components/PhoneLink';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 import Banner from '@/components/Banner';
 import Greetings from '@/components/Greetings';
-import styles from '@/styles/article.module.scss';
 
 const Coronarography: NextPage = () => {
   const SEODetails = {
@@ -21,7 +20,6 @@ const Coronarography: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Коронарография'
@@ -29,7 +27,7 @@ const Coronarography: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>Коронарография</h1>
         <p>
           Коронарография – малоинвазивный метод рентгенографической визуализации
@@ -102,11 +100,10 @@ const Coronarography: NextPage = () => {
           />
           )
         </p>
-        <PhoneLink
-          phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36'
-          text='Если вы хотите узнать стоимость коронарографии в нашей клинике,
-            позвоните нам по телефону '
-        />
+        <p>
+          Если вы хотите узнать стоимость коронарографии в нашей клинике,
+          позвоните нам по телефону <PhoneLink />
+        </p>
       </article>
       <Contacts />
       <Footer />

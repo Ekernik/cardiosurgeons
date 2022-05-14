@@ -2,6 +2,7 @@
   &_external_icon {
     display: flex;
     align-items: center;
+    color: var(--color-white);
 
     & > svg {
       margin-left: 1rem;
@@ -25,6 +26,11 @@
       align-items: center;
       font-size: var(--text-sm);
       margin: 0.7em 0;
+
+      & > p {
+        margin: 0;
+        font-size: var(--text-sm);
+      }
 
       & > svg {
         height: 32px;
@@ -53,13 +59,17 @@
   align-self: center;
   padding: 0.7em 1.5em;
   background-color: var(--color-P--dark);
-  color: var(--color-white);
   text-transform: uppercase;
   font-weight: 600;
   font-size: var(--text-sm);
 
   &:any-link {
     text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      background-color: var(--color-P--darkest);
+    }
   }
 }
 
@@ -88,6 +98,10 @@
 
     &_info__item {
       font-size: var(--text-regular);
+
+      & > p {
+        font-size: inherit;
+      }
     }
   }
 

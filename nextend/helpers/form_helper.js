@@ -1,5 +1,4 @@
 export const handleSubmit = () => {
-  console.log('отправляем форму');
   try {
     formSettings.checkValues(4, 8);
     // Make success animation
@@ -10,7 +9,7 @@ export const handleSubmit = () => {
     curtain.style.display = 'flex';
     curtain.style.animation = 'contact-form--fade-in 1.5s ease-in forwards';
     console.log('Форма отправленна');
-  } catch(err) {
+  } catch (err) {
     console.log(`Форма не отправленна: ${err.message}`);
   }
 };
@@ -41,6 +40,7 @@ export const formSettings = {
       const url_cherkessk = '/news/priem-v-gorode-cherkessk';
       const url_nizhniy_novgorod = '/news/priem-v-gorode-nizhniy-novgorod';
       const url_velikie_luki = '/news/priem-v-gorode-velikie-luki';
+      const url_lipeck = '/news/priem-v-gorode-lipeck';
       if (hostname.includes(url_oskol)) return 'Старый Оскол';
       else if (hostname.includes(url_saransk)) return 'Саранск';
       else if (hostname.includes(url_vladimir)) return 'Владимир';
@@ -54,6 +54,7 @@ export const formSettings = {
       else if (hostname.includes(url_nizhniy_novgorod))
         return 'Нижний Новгород';
       else if (hostname.includes(url_velikie_luki)) return 'Великие Луки';
+      else if (hostname.includes(url_lipeck)) return 'Липецк';
       else return hostname;
     }
   },

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import PhoneLink from '@/components/PhoneLink';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Greetings from '@/components/Greetings';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
@@ -9,7 +9,6 @@ import ButtonCTA from '@/components/ButtonCTA';
 import SEO from '@/components/SEO';
 import Map from '@/components/Map';
 import { doctors } from '@/public/static/databases/doctors';
-import global_styles from '@/styles/article.module.scss';
 import local_styles from './styles.module.scss';
 
 // Шахты - 25 февраля 2022 - 2 врача - Шеремет и Ким
@@ -31,17 +30,16 @@ const Announcement: NextPage = () => {
     pageLink: 'https://heartteamspb.com/news/priem-v-gorode-shahti-25.02.2022',
     type: 'article',
   };
-  
+
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header={{ title: `${dayOfVisit} ${monthOfVisit}`, pretitle: city }}
         buttonText='Записаться на консультацию'
       />
-      <article className={`container ${global_styles.article}`}>
+      <article className='container'>
         <h6 className={local_styles.date}>Новость от {dateOfNews} года</h6>
         <h3>
           {dayOfVisit} {monthOfVisit} {yearOfVisit} – {city} – приглашаем
@@ -82,10 +80,7 @@ const Announcement: NextPage = () => {
               <li>имеющиеся медицинские документы.</li>
             </ul>
             <h3>Стоимость приёма — {price}.</h3>
-            <ButtonCTA
-              styling={`greetings__cta ${local_styles.cta}`}
-              text='Записаться на прием'
-            />
+            <ButtonCTA styling={local_styles.cta} text='Записаться на прием' />
           </div>
         </div>
         <hr />
@@ -110,16 +105,11 @@ const Announcement: NextPage = () => {
               - Медицинский центр «Кардиоплюс»
             </p>
             <p>
-              <PhoneLink
-                phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36'
-                text='Тел. для записи: '
-              />
+              Тел. для записи: <PhoneLink />
             </p>
             <p>
-              <PhoneLink
-                text='тел. медицинского центра «Кардиоплюс»: '
-                phoneNumber='+7&nbsp;(960)&nbsp;450&#8209;94&#8209;37'
-              />
+              Nел. медицинского центра «Кардиоплюс»:{' '}
+              <PhoneLink phoneNumber='+7&nbsp;(960)&nbsp;450&#8209;94&#8209;37' />
             </p>
             <Map position={mapPosition} />
           </div>

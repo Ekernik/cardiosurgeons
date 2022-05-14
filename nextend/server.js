@@ -6,7 +6,7 @@ const next = require('next');
 const fs = require('fs');
 
 const dev = process.env.NODE_ENV !== 'production';
-const httpsApp = next(false); // { dev }
+const httpsApp = next({ dev: false }); 
 const httpApp = express();
 const handleSSL = httpsApp.getRequestHandler();
 const SSLPORT = 443;

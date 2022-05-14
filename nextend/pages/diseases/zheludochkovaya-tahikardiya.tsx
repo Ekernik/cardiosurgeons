@@ -1,11 +1,10 @@
 import { NextPage } from 'next';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
 import SEO from '@/components/SEO';
 import Banner from '@/components/Banner';
 import Greetings from '@/components/Greetings';
-import styles from '@/styles/article.module.scss';
 
 const DiseaseArticle: NextPage = () => {
   const SEODetails = {
@@ -19,7 +18,6 @@ const DiseaseArticle: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Желудочковая тахикардия'
@@ -27,7 +25,7 @@ const DiseaseArticle: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>Желудочковая тахикардия (ЖТ)</h1>
         <p>
           Желудочковая тахикардия — это нарушение ритма сердца, при котором

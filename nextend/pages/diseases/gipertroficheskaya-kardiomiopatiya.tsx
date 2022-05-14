@@ -1,12 +1,11 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
 import SEO from '@/components/SEO';
 import Banner from '@/components/Banner';
 import Greetings from '@/components/Greetings';
-import styles from '@/styles/article.module.scss';
 import PhoneLink from '@/components/PhoneLink';
 import EmailLink from '@/components/EmailLink';
 
@@ -22,7 +21,6 @@ const DiseaseArticle: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Гипертрофическая кардиомиопатия'
@@ -30,7 +28,7 @@ const DiseaseArticle: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>Гипертрофическая кардиомиопатия</h1>
         <p>
           Гипертрофическая кардиомиопатия - поражение сердца, обусловленное
@@ -99,12 +97,7 @@ const DiseaseArticle: NextPage = () => {
         </p>
         <p>
           За консультацией обращайтесь к нашим специалистам кардихрирургии по
-          телефону{' '}
-          <PhoneLink
-            phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36'
-            text_after=' '
-          />
-          или электронной почте <EmailLink />.
+          телефону <PhoneLink /> или электронной почте <EmailLink />.
         </p>
       </article>
       <Contacts />

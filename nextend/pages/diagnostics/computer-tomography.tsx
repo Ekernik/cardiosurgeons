@@ -1,12 +1,11 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 import Greetings from '@/components/Greetings';
 import Banner from '@/components/Banner';
-import styles from '@/styles/article.module.scss';
 
 const KT: NextPage = () => {
   const SEODetails = {
@@ -20,7 +19,6 @@ const KT: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Компьютерная томография'
@@ -28,7 +26,7 @@ const KT: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>КТ – компьютерная томография</h1>
         <p>
           Неотъемлемой частью современной диагностики является компьютерная

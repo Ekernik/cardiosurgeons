@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Link from '@/components/Link';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Greetings from '@/components/Greetings';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
@@ -10,7 +10,6 @@ import ButtonCTA from '@/components/ButtonCTA';
 import SEO from '@/components/SEO';
 import PhoneLink from '@/components/PhoneLink';
 import { doctors } from '@/public/static/databases/doctors';
-import global_styles from '@/styles/article.module.scss';
 import local_styles from './styles.module.scss';
 
 // Ставрополь - 15 марта 2022 - Каппушев
@@ -28,13 +27,12 @@ const Announcement: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header={{ title: '15 марта', pretitle: 'город Ставрополь' }}
         buttonText='Записаться на консультацию'
       />
-      <article className={`container ${global_styles.article}`}>
+      <article className='container'>
         <h6 className={local_styles.date}>новость от 17 февраля 2022 года</h6>
         <div className='flex'>
           <div className={local_styles.text_content}>
@@ -107,10 +105,7 @@ const Announcement: NextPage = () => {
             <ul>
               <li>Суточный мониторинг ЭКГ по&nbsp;Холтеру.</li>
             </ul>
-            <ButtonCTA
-              styling={`greetings__cta ${local_styles.cta}`}
-              text='Записаться на прием'
-            />
+            <ButtonCTA styling={local_styles.cta} text='Записаться на прием' />
           </div>
           <div className={local_styles.help_flex}>
             <DoctorCard doctor={doctor} />
@@ -135,10 +130,7 @@ const Announcement: NextPage = () => {
               </a>
             </p>
             <p>
-              <PhoneLink
-                phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36'
-                text='Тел. для записи: '
-              />
+              Тел. для записи: <PhoneLink />
             </p>
             <Map position={mapPosition} />
           </div>

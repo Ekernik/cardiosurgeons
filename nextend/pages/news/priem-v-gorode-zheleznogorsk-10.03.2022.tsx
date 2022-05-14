@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import SEO from '@/components/SEO';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Greetings from '@/components/Greetings';
 import Footer from '@/components/Footer';
 import Contacts from '@/components/Contacts';
@@ -9,7 +9,6 @@ import DoctorCard from '@/components/DoctorCard';
 import ButtonCTA from '@/components/ButtonCTA';
 import PhoneLink from '@/components/PhoneLink';
 import { doctors } from '@/public/static/databases/doctors';
-import global_styles from '@/styles/article.module.scss';
 import local_styles from './styles.module.scss';
 
 // Железногорск - 10 марта 2022 - Пягай
@@ -36,13 +35,12 @@ const Announcement: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header={{ title: `${dayOfVisit} ${monthOfVisit}`, pretitle: city }}
         buttonText='Записаться на консультацию'
       />
-      <article className={`container ${global_styles.article}`}>
+      <article className='container'>
         <h6 className={local_styles.date}>Новость от {dateOfNews} года</h6>
         <div className='flex'>
           <div className={local_styles.text_content}>
@@ -78,17 +76,14 @@ const Announcement: NextPage = () => {
                 по&nbsp;ОМС.
               </p>
             </div>
-            <ButtonCTA
-              styling={`greetings__cta ${local_styles.cta}`}
-              text='Записаться на прием'
-            />
+            <ButtonCTA styling={local_styles.cta} text='Записаться на прием' />
           </div>
           <div className={local_styles.help_flex}>
             <DoctorCard doctor={doctor} />
           </div>
         </div>
         <hr />
-        <div className={local_styles.main_flex}>
+        <section className={local_styles.main_flex}>
           <div className={local_styles.place_info}>
             <p>
               Прием будет проводиться:{' '}
@@ -108,22 +103,17 @@ const Announcement: NextPage = () => {
               </a>
             </p>
             <p>
-              <PhoneLink
-                phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36'
-                text='Тел. для записи: '
-              />
+              Тел. для записи: <PhoneLink />
             </p>
             <p>
-              <PhoneLink
-                phoneNumber='+7&nbsp;(47148)&nbsp;4&#8209;58&#8209;09'
-                text='Тел. МДЦ «Матис»: '
-              />
+              Тел. МДЦ «Матис»:{' '}
+              <PhoneLink phoneNumber='+7&nbsp;(47148)&nbsp;4&#8209;58&#8209;09' />
             </p>
             <Map position={mapPosition} />
           </div>
-        </div>
-        <hr />
+        </section>
       </article>
+      <hr />
       <Contacts />
       <Footer />
     </>

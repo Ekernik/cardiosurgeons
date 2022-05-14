@@ -1,7 +1,8 @@
+// TODO: See if we can reduce boilerplate for each doctors page
 import { NextPage } from 'next';
 import { useState } from 'react';
 import SEO from '@/components/SEO';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import Tab from '@/components/Tab';
@@ -22,23 +23,18 @@ const FeedbackPage: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div className='App'>
-        <div id='curtain' />
-        <Header />
-        <main className={`container ${style.container}`}>
-          <h1 className={`article__header ${style.h1}`}>
-            Отзывы о нашем Центре
-          </h1>
-          <Tab selected={selected} setSelected={setSelected} />
-          {selected === 'text' ? (
-            <section className={style.section}>{getReviews()}</section>
-          ) : (
-            <section className={style.section__video}>{getVideos()}</section>
-          )}
-        </main>
-        <Contacts />
-        <Footer />
-      </div>
+      <Header />
+      <main className='container mt'>
+        <h1>Отзывы о нашем Центре</h1>
+        <Tab selected={selected} setSelected={setSelected} />
+        {selected === 'text' ? (
+          <section className={style.section}>{getReviews()}</section>
+        ) : (
+          <section className={style.section__video}>{getVideos()}</section>
+        )}
+      </main>
+      <Contacts />
+      <Footer />
     </>
   );
 };

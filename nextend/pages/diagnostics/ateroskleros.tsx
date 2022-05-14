@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
@@ -20,7 +20,6 @@ const Ateroskleros: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
       <Greetings
         header='Атеросклероз'
@@ -28,7 +27,7 @@ const Ateroskleros: NextPage = () => {
         buttonText='записаться на бесплатный прием'
       />
       <Banner />
-      <article className={`container ${styles.article}`}>
+      <article className='container'>
         <h1>Атеросклероз</h1>
         <p>
           Атеросклероз — хроническое заболевание артерий эластического
@@ -94,13 +93,13 @@ const Ateroskleros: NextPage = () => {
           </li>
         </ul>
         <h2>Диагностика атеросклероза</h2>
-        <ul className='article__ul'>
+        <ul>
           <li>цветное дуплексное сканирование</li>
           <li>мультиспиральная компьютерная томография-ангиография</li>
           <li>прямая рентгенконтрастная ангиография</li>
         </ul>
         <h2>Типы хирургического лечения атеросклероза</h2>
-        <ul className='article__ul'>
+        <ul>
           <li>
             устранение атеросклеротической бляшки путем открытой операции на
             сосуде
@@ -174,7 +173,7 @@ const Ateroskleros: NextPage = () => {
           позволяет локально удалить бляшку из бедренной артерии
           (эндартерэктомия) и одномоментно эндоваскулярно расширить подвздошную
           артерию с последующим её стентированием, вместо более травматичного
-          аортобедренного шунтирования.{' '}
+          аортобедренного шунтирования.
         </p>
         <p>
           При наличии аневризмы брюшной аорты гибридные методики позволяют

@@ -1,5 +1,6 @@
+// TODO: Separate logic from UI
 import { NextPage } from 'next';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import DoctorCard from '@/components/DoctorCard';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
@@ -8,7 +9,6 @@ import PhoneLink from '@/components/PhoneLink';
 import SEO from '@/components/SEO';
 import { doctors } from '@/public/static/databases/doctors';
 import { SliderData__team } from '@/public/static/databases/sliderData/team';
-import styles from '@/styles/article.module.scss';
 
 const Team: NextPage = () => {
   const SEODetails = {
@@ -23,9 +23,8 @@ const Team: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div id='curtain' />
       <Header />
-      <article className={`mt container ${styles.article} section__our-team`}>
+      <article className={`mt container section__our-team`}>
         <h1>Наша команда</h1>
         <div className='doctor__list'>
           {doctors.map(doctor => (
@@ -67,8 +66,7 @@ const Team: NextPage = () => {
         </p>
         <p>
           Если вы хотите записаться на прием к ведущим кардиохирургам и
-          кардиологам, звоните{' '}
-          <PhoneLink phoneNumber='+7&nbsp;(999)&nbsp;238&#8209;01&#8209;36' />
+          кардиологам, звоните <PhoneLink />
         </p>
         <ImageSlider props={SliderData__team} />
       </article>
