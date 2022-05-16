@@ -1,6 +1,6 @@
 {
   "name": "nextend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,6 +10,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@types/node": "^17.0.33",
     "express": "^4.17.1",
     "next": "^12.1.6",
     "react": "17.0.2",
@@ -23,6 +24,7 @@
     "@next/bundle-analyzer": "^12.1.5",
     "@types/react": "^17.0.38",
     "eslint": "7.32.0",
-    "eslint-config-next": "12.0.3"
+    "eslint-config-next": "12.0.3",
+    "typescript": "^4.6.4"
   }
 }
