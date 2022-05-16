@@ -41,6 +41,8 @@ export const formSettings = {
       const url_nizhniy_novgorod = '/news/priem-v-gorode-nizhniy-novgorod';
       const url_velikie_luki = '/news/priem-v-gorode-velikie-luki';
       const url_lipeck = '/news/priem-v-gorode-lipeck';
+      const url_kostroma = '/news/priem-v-gorode-kostroma';
+      const url_cherepovets = '/news/priem-v-gorode-cherepovets';
       if (hostname.includes(url_oskol)) return 'Старый Оскол';
       else if (hostname.includes(url_saransk)) return 'Саранск';
       else if (hostname.includes(url_lipeck)) return 'Липецк';
@@ -56,6 +58,8 @@ export const formSettings = {
         return 'Нижний Новгород';
       else if (hostname.includes(url_velikie_luki)) return 'Великие Луки';
       else if (hostname.includes(url_lipeck)) return 'Липецк';
+      else if (hostname.includes(url_kostroma)) return 'Кострома';
+      else if (hostname.includes(url_cherepovets)) return 'Череповец';
       else return hostname;
     }
   },
