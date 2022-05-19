@@ -149,6 +149,7 @@ const Holter: NextPage = () => {
               src={'/static/images/dnevnik-1.jpeg'}
               width={100}
               height={100}
+              alt='Первая страница дневника мониторного наблюдения'
               layout='responsive'
             />
           </div>
@@ -157,6 +158,7 @@ const Holter: NextPage = () => {
               src={'/static/images/dnevnik-2.jpeg'}
               width={100}
               height={100}
+              alt='Вторая страница дневника мониторного наблюдения'
               layout='responsive'
             />
           </div>
