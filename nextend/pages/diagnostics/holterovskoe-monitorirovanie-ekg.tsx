@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
@@ -6,6 +7,7 @@ import SEO from '@/components/SEO';
 import Greetings from '@/components/Greetings';
 import Banner from '@/components/Banner';
 import styles from '@/styles/article.module.scss';
+import local_styles from './styles.module.scss';
 
 const Holter: NextPage = () => {
   const SEODetails = {
@@ -110,17 +112,9 @@ const Holter: NextPage = () => {
           компьютер и обрабатывают в специальной программе. После тщательного
           изучения результатов ЭКГ врач приступает к составлению заключения.
           Заключение составляется не только на основе выявленных патологических
-          изменений, но и на записях в дневнике пациента (
-          <a
-            href='/dnevnik-holter.pdf'
-            className='article__link'
-            target='_blank'
-            download
-          >
-            скачать&nbsp;дневник&nbsp;пациента
-          </a>
-          ). Такой процесс может занять от 30 минут до нескольких дней, в
-          зависимости от выявленных изменений.
+          изменений, но и на записях в дневнике пациента. Такой процесс может
+          занять от 30 минут до нескольких дней, в зависимости от выявленных
+          изменений.
         </p>
         <h3>При таком исследовании пациенту необходимо сделать 3 приема:</h3>
         <ul>
@@ -148,6 +142,33 @@ const Holter: NextPage = () => {
             возникающих симптомах
           </li>
         </ul>
+        <h3>Дневник мониторного наблюдения:</h3>
+        <div className={local_styles.images__container}>
+          <div>
+            <Image
+              src={'/static/images/dnevnik-1.jpeg'}
+              width={100}
+              height={100}
+              layout='responsive'
+            />
+          </div>
+          <div>
+            <Image
+              src={'/static/images/dnevnik-2.jpeg'}
+              width={100}
+              height={100}
+              layout='responsive'
+            />
+          </div>
+        </div>
+        <a
+          href='/dnevnik-holter.pdf'
+          className='article__link'
+          target='_blank'
+          download
+        >
+          скачать дневник
+        </a>
       </article>
       <Contacts />
       <Footer />
