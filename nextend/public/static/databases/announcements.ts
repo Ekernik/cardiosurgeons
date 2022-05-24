@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '6',
+    publishDate: '24 мая 2022 г.',
+    title: 'Лечение болезней сердца и органов сердечно-сосудистой системы',
+    options: {},
+    link: 'lechenie-boleznei-serdca',
+  },
+  {
     id: '5',
     publishDate: '29 марта 2022 г.',
     title: 'Выездные приемы кардиохирургов в городах России – апрель 2022',
