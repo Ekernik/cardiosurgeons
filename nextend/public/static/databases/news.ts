@@ -2,6 +2,13 @@ import { newsArrType } from '@/types/news';
 
 const newsArr: newsArrType[] = [
   {
+    id: 'n30',
+    title: '10 июня',
+    pretitle: 'Брянск',
+    buttonText: 'Записаться на приём',
+    link: 'priem-v-gorode-bryansk-10.06.2022',
+  },
+  {
     id: 'n29',
     title: '25 мая',
     pretitle: 'Липецк',

@@ -34,7 +34,7 @@ export const formSettings = {
       const url_stavropol = '/news/priem-v-gorode-stavropol';
       const url_arzamas = '/news/priem-v-gorode-arzamas';
       const url_hasavyurt = 'priem-v-gorode-hasavyurt';
-      const url_zheleznogorsk = 'priem-v-gorode-zheleznogorsk-10.03.2022';
+      const url_zheleznogorsk = 'priem-v-gorode-zheleznogorsk';
       const url_volhov = '/news/priem-v-gorode-volhov';
       const url_shahti = '/news/priem-v-gorode-shahti';
       const url_cherkessk = '/news/priem-v-gorode-cherkessk';
@@ -43,6 +43,7 @@ export const formSettings = {
       const url_lipeck = '/news/priem-v-gorode-lipeck';
       const url_kostroma = '/news/priem-v-gorode-kostroma';
       const url_cherepovets = '/news/priem-v-gorode-cherepovets';
+      const url_bryansk = 'bryansk';
       if (hostname.includes(url_oskol)) return 'Старый Оскол';
       else if (hostname.includes(url_saransk)) return 'Саранск';
       else if (hostname.includes(url_lipeck)) return 'Липецк';
@@ -60,6 +61,7 @@ export const formSettings = {
       else if (hostname.includes(url_lipeck)) return 'Липецк';
       else if (hostname.includes(url_kostroma)) return 'Кострома';
       else if (hostname.includes(url_cherepovets)) return 'Череповец';
+      else if (hostname.includes(url_bryansk)) return 'Брянск';
       else return hostname;
     }
   },
