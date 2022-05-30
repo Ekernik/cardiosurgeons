@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export const DropdownAboutUs: React.FC = () => {
   return (
-    <div className={styles.dropdown} data-dropdown>
+    <li className={styles.dropdown} data-dropdown>
       <button className={styles.button_link} data-dropdown-button>
         О нас
       </button>
@@ -28,6 +28,6 @@ export const DropdownAboutUs: React.FC = () => {
         />
         <Link href='/feedback' text='Отзывы' classes={styles.link__button} />
       </div>
-    </div>
+    </li>
   );
 };

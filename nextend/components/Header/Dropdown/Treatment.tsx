@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export const DropdownTreatment: React.FC = () => {
   return (
-    <div className={styles.dropdown} data-dropdown>
+    <li className={styles.dropdown} data-dropdown>
       <button className={styles.button_link} data-dropdown-button>
         <Link
           href='/treatment'
@@ -25,6 +25,6 @@ export const DropdownTreatment: React.FC = () => {
           );
         })}
       </div>
-    </div>
+    </li>
   );
 };

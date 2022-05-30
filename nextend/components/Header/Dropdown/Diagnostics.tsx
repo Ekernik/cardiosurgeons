@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 
 export const DropdownDiagnostics: React.FC = () => {
   return (
-    <div className={styles.dropdown} data-dropdown>
+    <li className={styles.dropdown} data-dropdown>
       <button className={styles.button_link} data-dropdown-button>
         Диагностика
       </button>
@@ -34,6 +34,6 @@ export const DropdownDiagnostics: React.FC = () => {
           classes={styles.link__button}
         />
       </div>
-    </div>
+    </li>
   );
 };

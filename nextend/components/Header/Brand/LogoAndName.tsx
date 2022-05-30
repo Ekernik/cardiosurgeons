@@ -10,8 +10,8 @@ const LogoAndName: React.FC = () => {
         <Image
           src={logo}
           alt='Логотип Центра кардиохирургии и интервенционной кардиологии'
-          height={40}
-          width={40}
+          height='40'
+          width='40'
           layout='intrinsic'
         />
       </Link>
