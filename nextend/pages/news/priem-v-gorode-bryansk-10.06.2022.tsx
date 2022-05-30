@@ -7,7 +7,6 @@ import Contacts from '@/components/Contacts';
 import DoctorCard from '@/components/DoctorCard';
 import ButtonCTA from '@/components/ButtonCTA';
 import SEO from '@/components/SEO';
-import Map from '@/components/Map';
 import { doctors } from '@/public/static/databases/doctors';
 import local_styles from './styles.module.scss';
 
