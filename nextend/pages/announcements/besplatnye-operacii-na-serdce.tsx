@@ -1,10 +1,7 @@
-import Link from '@/components/Link';
-import SEO from '@/components/SEO';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Contacts from '@/components/Contacts';
-import PhoneLink from '@/components/PhoneLink';
 import { NextPage } from 'next';
+import Link from '@/components/Link';
+import PhoneLink from '@/components/PhoneLink';
+import ArticleLayout from 'layouts/ArticleLayout';
 
 const Announcement: NextPage = () => {
   const SEODetails = {
@@ -17,11 +14,9 @@ const Announcement: NextPage = () => {
   };
 
   return (
-    <>
-      <SEO details={SEODetails} />
-      <Header />
+    <ArticleLayout details={SEODetails}>
       <section className='container mt'>
-        <h1>Оперируем БЕСПЛАТНО по федеральным квотам и ОМС</h1>
+        <h1>Оперируем БЕСПЛАТНО по федеральным квотам и&nbsp;ОМС</h1>
         <p>
           Осуществляем прием пациентов для диагностики и лечения болезней сердца
           и органов сердечно-сосудистой системы.{' '}
@@ -39,9 +34,7 @@ const Announcement: NextPage = () => {
           нам по телефону <PhoneLink />
         </p>
       </section>
-      <Contacts />
-      <Footer />
-    </>
+    </ArticleLayout>
   );
 };
 

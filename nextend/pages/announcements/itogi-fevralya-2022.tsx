@@ -1,9 +1,6 @@
-import Link from '@/components/Link';
-import SEO from '@/components/SEO';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Contacts from '@/components/Contacts';
 import { NextPage } from 'next';
+import Link from '@/components/Link';
+import ArticleLayout from 'layouts/ArticleLayout';
 
 const Announcement: NextPage = () => {
   const SEODetails = {
@@ -14,11 +11,9 @@ const Announcement: NextPage = () => {
     pageLink: 'https://heartteamspb.com/announcements/itogi-fevralya-2022',
     type: 'article',
   };
-  
+
   return (
-    <>
-      <SEO details={SEODetails} />
-      <Header />
+    <ArticleLayout details={SEODetails}>
       <section className='container mt'>
         <h1>
           Февраль: итоги лечения пациентов из регионов в&nbsp;нашей клинике
@@ -60,9 +55,7 @@ const Announcement: NextPage = () => {
           скорейшего выздоровления и хорошей дороги домой!
         </p>
       </section>
-      <Contacts />
-      <Footer />
-    </>
+    </ArticleLayout>
   );
 };
 

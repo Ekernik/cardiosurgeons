@@ -1,9 +1,6 @@
-import Link from '@/components/Link';
-import SEO from '@/components/SEO';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Contacts from '@/components/Contacts';
 import { NextPage } from 'next';
+import Link from '@/components/Link';
+import ArticleLayout from 'layouts/ArticleLayout';
 
 const Announcement: NextPage = () => {
   const SEODetails = {
@@ -14,11 +11,9 @@ const Announcement: NextPage = () => {
       'https://heartteamspb.com/announcements/kardiohirurgicheskie-operatsii-dlya-zhitelej-rossii',
     type: 'article',
   };
-  
+
   return (
-    <>
-      <SEO details={SEODetails} />
-      <Header />
+    <ArticleLayout details={SEODetails}>
       <section className='container mt'>
         <h1>Кардиохирургические операции на сердце для&nbsp;жителей России</h1>
         <p>
@@ -44,9 +39,7 @@ const Announcement: NextPage = () => {
           комфортно. Звоните, пишите, записывайтесь на прием.
         </p>
       </section>
-      <Contacts />
-      <Footer />
-    </>
+    </ArticleLayout>
   );
 };
 

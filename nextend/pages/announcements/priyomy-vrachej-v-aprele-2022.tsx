@@ -1,9 +1,6 @@
-import SEO from '@/components/SEO';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import Contacts from '@/components/Contacts';
 import { NextPage } from 'next';
 import PhoneLink from '@/components/PhoneLink';
+import ArticleLayout from 'layouts/ArticleLayout';
 
 const Announcement: NextPage = () => {
   const SEODetails = {
@@ -16,9 +13,7 @@ const Announcement: NextPage = () => {
   };
 
   return (
-    <>
-      <SEO details={SEODetails} />
-      <Header />
+    <ArticleLayout details={SEODetails}>
       <section className='container mt'>
         <h1>
           Выездные приемы кардиохирургов
@@ -47,9 +42,7 @@ const Announcement: NextPage = () => {
           Записаться на прием можно по телефону: <PhoneLink />.
         </p>
       </section>
-      <Contacts />
-      <Footer />
-    </>
+    </ArticleLayout>
   );
 };
 
