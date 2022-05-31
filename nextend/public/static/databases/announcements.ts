@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '8',
+    publishDate: '31 мая 2022 г.',
+    title: 'Стентирование коронарных артерий бесплатно по ОМС и квотам',
+    options: {},
+    link: 'stentirovanie-koronarnyh-arterij',
+  },
+  {
     id: '7',
     publishDate: '30 мая 2022 г.',
     title: 'Выездные приемы кардиохирургов в городах России – июнь 2022',
