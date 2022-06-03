@@ -18,7 +18,7 @@ export const Link: React.FC<LinkProps> = ({
   linkOptions,
   children,
 }) => (
-  <NextLink href={href}>
+  <NextLink href={href} prefetch={false}>
     <a onClick={onClick} className={classes} {...linkOptions}>
       {text}
       {children}
