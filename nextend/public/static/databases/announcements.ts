@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '9',
+    publishDate: '03 июня 2022 г.',
+    title: 'Аортокоронарное шунтирование в Санкт-Петербурге',
+    options: {},
+    link: 'aortokoronarnoe-shuntirovanie-v-sankt-peterburge',
+  },
+  {
     id: '8',
     publishDate: '31 мая 2022 г.',
     title: 'Стентирование коронарных артерий бесплатно по ОМС и квотам',
