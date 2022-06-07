@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '10',
+    publishDate: '07 июня 2022 г.',
+    title: 'Лечение ишемической болезни сердца в Санкт-Петербурге',
+    options: {},
+    link: 'lechenie-ishemicheskoj-bolezni-serdtsa',
+  },
+  {
     id: '9',
     publishDate: '03 июня 2022 г.',
     title: 'Аортокоронарное шунтирование в Санкт-Петербурге',
