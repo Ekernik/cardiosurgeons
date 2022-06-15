@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '11',
+    publishDate: '15 июня 2022 г.',
+    title: 'Как записаться на прием к кардиохирургам нашего центра',
+    options: {},
+    link: 'kak-zapisatsya-na-priem',
+  },
+  {
     id: '10',
     publishDate: '07 июня 2022 г.',
     title: 'Лечение ишемической болезни сердца в Санкт-Петербурге',
