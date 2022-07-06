@@ -1,11 +1,20 @@
 import Link from '@/components/Link';
 
-const Review: React.FC = () => (
+type PropsType = {
+  onClose: () => void;
+};
+
+const Review: React.FC<PropsType> = props => (
   <article>
     <p className='article__p'>
       Выражаю особую благодарность хирургу{' '}
-      <Link href='/team/doctor_pyagai' text='Пягай Виктору Александровичу' />, который наблюдал за
-      мной в послеоперационный период. Отношения чуткие и внимательные.
+      <Link
+        href='/team/doctor_pyagai'
+        text='Пягай Виктору Александровичу'
+        onClick={props.onClose}
+      />
+      , который наблюдал за мной в послеоперационный период. Отношения чуткие и
+      внимательные.
     </p>
     <p className='article__p'>
       Я также благодарен администратору Марине Анатольевне Андриановой, которая
