@@ -2,6 +2,13 @@ import { announcementType } from 'types/announcement';
 
 const announcementsArr: announcementType[] = [
   {
+    id: '12',
+    publishDate: '14 июля 2022 г.',
+    title: 'Кардиохирург нашей клиники - победитель конкурса «ЛИГА БУДУЩЕГО»',
+    options: {},
+    link: 'pobeditel-konkursa-liga-budushchego',
+  },
+  {
     id: '11',
     publishDate: '15 июня 2022 г.',
     title: 'Как записаться на прием к кардиохирургам нашего центра',
