@@ -1,11 +1,8 @@
 .floating-contacts {
   position: absolute;
-  height: 90vh;
-  width: 90vw;
   left: 0;
   top: 0;
-  transform: translate(-50%, 5%);
-  padding: 2rem;
+  transform: translate(-50%, 1%);
   background-color: var(--color-white);
   z-index: 5;
   display: flex;
@@ -129,8 +126,6 @@
 // Tablet media query
 @media (min-width: 768px) {
   .floating-contacts {
-    padding: 4rem;
-
     & h3 {
       width: 60%;
       font-size: var(--text-xl);
@@ -151,13 +146,11 @@
 // Full Desktops media query
 @media (min-width: 1400px) {
   .floating-contacts {
-    width: 55vw;
-
     &-cross {
-      top: 2em;
-      right: 2em;
+      top: .5em;
+      right: .5em;
       height: 1.5em;
-      width: 2.5em;
+      width: 1.5em;
     }
 
     & h3 {
