@@ -1,0 +1,26 @@
+.section,
+.section__video {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 1em;
+}
+
+///////////// TABLET VIEW
+@media (min-width: 768px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+///////////// LAPTOP VIEW
+@media (min-width: 992px) {
+  .section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section__video {
+    grid-template-columns: 1fr 1fr;
+  }
+}

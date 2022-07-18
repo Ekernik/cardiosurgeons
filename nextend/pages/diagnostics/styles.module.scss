@@ -1,0 +1,19 @@
+.images__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  aspect-ratio: 1/2;
+  margin-bottom: 1em;
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .images__container {
+    flex-direction: row;
+    aspect-ratio: 0;
+
+    & > div {
+      width: 50%;
+    }
+  }
+}

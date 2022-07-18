@@ -1,0 +1,29 @@
+.header {
+  &__nav {
+    display: none;
+    background-color: var(--color-P--tint);
+  }
+
+  &__menu {
+    display: none;
+    padding: 4px 0;
+  }
+}
+
+// Tablet media query
+@media (min-width: 768px) {
+  .header {
+    &__nav {
+      display: block;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      justify-content: space-between;
+      flex: 1.5;
+      overflow: visible;
+    }
+  }
+}

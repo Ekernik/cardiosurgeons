@@ -42,12 +42,18 @@
   }
 
   &__info {
-    & > iframe {
-      margin: 0 auto 1em;
-      width: 755px;
-      height: 424px;
-      max-width: 100%;
-      max-height: calc((100vw - 40px) / (16 / 9));
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+
+    & iframe {
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 240px;
+      border-radius: 6px;
     }
   }
 
@@ -92,6 +98,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 // Tablet media query
@@ -111,11 +123,14 @@
     }
 
     &__info {
-
       & > iframe {
         width: 100%;
-        height: 336;
+        height: 336px;
       }
+    }
+
+    &__list {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
@@ -150,10 +165,14 @@
 
     &__info {
       flex: 2;
-      
+
       & > iframe {
         height: 336px;
       }
+    }
+
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }
@@ -162,8 +181,8 @@
 @media (min-width: 1400px) {
   .doctor {
     &__info {
-      & > iframe {
-        height: 470px;
+      & iframe {
+        height: 430px;
       }
     }
   }

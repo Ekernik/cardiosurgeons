@@ -1,8 +1,8 @@
-import Header from '@/components/Header/Header';
+import { NextPage } from 'next';
+import Header from '@/components/Header';
 import SEO from '@/components/SEO';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
-import { NextPage } from 'next';
 
 const Structure: NextPage = () => {
   const SEODetails = {
@@ -12,17 +12,15 @@ const Structure: NextPage = () => {
     pageLink: 'https://heartteamspb.com/structure/cardioreanimatology',
     type: 'article',
   };
+
   return (
     <>
       <SEO details={SEODetails} />
-      <div className='App'>
-        <div id='curtain' />
-        <Header />
-        <main className='container section__about-us'>
-          <h1 className='article__header'>
-            Отделение кардиореаниматологии и анастезиологии
-          </h1>
-          <p className='article__p'>
+      <Header />
+      <main className='mt container'>
+        <article>
+          <h1>Отделение кардиореаниматологии и анастезиологии</h1>
+          <p>
             Отделение кардиореанимации и&nbsp;анестезиологии осуществляет
             оказание высококвалифицированной помощи больным с&nbsp;заболеваниями
             сердечно-сосудистой системы, нуждающимся в&nbsp;лечении
@@ -33,7 +31,7 @@ const Structure: NextPage = () => {
             обезболивания, создания психологического комфорта, глубокого сна
             во&nbsp;время проведения хирургического вмешательства.
           </p>
-          <p className='article__p'>
+          <p>
             Пациенты в&nbsp;предоперационном периоде обязательно осматриваются
             анестезиологом, оценивается течение их основного заболевания,
             по&nbsp;поводу которого планируется выполнение хирургического
@@ -45,7 +43,7 @@ const Structure: NextPage = () => {
             лечения и&nbsp;анестезиологическому обеспечению выполняемой
             операции.
           </p>
-          <p className='article__p'>
+          <p>
             В операционных в&nbsp;постоянной готовности находятся аппараты,
             позволяющие выполнить аутогемотрансфузию крови. Эта&nbsp;процедура
             позволяет в&nbsp;короткие сроки восполнить кровопотерю,
@@ -57,7 +55,7 @@ const Structure: NextPage = () => {
             создается искусственная циркуляция крови с&nbsp;удалением
             углекислого газа и&nbsp;насыщением кислородом.
           </p>
-          <p className='article__p'>
+          <p>
             Немаловажно наблюдение пациента в&nbsp;первые сутки после
             проведенной операции, где&nbsp;важен каждый момент,
             будь&nbsp;то&nbsp;изменения в&nbsp;анализах крови, артериального
@@ -69,10 +67,10 @@ const Structure: NextPage = () => {
             на&nbsp;профильное отделение, где его дальнейшее выздоровление будет
             происходить в&nbsp;плановом порядке.
           </p>
-        </main>
-        <Contacts />
-        <Footer />
-      </div>
+        </article>
+      </main>
+      <Contacts />
+      <Footer />
     </>
   );
 };

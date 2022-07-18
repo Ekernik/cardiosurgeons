@@ -1,0 +1,120 @@
+.dropdown {
+  position: relative;
+  margin: 0;
+}
+
+.link,
+.button_link,
+.button_link > a {
+  font-size: var(--text-regular);
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 400;
+  padding: 10px 0;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.button_link {
+  border: none;
+  background: none;
+
+  & > a:hover {
+    text-decoration: none;
+  }
+}
+
+.link__button,
+.link__button:any-link,
+.link.link__button:any-link {
+  font-size: var(--text-sm);
+  text-decoration: none;
+  color: var(--color-P--dark);
+  background-color: var(--color-P--tint);
+  font-weight: 400;
+  transition: 0.2s;
+  padding: 1em;
+  line-height: 1.2;
+  max-width: 20vw;
+
+  &:hover,
+  &:any-link:hover {
+    color: var(--color-P--darkest);
+    background-color: #3bacb544;
+    border-radius: 0.5em;
+    text-decoration: none;
+  }
+}
+
+.link.link__button___disabled {
+  margin: 0;
+  padding: 1em;
+  line-height: var(--text-sm);
+
+  &:hover {
+    color: var(--color-P--dark);
+    background-color: var(--color-P--tint);
+    cursor: default;
+  }
+}
+
+.dropdown__menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-P--tint);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-15px);
+  transition: all 150ms ease-in-out;
+
+  &___aside {
+    left: 100%;
+    top: -30%;
+    width: inherit;
+    z-index: 1;
+
+    & > .link__button {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.dropdown.active > .link,
+.link:hover,
+.button_link:hover {
+  color: black;
+}
+
+.dropdown.active > .link + .dropdown__menu,
+.button_link:hover + .dropdown__menu,
+.link:hover + .dropdown__menu,
+.dropdown__menu:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  gap: 0.5em;
+}
+
+.treatment__grid {
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  gap: 0.5em;
+  align-items: center;
+}

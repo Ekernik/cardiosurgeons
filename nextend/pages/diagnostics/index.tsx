@@ -1,5 +1,6 @@
+// TODO: Split logic from UI and extract smaller components
 import Link from '@/components/Link';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import { diagnosticsArr } from '@/public/static/databases/diagnostics';
@@ -46,20 +47,13 @@ const Diagnostics: NextPage = () => {
   return (
     <>
       <SEO details={SEODetails} />
-      <div className='App'>
-        <div id='curtain' />
-        <Header />
-        <main className='page__diagnostics'>
-          <section className='container  section__diagnostics'>
-            <h1 className='section__header'>
-              Мы производим диагностику по следующим направлениям
-            </h1>
-            <ul className='list-container__list'>{renderCategories()}</ul>
-          </section>
-        </main>
-        <Contacts />
-        <Footer />
-      </div>
+      <Header />
+      <section className='container mt'>
+        <h1>Мы производим диагностику по&nbsp;следующим&nbsp;направлениям</h1>
+        <ul className='list-container__list'>{renderCategories()}</ul>
+      </section>
+      <Contacts />
+      <Footer />
     </>
   );
 };

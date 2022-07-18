@@ -1,0 +1,38 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+  border-bottom: 1px solid var(--color-gray);
+
+  > button {
+    padding: 1em 4em;
+    width: 24em;
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: var(--text-sm);
+    color: var(--color-dark);
+    transition: 0.3s;
+
+    &:hover {
+      border-bottom: 2px solid var(--color-P--light);
+    }
+
+    &.active {
+      border-bottom: 2px solid var(--color-P--dark);
+
+      &:hover {
+        border-bottom: 2px solid var(--color-P--darkest);
+      }
+    }
+  }
+}
+
+///////////// TABLET VIEW
+@media (min-width: 768px) {
+  .tabs > button {
+    font-size: var(--text-md);
+  }
+}

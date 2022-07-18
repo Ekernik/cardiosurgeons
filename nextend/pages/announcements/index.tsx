@@ -1,14 +1,11 @@
-import Header from '@/components/Header/Header';
-import Contacts from '@/components/Contacts';
-import Footer from '@/components/Footer';
-import SEO from '@/components/SEO';
+import { NextPage } from 'next';
+import AnnouncementCard from '@/components/AnnouncementCard';
 import announcementsArr from '@/public/static/databases/announcements';
 import { announcementType } from 'types/announcement';
-import AnnouncementCard from '@/components/AnnouncementCard';
-import { NextPage } from 'next';
+import ArticleLayout from 'layouts/ArticleLayout';
 
 const Announcements: NextPage = () => {
-  let renderAnnouncements = (announcementsArr: announcementType[]) =>
+  const renderAnnouncements = (announcementsArr: announcementType[]) =>
     announcementsArr.map(announcement => (
       <AnnouncementCard key={announcement.id} {...announcement} />
     ));
@@ -20,22 +17,14 @@ const Announcements: NextPage = () => {
     pageLink: 'https://heartteamspb.com/announcements',
     type: 'article',
   };
+
   return (
-    <>
-      <SEO details={SEODetails} />
-      <div className='App'>
-        <div id='curtain' />
-        <Header />
-        <main className='section'>
-          <div className='container'>
-            <h1 className='article__header'>Новости нашего центра</h1>
-            <div className='grid'>{renderAnnouncements(announcementsArr)}</div>
-          </div>
-        </main>
-        <Contacts />
-        <Footer />
-      </div>
-    </>
+    <ArticleLayout details={SEODetails}>
+      <main className='container mt'>
+        <h1>Новости нашего центра</h1>
+        <div className='grid'>{renderAnnouncements(announcementsArr)}</div>
+      </main>
+    </ArticleLayout>
   );
 };
 

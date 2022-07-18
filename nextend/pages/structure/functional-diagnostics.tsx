@@ -1,8 +1,8 @@
-import Header from '@/components/Header/Header';
+import { NextPage } from 'next';
+import Header from '@/components/Header';
 import SEO from '@/components/SEO';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
-import { NextPage } from 'next';
 
 const Structure: NextPage = () => {
   const SEODetails = {
@@ -12,17 +12,15 @@ const Structure: NextPage = () => {
     pageLink: 'https://heartteamspb.com/structure/functional-diagnostics',
     type: 'article',
   };
+
   return (
     <>
       <SEO details={SEODetails} />
-      <div className='App'>
-        <div id='curtain' />
-        <Header />
-        <main className='container section__about-us'>
-          <h1 className='article__header'>
-            Отделение функциональной диагностики
-          </h1>
-          <p className='article__p'>
+      <Header />
+      <main className='mt container'>
+        <article>
+          <h1>Отделение функциональной диагностики</h1>
+          <p>
             Деятельность врачей - специалистов функциональной диагностики,
             являющихся неотъемлемым подразделением клиники Высоких медицинских
             технологий, посвящена анализу функционального состояния сердца
@@ -30,12 +28,12 @@ const Structure: NextPage = () => {
             определения необходимой медикаментозной терапии, оценки соответствия
             и&nbsp;эффективности проводимого лечения.
           </p>
-          <p className='article__p'>
+          <p>
             Наиболее востребованные методы исследований сердечно-сосудистой
             патологии это:
           </p>
-          <ul className='article__ul'>
-            <li className='article__li'>
+          <ul>
+            <li>
               Для визуализации камер сердца применяется
               трансторакальная&nbsp;(неинвазивная) и&nbsp;чреспищеводная
               эхокардиография. Эти&nbsp;два метода позволяют оценить размеры
@@ -45,7 +43,7 @@ const Structure: NextPage = () => {
               патологии: сужение&nbsp;(стеноз) клапана
               или&nbsp;его&nbsp;недостаточность.
             </li>
-            <li className='article__li'>
+            <li>
               При подозрении на&nbsp;ишемическую болезнь сердца применяют
               эхокардиографию с&nbsp;физической или&nbsp;фармакологической
               нагрузкой&nbsp;(стресс-эхокардиография). Во&nbsp;время прохождения
@@ -55,7 +53,7 @@ const Structure: NextPage = () => {
               ультразвуковое исследование сердца, что&nbsp;позволяет оценить
               сократимость сердечной мышцы “до”&nbsp;и&nbsp;“после”.
             </li>
-            <li className='article__li'>
+            <li>
               Для анализа электрической активности сердца на&nbsp;помощь
               приходит электрокардиограмма&nbsp;(ЭКГ) - краткосрочная запись
               и&nbsp;суточный (или&nbsp;многосуточный) мониторинг
@@ -66,22 +64,22 @@ const Structure: NextPage = () => {
               – рубцовых изменений миокарда.
             </li>
           </ul>
-          <p className='article__p'>
+          <p>
             Всем пациентам перед выполнением сложных операций обязательно
             проводится дуплексное сканирование сосудов головы и&nbsp;шеи
             (брахиоцефальных артерий), для&nbsp;профилактики возникновения
             острой ишемии головного мозга, т.е.&nbsp;инсульта.
           </p>
-          <p className='article__p'>
+          <p>
             Вышеописанные методы исследований выполняются на&nbsp;высококлассном
             оборудовании. Необходимо понимать, что&nbsp;сопоставлением
             результатов и&nbsp;определением дальнейшей тактики лечения
             занимается непосредственно лечащий врач.
           </p>
-        </main>
-        <Contacts />
-        <Footer />
-      </div>
+        </article>
+      </main>
+      <Contacts />
+      <Footer />
     </>
   );
 };
