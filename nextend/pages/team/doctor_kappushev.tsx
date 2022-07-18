@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from '@/components/Link';
 import img_doctor from '@/public/static/images/doctors/doctor_Kappushev.webp';
 import Contacts from '@/components/Contacts';
 import SEO from '@/components/SEO';
@@ -34,6 +35,11 @@ const Kappushev: NextPage = () => {
               квалификационной категории
             </p>
           </div>
+          <Link
+            href='/feedback/kappushev'
+            text='отзывы о враче'
+            classes='doctor__feedback'
+          />
         </section>
         <section className='doctor__info'>
           <h3>Врачебная деятельность</h3>
