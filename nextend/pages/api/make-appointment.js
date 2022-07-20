@@ -1,29 +1,35 @@
-import fs from 'fs';
-import path from 'path';
+import {
+  checkEmail,
+  checkIfSpam,
+  checkName,
+  checkPhone,
+  checkMessage,
+} from '../../helpers/api/formValidation';
 
-function isSpam(id) {
-  const data = readFile('appointments.json');
+import {
+  getReadableDate,
+  getReadableOrigin,
+} from '../../helpers/api/transformData';
 
-  let ipCount = 0;
+import { updateDataFile } from '../../helpers/api/fileActions';
 
-  data.forEach(appointment => {
-    appointment.id === id ? ipCount++ : null;
-  });
+async function sendTelegram(event) {
+  const API_KEY = process.env.TELEGRAM_KEY;
+  const NIKITA_ID = process.env.NIKITA_ID;
+  const MARIANNA_ID = process.env.MARIANNA_ID;
+  const text = `
+Дата:      ${getReadableDate(event.date)}%0A
+Откуда:        ${event.linkOrigin}%0A
+Имя:             ${event.name}%0A
+Телефон:    ${event.phone}%0A
+Email:           ${event.email}%0A
+Сообщение:%0A
+    ${event.message}`;
 
-  return ipCount > 3;
-}
-
-function readFile(filename) {
-  const filePath = path.join(process.cwd(), 'data', filename);
-  const fileData = fs.readFileSync(filePath);
-  return JSON.parse(fileData);
-}
-
-function updateDataFile(filename, newObject) {
-  const filePath = path.join(process.cwd(), 'data', filename);
-  const data = readFile(filename);
-  data.push(newObject);
-  fs.writeFileSync(filePath, JSON.stringify(data));
+  const NIKITA_LINK = `https://api.telegram.org/bot${API_KEY}/sendMessage?chat_id=${NIKITA_ID}&text=${text}`;
+  const MARIANNA_LINK = `https://api.telegram.org/bot${API_KEY}/sendMessage?chat_id=${MARIANNA_ID}&text=${text}`;
+  await fetch(NIKITA_LINK).catch(err => console.log(err));
+  // await fetch(MARIANNA_LINK).catch(err => console.log(err));
 }
 
 function makeAppointment(req, res) {
@@ -45,28 +51,24 @@ function makeAppointment(req, res) {
       phone: phone,
       message: message,
       ip: ip,
-      linkOrigin: linkOrigin,
+      linkOrigin: getReadableOrigin(linkOrigin),
     };
 
-    if (isSpam(id)) {
-      updateDataFile('appointments-spam.json', {
-        ...newAppointment,
-        reason: 'Слишком много запросов за сутки с одного IP',
-      });
+    if (!checkEmail(email, res)) return;
+    if (!checkName(name, res)) return;
+    if (!checkPhone(phone, res)) return;
+    if (!checkMessage(message, res)) return;
+    if (!!checkIfSpam(id, res, newAppointment)) return;
 
-      return res.status(429).json({
-        message: 'Слишком много запросов за сутки с Вашего IP',
-        code: 429,
-      });
-    }
-
+    sendTelegram(newAppointment);
     updateDataFile('appointments.json', newAppointment);
 
     return res
       .status(201)
       .json({ message: 'Успешная запись на прием', code: 201 });
-  } else {
-    return res.status(200).json({ message: 'Form submitted' });
+  }
+  if (req.method === 'GET') {
+    res.status(200).json({ code: 200, status: 'Connected' });
   }
 }
 

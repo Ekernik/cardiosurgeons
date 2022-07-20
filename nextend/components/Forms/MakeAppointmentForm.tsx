@@ -1,5 +1,4 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import Link from 'next/link';
+import { Formik, Form } from 'formik';
 import { useRouter } from 'next/router';
 import styles from './styles.module.scss';
 import {
@@ -31,15 +30,7 @@ function MakeAppointmentForm() {
       headers: {
         'Content-Type': 'application/json',
       },
-    })
-      .then(response => response.json())
-      .then(data => {
-        switch (data.code) {
-          case '201':
-            console.log('success');
-            break;
-        }
-      });
+    });
   }
 
   return (
@@ -103,13 +94,13 @@ function validateValues(values) {
   } else if (
     !/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/i.test(values.phone)
   ) {
-    errors.phone = 'Неверный формат телефона';
+    errors.phone = 'Неверный формат';
   }
   if (
     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email) &&
     values.email
   ) {
-    errors.email = 'Неверный формат почты';
+    errors.email = 'Неверный формат';
   }
   return errors;
 }

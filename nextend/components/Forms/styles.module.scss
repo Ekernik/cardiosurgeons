@@ -1,13 +1,15 @@
-// min-width 1120px
+// Phones
 .form {
-  width: 549px;
+  width: 100%;
   background-color: #f5f9fa; // TODO: color-name light-bg
-  padding: 32px 32px 25px;
+  border: 1px solid #ccdfe6; // TODO: color-name border-light
+  padding: 16px;
   border-radius: 6px;
+  flex: 1;
 
   & > h2 {
     text-align: center;
-    margin: 0px 0px 32px;
+    margin: 0px 0px 16px;
   }
 }
 
@@ -15,15 +17,38 @@
   background-color: #375e6c; // TODO: color-name main-normal
   color: #fff;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 18px;
+  line-height: 24px;
   width: 100%;
-  padding: 13px 0;
+  padding: 8px 0;
   border: none;
   border-radius: 6px;
+  transition: background-color 0.2s;
   cursor: pointer;
 
   &:disabled {
-    background-color: #006636; // TODO: color-name success
+    background-color: #006636 !important; // TODO: color-name success
     cursor: not-allowed;
+  }
+}
+
+// Desktops
+@media (min-width: 1120px) {
+  .form {
+    width: 549px;
+    padding: 32px 32px 25px;
+
+    & > h2 {
+      margin: 0px 0px 20px;
+    }
+  }
+
+  .submitButton {
+    font-size: 32px;
+    padding: 13px 0;
+
+    &:hover {
+      background-color: #4490ab; // TODO: color-name main-hover
+    }
   }
 }

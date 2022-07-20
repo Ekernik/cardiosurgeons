@@ -1,9 +1,6 @@
-import Image from 'next/image';
-import success from '@/public/static/svg/success.svg';
 import MakeAppointmentForm from './Forms/MakeAppointmentForm';
 import styles from '@/components/Header/styles.module.scss';
 import styles2 from '@/components/Header/Nav/styles.module.scss';
-import { useRouter } from 'next/router';
 
 const handleClose = () => {
   const body = document.querySelector('body');

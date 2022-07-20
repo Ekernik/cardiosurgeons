@@ -1,68 +1,67 @@
 import Link from '@/components/Link';
-import ContactsForm from './ContactsForm';
 import styles from './styles.module.scss';
 import PhoneLink from '@/components/PhoneLink';
 import Map from '@/components/Map';
+import EmailLink from '@/components/EmailLink';
 
 // ICONS
-import { BiLinkExternal, BiPhoneCall } from 'react-icons/bi';
+import { BiPhoneCall } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { SiMoscowmetro } from 'react-icons/si';
 import { GoMail } from 'react-icons/go';
 import { BsClock } from 'react-icons/bs';
+import MakeAppointmentForm from '../Forms/MakeAppointmentForm';
 
 const Contacts: React.FC = () => (
   <section className='container'>
     <div className={styles.contacts_flexbox}>
       {/* Left part */}
-      <div className={styles.our_location}>
-        <h3 className={styles.subheader}>
-          Где нас найти в г. Санкт-Петербурге
-        </h3>
-        <Map position={[59.915765, 30.28255]} />
+      <section className={styles.our_location}>
+        <h2>
+          Где нас найти <br /> в Санкт-Петербурге
+        </h2>
+        <Map position={[59.915765, 30.28255]} height='350px' />
         <Link
           href='/map-route.png'
           classes={styles.advanced_route}
           linkOptions={{ target: '_blank' }}
         >
-          <span className={styles.contacts_external_icon}>
-            Подробный маршрут
-            <BiLinkExternal />
-          </span>
+          Подробный маршрут
         </Link>
 
         <ul className={styles.contacts_info}>
           <li className={styles.contacts_info__item}>
             <FaMapMarkerAlt />
-            Санкт-Петербург, наб. р. Фонтанки, д. 154
+            <address>
+              Санкт-Петербург, наб.&nbsp;р.&nbsp;Фонтанки,&nbsp;д.&nbsp;154
+            </address>
           </li>
 
           <li className={styles.contacts_info__item}>
             <SiMoscowmetro />
-            Балтийская, Технологический институт
+            Балтийская, Технологический&nbsp;институт
           </li>
 
           <li className={styles.contacts_info__item}>
             <BsClock />
-            09:00 - 21:00
+            <time dateTime='09:00'>09:00</time> -{' '}
+            <time dateTime='21:00'>21:00</time>
           </li>
 
           <li className={styles.contacts_info__item}>
             <GoMail />
-            <a href='mailto:heartteam.spb@gmail.com' className='article__link'>
-              heartteam.spb@gmail.com
-            </a>
+            <EmailLink />
           </li>
 
           <li className={styles.contacts_info__item}>
             <BiPhoneCall />
-            <PhoneLink phoneNumber='+7 (999) 238-01-36' text_classes='' />
+            <PhoneLink />
           </li>
         </ul>
-      </div>
+      </section>
 
       {/* Right part - Form */}
-      <ContactsForm />
+      <MakeAppointmentForm />
     </div>
   </section>
 );

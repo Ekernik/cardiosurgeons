@@ -38,13 +38,12 @@ ul {
 
 a:any-link {
   text-decoration: none;
-  color: var(--color-P--dark);
-  font-weight: 600;
-  transition: 0.3s;
+  color: #375e6c; // TODO: color-name main-normal
+  font-weight: 700;
+  transition: color 0.2s;
 
   &:hover {
-    color: var(--color-P--darkest);
-    text-decoration: underline;
+    color: #4490AB; // TODO: color-name main-hover
   }
 }
 
