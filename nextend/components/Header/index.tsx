@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 import Nav from './Nav';
-import FloatingContacts from '@/components/FloatingContacts';
+import FormModal from '@/components/FormModal';
 import Brand from './Brand';
 import {
   mountScrollListener,
@@ -15,15 +15,18 @@ const Header: React.FC = () => {
     mountScrollListener();
   }, []);
 
+  const [showFormModal, setShowFormModal] = useState(false);
+  const openFormModal = () => setShowFormModal(true);
+  const handleClose = () => setShowFormModal(false);
+
   return (
     <header className={styles.header}>
-      <div id='curtain' />
       <div className={`container ${styles.header__container}`}>
-        <Brand />
+        <Brand openFormModal={openFormModal} />
         <BurgerMenu />
       </div>
       <Nav />
-      <FloatingContacts />
+      {showFormModal && <FormModal handleClose={handleClose} />}
     </header>
   );
 };

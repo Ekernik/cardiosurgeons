@@ -6,31 +6,11 @@ import {
   checkMessage,
 } from '../../helpers/api/formValidation';
 
-import {
-  getReadableDate,
-  getReadableOrigin,
-} from '../../helpers/api/transformData';
+import { getReadableOrigin } from '../../helpers/api/transformData';
 
 import { updateDataFile } from '../../helpers/api/fileActions';
 
-async function sendTelegram(event) {
-  const API_KEY = process.env.TELEGRAM_KEY;
-  const NIKITA_ID = process.env.NIKITA_ID;
-  const MARIANNA_ID = process.env.MARIANNA_ID;
-  const text = `
-Дата:      ${getReadableDate(event.date)}%0A
-Откуда:        ${event.linkOrigin}%0A
-Имя:             ${event.name}%0A
-Телефон:    ${event.phone}%0A
-Email:           ${event.email}%0A
-Сообщение:%0A
-    ${event.message}`;
-
-  const NIKITA_LINK = `https://api.telegram.org/bot${API_KEY}/sendMessage?chat_id=${NIKITA_ID}&text=${text}`;
-  const MARIANNA_LINK = `https://api.telegram.org/bot${API_KEY}/sendMessage?chat_id=${MARIANNA_ID}&text=${text}`;
-  await fetch(NIKITA_LINK).catch(err => console.log(err));
-  // await fetch(MARIANNA_LINK).catch(err => console.log(err));
-}
+import { sendTelegram } from '../../helpers/api/telegranAction';
 
 function makeAppointment(req, res) {
   if (req.method === 'POST') {
@@ -54,10 +34,10 @@ function makeAppointment(req, res) {
       linkOrigin: getReadableOrigin(linkOrigin),
     };
 
-    if (!checkEmail(email, res)) return;
-    if (!checkName(name, res)) return;
-    if (!checkPhone(phone, res)) return;
-    if (!checkMessage(message, res)) return;
+    if (!checkEmail(newAppointment, res)) return;
+    if (!checkName(newAppointment, res)) return;
+    if (!checkPhone(newAppointment, res)) return;
+    if (!checkMessage(newAppointment, res)) return;
     if (!!checkIfSpam(id, res, newAppointment)) return;
 
     sendTelegram(newAppointment);

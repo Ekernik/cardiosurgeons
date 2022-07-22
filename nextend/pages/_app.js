@@ -2,7 +2,6 @@ import '@/styles/globals.scss';
 import '@/styles/header.scss';
 import '@/styles/scroll.scss';
 import '@/styles/normalize.css';
-import '@/styles/floatingContacts.scss';
 import '@/styles/contacts.scss';
 import '@/styles/404.scss';
 import '@/styles/diagnostic.scss';

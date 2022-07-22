@@ -57,21 +57,20 @@
   line-height: 12px;
 }
 
-// Desktops
-@media (min-width: 1120px) {
+// Tablets
+@media (min-width: 744px) {
+  .label,
+  .input__text,
+  .input__textarea {
+    width: 485px;
+  }
+
   .label {
-    font-weight: 700;
     line-height: 28px;
     font-size: 18px;
-    color: var(--color-dark);
 
     &__terms {
-      font-weight: 700;
-      color: var(--color-dark);
       font-size: 18px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
       margin-bottom: 32px;
     }
   }
@@ -79,39 +78,20 @@
   .input {
     &__text {
       height: 48px;
-      border-radius: 6px;
       padding: 0 32px;
-      line-height: 28px;
       font-size: 18px;
-      color: var(--color-dark);
-      width: 100%;
-      border: 1px solid #ccdfe6; // TODO: color-name border-light
-      margin-bottom: 8px;
+      line-height: 28px;
     }
 
     &__textarea {
-      border-radius: 6px;
       padding: 8px 32px;
-      line-height: 28px;
       font-size: 18px;
+      line-height: 28px;
       height: 140px;
-      color: var(--color-dark);
-      width: 100%;
-      border: 1px solid #ccdfe6; // TODO: color-name border-light
-      margin-bottom: 8px;
-      overflow-wrap: break-word;
-    }
-
-    &__checkbox {
-      min-width: 20px;
-      min-height: 20px;
-      border-radius: 6px;
-      cursor: pointer;
     }
   }
 
   .error {
-    color: red;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
