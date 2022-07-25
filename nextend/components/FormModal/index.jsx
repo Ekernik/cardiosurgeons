@@ -3,8 +3,8 @@ import styles from './styles.module.scss';
 import { useEffect } from 'react';
 
 function FormModal(props) {
-  const htmlEl = document.querySelector('html');
   useEffect(() => {
+    const htmlEl = document.querySelector('html');
     htmlEl.classList.add('fixed');
 
     return () => {
