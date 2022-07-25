@@ -1,0 +1,91 @@
+// Phone
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+// Tablet media query
+@media (min-width: 744px) {
+  .modal {
+    max-width: max-content;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+
+    &__cross {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 1.5em;
+      width: 1.5em;
+      z-index: 3;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 4px;
+      transition: background .2s;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      & span {
+        opacity: 0;
+      }
+
+      & span,
+      &::after,
+      &::before {
+        height: 0.25em;
+        width: 100%;
+        position: absolute;
+        margin: 0 auto;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        transition: 0.4s ease-out;
+        background-color: rgba(0, 0, 0, 1);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 10px;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        top: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Full Desktops media query
+@media (min-width: 1400px) {
+  .modal {
+    position: absolute;
+    max-height: 100vh;
+
+    &__cross {
+      top: 20px;
+      right: 30px;
+
+      &::before,
+      &::after {
+        background-color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}

@@ -29,7 +29,7 @@ const Announcement: NextPage = () => {
       <SEO details={SEODetails} />
       <Header />
       <Greetings
-        header={{ title: '19 апреля', pretitle: 'город Старый Оскол' }}
+        header={{ title: '19 июля', pretitle: 'город Старый Оскол' }}
         buttonText='Записаться на консультацию'
       />
       <article className='container'>

@@ -1,0 +1,80 @@
+// Phone
+.our_location {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f9fa; // TODO: color-name light-bg
+  border: 1px solid #ccdfe6; // TODO: color-name border-light
+  border-radius: 6px;
+
+  & > h2 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin: 16px auto 8px;
+  }
+}
+
+.info {
+  padding: 0 16px;
+
+  &__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 8px;
+
+    & > svg {
+      height: 32px;
+      width: auto;
+      color: #111827;
+      opacity: 0.8;
+      margin-right: 1em;
+    }
+  }
+}
+
+.advanced_route {
+  margin: 8px auto 16px;
+  font-weight: 700;
+  color: #375e6c; // TODO: color-name main-normal
+
+  &:any-link,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Tablets
+@media (min-width: 744px) {
+  .our_location {
+    width: 549px;
+    flex: 1;
+    
+    & > h2 {
+      font-size: 32px;
+      line-height: 36px;
+      margin: 14px auto 12px;
+    }
+  }
+}
+
+// Laptops media query
+@media (min-width: 992px) {
+  .our_location {
+    width: 549px;
+  }
+  .info__item {
+    font-size: var(--text-regular);
+
+    & > p {
+      font-size: inherit;
+    }
+  }
+
+  .advanced_route {
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+}

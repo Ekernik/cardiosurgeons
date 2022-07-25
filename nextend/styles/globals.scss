@@ -27,11 +27,11 @@
   --text-xl: 1.9rem;
   --text-2xl: 2.5rem;
 }
-html {
+* {
   scroll-behavior: smooth;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-  'Helvetica Neue', sans-serif;
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 body {
