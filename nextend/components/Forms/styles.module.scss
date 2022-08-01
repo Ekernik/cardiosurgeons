@@ -51,7 +51,7 @@
   }
 
   .submitButton {
-    width: 100%;
+    width: 485px;
     font-size: 32px;
     padding: 13px 0;
   }
@@ -60,7 +60,7 @@
 // Desktops
 @media (min-width: 1120px) {
   .form {
-    width: 549px;
+    max-width: 549px;
     padding: 32px 32px 25px;
   }
 

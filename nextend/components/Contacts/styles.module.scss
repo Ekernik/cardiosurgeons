@@ -7,16 +7,10 @@
   }
 }
 
-// Tablets media query
-@media (min-width: 768px) {
-  .contacts_flexbox {
-    align-items: stretch;
-  }
-}
-
 // Laptops media query
 @media (min-width: 992px) {
   .contacts_flexbox {
+    align-items: stretch;
     flex-direction: row;
     gap: 19px;
   }
