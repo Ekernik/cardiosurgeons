@@ -36,10 +36,12 @@ const Announcement: NextPage = () => {
         <h6 className={local_styles.date}>Новость от 02 августа 2022 года</h6>
         <section className='flex'>
           <div className={local_styles.text_content}>
+            <h1>Прием сердечно-сосудистого хирурга в Старом Осколе</h1>
             <h3>
-              30 августа 2022 г. в&nbsp;МДЦ «Медтест» проводится отбор
-              на&nbsp;бесплатное <strong>хирургическое лечение</strong>{' '}
-              в&nbsp;Санкт-Петербурге пациентов с&nbsp;заболеваниями:
+              <time dateTime='2022-08-30'>30 августа 2022 г.</time> в&nbsp;МДЦ
+              «Медтест» проводится отбор на&nbsp;бесплатное{' '}
+              <strong>хирургическое лечение</strong> в&nbsp;Санкт-Петербурге
+              пациентов с&nbsp;заболеваниями:
             </h3>
             <ul>
               <li>ИБС</li>
@@ -76,7 +78,11 @@ const Announcement: NextPage = () => {
         <div className={local_styles.place_info}>
           <p>
             Прием будет проводиться:{' '}
-            <strong>30&#160;августа&#160;2022&#160;г</strong>
+            <strong>
+              <time dateTime='2022-08-30'>
+                30&#160;августа&#160;2022&#160;г
+              </time>
+            </strong>
           </p>
           <p>
             По адресу:{' '}
