@@ -1,9 +1,6 @@
 // Phone
 .our_location {
-<<<<<<< HEAD
-=======
   width: 100%;
->>>>>>> fc3ffadf00f64fb2f06535fccb461dd750be3187
   display: flex;
   flex-direction: column;
   background-color: #f5f9fa; // TODO: color-name light-bg
@@ -54,11 +51,8 @@
 @media (min-width: 744px) {
   .our_location {
     width: 549px;
-<<<<<<< HEAD
     flex: 1;
-=======
->>>>>>> fc3ffadf00f64fb2f06535fccb461dd750be3187
-    
+
     & > h2 {
       font-size: 32px;
       line-height: 36px;
@@ -70,14 +64,9 @@
 // Laptops media query
 @media (min-width: 992px) {
   .our_location {
-<<<<<<< HEAD
-    width: 549px;
-  }
-=======
     max-width: 549px;
   }
 
->>>>>>> fc3ffadf00f64fb2f06535fccb461dd750be3187
   .info__item {
     font-size: var(--text-regular);
 
