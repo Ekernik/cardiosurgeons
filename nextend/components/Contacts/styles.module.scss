@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+<<<<<<< HEAD
   }
 }
 
@@ -11,12 +12,18 @@
 @media (min-width: 768px) {
   .contacts_flexbox {
     align-items: stretch;
+=======
+>>>>>>> fc3ffadf00f64fb2f06535fccb461dd750be3187
   }
 }
 
 // Laptops media query
 @media (min-width: 992px) {
   .contacts_flexbox {
+<<<<<<< HEAD
+=======
+    align-items: stretch;
+>>>>>>> fc3ffadf00f64fb2f06535fccb461dd750be3187
     flex-direction: row;
     gap: 19px;
   }

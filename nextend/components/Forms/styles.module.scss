@@ -51,7 +51,11 @@
   }
 
   .submitButton {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 485px;
+>>>>>>> fc3ffadf00f64fb2f06535fccb461dd750be3187
     font-size: 32px;
     padding: 13px 0;
   }
@@ -60,7 +64,11 @@
 // Desktops
 @media (min-width: 1120px) {
   .form {
+<<<<<<< HEAD
     width: 549px;
+=======
+    max-width: 549px;
+>>>>>>> fc3ffadf00f64fb2f06535fccb461dd750be3187
     padding: 32px 32px 25px;
   }
 

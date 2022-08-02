@@ -13,6 +13,8 @@
 /out/
 
 # production
+appointments.json
+appointments-spam.json
 /build
 
 # misc
