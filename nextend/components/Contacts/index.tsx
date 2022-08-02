@@ -9,7 +9,6 @@ const Contacts: React.FC = () => (
       {/* Left part */}
       <LocationCard />
       {/* Right part - Form */}
-      <LocationCard />
       <MakeAppointmentForm />
     </div>
   </section>
